@@ -1,0 +1,26 @@
+{
+  "status": "interaction checks passed",
+  "widths": [
+    1440,
+    1024,
+    768,
+    390,
+    375,
+    320
+  ],
+  "browserErrors": [],
+  "scans": [
+    {
+      "state": "dialog",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    }
+  ]
+}

@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Evolve Through AI | Technology • Innovation • Solutions | Learn. Build. Evolve.</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+.font-mono-code { font-family: 'JetBrains Mono', monospace; }
+@keyframes dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+.animate-loop-flow {
+  stroke-dasharray: 8, 8;
+  animation: dash 6s linear infinite;
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#b4c5ff", "background": "#f9f9ff", "secondary": "#00687a", "surface-container-low": "#f1f3ff", "secondary-container": "#57dffe", "on-error-container": "#93000a", "surface-container-highest": "#dce2f6", "surface-dim": "#d3daee", "on-secondary-fixed-variant": "#004e5c", "on-primary-fixed-variant": "#003ea8", "on-background": "#151b2a", "primary-fixed": "#dbe1ff", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#5516be", "primary-container": "#2563eb", "primary-fixed-dim": "#b4c5ff", "primary": "#004ac6", "surface-container-lowest": "#ffffff", "surface-variant": "#dce2f6", "tertiary": "#632ecd", "on-secondary-container": "#006172", "outline": "#737686", "on-error": "#ffffff", "outline-variant": "#c3c6d7", "on-tertiary-container": "#f6edff", "surface-bright": "#f9f9ff", "on-secondary-fixed": "#001f26", "on-secondary": "#ffffff", "on-primary-fixed": "#00174b", "tertiary-container": "#7d4ce7", "on-primary": "#ffffff", "surface-tint": "#0053db", "inverse-on-surface": "#edf0ff", "surface-container-high": "#e2e8fc", "on-primary-container": "#eeefff", "secondary-fixed": "#acedff", "tertiary-fixed-dim": "#d0bcff", "surface-container": "#e9edff", "secondary-fixed-dim": "#4cd7f6", "error": "#ba1a1a", "on-surface-variant": "#434655", "inverse-surface": "#2a3040", "on-surface": "#151b2a", "tertiary-fixed": "#e9ddff", "surface": "#f9f9ff", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#23005c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2rem", "space-2xl": "3rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-3xl": "4.5rem", "gutter-mobile": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin-desktop-wide": "3rem" }, "fontFamily": { "headline-lg-mobile": [ "Inter" ], "display-mobile": [ "Inter" ], "display": [ "Inter" ], "headline-sm": [ "Inter" ], "title-lg": [ "Inter" ], "headline-lg": [ "Inter" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "title-md": [ "Inter" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "code-inline": [ "JetBrains Mono", "monospace" ], "headline-md": [ "Inter" ], "body-sm": [ "Inter" ] }, "fontSize": { "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "display": [ "54px", { "lineHeight": "62px", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "500" } ], "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "code-inline": [ "13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-margin-desktop-wide flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-md" data-path="flagship-masterclass" href="#"><div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm font-bold shadow-[0_2px_4px_rgba(0,74,198,0.2)]"><span class="tracking-tight">ETA</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface font-semibold tracking-tight">Evolve Through AI</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">v4.2</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-normal">Technology • Innovation • Solutions</span></div></a></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container-high text-primary font-semibold rounded-lg" data-path="flagship-masterclass" href="#offerings">5 Pathways</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="devops-runtime" href="#devops-runtime">DevOps for AI</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="career-ladder" href="#career-ladder">Career Ladder</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="capstone-spotlight" href="#capstone-spotlight">14 Projects &amp; Capstone</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="us-vs-them" href="#anti-vaporware">Anti-Vaporware</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="horizons" href="#horizons">Vision Horizons</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low hover:text-on-surface font-label-md text-label-md border border-outline-variant/40 shadow-sm transition-all" data-path="live-demo" href="#devops-runtime">Explore Architecture</a><a class="relative inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-medium shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] hover:bg-primary hover:text-on-primary active:scale-[0.98] transition-all" data-path="apply-for-cohort" href="#tuition-calculator" onclick="triggerReviewModal()"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span></span><span>Apply for Review</span><span class="hidden lg:inline text-on-primary-container/80 text-[11px] font-normal">• Cohort 05</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer" onclick="triggerReviewModal()"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION WITH EMBEDDED SHADER CANVAS BACKGROUND & WORD ROTATOR -->
+<section class="relative w-full overflow-hidden bg-slate-950 text-white min-h-[920px] flex flex-col justify-between pt-space-3xl pb-space-2xl px-margin-desktop-wide">
+<!-- WebGL Shader Canvas from DATA:SCREEN:SCREEN_5 -->
+<div class="absolute inset-0 w-full h-full pointer-events-none opacity-85">
+<canvas class="w-full h-full block" id="shader-canvas-ANIMATION_35"></canvas>
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/65 to-slate-950/95 pointer-events-none"></div>
+<!-- Brand Mission & Philosophy Pill -->
+<div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md border border-white/10 shadow-sm">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-85"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Learn. Build. Evolve. // TECHNOLOGY • INNOVATION • SOLUTIONS</span>
+</div>
+<!-- Main Editorial Headline with Dynamic Word Rotator -->
+<div class="max-w-4xl flex flex-col gap-space-sm mt-space-xs">
+<h1 class="font-display text-display text-white tracking-tight leading-tight">
+  Don't Just Learn Tools.<br/>
+  Understand Systems.<br/>
+  Build <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-violet-400 font-extrabold transition-all duration-500" id="word-rotator">Sovereign AI Infrastructure</span>.
+</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-3xl leading-relaxed">
+  From practical Linux, cloud, and DevOps foundations to enterprise AI engineering. Develop genuine capabilities that evolve with modern technology.
+</p>
+<div class="text-surface-container-highest/90 text-sm italic font-light tracking-wide border-l-2 border-secondary-container/60 pl-space-sm mt-space-xs">
+  "Technology keeps evolving. People and organizations should evolve with it. Evolve Through AI makes that possible."
+</div>
+</div>
+<!-- SECTION 2 PREVIEW INTEGRATED: Dual Audience Switcher & Empathy Tabs -->
+<div class="w-full max-w-3xl mt-space-md bg-slate-900/80 border border-white/10 backdrop-blur-md rounded-2xl p-space-md shadow-2xl">
+<div class="flex flex-wrap items-center gap-space-xs pb-space-sm border-b border-white/10">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-container-high font-semibold mr-space-xs">Select Your Trajectory:</span>
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-center transition-all bg-primary text-on-primary shadow-md flex items-center gap-space-xs" id="pathway-pro" onclick="switchPathway('pro')">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span>Working Professionals: Modernize to AI</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-center text-surface-container-high hover:text-white transition-all flex items-center gap-space-xs" id="pathway-early" onclick="switchPathway('early')">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>Early-Career &amp; Freshers: Zero to Production</span>
+</button>
+</div>
+<!-- Dynamic Dual Audience Empathy Content -->
+<div class="pt-space-sm flex flex-col gap-space-xs" id="pathway-container">
+<div class="flex items-center gap-space-xs text-secondary-container font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span id="pathway-headline">Your experience is valuable. Build on it and evolve into an AI-enabled Systems Architect.</span>
+</div>
+<p class="text-surface-container-high text-body-sm leading-relaxed" id="pathway-body">
+  Platform, SRE, and Cloud engineers already understand concurrency, network isolation, and Linux cgroups. We treat your baseline with respect: bridging classic container orchestration to vLLM vRAM allocations, PagedAttention batching, eBPF telemetry hooks, and autonomous MCP swarms.
+</p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-surface-container-highest text-label-sm font-mono-code" id="pathway-tags">
+<span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">KV-Cache &amp; vRAM Management</span>
+<span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">Model Weight Serving (AWQ/GPTQ)</span>
+<span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">Multi-Region ArgoCD Fleet</span>
+</div>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="mt-space-lg flex flex-wrap items-center gap-space-md">
+<button class="relative inline-flex items-center gap-space-sm px-space-xl py-space-md rounded-lg bg-primary-container text-on-primary-container font-title-md text-title-md shadow-lg hover:bg-primary active:scale-[0.98] transition-all" id="hero-apply-btn" onclick="triggerReviewModal()">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+<span>Apply for Architecture Review</span>
+</button>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-white font-title-md text-title-md backdrop-blur-sm border border-white/10 transition-colors" href="#devops-runtime">
+<span class="material-symbols-outlined text-[20px]">all_inclusive</span>
+<span>Explore DevOps-for-AI Loop</span>
+</a>
+</div>
+</div>
+<!-- Live Telemetry Counters -->
+<div class="relative z-10 w-full max-w-7xl mx-auto mt-space-2xl pt-space-md border-t border-white/10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col p-space-md rounded-xl bg-slate-900/70 backdrop-blur-md border border-white/5">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight counter-num" data-target="18">0</span>
+<span class="font-title-lg text-title-lg text-secondary-container font-semibold">Modules</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-container-high mt-1">POSIX to vLLM Sovereign</span>
+</div>
+<div class="flex flex-col p-space-md rounded-xl bg-slate-900/70 backdrop-blur-md border border-white/5">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight counter-num" data-target="14">0</span>
+<span class="font-title-lg text-title-lg text-secondary-container font-semibold">Projects</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-container-high mt-1">Auditable Production Repos</span>
+</div>
+<div class="flex flex-col p-space-md rounded-xl bg-slate-900/70 backdrop-blur-md border border-white/5">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight counter-num" data-target="1">0</span>
+<span class="font-title-lg text-title-lg text-secondary-container font-semibold">Capstone</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-container-high mt-1">Live RFC Oral Mesh Defense</span>
+</div>
+<div class="flex flex-col p-space-md rounded-xl bg-slate-900/70 backdrop-blur-md border border-white/5">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight counter-num" data-decimals="1" data-target="100.0">0</span>
+<span class="font-title-lg text-title-lg text-secondary-container font-semibold">%</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-container-high mt-1">Anti-Vaporware Zero Mock Badges</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: 3 HORIZONS UMBRELLA COMPANY POSITIONING (60% EDITORIAL LIGHT) -->
+<section class="w-full bg-surface-container-low py-space-3xl px-margin-desktop-wide" id="horizons">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>Company Architecture &amp; Long-Term Vision</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The Three Horizons of Evolve Through AI</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Practical systems engineering education is our high-trust launch vehicle. We are systematically building the engineering foundation, advisory footprint, and sovereign developer tooling of the AI era.</p>
+</div>
+<!-- 3 Horizons Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Horizon 1 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest border-2 border-primary/30 shadow-lg flex flex-col justify-between gap-space-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 px-3 py-1 bg-primary text-on-primary font-label-sm text-[11px] font-bold uppercase rounded-bl-lg">Active Now</div>
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<span class="text-primary font-mono-code text-xs uppercase font-semibold">Horizon 01 • Launch Vehicle</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Engineering Education</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+  Practical, verified systems education bridging Linux, Kubernetes, Multi-Cloud, and AI runtime engineering. Zero toys, 14 production git repositories, and rigorous RFC defense.
+</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1 text-label-sm">
+<span class="text-on-surface font-semibold">Output: Certified System Architects</span>
+<span class="text-on-surface-variant">Deep foundation for all future expansion.</span>
+</div>
+</div>
+<!-- Horizon 2 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest border border-outline-variant/50 shadow-md flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<span class="text-secondary font-mono-code text-xs uppercase font-semibold">Horizon 02 • Enterprise Advisory</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cloud &amp; AI Engineering Advisory</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+  Direct architectural consulting and forward deployed engineering. Helping enterprises stand up private GPU nodes, eBPF telemetry meshes, and fine-tuned sovereign inference fabrics.
+</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1 text-label-sm">
+<span class="text-on-surface font-semibold">Focus: Enterprise Modernization</span>
+<span class="text-on-surface-variant">Sovereign cloud migration &amp; GPU cost reduction.</span>
+</div>
+</div>
+<!-- Horizon 3 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest border border-outline-variant/50 shadow-md flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-2">
+<span class="material-symbols-outlined text-[26px]">precision_manufacturing</span>
+</div>
+<span class="text-tertiary font-mono-code text-xs uppercase font-semibold">Horizon 03 • Software Ecosystem</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Developer Tooling &amp; Products</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+  Proprietary developer tooling, sovereign telemetry dashboards, and autonomous MCP execution gateways created to solve the real operational bottlenecks uncovered in Horizons 1 &amp; 2.
+</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1 text-label-sm">
+<span class="text-on-surface font-semibold">Vision: Next-Gen Tooling Platform</span>
+<span class="text-on-surface-variant">Production-grade open-core developer products.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SIGNATURE INTERACTIVE DEVOPS INFINITY LIFECYCLE & OPERATIONAL RUNTIME FOR AI (CINEMATIC DARK) -->
+<section class="w-full bg-slate-950 text-white py-space-3xl px-margin-desktop-wide border-y border-white/10" id="devops-runtime">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+<span>The Core Concept</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white">DevOps is the Operational Runtime for AI</h2>
+<p class="font-body-md text-body-md text-surface-container-high">AI models without robust systems engineering are fragile laboratory toys. The modern infinity loop links continuous delivery directly into autonomous LLM feedback loops and GPU telemetry.</p>
+</div>
+<div class="flex items-center gap-space-xs text-white bg-slate-900 border border-white/10 px-space-md py-space-xs rounded-lg font-label-md">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">cached</span>
+<span>Continuous Delivery &amp; Self-Supervised Feedback</span>
+</div>
+</div>
+<!-- Interactive Infinity Loop Component -->
+<div class="p-space-xl rounded-2xl bg-slate-900/80 border border-white/10 shadow-2xl flex flex-col gap-space-xl">
+<div class="w-full flex flex-col items-center justify-center">
+<!-- Interactive SVG Loop Diagram -->
+<div class="w-full max-w-4xl relative">
+<svg class="w-full h-48 md:h-64" fill="none" viewbox="0 0 800 300">
+<defs>
+<lineargradient id="loop-grad" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#2563eb"></stop>
+<stop offset="50%" stop-color="#06b6d4"></stop>
+<stop offset="100%" stop-color="#8b5cf6"></stop>
+</lineargradient>
+</defs>
+<!-- Base Infinity Figure-8 Path -->
+<path d="M 220 150 C 220 70, 70 70, 70 150 C 70 230, 220 230, 400 150 C 580 70, 730 70, 730 150 C 730 230, 580 230, 400 150 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-linecap="round" stroke-width="12"></path>
+<!-- Animated Pulse Trail -->
+<path class="animate-loop-flow" d="M 220 150 C 220 70, 70 70, 70 150 C 70 230, 220 230, 400 150 C 580 70, 730 70, 730 150 C 730 230, 580 230, 400 150 Z" fill="none" stroke="url(#loop-grad)" stroke-linecap="round" stroke-width="8"></path>
+<!-- Center Convergence Node: The Additive AI Runtime -->
+<circle cx="400" cy="150" fill="#000" r="18" stroke="#06b6d4" stroke-width="4"></circle>
+<circle class="animate-pulse" cx="400" cy="150" fill="#57dffe" r="8"></circle>
+</svg>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-10 text-center pointer-events-none">
+<span class="px-2.5 py-1 rounded bg-slate-950/90 border border-cyan-400 text-cyan-300 font-mono-code text-[11px] font-bold uppercase shadow-lg">
+        Convergence: Autonomous AI Runtime
+      </span>
+</div>
+</div>
+<!-- Interactive 8 Stages Selector -->
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-space-xs w-full mt-4">
+<button class="p-space-xs rounded-xl bg-primary/20 border border-primary text-left transition-all stage-btn" id="sbtn-0" onclick="inspectDevOpsStage(0)">
+<div class="text-[11px] font-mono-code text-cyan-300">01. PLAN</div>
+<div class="text-xs font-semibold text-white truncate">Jira / Boards</div>
+</button>
+<button class="p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn" id="sbtn-1" onclick="inspectDevOpsStage(1)">
+<div class="text-[11px] font-mono-code text-surface-container-high">02. CODE</div>
+<div class="text-xs font-semibold text-white truncate">Git / GitHub</div>
+</button>
+<button class="p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn" id="sbtn-2" onclick="inspectDevOpsStage(2)">
+<div class="text-[11px] font-mono-code text-surface-container-high">03. BUILD</div>
+<div class="text-xs font-semibold text-white truncate">Pipelines / Maven</div>
+</button>
+<button class="p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn" id="sbtn-3" onclick="inspectDevOpsStage(3)">
+<div class="text-[11px] font-mono-code text-surface-container-high">04. TEST &amp; SEC</div>
+<div class="text-xs font-semibold text-white truncate">Sonar / Trivy</div>
+</button>
+<button class="p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn" id="sbtn-4" onclick="inspectDevOpsStage(4)">
+<div class="text-[11px] font-mono-code text-surface-container-high">05. PACKAGE</div>
+<div class="text-xs font-semibold text-white truncate">Docker / Helm</div>
+</button>
+<button class="p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn" id="sbtn-5" onclick="inspectDevOpsStage(5)">
+<div class="text-[11px] font-mono-code text-surface-container-high">06. DEPLOY</div>
+<div class="text-xs font-semibold text-white truncate">ArgoCD / AKS / EKS</div>
+</button>
+<button class="p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn" id="sbtn-6" onclick="inspectDevOpsStage(6)">
+<div class="text-[11px] font-mono-code text-surface-container-high">07. OPERATE</div>
+<div class="text-xs font-semibold text-white truncate">Prometheus / eBPF</div>
+</button>
+<button class="p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn" id="sbtn-7" onclick="inspectDevOpsStage(7)">
+<div class="text-[11px] font-mono-code text-surface-container-high">08. AI-IMPROVE</div>
+<div class="text-xs font-semibold text-white truncate">Claude / MCP Agents</div>
+</button>
+</div>
+</div>
+<!-- Detailed Stage Telemetry Inspector Box -->
+<div class="p-space-md rounded-xl bg-slate-950 border border-white/10 flex flex-col md:flex-row items-start justify-between gap-space-md" id="stage-inspector">
+<div class="flex flex-col gap-1 max-w-xl">
+<div class="flex items-center gap-space-xs text-xs font-mono-code text-cyan-300">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span id="inspect-stage-step">STAGE 01: ARCHITECTURE RFC &amp; BACKLOG PLANNING</span>
+</div>
+<div class="font-title-lg text-title-lg text-white font-bold" id="inspect-stage-title">Plan (Jira, Azure Boards, RFCs)</div>
+<p class="text-surface-container-high text-body-sm" id="inspect-stage-desc">
+      Engineers define precise SLO latency limits, multi-region residency constraints, and threat boundaries before writing single lines of code. Enterprise traceability from ticket to production git hash.
+    </p>
+</div>
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-slate-900 border border-white/5 min-w-[280px]">
+<span class="text-xs text-surface-container-high font-mono-code">AI Additive Integration</span>
+<span class="text-sm font-semibold text-violet-300" id="inspect-ai-additive">Autonomous Backlog PR Refinement</span>
+<span class="text-[11px] text-surface-container-high/70" id="inspect-ai-detail">Claude MCP agent ingests RFC criteria to generate candidate test matrix.</span>
+</div>
+</div>
+<!-- The Additive AI Vector Breakdown -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-xl bg-slate-900/60 border border-white/5 flex flex-col gap-1">
+<span class="text-xs font-mono-code text-secondary-container">VRAM &amp; GPU Scheduling</span>
+<span class="text-sm font-semibold text-white">PagedAttention &amp; vLLM</span>
+<span class="text-xs text-surface-container-high">Moving beyond CPU metrics to VRAM KV-cache occupancy and dynamic GPU node autoscaling.</span>
+</div>
+<div class="p-space-md rounded-xl bg-slate-900/60 border border-white/5 flex flex-col gap-1">
+<span class="text-xs font-mono-code text-secondary-container">Inference Streaming</span>
+<span class="text-sm font-semibold text-white">Sub-20ms Token Latency</span>
+<span class="text-xs text-surface-container-high">Real-time HTTP/2 chunked SSE response streams, AWQ quantization, and speculative decoding.</span>
+</div>
+<div class="p-space-md rounded-xl bg-slate-900/60 border border-white/5 flex flex-col gap-1">
+<span class="text-xs font-mono-code text-secondary-container">Context &amp; Memory</span>
+<span class="text-sm font-semibold text-white">Vector DBs (Qdrant/Milvus)</span>
+<span class="text-xs text-surface-container-high">High-dimensional HNSW graph search topologies integrated with GitOps persistence layers.</span>
+</div>
+<div class="p-space-md rounded-xl bg-slate-900/60 border border-white/5 flex flex-col gap-1">
+<span class="text-xs font-mono-code text-secondary-container">Action Protocol</span>
+<span class="text-sm font-semibold text-white">MCP Agent Swarms</span>
+<span class="text-xs text-surface-container-high">Model Context Protocol tool servers providing sandboxed execution with zero-trust guardrails.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: 5 BUSINESS OFFERINGS / PATHWAYS PREVIEW (EDITORIAL LIGHT) -->
+<section class="w-full bg-surface py-space-3xl px-margin-desktop-wide" id="offerings">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+<span>Structured Programs</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">5 Engineering Pathways Designed for Market Dominance</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Whether you are engineering multi-cloud clusters or orchestrating autonomous LLM pipelines, each curriculum is built for immediate, auditable corporate execution.</p>
+</div>
+<!-- 5 Programs Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Program 1: Flagship Masterclass -->
+<div class="lg:col-span-2 p-space-xl rounded-2xl bg-gradient-to-br from-surface-container-lowest to-surface-container-low border-2 border-primary shadow-xl flex flex-col justify-between gap-space-lg relative">
+<div class="absolute top-4 right-4 px-3 py-1 bg-primary text-on-primary font-label-sm text-xs font-bold uppercase rounded-full">Primary Flagship</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-mono-code text-xs font-semibold">
+<span>PROGRAM 01</span>
+<span>•</span>
+<span>18 MODULES • 14 REPOS • 1 CAPSTONE DEFENSE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Complete DevOps, Multi-Cloud &amp; AI Engineering Masterclass</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+  The comprehensive sovereign engineering bridge. Takes engineers through POSIX foundations, container internals, custom Linux kernel cgroups, production OpenTofu/Terraform, multi-region Kubernetes, GitOps ArgoCD fleets, OpenTelemetry eBPF instrumentation, and high-throughput vLLM model serving nodes.
+</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
+<div class="p-2 rounded-lg bg-surface-container-highest/60 text-center">
+<div class="font-bold text-on-surface text-sm">18 Modules</div>
+<div class="text-[11px] text-on-surface-variant">Structured Ramp</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-highest/60 text-center">
+<div class="font-bold text-on-surface text-sm">14 Projects</div>
+<div class="text-[11px] text-on-surface-variant">Production Repos</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-highest/60 text-center">
+<div class="font-bold text-primary text-sm">Oral RFC</div>
+<div class="text-[11px] text-on-surface-variant">Staff Defense</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-highest/60 text-center">
+<div class="font-bold text-secondary text-sm">Sovereign AI</div>
+<div class="text-[11px] text-on-surface-variant">vLLM &amp; MCP</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-variant">
+<span class="text-sm font-semibold text-primary">Full Flagship Enrollment Open</span>
+<button class="inline-flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all" onclick="triggerReviewModal()">
+<span>Enroll in Flagship</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Program 2: Azure DevOps & Cloud -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-mono-code text-xs font-semibold">
+<span>PROGRAM 02</span>
+<span>•</span>
+<span>MICROSOFT STACK</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Azure DevOps &amp; Cloud Engineering</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Enterprise Microsoft cloud operations. Master Azure Boards, multi-stage YAML pipelines, Azure Kubernetes Service (AKS), Bicep/Terraform automation, and Microsoft Entra zero-trust governance.
+</p>
+<div class="flex flex-wrap gap-1 pt-1 font-mono-code text-[11px] text-on-surface-variant">
+<span class="bg-surface-container-low px-2 py-0.5 rounded">AKS Mesh</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">Azure Repos</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">ARM/Bicep</span>
+</div>
+</div>
+<div class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">Enterprise Focus</span>
+<a class="text-xs font-semibold text-primary flex items-center gap-1 hover:underline" href="#tuition-calculator">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Program 3: AWS DevOps & Cloud -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-mono-code text-xs font-semibold">
+<span>PROGRAM 03</span>
+<span>•</span>
+<span>HYPERSCALE AWS</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">AWS DevOps &amp; Cloud Engineering</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Architect resilient AWS cloud topographies. Deep dive into IAM security bound policies, VPC transit gateways, Elastic Kubernetes Service (EKS) node scaling, and automated Terragrunt stacks.
+</p>
+<div class="flex flex-wrap gap-1 pt-1 font-mono-code text-[11px] text-on-surface-variant">
+<span class="bg-surface-container-low px-2 py-0.5 rounded">AWS EKS</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">Transit VPC</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">Karpenter Autoscaling</span>
+</div>
+</div>
+<div class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">Hyperscale Fleet</span>
+<a class="text-xs font-semibold text-primary flex items-center gap-1 hover:underline" href="#tuition-calculator">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Program 4: Forward Deployed AI -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-tertiary font-mono-code text-xs font-semibold">
+<span>PROGRAM 04</span>
+<span>•</span>
+<span>APPLIED AI SYSTEMS</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Forward Deployed Engineering &amp; Applied AI</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Bridge frontier models into real business workflows. Build production LangGraph multi-agent loops, Model Context Protocol (MCP) tool bridges, and secure streaming API microservices with sub-20ms latency.
+</p>
+<div class="flex flex-wrap gap-1 pt-1 font-mono-code text-[11px] text-on-surface-variant">
+<span class="bg-surface-container-low px-2 py-0.5 rounded">LangGraph</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">MCP Swarms</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">FastAPI Inference</span>
+</div>
+</div>
+<div class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">Forward Deployed</span>
+<a class="text-xs font-semibold text-primary flex items-center gap-1 hover:underline" href="#tuition-calculator">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Program 5: Career & Interview -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-mono-code text-xs font-semibold">
+<span>PROGRAM 05</span>
+<span>•</span>
+<span>EXECUTIVE CRITIQUE</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Career &amp; Technical Interview Development</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Technical defense mastery. Prepare for Tier-1 platform and Staff SRE system design loops through mock RFC oral reviews, whiteboarding sovereign AI topologies, and line-by-line portfolio git audits.
+</p>
+<div class="flex flex-wrap gap-1 pt-1 font-mono-code text-[11px] text-on-surface-variant">
+<span class="bg-surface-container-low px-2 py-0.5 rounded">RFC Defense</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">System Design</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded">Staff Audits</span>
+</div>
+</div>
+<div class="pt-space-xs border-t border-surface-container-high flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">1-on-1 Staff Defense</span>
+<a class="text-xs font-semibold text-primary flex items-center gap-1 hover:underline" href="#tuition-calculator">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CAREER EVOLUTION LADDER (WARM EDITORIAL LIGHT) -->
+<section class="w-full bg-surface-container-low py-space-3xl px-margin-desktop-wide" id="career-ladder">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">stairs</span>
+<span>Verified Trajectory</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The 4-Stage Career Evolution Ladder</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+  DevOps is foundational, not an automatic shortcut. Systems mastery requires an honest progression: master the host, master the cloud fleet, orchestrate with AI leverage, then deploy autonomous systems.
+</p>
+</div>
+<!-- Ladder Stages -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Level 0 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border-t-4 border-slate-400 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-mono-code text-xs font-bold text-on-surface-variant">LEVEL 00</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-xs font-medium">Prerequisite</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Systems Foundations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Linux kernel POSIX syscalls, socket buffers, Bash scripting, systemd lifecycle, and fundamental networking (TCP/IP, DNS, TLS).
+</p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low text-xs font-mono-code text-on-surface">
+  Baseline: Host Familiarity
+</div>
+</div>
+<!-- Level 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border-t-4 border-primary shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-mono-code text-xs font-bold text-primary">LEVEL 01</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary text-xs font-medium">Core Platform</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Cloud &amp; Platform Eng</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Docker namespaces, cgroups v2 resource quotas, OpenTofu declarative clouds, Kubernetes multi-tenant clusters, and GitOps pipelines.
+</p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low text-xs font-mono-code text-primary font-medium">
+  Role: Platform / DevOps Engineer
+</div>
+</div>
+<!-- Level 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border-t-4 border-secondary shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-mono-code text-xs font-bold text-secondary">LEVEL 02</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-secondary text-xs font-medium">AI-Assisted</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">AI-Assisted DevOps</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Supercharging delivery with intelligent agents. Automated incident triaging, dynamic PR reviews, self-healing eBPF alerts, and prompt pipelines.
+</p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low text-xs font-mono-code text-secondary font-medium">
+  Role: Senior SRE / Staff Platform
+</div>
+</div>
+<!-- Level 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border-t-4 border-tertiary shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-mono-code text-xs font-bold text-tertiary">LEVEL 03</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-tertiary text-xs font-medium">Sovereign Frontier</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Sovereign AI Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+  Direct distributed GPU node operations. vLLM continuous batching, PagedAttention memory, MCP multi-agent swarms, and sovereign enclaves.
+</p>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low text-xs font-mono-code text-tertiary font-medium">
+  Role: AI Systems Infrastructure Architect
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: 14 HANDS-ON PROJECTS & 8-STAGE ENTERPRISE CAPSTONE SPOTLIGHT (EDITORIAL LIGHT) -->
+<section class="w-full bg-surface py-space-3xl px-margin-desktop-wide" id="capstone-spotlight">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">folder_special</span>
+<span>Evidence-Based Portfolio</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">14 Auditable Repositories &amp; The 8-Stage Capstone</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+  Candidates graduate with a verifiable GitHub organization containing 14 production codebases, culminating in an oral architectural defense of their complete sovereign mesh.
+</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface font-mono-code text-xs font-semibold">
+    Zero Simulated Terminals
+  </span>
+</div>
+</div>
+<!-- 8-Stage Capstone Flow Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-primary font-bold">
+<span>STAGE 01</span>
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">RFC Threat Model</h4>
+<p class="text-xs text-on-surface-variant">STRIDE architecture specification, latency SLA budgets, and VPC security boundary RFC.</p>
+<span class="text-[11px] font-mono-code text-primary">Repo: rfc-production-spec</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-primary font-bold">
+<span>STAGE 02</span>
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Git Governance Gate</h4>
+<p class="text-xs text-on-surface-variant">Branch rulesets, signed GPG commits, trunk-based delivery, and automated merge checks.</p>
+<span class="text-[11px] font-mono-code text-primary">Repo: git-governance-core</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-primary font-bold">
+<span>STAGE 03</span>
+<span class="material-symbols-outlined text-[18px]">cloud</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Multi-Cloud OpenTofu</h4>
+<p class="text-xs text-on-surface-variant">Dual-region cloud state locking, remote S3/GCS backends, VPC peering, and KMS keys.</p>
+<span class="text-[11px] font-mono-code text-primary">Repo: infra-fleet-opentofu</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-primary font-bold">
+<span>STAGE 04</span>
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Supply-Chain Gate</h4>
+<p class="text-xs text-on-surface-variant">Cosign container signing, Trivy image CVE scanning, and SonarQube quality boundaries.</p>
+<span class="text-[11px] font-mono-code text-primary">Repo: supply-chain-sentinel</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-tertiary font-bold">
+<span>STAGE 05</span>
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Kubernetes Fleet</h4>
+<p class="text-xs text-on-surface-variant">Multi-cluster ingress, Cilium eBPF network security policies, and resource limit cgroups.</p>
+<span class="text-[11px] font-mono-code text-tertiary">Repo: k8s-mesh-platform</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-tertiary font-bold">
+<span>STAGE 06</span>
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">GitOps ArgoCD Delivery</h4>
+<p class="text-xs text-on-surface-variant">App-of-apps pattern, automated zero-drift reconciliations, and canary rollouts.</p>
+<span class="text-[11px] font-mono-code text-tertiary">Repo: argocd-root-manifests</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-tertiary font-bold">
+<span>STAGE 07</span>
+<span class="material-symbols-outlined text-[18px]">monitoring</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">SRE &amp; eBPF Telemetry</h4>
+<p class="text-xs text-on-surface-variant">Prometheus metric scrapers, Grafana SLO cockpits, and kernel socket latency tracing.</p>
+<span class="text-[11px] font-mono-code text-tertiary">Repo: telemetry-cockpit-sre</span>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border-2 border-secondary shadow-md flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between text-xs font-mono-code text-secondary font-bold">
+<span>STAGE 08</span>
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">AI Assistant Loop</h4>
+<p class="text-xs text-on-surface-variant">vLLM GPU node integration, PagedAttention batching, and supervised MCP agent triaging.</p>
+<span class="text-[11px] font-mono-code text-secondary">Repo: sovereign-ai-vllm-mcp</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: ABSOLUTE ANTI-VAPORWARE CHARTER (HIGH CONTRAST & RADICAL TRANSPARENCY) -->
+<section class="w-full bg-surface-container-low py-space-3xl px-margin-desktop-wide" id="anti-vaporware">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-error font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Radical Honesty &amp; Transparency</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The Anti-Vaporware Charter</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We reject the deceptive metrics rampant in modern tech education. Here is our unwavering promise to candidate engineers and enterprise sponsors.</p>
+</div>
+<!-- Comparison Table -->
+<div class="w-full overflow-x-auto rounded-2xl bg-surface-container-lowest shadow-lg border border-outline-variant/40">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface">
+<th class="py-space-md px-space-lg font-title-md text-title-md font-semibold w-1/4">Engineering Dimension</th>
+<th class="py-space-md px-space-lg font-title-md text-title-md font-semibold w-5/12 text-on-surface-variant">Typical Bootcamps &amp; Vaporware Academies</th>
+<th class="py-space-md px-space-lg font-title-md text-title-md font-semibold w-5/12 text-primary bg-primary-fixed/30">Evolve Through AI Engineering Flagship</th>
+</tr>
+</thead>
+<tbody class="text-body-md font-body-md divide-y divide-surface-container-high/40">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-on-surface">Salary &amp; Job Claims</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Fabricated "$250k placement guarantees" based on misleading small cohorts.</td>
+<td class="py-space-md px-space-lg text-on-surface font-medium bg-primary-fixed/10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Zero fake salary stats. We focus strictly on verifiable engineering capability.</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-on-surface">Runtime Architecture</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Simulated browser mock terminals with preset answers and no real cloud networks.</td>
+<td class="py-space-md px-space-lg text-on-surface font-medium bg-primary-fixed/10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Real cloud VPCs, bare-metal eBPF hooks, custom Linux kernels, and real GPU nodes.</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-on-surface">Curriculum Depth</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Toy Python wrappers calling OpenAI API keys with zero infrastructure knowledge.</td>
+<td class="py-space-md px-space-lg text-on-surface font-medium bg-primary-fixed/10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Host, fine-tune, and serve open-weights models (vLLM, Ollama, TensorRT-LLM).</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-lg font-semibold text-on-surface">Mentorship Model</td>
+<td class="py-space-md px-space-lg text-on-surface-variant">Pre-recorded video playlists with unresponsive, unmoderated community chatrooms.</td>
+<td class="py-space-md px-space-lg text-on-surface font-medium bg-primary-fixed/10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Direct RFC reviews and oral defenses with enterprise platform and SRE veterans.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 8: INTERACTIVE TUITION & SPONSORSHIP METER -->
+<section class="w-full bg-surface py-space-3xl px-margin-desktop-wide" id="tuition-calculator">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+<span>Transparent Capital Allocation</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Interactive Tuition &amp; Sponsorship Meter</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Calculate corporate L&amp;D sponsorship reimbursements, individual monthly split payments, and executive cohort options.</p>
+</div>
+<!-- Pricing Calculator Box -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter border border-outline-variant/30">
+<!-- Controls Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Cohort Pacing Selection -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Select Cohort Pathway</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<button class="p-space-md rounded-xl bg-surface-container-high text-primary font-title-md text-title-md text-left transition-all border border-primary/20" id="pace-self" onclick="selectPace('self')">
+<span class="block font-semibold">Self-Paced Intensive</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant mt-1">18 Modules + Repo Access + Asynchronous RFC Reviews</span>
+</button>
+<button class="p-space-md rounded-xl bg-surface-container-low text-on-surface font-title-md text-title-md text-left transition-all border border-transparent" id="pace-live" onclick="selectPace('live')">
+<span class="block font-semibold">Live Executive Accelerator</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant mt-1">Weekend Live Labs + 1-on-1 Oral Capstone Defense</span>
+</button>
+</div>
+</div>
+<!-- Corporate Sponsorship Toggle -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Corporate L&amp;D Reimbursement Invoice</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Generate pre-formatted vendor documentation and SOC2 compliance packets.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="corp-toggle" onchange="toggleCorporate(this.checked)" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-dim after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Split Payment Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Payment Installment Schedule</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="installment-label">Pay in Full (15% Savings)</span>
+</div>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="split-slider" max="4" min="1" oninput="updateSplit(this.value)" step="1" type="range" value="1"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Full Payment</span>
+<span>2 Months</span>
+<span>3 Months</span>
+<span>4 Months</span>
+</div>
+</div>
+</div>
+<!-- Result / Odometer Column -->
+<div class="lg:col-span-5 p-space-lg rounded-xl bg-slate-950 text-white flex flex-col justify-between border border-white/10">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between text-surface-container-high font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Cohort Investment</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/20 text-secondary-container font-semibold" id="badge-guarantee">30-Day Audit Guarantee</span>
+</div>
+<!-- Price Meter -->
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-container-high">Tuition Rate</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-white">$</span>
+<span class="font-display text-display font-extrabold text-white tracking-tight" id="price-odometer">1,850</span>
+<span class="font-title-md text-title-md text-surface-container-high" id="per-term-text">/ total</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary-container mt-1" id="savings-note">Includes $300 upfront deduction</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm text-surface-container-high pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">done</span>
+<span>Direct Access to 14 Production GitHub Repos</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">done</span>
+<span>Dedicated GPU Testbed Cluster Credits</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">done</span>
+<span>Personal Architecture RFC Defense</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex flex-col gap-space-xs">
+<button class="w-full py-space-md rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold shadow-lg hover:bg-primary-container active:scale-[0.98] transition-all flex items-center justify-center gap-space-xs" id="calc-apply-btn" onclick="triggerCalculatorSubmit()">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span id="calc-btn-text">Lock In Rate • Cohort 05</span>
+</button>
+<span class="font-label-sm text-label-sm text-surface-container-high text-center">Instant electronic invoicing • Zero hidden platform fees</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- APPLICATION CONFIRMATION MODAL -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300" id="application-modal">
+<div class="relative w-full max-w-lg p-space-xl rounded-2xl bg-surface-container-lowest shadow-2xl flex flex-col gap-space-md border border-outline-variant/30">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm font-semibold uppercase">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Application Portal</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-dim transition-colors" onclick="closeReviewModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Candidate Architecture Review</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Submit your background for verified review by our engineering admissions committee.</p>
+</div>
+<form class="flex flex-col gap-space-sm mt-space-xs" onsubmit="handleFormSubmission(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Full Name</label>
+<input class="h-10 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Alex Morgan" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Work Email (or Personal GitHub)</label>
+<input class="h-10 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="alex@enterprise.internal" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Target Trajectory</label>
+<select class="h-10 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>Working Professional: Modernize to AI Infra</option>
+<option>Early-Career / Fresher: Zero to Production SRE</option>
+<option>Azure DevOps &amp; Cloud Specialist</option>
+<option>AWS Hyperscale Fleet Specialist</option>
+<option>Forward Deployed AI &amp; LangGraph Agent Swarms</option>
+</select>
+</div>
+<button class="mt-space-sm w-full py-space-md rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" id="submit-form-btn" type="submit">
+<span>Submit Architecture Candidacy</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.03)] pt-space-3xl pb-space-2xl border-t border-surface-container-high/60"><div class="w-full px-margin-desktop-wide mx-auto"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-3xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary font-title-md font-bold"><span class="tracking-tight">ETA</span></div><div class="flex flex-col"><span class="font-title-lg text-title-lg text-on-surface font-semibold">Evolve Through AI</span><span class="text-xs text-on-surface-variant">Technology • Innovation • Solutions</span></div></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">"Technology keeps evolving. People and organizations should evolve with it. Evolve Through AI makes that possible."</p><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary"><span class="material-symbols-outlined text-[16px]">verified</span><span>Learn. Build. Evolve.</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface font-semibold">5 Pathways</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">1. Flagship Masterclass</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">2. Azure Cloud &amp; DevOps</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">3. AWS DevOps &amp; Fleet</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">4. Forward Deployed AI</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">5. Career &amp; RFC Defense</li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface font-semibold">Corporate Horizons</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Horizon 1: Systems Education</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Horizon 2: Enterprise Advisory</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Horizon 3: Sovereign Tooling</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">14 Verified GitHub Projects</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">8-Stage Enterprise Capstone</li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface font-semibold">Anti-Vaporware Pledge</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Zero fake placement statistics, zero simulated web terminals, zero inflated claims. 100% genuine engineering rigor, auditable code, and real architecture defense.</p><div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">shield</span><span class="font-label-sm text-label-sm text-on-surface-variant">Built for Enterprise Platform &amp; SRE Architects.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant border-t border-surface-container-high/60"><div class="font-body-sm text-body-sm">© 2025 Evolve Through AI Inc. Technology • Innovation • Solutions. All rights reserved.</div><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><span class="hover:text-on-surface transition-colors cursor-pointer">Charter Standards</span><span class="hover:text-on-surface transition-colors cursor-pointer">Terms of Engagement</span><span class="hover:text-on-surface transition-colors cursor-pointer">RFC Advisory Protocol</span></div></div></div></footer>
+<!-- JAVASCRIPT: WEBGL SHADER CANVAS (ANIMATION_35) + INTERACTIVITY -->
+<script>
+// 1. WebGL Shader Canvas Initialization from SCREEN_5
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_35');
+  if (!canvas) return;
+
+  function syncSize() {
+    const parent = canvas.parentElement;
+    const w = parent ? parent.clientWidth : (window.innerWidth || 1280);
+    const h = parent ? parent.clientHeight : (window.innerHeight || 720);
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined' && canvas.parentElement) {
+    new ResizeObserver(syncSize).observe(canvas.parentElement);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
+
+float snoise(vec2 v) {
+    const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+    vec2 i  = floor(v + dot(v, C.yy) );
+    vec2 x0 = v -   i + dot(i, C.xx);
+    vec2 i1;
+    i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+    vec4 x12 = x0.xyxy + C.xxzz;
+    x12.xy -= i1;
+    i = mod289(i);
+    vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 )) + i.x + vec3(0.0, i1.x, 1.0 ));
+    vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+    m = m*m;
+    m = m*m;
+    vec3 x = 2.0 * fract(p * C.www) - 1.0;
+    vec3 h = abs(x) - 0.5;
+    vec3 ox = floor(x + 0.5);
+    vec3 a0 = x - ox;
+    m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+    vec3 g;
+    g.x  = a0.x  * x0.x  + h.x  * x0.y;
+    g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+    return 130.0 * dot(m, g);
+}
+
+void main() {
+    vec2 st = gl_FragCoord.xy / u_resolution.xy;
+    st.x *= u_resolution.x / u_resolution.y;
+    
+    vec2 mouse = u_mouse / u_resolution.xy;
+    float t = u_time * 0.16;
+
+    float n1 = snoise(st * 1.5 + vec2(t * 0.25, t * 0.18));
+    float n2 = snoise(st * 2.2 - vec2(t * 0.15, n1 * 0.35) + mouse * 0.15);
+    float n3 = snoise(st * 3.0 + vec2(n2 * 0.45, t * 0.28));
+
+    vec3 bgBase = vec3(0.043, 0.066, 0.118); // #0b111e deep midnight obsidian
+    vec3 electricBlue = vec3(0.145, 0.388, 0.921); // #2563eb core brand accent
+    vec3 cyberCyan = vec3(0.023, 0.713, 0.831); // #06b6d4 live telemetry cyan
+    vec3 deepViolet = vec3(0.545, 0.361, 0.965); // #8b5cf6 sovereign AI violet
+
+    float f1 = smoothstep(-0.25, 0.85, n1 + n2 * 0.5);
+    float f2 = smoothstep(0.15, 0.92, n2 * n3 + 0.28);
+    float f3 = smoothstep(0.45, 0.98, n3);
+
+    vec3 color = bgBase;
+    color = mix(color, electricBlue * 0.65, f1 * 0.5);
+    color = mix(color, cyberCyan * 0.8, f2 * 0.55);
+    color = mix(color, deepViolet * 0.85, f3 * 0.45);
+
+    float vignette = smoothstep(1.6, 0.25, length(gl_FragCoord.xy / u_resolution.xy - 0.5));
+    color *= (0.78 + 0.22 * vignette);
+
+    vec2 grid = abs(fract(gl_FragCoord.xy / 64.0 - 0.5) - 0.5) / fwidth(gl_FragCoord.xy / 64.0);
+    float line = min(grid.x, grid.y);
+    float gridAlpha = 1.0 - min(line, 1.0);
+    color += cyberCyan * gridAlpha * 0.035 * (sin(u_time * 1.4) * 0.25 + 0.75);
+
+    gl_FragColor = vec4(color, 1.0);
+}`;
+
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+
+// 2. Dynamic Rotating Word Element
+const rotatorWords = [
+  "Sovereign AI Infrastructure",
+  "Autonomous Agent Swarms",
+  "Multi-Cloud GitOps",
+  "Resilient Production Systems"
+];
+let currentWordIdx = 0;
+const rotatorEl = document.getElementById("word-rotator");
+
+setInterval(() => {
+  if (!rotatorEl) return;
+  rotatorEl.style.opacity = '0';
+  rotatorEl.style.transform = 'translateY(-8px)';
+  setTimeout(() => {
+    currentWordIdx = (currentWordIdx + 1) % rotatorWords.length;
+    rotatorEl.textContent = rotatorWords[currentWordIdx];
+    rotatorEl.style.opacity = '1';
+    rotatorEl.style.transform = 'translateY(0px)';
+  }, 280);
+}, 3000);
+
+// 3. Dual Audience Architecture & Empathy Switcher
+function switchPathway(type) {
+  const proBtn = document.getElementById('pathway-pro');
+  const earlyBtn = document.getElementById('pathway-early');
+  const headlineEl = document.getElementById('pathway-headline');
+  const bodyEl = document.getElementById('pathway-body');
+  const tagsEl = document.getElementById('pathway-tags');
+
+  if (type === 'pro') {
+    proBtn.className = "px-space-md py-space-xs rounded-lg font-label-md text-label-md text-center transition-all bg-primary text-on-primary shadow-md flex items-center gap-space-xs";
+    earlyBtn.className = "px-space-md py-space-xs rounded-lg font-label-md text-label-md text-center text-surface-container-high hover:text-white transition-all flex items-center gap-space-xs";
+    headlineEl.textContent = "Your experience is valuable. Build on it and evolve into an AI-enabled Systems Architect.";
+    bodyEl.textContent = "Platform, SRE, and Cloud engineers already understand concurrency, network isolation, and Linux cgroups. We treat your baseline with respect: bridging classic container orchestration to vLLM vRAM allocations, PagedAttention batching, eBPF telemetry hooks, and autonomous MCP swarms.";
+    tagsEl.innerHTML = `
+      <span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">KV-Cache &amp; vRAM Management</span>
+      <span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">Model Weight Serving (AWQ/GPTQ)</span>
+      <span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">Multi-Region ArgoCD Fleet</span>
+    `;
+  } else {
+    earlyBtn.className = "px-space-md py-space-xs rounded-lg font-label-md text-label-md text-center transition-all bg-primary text-on-primary shadow-md flex items-center gap-space-xs";
+    proBtn.className = "px-space-md py-space-xs rounded-lg font-label-md text-label-md text-center text-surface-container-high hover:text-white transition-all flex items-center gap-space-xs";
+    headlineEl.textContent = "Start from fundamentals, master corporate workflows, and build an auditable 14-project portfolio.";
+    bodyEl.textContent = "Demystifying the enterprise reality. Forget following 50 disconnected superficial YouTube tutorials. We guide you from core Linux POSIX and Git trunk branches through genuine Docker isolation and multi-cloud Kubernetes into live AI serving nodes.";
+    tagsEl.innerHTML = `
+      <span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">Linux Syscall Internals</span>
+      <span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">Production Git Governance</span>
+      <span class="bg-slate-800/80 px-2 py-1 rounded border border-white/5">14 Auditable Public Repos</span>
+    `;
+  }
+}
+
+// 4. Interactive DevOps Infinity Lifecycle Loop Stages
+const stagesData = [
+  {
+    step: "STAGE 01: ARCHITECTURE RFC & BACKLOG PLANNING",
+    title: "Plan (Jira, Azure Boards, Architecture RFCs)",
+    desc: "Engineers define precise SLO latency limits, multi-region residency constraints, and threat boundaries before writing single lines of code. Enterprise traceability from ticket to production git hash.",
+    aiAdd: "Autonomous Backlog PR Refinement",
+    aiDet: "Claude MCP agent ingests RFC criteria to generate candidate test matrix."
+  },
+  {
+    step: "STAGE 02: VERSION INTEGRITY & GIT GOVERNANCE",
+    title: "Code (Git, GitHub, GitLab Enterprise)",
+    desc: "Trunk-based development with signed GPG commits, strict CODEOWNERS approvals, and automated pre-commit security linters preventing secrets leakage.",
+    aiAdd: "Self-Supervised Code Reviewers",
+    aiDet: "Static AST validation against known CVEs and anti-patterns."
+  },
+  {
+    step: "STAGE 03: DISTRIBUTED COMPILATION & CANARY BUILDS",
+    title: "Build (Azure Pipelines, GitHub Actions, Maven)",
+    desc: "Parallelized multi-architecture container builds (AMD64 & ARM64) with deterministic layer caching and SBOM artifact generation.",
+    aiAdd: "Dynamic Test Matrix Pruning",
+    aiDet: "AI agent identifies affected blast radii to run only pertinent integration suites."
+  },
+  {
+    step: "STAGE 04: SUPPLY-CHAIN DEFENSE & CVE ENFORCEMENT",
+    title: "Test & Secure (SonarQube, Trivy, Cosign)",
+    desc: "Strict cryptographic attestation using Sigstore Cosign. Trivy blocking build pipelines upon detecting critical or high CVE vulnerabilities.",
+    aiAdd: "Automated Patch Generation",
+    aiDet: "Inference assistant writes atomic pull requests for vulnerable package pins."
+  },
+  {
+    step: "STAGE 05: IMMUTABLE ARTIFACT PACKAGING",
+    title: "Package (Docker OCI, Helm Charts, Kustomize)",
+    desc: "Multi-stage distroless containers stripped of shell binaries to eliminate attack surfaces, packaged as versioned Helm charts in private OCI registries.",
+    aiAdd: "Container Footprint Compaction",
+    aiDet: "Automatic detection of unnecessary shared libraries and unstripped symbols."
+  },
+  {
+    step: "STAGE 06: DECLARATIVE GITOPS ROLLOUT",
+    title: "Deploy (AKS, EKS, ArgoCD, OpenTofu)",
+    desc: "Zero manual kubectl access. ArgoCD synchronizes desired state from git to multi-cloud clusters with automated canary rollbacks on HTTP 5xx spikes.",
+    aiAdd: "Canary Anomaly Guardrails",
+    aiDet: "Statistical latency deviation models gating progressive traffic shifts."
+  },
+  {
+    step: "STAGE 07: KERNEL-LEVEL TELEMETRY OBSERVABILITY",
+    title: "Operate (Prometheus, Grafana, Cilium eBPF)",
+    desc: "Ring-buffer tracing of socket allocations, TCP drops, and GPU vRAM memory paging without intrusive user-space agent overhead.",
+    aiAdd: "Root-Cause Incident Synthesis",
+    aiDet: "LLM parses distributed trace spans to pinpoint socket contention bottlenecks."
+  },
+  {
+    step: "STAGE 08: SUPERVISED AI REFINEMENT & MCP AGENTS",
+    title: "AI-Assisted Improve (Claude, Copilot, MCP Agents)",
+    desc: "The infinity loop closes: operational telemetry is fed directly into Model Context Protocol (MCP) agents to automatically propose infrastructure improvements.",
+    aiAdd: "Closed-Loop Self-Healing",
+    aiDet: "Continuous infrastructure adaptation balancing cost, latency, and throughput."
+  }
+];
+
+function inspectDevOpsStage(idx) {
+  // Reset all button styles
+  for (let i = 0; i < 8; i++) {
+    const btn = document.getElementById('sbtn-' + i);
+    if (!btn) continue;
+    if (i === idx) {
+      btn.className = "p-space-xs rounded-xl bg-primary/20 border border-primary text-left transition-all stage-btn";
+      btn.querySelector('div:first-child').className = "text-[11px] font-mono-code text-cyan-300";
+    } else {
+      btn.className = "p-space-xs rounded-xl bg-slate-800/80 border border-white/5 text-left transition-all stage-btn";
+      btn.querySelector('div:first-child').className = "text-[11px] font-mono-code text-surface-container-high";
+    }
+  }
+
+  const data = stagesData[idx];
+  document.getElementById('inspect-stage-step').textContent = data.step;
+  document.getElementById('inspect-stage-title').textContent = data.title;
+  document.getElementById('inspect-stage-desc').textContent = data.desc;
+  document.getElementById('inspect-ai-additive').textContent = data.aiAdd;
+  document.getElementById('inspect-ai-detail').textContent = data.aiDet;
+}
+
+// 5. Counters
+function animateCounters() {
+  const counters = document.querySelectorAll('.counter-num');
+  counters.forEach(counter => {
+    const target = parseFloat(counter.getAttribute('data-target'));
+    const decimals = parseInt(counter.getAttribute('data-decimals') || '0', 10);
+    let current = 0;
+    const increment = target / 40;
+    const update = () => {
+      current += increment;
+      if (current < target) {
+        counter.textContent = current.toFixed(decimals);
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target.toFixed(decimals);
+      }
+    };
+    update();
+  });
+}
+window.addEventListener('DOMContentLoaded', animateCounters);
+
+// 6. Interactive Pricing Calculator
+let currentPace = 'self';
+let isCorporate = false;
+let splitCount = 1;
+
+function selectPace(pace) {
+  currentPace = pace;
+  const selfBtn = document.getElementById('pace-self');
+  const liveBtn = document.getElementById('pace-live');
+
+  if (pace === 'self') {
+    selfBtn.className = "p-space-md rounded-xl bg-surface-container-high text-primary font-title-md text-title-md text-left transition-all border border-primary/20";
+    liveBtn.className = "p-space-md rounded-xl bg-surface-container-low text-on-surface font-title-md text-title-md text-left transition-all border border-transparent";
+  } else {
+    liveBtn.className = "p-space-md rounded-xl bg-surface-container-high text-primary font-title-md text-title-md text-left transition-all border border-primary/20";
+    selfBtn.className = "p-space-md rounded-xl bg-surface-container-low text-on-surface font-title-md text-title-md text-left transition-all border border-transparent";
+  }
+  recalculatePrice();
+}
+
+function toggleCorporate(checked) {
+  isCorporate = checked;
+  recalculatePrice();
+}
+
+function updateSplit(val) {
+  splitCount = parseInt(val, 10);
+  const label = document.getElementById('installment-label');
+  if (splitCount === 1) {
+    label.textContent = "Pay in Full (15% Savings)";
+  } else {
+    label.textContent = `${splitCount} Monthly Installments`;
+  }
+  recalculatePrice();
+}
+
+function recalculatePrice() {
+  let base = currentPace === 'self' ? 1850 : 2950;
+  if (isCorporate) {
+    base += 400;
+  }
+
+  const priceOdometer = document.getElementById('price-odometer');
+  const perTermText = document.getElementById('per-term-text');
+  const savingsNote = document.getElementById('savings-note');
+
+  if (splitCount === 1) {
+    priceOdometer.textContent = base.toLocaleString();
+    perTermText.textContent = "/ total";
+    savingsNote.textContent = isCorporate ? "Direct Corporate Invoice Included" : "Includes $300 upfront deduction";
+  } else {
+    const perMonth = Math.round(base / splitCount);
+    priceOdometer.textContent = perMonth.toLocaleString();
+    perTermText.textContent = `/ month (${splitCount}x)`;
+    savingsNote.textContent = `Total program commitment: $${(perMonth * splitCount).toLocaleString()}`;
+  }
+}
+
+// 7. Review Modal & Intake
+function triggerReviewModal() {
+  const modal = document.getElementById('application-modal');
+  modal.classList.remove('opacity-0', 'pointer-events-none');
+  modal.classList.add('opacity-100');
+}
+
+function closeReviewModal() {
+  const modal = document.getElementById('application-modal');
+  modal.classList.remove('opacity-100');
+  modal.classList.add('opacity-0', 'pointer-events-none');
+}
+
+function triggerCalculatorSubmit() {
+  const btn = document.getElementById('calc-apply-btn');
+  const originalText = document.getElementById('calc-btn-text').textContent;
+  btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span><span>Seat Reserved! Opening Form...</span>`;
+  btn.classList.add('bg-secondary');
+  setTimeout(() => {
+    triggerReviewModal();
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">verified_user</span><span id="calc-btn-text">${originalText}</span>`;
+    btn.classList.remove('bg-secondary');
+  }, 600);
+}
+
+function handleFormSubmission(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-form-btn');
+  btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">done</span><span>Application Received! Technical review queued.</span>`;
+  btn.classList.add('bg-secondary');
+  setTimeout(() => {
+    closeReviewModal();
+    btn.innerHTML = `<span>Submit Architecture Candidacy</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>`;
+    btn.classList.remove('bg-secondary');
+  }, 1800);
+}
+</script>
+</body></html>
