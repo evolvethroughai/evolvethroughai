@@ -19,4 +19,5 @@ else
   git commit -m "${1:-committing code}"
 fi
 
-git push origin development
+git push origin main
+
