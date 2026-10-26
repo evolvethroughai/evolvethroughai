@@ -69,3 +69,5 @@ The documentation baseline is complete. [Homepage Screen Review](docs/HOMEPAGE_S
 Circuit-ribbon identity is approved and integrated locally. See [brand assets and usage](../public/brand/README.md), [design requirements](docs/DESIGN_REQUIREMENTS.md) and [integration verification](../design-review/brand-integration/REPORT.md). Final homepage approval and deployment remain separate.
 
 Current visual theme: Inter headings/body, midnight dark default with a persistent light switch, and logo-led gradient accents. See [theme QA](../design-review/brand-theme/REPORT.md). This supersedes the earlier Sora/light-only implementation summary.
+
+Latest milestone: [immersive section plan](docs/IMMERSIVE_DESIGN_PLAN.md) and [hero/pathway preview evidence](../design-review/immersive-milestone-01/REPORT.md). Owner visual approval required before lifecycle/curriculum work.

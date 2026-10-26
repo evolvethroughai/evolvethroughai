@@ -281,3 +281,23 @@ Final design approval; original detailed curriculum/labs; live enquiry delivery;
 ## Screen-by-screen review checkpoint â€” 26 October 2026
 
 Screen 01 (header and hero) has a bounded corrective pass and recorded verification, and is awaiting owner review. Do not treat this as approval of the whole homepage. Follow [Homepage screen review](HOMEPAGE_SCREEN_REVIEW.md) before moving to the audience section or additional pages.
+
+## 26 October 2026 — immersive direction, milestone 01
+
+Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
+
+Existing architecture is React 19 / TypeScript / Vite, not Next.js; no migration undertaken. Logo SVGs, approved curriculum and downstream lifecycle/project/curriculum implementations are preserved. Existing Motion (MIT) is used through LazyMotion/lightweight components for short stage-title opacity and one-time pathway border emphasis. No new packages, copied templates or remote imagery. The retained conceptual image is labelled illustrative; publication provenance remains unverified, not represented as licensed learner photography.
+
+Implemented: enlarged human-context illustration, preserved headline, expandable illustrative technical examples, stable connected journey controls, and two editorial pathways with practical steps and links that select the existing audience detail. No interaction connects to real infrastructure.
+
+Verification: TypeScript and production build passed. Dark/light at 320, 390, 640, 768, 1024 and 1440px showed no horizontal overflow. All four stages and example disclosures tested; closed-state stage heights stable. Desktop axe WCAG A/AA scans in both themes reported zero violations after contrast repairs. Keyboard selection, audience links, normal/reduced motion and zero page errors recorded. Evidence: design-review/immersive-milestone-01/qa.json and screenshots. Visual approval, not automation alone, gates the next stage.
+
+STOP GATE: obtain owner visual approval of milestone 01 before implementing the DevOps infinity lifecycle, DevOps-to-AI progression, projects, curriculum or other pages. No deployment authorized or performed.
+
+## 26 October 2026 - Screen 2 ready for owner review
+
+Implemented From curiosity to capability with the exact owner-supplied light/dark engineering-workspace images, optimized WebP variants, accessible Learn/Build/Deploy/Evolve interaction, meaningful examples/questions and restrained reduced-motion-safe transitions. Source of Screen 1 and its protected styling/header files remains unchanged. Existing curriculum and next sections preserved. TypeScript/build, eight theme/width layout and scoped axe checks passed; keyboard, theme swap, stage destinations and examples verified. Evidence: design-review/screen-02/REPORT.md and qa.json. Owner visual approval is pending. Stop after Screen 2; no next-section development or deployment.
+
+## 26 October 2026 - morphic navigation, account/search and rotating headline
+
+Owner requested tagline beneath logo, centered premium navigation, a compact left search, account dropdown and five-second headline phrases. Installed and adapted Kokonut MorphicNavbar/ProfileDropdown for React/Vite; used the supplied ActionSearchBar with actual curriculum/project destinations. Theme toggle remains separate from Login. Visitor menu is truthful about missing portal/auth; existing VITE_PORTAL_URL wiring retained. Added pauseable AI skills / DevOps automation / cloud headline alternatives with reduced-motion fallback. Preserved logo, topographic background, Screen 2, content and downstream sections. Checks and usage: Important_Documents/docs/HEADER_COMPONENT_USAGE.md; previews: design-review/header-morphic/. New utilities: clsx, tailwind-merge. No new animation framework, fabricated subscribers, deployment or Git push. Visual approval remains pending.

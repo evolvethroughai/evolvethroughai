@@ -1,0 +1,42 @@
+/* Replacement background: original Kokonut contours with restrained ambient depth. */
+.hero-topo-layer{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;border-radius:inherit;isolation:isolate}
+.hero-topo-layer .hero-topo-background{position:absolute;inset:0;min-height:0;height:100%;width:100%;background:transparent;color:#416a9e;opacity:.48;pointer-events:none}
+.hero-topo-background>div[aria-hidden=true]{position:absolute;inset:0;pointer-events:none}
+.hero-topo-background canvas{display:block;width:100%;height:100%}
+.hero-ambient-glow{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply}
+.hero-ambient-glow--cyan{background:radial-gradient(ellipse 40% 35% at 65% 23%,rgb(6 182 212 / 9%),transparent 85%)}
+.hero-ambient-glow--violet{background:radial-gradient(ellipse 37% 33% at 95% 42%,rgb(139 92 246 / 7%),transparent 85%)}
+.refined-hero>.refined-hero-grid,.refined-hero>.immersive-pathways{position:relative;z-index:1}
+/* Replace the previous dot-grid and blue/violet background, retaining entrance motion. */
+.cinematic-hero.refined-hero::before,.cinematic-hero.refined-hero::after{content:none}
+[data-theme=dark] .hero-topo-layer .hero-topo-background{background:transparent;color:#9bb7e6;opacity:.4}
+[data-theme=dark] .hero-ambient-glow{mix-blend-mode:screen}
+[data-theme=dark] .hero-ambient-glow--cyan{background:radial-gradient(ellipse 40% 35% at 65% 23%,rgb(6 182 212 / 7%),transparent 85%)}
+[data-theme=dark] .hero-ambient-glow--violet{background:radial-gradient(ellipse 37% 33% at 95% 42%,rgb(139 92 246 / 5%),transparent 85%)}
+@media(max-width:640px){.hero-topo-layer{bottom:auto;height:min(1050px,100%)}.hero-topo-layer .hero-topo-background{opacity:.35}.hero-ambient-glow--cyan{background:radial-gradient(ellipse 90% 30% at 70% 35%,rgb(6 182 212 / 8%),transparent 85%)}.hero-ambient-glow--violet{background:radial-gradient(ellipse 80% 28% at 95% 50%,rgb(139 92 246 / 6%),transparent 85%)}}
+@media(prefers-reduced-motion:reduce){.hero-topo-layer canvas{transition:none}}
+
+/* Landing screen: centred copy only. The visual journey is the next section. */
+.landing-centered .refined-hero-grid{display:flex;align-items:center;justify-content:center;min-height:calc(100svh - 82px);max-width:1100px;padding-block:76px 86px}
+.landing-centered .journey-copy{width:100%;max-width:940px;margin:0 auto;text-align:center}
+.landing-centered .hero-brand-label{justify-content:center}
+.landing-centered .hero-brand-label:after{content:'';width:24px;height:2px;background:#2563eb}
+.landing-centered .journey-copy h1{font-size:clamp(44px,5.5vw,80px);line-height:1.1;letter-spacing:-.055em;max-width:none}
+.landing-centered .journey-intro{max-width:680px;margin-inline:auto;font-size:18px}
+.landing-centered .hero-primary-actions{justify-content:center;margin-top:32px}
+.landing-centered .hero-proof{justify-content:center;margin-top:34px}
+.landing-centered .hero-intent{max-width:590px;margin-inline:auto;margin-top:20px}
+.hero-journey-section{padding:72px 0 64px;background:var(--paper);border-top:1px solid var(--line)}
+.journey-section-intro{margin-bottom:32px;max-width:650px}.journey-section-intro>.mini-label{font-size:10px;color:#526d90}.journey-section-intro h2{font-size:clamp(30px,3.3vw,45px);letter-spacing:-.045em;line-height:1.2;margin-top:15px}.journey-section-intro p{font-size:15px;margin-top:17px}
+.hero-journey-section .hero-engineering-panel{display:grid;grid-template-columns:1.05fr 1fr;overflow:hidden}
+.hero-journey-section .journey-panel-scene{height:auto;min-height:520px}
+.hero-journey-section .journey-panel-scene>img{height:100%;object-fit:cover;object-position:54% center}
+.hero-journey-section .journey-panel-caption{bottom:55px;left:28px;right:25px}
+.hero-journey-section .journey-panel-caption>span:last-child{font-size:28px}
+.hero-journey-section .illustration-credit{bottom:20px;left:28px;right:20px}
+.hero-journey-section .journey-panel-body{padding:28px}
+.hero-journey-section .hero-engineering-panel{border-color:#cdd8e8;background:#fff}
+[data-theme=dark] .journey-section-intro>.mini-label{color:#a6bbda}
+[data-theme=dark] .hero-journey-section .hero-engineering-panel{background:#101c2e;border-color:#33455f}
+@media(max-width:900px){.landing-centered .refined-hero-grid{max-width:800px}.hero-journey-section .hero-engineering-panel{grid-template-columns:.85fr 1.15fr}.hero-journey-section .journey-panel-body{padding:24px 20px}.hero-journey-section .journey-panel-scene{min-height:550px}}
+@media(max-width:640px){.landing-centered .refined-hero-grid{min-height:calc(100svh - 145px);padding-block:58px 64px}.landing-centered .journey-copy h1{font-size:clamp(35px,8.8vw,52px)}.landing-centered .journey-intro{font-size:15px;max-width:440px}.landing-centered .hero-primary-actions{align-items:center;gap:10px 20px}.landing-centered .hero-primary-actions .primary{justify-content:center}.landing-centered .hero-proof{gap:12px;margin-top:25px}.landing-centered .hero-intent{font-size:12px}.hero-journey-section{padding:45px 0}.hero-journey-section .hero-engineering-panel{display:block}.hero-journey-section .journey-panel-scene{height:225px;min-height:0}.hero-journey-section .journey-panel-caption>span:last-child{font-size:24px}.hero-journey-section .journey-panel-caption{left:20px;bottom:44px}.hero-journey-section .illustration-credit{left:20px;bottom:13px;font-size:9px}.journey-section-intro p{font-size:14px}}

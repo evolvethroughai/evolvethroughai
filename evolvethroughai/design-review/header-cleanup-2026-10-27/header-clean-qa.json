@@ -1,0 +1,143 @@
+{
+  "results": [
+    {
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "12px"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "16px"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "16px"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "16px"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "12px"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "16px"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "16px"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "actions": [
+        "portal-search",
+        "visitor-account",
+        "portal-control portal-control--primary"
+      ],
+      "themeToggle": false,
+      "downloadButton": false,
+      "headerPosition": "relative",
+      "border": "1px",
+      "heroBelowHeader": true,
+      "heroClipping": "clip",
+      "headlineGap": "16px"
+    }
+  ],
+  "search": true,
+  "login": true,
+  "enquiry": true
+}

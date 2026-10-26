@@ -3,7 +3,7 @@ import { ArrowUpRight, ArrowRight, ArrowDown, Check, Plus, Minus, Search, Menu, 
 import { modules, projects, stages, programs } from './data/websiteContent';
 import { AudienceSteps, CapstoneJourney, EvolutionDetail } from './components/ConsolidatedExperience';
 import { CinematicHero, EngineeringStack } from './components/VisualExperience';
-import { ThemeToggle } from './components/ThemeToggle';
+import Header from './components/Header';
 import { BrandLogo } from './components/BrandLogo';
 import { downloadCurriculum, SiteFooter, QuickActions } from './components/SiteActions';
 
@@ -33,9 +33,6 @@ function EnquiryDialog({ dialogRef, budget, program }: { dialogRef: React.RefObj
 }
 
 export default function App() {
-  const [mobileMenu, setMobileMenu] = useState(false);
-  const headerRef = useRef<HTMLElement>(null);
-  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const [audience, setAudience] = useState(0);
   const [stage, setStage] = useState(0);
   const [isLoopPlaying, setIsLoopPlaying] = useState(false);
@@ -51,7 +48,7 @@ export default function App() {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const stageIcon = icons[stage];
   const StageIcon = stageIcon;
-  const openEnquiry = (title = programs[0].title) => { setMobileMenu(false); setProgram(title); dialogRef.current?.showModal(); };
+  const openEnquiry = (title = programs[0].title) => { setProgram(title); dialogRef.current?.showModal(); };
   const filteredModules = modules.filter(module => (category === 'All modules' || module.category === category) && `${module.title} ${module.description} ${module.topics.join(' ')}`.toLowerCase().includes(query.toLowerCase()));
   const filteredProjects = projects.map((project, index) => ({ ...project, index })).filter(project => projectCategory === 'All projects' || project.category === projectCategory);
   const project = projects[selectedProject];
@@ -68,29 +65,7 @@ export default function App() {
     const timer = window.setInterval(() => setStage(previous => (previous + 1) % stages.length), 4500);
     return () => window.clearInterval(timer);
   }, [isLoopPlaying, reducedMotion]);
-  useEffect(() => {
-    if (!mobileMenu) return;
-    const media = window.matchMedia('(min-width: 641px)');
-    const closeForDesktop = () => { if (media.matches) setMobileMenu(false); };
-    const onEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setMobileMenu(false);
-        menuButtonRef.current?.focus({ preventScroll: true });
-      }
-    };
-    const onOutsidePointer = (event: PointerEvent) => {
-      if (event.target instanceof Node && !headerRef.current?.contains(event.target)) setMobileMenu(false);
-    };
-    document.addEventListener('keydown', onEscape);
-    document.addEventListener('pointerdown', onOutsidePointer, { passive: true });
-    media.addEventListener('change', closeForDesktop);
-    closeForDesktop();
-    return () => {
-      document.removeEventListener('keydown', onEscape);
-      document.removeEventListener('pointerdown', onOutsidePointer);
-      media.removeEventListener('change', closeForDesktop);
-    };
-  }, [mobileMenu]);
+
 
   const chooseAudience = (index: number) => { setAudience(index); };
   const chooseStage = (index: number) => { setIsLoopPlaying(false); setStage(index); };
@@ -113,7 +88,7 @@ export default function App() {
 
   return <div className="site-shell" id="home">
     <a className="skip-link" href="#main">Skip to content</a>
-    <header ref={headerRef} className="header"><div className="nav-wrap"><BrandLogo /><nav id="main-navigation" aria-label="Main navigation" className={mobileMenu ? 'main-nav is-open' : 'main-nav'}>{[['Programs', 'programs'], ['The experience', 'experience'], ['Projects', 'projects'], ['Our story', 'about']].map(([label, id]) => <a key={id} href={`#${id}`} onClick={() => setMobileMenu(false)}>{label}</a>)}</nav><div className="nav-actions"><ThemeToggle /><button className="text-button" onClick={downloadCurriculum}>Download curriculum <Download size={15} aria-hidden="true" /></button><button className="button primary nav-cta" onClick={() => openEnquiry()}>Enquire <Arrow /></button></div><button ref={menuButtonRef} className="icon-button menu-toggle" aria-label={mobileMenu ? 'Close navigation' : 'Open navigation'} aria-expanded={mobileMenu} aria-controls="main-navigation" onClick={() => setMobileMenu(!mobileMenu)}>{mobileMenu ? <X /> : <Menu />}</button></div></header>
+    <Header onEnquire={() => openEnquiry()} portalHref={import.meta.env.VITE_PORTAL_URL} />
     <main id="main">
       <CinematicHero onChooseAudience={chooseAudience} />
       <div className="tool-belt"><div className="container belt-inner"><span className="mono">CONNECTED SKILLS.<br />REAL ENGINEERING.</span><span><GitBranch aria-hidden="true" /> Git</span><span><Box aria-hidden="true" /> Docker</span><span><Command aria-hidden="true" /> Kubernetes</span><span><Cloud aria-hidden="true" /> Azure & AWS</span><span><Layers aria-hidden="true" /> Terraform</span><span><Sparkles aria-hidden="true" /> Applied AI</span></div></div>

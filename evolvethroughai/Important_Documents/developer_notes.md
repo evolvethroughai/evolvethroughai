@@ -304,3 +304,90 @@ Evidence: design-review/brand-theme/qa.json and dark/light screenshots. Both the
 ## 26 October 2026 — homepage premium refinement for review
 
 Owner requested refinement of the existing homepage, preserving the logo/headline/architecture. Replaced floating hero labels and cropped overlay with a connected, keyboard-operable engineering journey and illustrative workflows. Refined header, CTA hierarchy and audience transition; removed decorative hero ribbon and image drift. Both themes checked at six widths; all stage panels stable, CTA/stage/audience targets verified, zero desktop axe violations, no console errors. Homepage approval is pending. No other pages or deployment. Evidence: design-review/homepage-premium/REPORT.md and qa.json. This supersedes prior hero composition notes, not the approved brand identity.
+
+## 26 October 2026 — immersive direction, milestone 01
+
+Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](docs/IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
+
+Existing architecture is React 19 / TypeScript / Vite, not Next.js; no migration undertaken. Logo SVGs, approved curriculum and downstream lifecycle/project/curriculum implementations are preserved. Existing Motion (MIT) is used through LazyMotion/lightweight components for short stage-title opacity and one-time pathway border emphasis. No new packages, copied templates or remote imagery. The retained conceptual image is labelled illustrative; publication provenance remains unverified, not represented as licensed learner photography.
+
+Implemented: enlarged human-context illustration, preserved headline, expandable illustrative technical examples, stable connected journey controls, and two editorial pathways with practical steps and links that select the existing audience detail. No interaction connects to real infrastructure.
+
+Verification: TypeScript and production build passed. Dark/light at 320, 390, 640, 768, 1024 and 1440px showed no horizontal overflow. All four stages and example disclosures tested; closed-state stage heights stable. Desktop axe WCAG A/AA scans in both themes reported zero violations after contrast repairs. Keyboard selection, audience links, normal/reduced motion and zero page errors recorded. Evidence: design-review/immersive-milestone-01/qa.json and screenshots. Visual approval, not automation alone, gates the next stage.
+
+STOP GATE: obtain owner visual approval of milestone 01 before implementing the DevOps infinity lifecycle, DevOps-to-AI progression, projects, curriculum or other pages. No deployment authorized or performed.
+
+## 26 October 2026 — reusable EvolveIcon pulse
+
+Owner requested removal of the static circuit trace and a 2.8s repeating pulse ending at the fixed dot. Implemented EvolveIcon.tsx/CSS with useId-scoped defs, animated prop, SVG accessibility props and reduced-motion fallback. Integrated standalone footer symbol; official static lockups and favicons preserved. Build/TypeScript and timed Chrome checks passed. Usage/evidence: design-review/evolve-icon-pulse/README.md. No deployment.
+
+## 26 October 2026 — pulse visibility correction
+
+Previous animated instance was limited to the small footer signoff. Integrated EvolveIcon into shared header/footer wordmarks using original outlined lettering-only SVG derivatives, preserving exact placement and AI gradient. Lengthened pulse and increased core/halo/terminal flare visibility. Checked 320/390/768/1440px: animation present, arrival flare visible, no overflow; reduced motion disables it. TypeScript/build passed. Original full logo SVG masters preserved. Header screenshot: design-review/evolve-icon-pulse/header-preview.png. No deployment.
+
+## 26 October 2026 - static circuit restored beneath pulse
+
+Owner revised the icon direction: retain the original static white curve and animate the flash over it. Restored a separate 4.7-unit white track below the halo/core layers in EvolveIcon. Terminal dot, pulse timing and reduced-motion support preserved. The static curve remains visible when animation is disabled.
+
+## 26 October 2026 - hero background and entrance refinement
+
+Implemented src/hero-motion.css, imported after existing styles. Layered light surface with responsive masked dot grid, electric-blue 5% and violet 3% feathered radial ambient glows; compatible dark surface. Static CSS gradients avoid moving blur filters or background JavaScript. Headline, subtext and actions enter using opacity/12px translateY in staggered 0.4s cubic-bezier transitions. Feature-panel and step hover/focus shadows use blue at 10%, stable bounds and 0.4s transitions. Reduced motion disables entrance/hover transitions; keyboard focus immediately reveals action content. Decorative layers ignore pointer events. Existing text, logo, framework, dependencies and destinations unchanged.
+
+Verification: TypeScript and production build passed. Chrome light/dark at 320, 390, 768 and 1440px: no horizontal overflow, content visible after entrance; step selection functional. Computed CSS confirms 0.4s timings, stagger delays and blue/10 shadow. Reduced motion yields animation:none, opacity:1 and transform:none. No JavaScript page errors. Previews/evidence: design-review/hero-motion/. Homepage visual approval remains pending. No deployment.
+
+## 26 October 2026 - Kokonut BackgroundPaths integration
+
+Installed using npx shadcn@latest add https://kokonutui.com/r/background-paths.json --yes. Added components.json matching existing Vite aliases. Registry v2.0.0 source retains MIT author attribution in src/components/kokonutui/background-paths.tsx; adapted its missing cn import to local typed class concatenation without adding packages. Existing registry component is canvas-based, not the older SVG demo.
+
+Added src/components/Hero.tsx and Hero.css. Existing CinematicHero content now sits inside this wrapper, with BackgroundPaths as a decorative absolute layer behind positioned content. children=null suppresses registry demo text. Eighteen slow-flowing paths; cursor interaction disabled; pointer-events:none preserves links and controls. Transparent background and restrained theme-aware colors preserve prior hero styling. Reduced-motion changes remount a static canvas; registry pauses flow off-screen/hidden tabs. No unrelated pages, curriculum or logo changes.
+
+TypeScript and Vite build passed. Chrome at 390/768/1440px confirmed painted nonzero-size canvas, no overflow, transparent background and pointer-events:none; journey buttons remained clickable. Reduced-motion canvas rendered. No page errors. Screenshot: design-review/kokonut-background-paths/desktop.png. No deployment.
+
+## 26 October 2026 - header control group implemented
+
+Extracted Header.tsx/Header.css and integrated in App.tsx. Actions ordered Theme, Login, Download curriculum, Enquire. Preserved animated logo, navigation and handlers. Responsive horizontal control row, outline download, glass surfaces, blue-gradient enquiry, dark/light support. No portal/auth integration exists: Login opens an honest unavailable-status dialog; a valid configured VITE_PORTAL_URL instead enables direct portal navigation. No fake login/session or credentials collected. TypeScript/build passed. Chrome 320/390/701/768/1024/1440: no overflow, controls aligned. Login dialog/Escape, curriculum download, enquiry and mobile navigation passed. Previews in design-review/header-controls. No deployment.
+
+## 26 October 2026 - Kokonut TopoBackground replaces hero paths
+
+Installed using the requested shadcn registry command. Hero.tsx now renders TopoBackground as an absolute decorative background behind existing content, with two soft cyan/violet radial glow layers. Previous BackgroundPaths component remains on disk but is no longer imported by the hero; prior dot-grid pseudo-elements are disabled. Topo count is controlled by interval 0.1, drift speed 0.15, fixed seed 26, labels=false, interactive=false. Mobile background height is capped. Reduced-motion changes remount a static map. Registry MIT author attribution preserved; missing cn dependency adapted to typed local class concatenation without new packages. Existing logo, copy, controls and downstream sections unchanged.
+
+TypeScript/build passed. Chrome 390/1440px in light/dark: full-size nonempty canvas, two glows, no overflow, pointer-events:none, prior dot grid disabled; journey clicks work. Reduced-motion canvas renders; no page errors. Evidence and previews: design-review/topo-background/. No deployment.
+
+## 26 October 2026 - hero alignment and media order
+
+Owner approved the topographic hero background, then requested layout-only adjustments. Added hero-balanced scope in Hero.tsx. On desktop the left copy fills the grid cell with flex-column/justify-center, centring the complete tag/headline/description/actions/stats group vertically against the card. On stacked tablet/mobile it returns to natural height. The actual card markup in VisualExperience.tsx now opens with the section title and journey controls, followed by the contained image, then selected-stage detail. Preserved dark surface/border styling, both themes, approved topography, logo and interactions.
+
+TypeScript and build passed. Chrome 390/768/1440px: no horizontal overflow; DOM/rendered order confirms heading then controls then image; stage clicks functional. Desktop column centre difference measured 0px. Previews: design-review/hero-alignment/. Whole-homepage approval remains separate; no deployment.
+
+## 26 October 2026 - reverted last hero alignment/media change
+
+Owner requested rollback of the most recent layout pass. Restored the image/caption to the top of the feature card and removed hero-balanced alignment overrides. Approved topographic background, cyan/violet glows, header and all earlier work preserved. Earlier alignment notes are historical and superseded by this rollback.
+
+
+## 26 October 2026 - clarified centered landing and separate second section
+
+Owner clarified that the whole landing copy should be horizontally centered across the website, with the entire sunrise image and interactive journey card moved into the second section. Implemented a single-column, viewport-height centered Hero containing eyebrow, preserved headline, description, CTAs, stats and intent line. Approved topographic background and ambient glows remain on this first screen. Moved the complete existing engineering journey into the following #engineering-journey section; audience pathways follow it. Image is now lazy-loaded below the fold. No content or logo redesign.
+
+TypeScript/build passed. Chrome 320/390/768/1440px: horizontal center difference 0px, no page overflow, no image inside first Hero, second section begins after Hero; stage selection works. Desktop/mobile previews: design-review/centered-landing/. No deployment; whole-homepage approval remains pending.
+
+## 26 October 2026 - Screen 2 ready for owner review
+
+Implemented From curiosity to capability with the exact owner-supplied light/dark engineering-workspace images, optimized WebP variants, accessible Learn/Build/Deploy/Evolve interaction, meaningful examples/questions and restrained reduced-motion-safe transitions. Source of Screen 1 and its protected styling/header files remains unchanged. Existing curriculum and next sections preserved. TypeScript/build, eight theme/width layout and scoped axe checks passed; keyboard, theme swap, stage destinations and examples verified. Evidence: design-review/screen-02/REPORT.md and qa.json. Owner visual approval is pending. Stop after Screen 2; no next-section development or deployment.
+
+## 26 October 2026 - morphic navigation, account/search and rotating headline
+
+Owner requested tagline beneath logo, centered premium navigation, a compact left search, account dropdown and five-second headline phrases. Installed and adapted Kokonut MorphicNavbar/ProfileDropdown for React/Vite; used the supplied ActionSearchBar with actual curriculum/project destinations. Theme toggle remains separate from Login. Visitor menu is truthful about missing portal/auth; existing VITE_PORTAL_URL wiring retained. Added pauseable AI skills / DevOps automation / cloud headline alternatives with reduced-motion fallback. Preserved logo, topographic background, Screen 2, content and downstream sections. Checks and usage: Important_Documents/docs/HEADER_COMPONENT_USAGE.md; previews: design-review/header-morphic/. New utilities: clsx, tailwind-merge. No new animation framework, fabricated subscribers, deployment or Git push. Visual approval remains pending.
+
+## 26 October 2026 - logo-spectrum headline and shuffled messaging
+
+Supersedes the earlier four-line rotation: the whole rotating line now uses the shared logo blue/cyan/violet gradient, fitted to the text width. Added 18 aspirational learning/business lines covering AI agents, agentic AI, RAG, LLMs, forward-deployed engineering, cloud, automation and application development. Wording does not assert launched future programs or guaranteed growth. Shared action/heading accents use the same palette family.
+
+Five-second shuffle-bag rotation avoids immediate repeats. Reduced motion retains the original headline; off-screen/hidden tabs suspend rotation. Removed visible Pause words/Resume words labels. A keyboard-focus-revealed pause/resume icon remains for accessibility. Hidden measuring text reserves space for varied phrase lengths; screen readers retain a stable canonical headline.
+
+TypeScript/build passed. Chrome 320/390/768/1440 checked: no overflow, 18 phrases, full-line brand gradient and no visible Pause words label. Live samples confirmed shuffled transitions. Workspace sections and assets unchanged. No deployment.
+
+## 27 October 2026 - header boundary and controls cleanup
+
+Owner requested exactly Search / Login / Enquire in the right header group. Moved SiteSearch from the logo area to the right, removed ThemeToggle and the direct download icon button. Curriculum download remains available through the existing account menu and page actions. Header is relative at z-index 50 with a white 90% backdrop, 12px blur and subtle 1px bottom separator; dark theme retains its solid dark equivalent. Hero.tsx now scopes paint containment/clipping to prevent topographic canvas overlap. Added 16px separation between headline lines (12px at narrow mobile). Existing logo, centered navbar, headline rotation and Screen 2 preserved.
+
+TypeScript/build passed. Chrome light/dark at 320/390/768/1440 confirmed exactly three action items, no theme/download buttons, no horizontal overflow, header/hero boundary, clipped backdrop and headline margins. Search, visitor login menu and enquiry dialog verified. Screenshots and QA: design-review/header-cleanup-2026-10-27/. No deployment.

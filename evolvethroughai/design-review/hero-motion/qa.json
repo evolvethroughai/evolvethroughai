@@ -1,0 +1,97 @@
+{
+  "layouts": [
+    {
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "headlineOpacity": "0.999994",
+      "gridPointerEvents": "none"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "headlineOpacity": "1",
+      "gridPointerEvents": "none"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "headlineOpacity": "1",
+      "gridPointerEvents": "none"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "headlineOpacity": "1",
+      "gridPointerEvents": "none"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "headlineOpacity": "1",
+      "gridPointerEvents": "none"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "headlineOpacity": "1",
+      "gridPointerEvents": "none"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "headlineOpacity": "1",
+      "gridPointerEvents": "none"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "headlineOpacity": "1",
+      "gridPointerEvents": "none"
+    }
+  ],
+  "stagger": [
+    {
+      "class": "eyebrow hero-brand-label",
+      "delay": "0.02s",
+      "duration": "0.4s",
+      "animation": "hero-editorial-enter"
+    },
+    {
+      "class": "H1",
+      "delay": "0.08s",
+      "duration": "0.4s",
+      "animation": "hero-editorial-enter"
+    },
+    {
+      "class": "journey-intro",
+      "delay": "0.16s",
+      "duration": "0.4s",
+      "animation": "hero-editorial-enter"
+    },
+    {
+      "class": "hero-primary-actions",
+      "delay": "0.24s",
+      "duration": "0.4s",
+      "animation": "hero-editorial-enter"
+    }
+  ],
+  "hover": {
+    "shadow": "rgba(37, 99, 235, 0.1) 0px 25px 50px -12px",
+    "duration": "0.4s, 0.4s"
+  },
+  "selected": "true",
+  "reduced": {
+    "animation": "none",
+    "opacity": "1",
+    "transform": "none"
+  },
+  "errors": []
+}
