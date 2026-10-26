@@ -5,5 +5,8 @@ import './refinement.css';
 import './brand-theme.css';
 import './homepage-refinement.css';
 import './immersive-milestone.css';
+import './hero-motion.css';
+import './components/HeaderRefinement.css';
 
 createRoot(document.getElementById('root')!).render(<App />);
+

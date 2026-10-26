@@ -1,0 +1,152 @@
+{
+  "layouts": [
+    {
+      "width": 320,
+      "theme": "light",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-light-640.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        964.59375,
+        964.59375,
+        964.96875,
+        973.484375
+      ],
+      "violations": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-light-640.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        963.84375,
+        963.84375,
+        964.59375,
+        964.21875
+      ],
+      "violations": []
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-light-991.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        778.6875,
+        778.6875,
+        778.6875,
+        778.6875
+      ],
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-light-991.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        788.6875,
+        788.6875,
+        788.6875,
+        788.6875
+      ],
+      "violations": []
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-dark-640.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        964.59375,
+        964.59375,
+        964.96875,
+        973.484375
+      ],
+      "violations": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-dark-640.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        963.84375,
+        963.84375,
+        964.59375,
+        964.21875
+      ],
+      "violations": []
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-dark-991.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        778.6875,
+        778.6875,
+        778.6875,
+        778.6875
+      ],
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "asset": "http://127.0.0.1:3001/images/screen-02/workspace-dark-991.webp",
+      "imageLoaded": true,
+      "nextSection": true,
+      "heights": [
+        788.6875,
+        788.6875,
+        788.6875,
+        788.6875
+      ],
+      "violations": []
+    }
+  ],
+  "screen1": [
+    {
+      "theme": "light",
+      "width": 390,
+      "identical": false
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "identical": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "identical": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "identical": false
+    }
+  ],
+  "protectedFiles": true,
+  "protectedMarkup": true,
+  "keyboard": "true",
+  "themeSwitchAsset": "/images/screen-02/workspace-light-991.webp",
+  "normalMotion": "none",
+  "errors": []
+}

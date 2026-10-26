@@ -1,0 +1,45 @@
+{
+  "structure": {
+    "icons": 5,
+    "uniqueIds": true,
+    "oldLine": false,
+    "stillAnimation": "none"
+  },
+  "phases": [
+    {
+      "t": 0,
+      "dash": "8px",
+      "opacity": "0",
+      "flare": "0"
+    },
+    {
+      "t": 1000,
+      "dash": "-32.4808px",
+      "opacity": "1",
+      "flare": "0"
+    },
+    {
+      "t": 1650,
+      "dash": "-94.1027px",
+      "opacity": "0.737169",
+      "flare": "0.849935"
+    },
+    {
+      "t": 2200,
+      "dash": "-100px",
+      "opacity": "0",
+      "flare": "0"
+    },
+    {
+      "t": 2700,
+      "dash": "-100px",
+      "opacity": "0",
+      "flare": "0"
+    }
+  ],
+  "reduced": {
+    "animation": "none",
+    "opacity": "0",
+    "nodeFill": "#FFFFFF"
+  }
+}

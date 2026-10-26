@@ -14,7 +14,9 @@
                                    "src/index.css",
                                    "src/refinement.css",
                                    "src/brand-theme.css",
-                                   "src/homepage-refinement.css"
+                                   "src/homepage-refinement.css",
+                                   "src/immersive-milestone.css",
+                                   "src/components/HeaderRefinement.css"
                                ],
                     "components":  [
 
@@ -101,6 +103,14 @@
                       {
                           "date":  "2026-10-26",
                           "decision":  "Homepage refinement implemented for review: integrated connected engineering journey, secondary curriculum text link, contained cinematic image, audience pathways. Owner approval remains pending."
+                      },
+                      {
+                          "date":  "2026-10-26",
+                          "decision":  "Owner-directed immersive milestone 01: human-context illustrative hero, expandable workflow examples, editorial career pathways, lightweight existing Motion; visual approval pending before downstream sections."
+                      },
+                      {
+                          "date":  "2026-10-26",
+                          "decision":  "Owner-requested centered morphic navigation, tagline beneath logo, left search, truthful visitor account menu, separate theme toggle and pauseable five-second headline rotation; implementation awaiting visual approval."
                       }
                   ],
     "evidence":  [

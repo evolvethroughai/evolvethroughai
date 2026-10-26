@@ -1,0 +1,20 @@
+/* Geometry scales with the viewBox; pulse stroke lengths use pathLength=100. */
+.evolve-icon{display:inline-block;vertical-align:middle;flex-shrink:0;overflow:visible}
+.evolve-icon__flash{stroke-dasharray:16 100;stroke-dashoffset:16;opacity:0}
+.evolve-icon__flare{opacity:0;pointer-events:none}
+.evolve-icon[data-animated=true] .evolve-icon__flash{animation:evolve-circuit-flash 2.8s infinite}
+.evolve-icon[data-animated=true] .evolve-icon__flare{animation:evolve-anchor-flare 2.8s infinite}
+@keyframes evolve-circuit-flash{
+  0%{stroke-dashoffset:16;opacity:0;animation-timing-function:cubic-bezier(.42,0,1,1)}
+  5%{opacity:1;stroke-dashoffset:16;animation-timing-function:cubic-bezier(.42,0,1,1)}
+  58%{stroke-dashoffset:-84;opacity:1}
+  63%,100%{stroke-dashoffset:-100;opacity:0}
+}
+@keyframes evolve-anchor-flare{0%,53%{opacity:0}59%{opacity:.85}72%,100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.evolve-icon[data-animated=true] .evolve-icon__flash,.evolve-icon[data-animated=true] .evolve-icon__flare{animation:none;opacity:0}}
+/* Parent page can pause continuous ambient motion without replacing the icon. */
+.evolve-icon[data-animated=false] .evolve-icon__flash,.evolve-icon[data-animated=false] .evolve-icon__flare{animation:none;opacity:0}
+
+.brand-signoff>.footer-evolve-icon{width:70px;height:80px}@media(max-width:640px){.brand-signoff>.footer-evolve-icon{width:49px;height:56px}}
+
+.brand-artwork{display:block;position:relative;line-height:0}.brand-artwork>.brand-artwork-icon{position:absolute;left:1.6129%;top:4.8077%;width:26.1935%;height:89.2308%;pointer-events:none}

@@ -1,0 +1,6 @@
+# Hero motion verification
+## 26 October 2026 - hero background and entrance refinement
+
+Implemented src/hero-motion.css, imported after existing styles. Layered light surface with responsive masked dot grid, electric-blue 5% and violet 3% feathered radial ambient glows; compatible dark surface. Static CSS gradients avoid moving blur filters or background JavaScript. Headline, subtext and actions enter using opacity/12px translateY in staggered 0.4s cubic-bezier transitions. Feature-panel and step hover/focus shadows use blue at 10%, stable bounds and 0.4s transitions. Reduced motion disables entrance/hover transitions; keyboard focus immediately reveals action content. Decorative layers ignore pointer events. Existing text, logo, framework, dependencies and destinations unchanged.
+
+Verification: TypeScript and production build passed. Chrome light/dark at 320, 390, 768 and 1440px: no horizontal overflow, content visible after entrance; step selection functional. Computed CSS confirms 0.4s timings, stagger delays and blue/10 shadow. Reduced motion yields animation:none, opacity:1 and transform:none. No JavaScript page errors. Previews/evidence: design-review/hero-motion/. Homepage visual approval remains pending. No deployment.

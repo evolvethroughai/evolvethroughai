@@ -1,0 +1,96 @@
+{
+  "layouts": [
+    {
+      "theme": "light",
+      "width": 320,
+      "overflow": true,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": 0.0078125,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "overflow": true,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": null,
+      "phrase": "Shape what’s next."
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "tagline": "Learn. Build. Evolve.",
+      "navCentered": 0.0078125,
+      "phrase": "Shape what’s next."
+    }
+  ],
+  "accountMenu": true,
+  "portalDialog": true,
+  "searchMatches": "FIND YOUR NEXT STEP\nSearch programs, modules and projects\nExplore\nCurriculum — all 18 modules › Docker & Container Engineering\nLearning projects › Docker Compose app & database\nLearning projects › Containerized Java application\nLearning projects › React application containerization\nLearning projects › Kubernetes microservices on AKS\nLearning projects › Infrastructure & application pipeline\n↑↓Navigate↵RunescClose",
+  "rotation": {
+    "first": "Shape what’s next.",
+    "second": "Shape your AI skills.",
+    "paused": "Shape your AI skills.",
+    "afterPause": "Shape your AI skills."
+  },
+  "mobileClosed": "false",
+  "violations": [],
+  "errors": []
+}
