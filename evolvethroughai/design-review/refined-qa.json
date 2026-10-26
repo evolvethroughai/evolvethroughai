@@ -1,0 +1,46 @@
+{
+  "status": "functional checks passed",
+  "fonts": "Sora + Inter, locally hosted",
+  "remoteFontRequests": [],
+  "layouts": [
+    {
+      "width": 1440,
+      "content": 1440
+    },
+    {
+      "width": 1024,
+      "content": 1024
+    },
+    {
+      "width": 768,
+      "content": 768
+    },
+    {
+      "width": 390,
+      "content": 390
+    },
+    {
+      "width": 375,
+      "content": 375
+    },
+    {
+      "width": 320,
+      "content": 320
+    }
+  ],
+  "errors": [],
+  "scans": [
+    {
+      "state": "dialog",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    }
+  ]
+}

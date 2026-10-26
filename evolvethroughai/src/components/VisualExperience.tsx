@@ -1,48 +1,41 @@
-import { useEffect, useRef, useState } from 'react';
-import { ArrowDown, ArrowRight, ArrowUpRight, Check, Cloud, Code2, Layers, Pause, Play, Sparkles } from 'lucide-react';
+import { LazyMotion, domAnimation, useReducedMotion } from 'motion/react';
+import * as m from 'motion/react-m';
+import { AudiencePathways } from './AudiencePathways';
+import { useState } from 'react';
+import { ArrowRight, ArrowUpRight, Check, Cloud, Code2, Layers, Sparkles } from 'lucide-react';
 
 const journeyStages = [
-  { name: 'Learn', title: 'Start with understanding.', description: 'Build a foundation in systems, scripting and engineering workflows.' },
-  { name: 'Build', title: 'Turn knowledge into something real.', description: 'Connect code, containers and automation through hands-on projects.' },
-  { name: 'Deploy', title: 'Take your work into the cloud.', description: 'Explore infrastructure, delivery pipelines and running applications.' },
-  { name: 'Evolve', title: 'Build on everything you know.', description: 'Extend your engineering experience with thoughtful AI-assisted workflows.' },
+  { name: 'Learn', icon: Code2, title: 'Understand what happens underneath.', description: 'Start with systems, networking, Git and scripting. Build a foundation you can explain, not just commands you can repeat.', label: 'FOUNDATIONS', code: ['# Understand the environment', 'pwd', 'git status', 'bash ./scripts/check-environment.sh'], destination: '#curriculum', action: 'Explore the foundations' },
+  { name: 'Build', icon: Layers, title: 'Turn understanding into working software.', description: 'Connect source control, application builds, tests and containers. Practise how each decision affects the next step.', label: 'CONNECTED WORKFLOWS', code: ['# Package and check an application', 'docker build -t learning-app .', 'docker run --rm -p 8080:8080 learning-app'], destination: '#projects', action: 'Explore learning projects' },
+  { name: 'Deploy', icon: Cloud, title: 'See how applications run in the cloud.', description: 'Explore infrastructure, delivery pipelines and observability. Understand how an application reaches its environment and how teams operate it.', label: 'CLOUD & DELIVERY', code: ['# Inspect before changing infrastructure', 'terraform fmt -check', 'terraform validate', 'terraform plan'], destination: '#experience', action: 'Explore the engineering lifecycle' },
+  { name: 'Evolve', icon: Sparkles, title: 'Build on your skills with thoughtful AI.', description: 'Use AI to assist scripting and troubleshooting. Review suggestions, test your changes and keep engineering judgement in the loop.', label: 'HUMAN-LED AI ASSISTANCE', code: ['# A human-reviewed learning workflow', 'Read the problem and constraints', 'Review the AI-assisted suggestion', 'Test, explain and improve the change'], destination: '#progression', action: 'Explore your next stage' },
 ];
 
 export function CinematicHero({ onChooseAudience }: { onChooseAudience: (index: number) => void }) {
   const [stage, setStage] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const [reduced, setReduced] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const query = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const sync = () => setReduced(query.matches);
-    sync(); query.addEventListener('change', sync);
-    return () => query.removeEventListener('change', sync);
-  }, []);
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-    if (paused || reduced) { section.style.setProperty('--journey-drift', '0px'); return; }
-    let frame = 0;
-    const update = () => {
-      frame = 0;
-      const rect = section.getBoundingClientRect();
-      if (rect.bottom >= 0 && rect.top <= window.innerHeight) section.style.setProperty('--journey-drift', `${Math.max(-30, Math.min(70, -rect.top * .11))}px`);
-    };
-    const scroll = () => { if (!frame) frame = requestAnimationFrame(update); };
-    update(); window.addEventListener('scroll', scroll, { passive: true });
-    return () => { window.removeEventListener('scroll', scroll); cancelAnimationFrame(frame); };
-  }, [paused, reduced]);
-  return <section ref={sectionRef} className="cinematic-hero" data-motion={paused || reduced ? 'paused' : 'active'} aria-labelledby="hero-heading">
-    <div className="journey-scene">
-      <img className="journey-landscape" src="/images/engineering-journey.jpg" alt="" width={1920} height={1088} fetchPriority="high" />
-      <div className="journey-wash" />
-      <div className="journey-waypoints" aria-label="Explore your engineering journey">{journeyStages.map((item, index) => <button key={item.name} className={`journey-waypoint waypoint-${index} ${stage === index ? 'active' : ''}`} aria-pressed={stage === index} onClick={() => setStage(index)}><span className="waypoint-face"><span className="waypoint-signal" /><span>{item.name}</span><ArrowUpRight size={12} aria-hidden="true" /></span></button>)}</div>
-      <div className="journey-scene-detail" aria-live="polite"><div className="journey-detail-top"><span className="mono">0{stage + 1} / {journeyStages[stage].name.toUpperCase()}</span><span className="journey-detail-dots" aria-hidden="true">{journeyStages.map((item, index) => <i key={item.name} className={stage === index ? 'active' : ''} />)}</span></div><strong>{journeyStages[stage].title}</strong><p>{journeyStages[stage].description}</p></div>
+  const reduceMotion = useReducedMotion();
+  const current = journeyStages[stage];
+  const Icon = current.icon;
+  return <LazyMotion features={domAnimation}><section className="cinematic-hero refined-hero" aria-labelledby="hero-heading">
+    <div className="container refined-hero-grid">
+      <div className="journey-copy">
+        <div className="eyebrow hero-brand-label">FOR THE ENGINEER YOU’RE BECOMING</div>
+        <h1 id="hero-heading"><span>Build real skills.</span><span>Shape <em>what’s next.</em></span></h1>
+        <p className="journey-intro">Understand the systems. Connect the workflow.<br className="desktop-break" /> Build practical cloud, DevOps and AI-assisted engineering skills.</p>
+        <div className="hero-primary-actions"><a className="button primary" href="#programs">Explore the masterclass <ArrowUpRight size={18} aria-hidden="true" /></a><a className="hero-curriculum-link" href="#curriculum">See the curriculum <ArrowRight size={17} aria-hidden="true" /></a></div>
+        <div className="hero-proof" aria-label="Program curriculum structure"><span><strong>18</strong> modules</span><i aria-hidden="true" /><span><strong>14</strong> projects</span><i aria-hidden="true" /><span><strong>01</strong> capstone</span></div>
+        <p className="hero-intent">You bring the curiosity. Build the understanding to make your next step meaningful.</p>
+      </div>
+      <div className="hero-engineering-panel">
+        <div className="journey-panel-scene"><img src="/images/engineering-journey.jpg" width={1920} height={1088} alt="" fetchPriority="high" /><div className="journey-panel-caption"><span>YOUR NEXT CHAPTER</span><span>From curiosity to capability.</span></div><span className="illustration-credit">Concept illustration · not a learner photograph</span></div>
+        <div className="journey-panel-body">
+          <ol className="connected-journey" aria-label="Explore the engineering journey">{journeyStages.map((item,index) => { const StepIcon=item.icon; return <li key={item.name}><button type="button" aria-pressed={stage===index} aria-controls="hero-journey-detail" onClick={()=>setStage(index)}><span className="connected-step-icon"><StepIcon size={19} aria-hidden="true" /></span><span>{item.name}</span><span className="sr-only">: show this stage</span></button></li>; })}</ol>
+          <div id="hero-journey-detail" className="connected-detail" aria-live="polite" aria-atomic="true"><div className="connected-detail-label"><Icon size={15} aria-hidden="true" /><span>{current.label}</span><span>0{stage+1} / 04</span></div><m.h2 key={`title-${stage}`} initial={reduceMotion ? false : { opacity: .4 }} animate={{ opacity: 1 }} transition={{ duration: .22 }}>{current.title}</m.h2><p>{current.description}</p><details className="workflow-disclosure" key={`example-${stage}`}><summary>Look inside this workflow <Code2 size={15} aria-hidden="true" /></summary><div className="journey-workflow"><span>ILLUSTRATIVE EXAMPLE · NOT A LIVE ENVIRONMENT</span><pre><code>{current.code.join('\n')}</code></pre></div></details><a className="text-link" href={current.destination}>{current.action}<ArrowRight size={15} aria-hidden="true" /></a></div>
+        </div>
+      </div>
     </div>
-    <div className="container journey-content"><div className="journey-copy"><div className="eyebrow"><span className="status-dot" /> THE FUTURE IS SOMETHING YOU BUILD</div><h1 id="hero-heading"><span>Your next chapter.</span><span>Starts with what</span><em>you build.</em></h1><p className="journey-intro">From your first engineering role to your next chapter.<br className="desktop-break" /> Build practical cloud, DevOps and AI-assisted skills.</p><div className="hero-actions hero-path-actions"><a className="hero-path-choice" href="#path" onClick={() => onChooseAudience(1)}><span><strong>I’m starting my career</strong><small>Build a connected foundation</small></span><ArrowUpRight size={18} aria-hidden="true" /></a><a className="hero-path-choice" href="#path" onClick={() => onChooseAudience(0)}><span><strong>I’m growing my career</strong><small>Build on your experience</small></span><ArrowUpRight size={18} aria-hidden="true" /></a></div><a className="text-link hero-experience-link" href="#experience"><span className="play-icon"><ArrowRight size={15} aria-hidden="true" /></span>Explore how engineering connects</a><div className="journey-bottom"><span className="mono">LEARN. BUILD. EVOLVE.</span><a href="#path" aria-label="Scroll to choose your path"><ArrowDown size={17} aria-hidden="true" /></a></div></div></div>
-    <button className="visual-motion-toggle" aria-pressed={paused || reduced} disabled={reduced} onClick={() => setPaused(!paused)}>{paused || reduced ? <Play size={12} aria-hidden="true" /> : <Pause size={12} aria-hidden="true" />}{reduced ? 'Reduced motion' : paused ? 'Resume visual motion' : 'Pause visual motion'}</button>
-  </section>;
+    <AudiencePathways onChooseAudience={onChooseAudience} />
+  </section></LazyMotion>;
 }
 
 const stackStages = [

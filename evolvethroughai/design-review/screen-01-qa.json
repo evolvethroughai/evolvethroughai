@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "allFourMilestones": "normal clicks passed; no panel overlap",
+      "violations": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "allFourMilestones": "normal clicks passed; no panel overlap"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "allFourMilestones": "normal clicks passed; no panel overlap"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "allFourMilestones": "normal clicks passed; no panel overlap"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "allFourMilestones": "normal clicks passed; no panel overlap",
+      "violations": []
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "allFourMilestones": "normal clicks passed; no panel overlap"
+    }
+  ],
+  "browserErrors": []
+}

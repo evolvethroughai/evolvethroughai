@@ -1,0 +1,6 @@
+# Logo-led theme implementation
+## 26 October 2026 — logo-led website theme
+
+Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blue–violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
+
+Evidence: design-review/brand-theme/qa.json and dark/light screenshots. Both themes checked at 320, 390, 640, 768, 1024 and 1440px: no horizontal overflow or header overlap. Desktop axe WCAG A/AA scans in each theme: zero reported violations after contrast repairs. Theme survives reload. Mobile navigation, enquiry open/Escape close, curriculum download and normal/reduced circuit motion passed. TypeScript and production build passed. Automated checks do not replace owner visual approval. Earlier Sora typography and light-only implementation notes are historical; the current heading font is Inter.

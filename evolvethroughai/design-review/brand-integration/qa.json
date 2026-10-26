@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-26",
+  "checks": [
+    {
+      "width": 320,
+      "overflow": false,
+      "headerOverlap": false,
+      "logoCount": 2,
+      "logosLoaded": true,
+      "footerSymbol": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "headerOverlap": false,
+      "logoCount": 2,
+      "logosLoaded": true,
+      "footerSymbol": true
+    },
+    {
+      "width": 640,
+      "overflow": false,
+      "headerOverlap": false,
+      "logoCount": 2,
+      "logosLoaded": true,
+      "footerSymbol": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "headerOverlap": false,
+      "logoCount": 2,
+      "logosLoaded": true,
+      "footerSymbol": true
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "headerOverlap": false,
+      "logoCount": 2,
+      "logosLoaded": true,
+      "footerSymbol": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "headerOverlap": false,
+      "logoCount": 2,
+      "logosLoaded": true,
+      "footerSymbol": true
+    }
+  ],
+  "assets": [
+    {
+      "url": "/brand/logo-light.svg",
+      "status": 200
+    },
+    {
+      "url": "/brand/logo-dark.svg",
+      "status": 200
+    },
+    {
+      "url": "/brand/favicon.svg",
+      "status": 200
+    },
+    {
+      "url": "/brand/favicon.ico",
+      "status": 200
+    },
+    {
+      "url": "/brand/apple-touch-icon.png",
+      "status": 200
+    },
+    {
+      "url": "/brand/icon-192.png",
+      "status": 200
+    },
+    {
+      "url": "/brand/icon-512.png",
+      "status": 200
+    },
+    {
+      "url": "/brand/social-preview.png",
+      "status": 200
+    },
+    {
+      "url": "/site.webmanifest",
+      "status": 200
+    },
+    {
+      "url": "/favicon.svg",
+      "status": 200
+    },
+    {
+      "url": "/favicon.ico",
+      "status": 200
+    }
+  ],
+  "consoleErrors": [],
+  "interactions": {
+    "mobileNavigation": true,
+    "enquiryOpenEscape": true,
+    "curriculumDownload": "evolvethroughai-curriculum-overview.md"
+  },
+  "accessibilityViolations": []
+}

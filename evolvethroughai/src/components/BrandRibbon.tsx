@@ -1,0 +1,4 @@
+/** Decorative circuit geometry echoes the approved mark, without replacing it. */
+export function BrandRibbon() {
+  return <div className="brand-ribbon" aria-hidden="true"><svg viewBox="0 0 620 180" fill="none"><defs><linearGradient id="ribbon-flow" x1="0" y1="160" x2="620" y2="0" gradientUnits="userSpaceOnUse"><stop stopColor="#2563EB"/><stop offset=".47" stopColor="#06B6D4"/><stop offset="1" stopColor="#8B5CF6"/></linearGradient></defs><path className="ribbon-band" d="M-35 153C120 153 102 22 261 55S443 173 660 19" stroke="url(#ribbon-flow)" strokeWidth="26"/><path className="ribbon-trace" d="M-35 153C120 153 102 22 261 55S443 173 590 63" stroke="currentColor" strokeWidth="2"/><circle className="ribbon-terminal" cx="590" cy="63" r="6" fill="currentColor"/></svg><span>Learn. Build. Evolve.</span></div>;
+}

@@ -1,0 +1,205 @@
+{
+  "results": [
+    {
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1648,
+      "stageHeights": [
+        703.1875,
+        703.1875,
+        703.1875,
+        703.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1584,
+      "stageHeights": [
+        680.1875,
+        680.1875,
+        680.1875,
+        680.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 640,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1514,
+      "stageHeights": [
+        680.1875,
+        680.1875,
+        680.1875,
+        680.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1330,
+      "stageHeights": [
+        587.1875,
+        587.1875,
+        587.1875,
+        587.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 931,
+      "stageHeights": [
+        699.1875,
+        699.1875,
+        699.1875,
+        699.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 967,
+      "stageHeights": [
+        699.1875,
+        699.1875,
+        699.1875,
+        699.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1648,
+      "stageHeights": [
+        703.1875,
+        703.1875,
+        703.1875,
+        703.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1584,
+      "stageHeights": [
+        680.1875,
+        680.1875,
+        680.1875,
+        680.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 640,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1514,
+      "stageHeights": [
+        680.1875,
+        680.1875,
+        680.1875,
+        680.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 1330,
+      "stageHeights": [
+        587.1875,
+        587.1875,
+        587.1875,
+        587.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 931,
+      "stageHeights": [
+        699.1875,
+        699.1875,
+        699.1875,
+        699.1875
+      ],
+      "violations": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "detailContained": true,
+      "panelInViewport": true,
+      "oldFloatingLabels": false,
+      "heroHeight": 967,
+      "stageHeights": [
+        699.1875,
+        699.1875,
+        699.1875,
+        699.1875
+      ],
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "interactions": {
+    "fresher": "true",
+    "professional": "true",
+    "primary": "#programs",
+    "secondary": "#curriculum",
+    "mobileNav": true,
+    "enquiryEscape": true
+  }
+}

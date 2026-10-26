@@ -1,0 +1,283 @@
+# Website Roadmap
+
+> Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
+> Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
+
+
+## Current milestone
+
+**The documentation baseline is complete. The latest owner request authorizes page-by-page, screen-by-screen refinement, starting with the homepage header and hero. Final homepage approval remains open.** The latest master handover states that final design approval and public launch are unconfirmed. Prior positive feedback on an iteration does not establish final approval.
+
+An existing local implementation already covers parts of Phases 2 and 3. Do not restart it or mark those phases complete simply because the handover describes earlier plans. Preserve the working source and reconcile it with the newly documented requirements.
+
+## Current implementation versus the phase gates
+
+| Phase | Inspection snapshot | Acceptance still needed |
+| --- | --- | --- |
+| 1 — Foundation/design approval | Existing app, exports, notes, source context and latest QA artifacts inspected; documentation being established | Owner review and explicit homepage approval |
+| 2 — Core website | Navigation and one composed homepage exist in React/Vite | Dedicated Learning Programs and Masterclass routes, agreed page architecture and owner review |
+| 3 — Curriculum/interactions | 18-module overview, 14 project concepts, 8 lifecycle controls, 9 capstone UI stages and 5 progression controls exist | Original detailed source reconciliation, approved lab scope and content review |
+| 4 — Business functionality | Browser validation and local enquiry/curriculum downloads exist | Real delivery backend, verified contacts, spam handling, data practices, legal pages and approved analytics |
+| 5 — Production launch | Earlier build/TypeScript/browser/axe results are recorded; local build output exists | Full release review, domain/HTTPS/hosting verification, production forms and deployment smoke tests |
+| 6 — Content/marketing | Channels and strategy discussed | Owner-approved publication cadence, real accounts/content and measured enquiries |
+| 7 — Expansion | Future program/service/product directions documented | Demand, capacity, detailed scope and explicit approval |
+
+## Founder roadmap and acceptance criteria
+
+## PART 20 — WEBSITE DEVELOPMENT ROADMAP
+
+These are planning targets, not guaranteed deadlines.
+
+I have approximately 5–7 hours per week available for this project.
+
+Adjust the timeline based on actual implementation complexity.
+
+### PHASE 1 — FOUNDATION AND DESIGN APPROVAL
+
+Objectives:
+
+- Inspect the current Codex project.
+- Identify existing application structure.
+- Identify original design references.
+- Establish source-of-truth documentation.
+- Confirm the homepage visual direction.
+- Review desktop and mobile previews.
+- Avoid generic design patterns.
+
+Acceptance criteria:
+
+- Existing project understood.
+- Business context documented.
+- Visual direction clearly established.
+- Homepage reviewed and approved by me.
+
+### PHASE 2 — CORE WEBSITE
+
+Build or refine:
+
+- Global navigation
+- Homepage
+- Learning Programs page
+- Flagship Masterclass page
+- Responsive layout
+- Shared components
+- Design tokens
+
+Acceptance criteria:
+
+- Core routes work.
+- Navigation is functional.
+- Layouts are coherent.
+- Mobile experience is usable.
+- No fabricated business claims.
+
+### PHASE 3 — CURRICULUM AND INTERACTIVE EXPERIENCES
+
+Implement:
+
+- 18-module curriculum
+- Detailed module interactions
+- 14 project showcases
+- Enterprise capstone
+- DevOps infinity lifecycle
+- DevOps-to-AI career progression
+- Meaningful animations
+
+Acceptance criteria:
+
+- Source content is accurate.
+- Curriculum is readable and navigable.
+- Interactive elements genuinely function.
+- Mobile layouts are usable.
+- Motion does not block accessibility.
+
+### PHASE 4 — BUSINESS FUNCTIONALITY
+
+Implement:
+
+- Contact page
+- Functional enquiry form
+- Form validation
+- Spam protection
+- Appropriate data handling
+- Real delivery of enquiry messages
+- Clear confirmation and error states
+- Privacy and legal pages
+- Basic SEO and analytics where approved
+
+Acceptance criteria:
+
+- End-to-end enquiry testing passes.
+- No simulated submission is presented as successful.
+- Contact information is verified.
+- Personal information is handled responsibly.
+
+### PHASE 5 — QUALITY AND PRODUCTION LAUNCH
+
+Tasks:
+
+- Responsive testing
+- Browser testing
+- Accessibility review
+- Performance review
+- Security review
+- Content verification
+- SEO metadata
+- Domain configuration
+- HTTPS
+- Production deployment
+- Smoke testing
+
+Acceptance criteria:
+
+- No critical launch-blocking defects.
+- Production deployment works.
+- Main pages are accessible.
+- Forms work.
+- The website is ready for public visitors.
+
+### PHASE 6 — CONTENT AND MARKETING
+
+Potential activities:
+
+- Launch YouTube channel
+- Launch Instagram presence
+- Establish LinkedIn presence
+- Publish engineering tutorials
+- Create practical DevOps content
+- Share project demonstrations
+- Explain career pathways
+- Direct visitors to the website
+
+Content should provide genuine value rather than rely on exaggerated marketing.
+
+### PHASE 7 — BUSINESS EXPANSION
+
+After validating initial demand:
+
+- Improve the flagship offering
+- Expand AWS specialization
+- Develop applied AI programs
+- Develop Forward Deployed Engineering
+- Explore cloud and DevOps consulting
+- Explore AI automation services
+- Evaluate software products
+- Consider an LMS when genuinely needed
+
+---
+
+## Version 1 boundaries
+
+## PART 22 — WEBSITE VERSION 1 SCOPE
+
+The first public version should prioritize:
+
+1. Premium homepage
+2. Learning Programs page
+3. Detailed flagship Masterclass page
+4. Complete curriculum representation
+5. Hands-on projects and capstone
+6. Interactive DevOps lifecycle
+7. About page
+8. Contact and functional enquiry form
+9. Essential legal pages
+10. Responsive, accessible, reliable implementation
+
+Avoid prematurely building:
+
+- Full LMS
+- Student dashboard
+- Mobile app
+- Payment gateway without a defined business process
+- Complex CRM
+- AI chatbot
+- Unnecessary backend services
+- Unapproved consulting pages
+- Large numbers of placeholder programs
+
+Build a strong foundation without overengineering.
+
+---
+
+## PART 13 — TECHNICAL DIRECTION
+
+Previously discussed technologies:
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Motion / Framer Motion
+- GSAP
+- SVG
+- React Bits
+- Three.js
+- Spline
+- Node.js
+- Python for future AI-related services
+
+These are options, not instructions to install every library.
+
+Inspect the existing repository first.
+
+Preserve a coherent working architecture where possible.
+
+Prioritize:
+
+- Maintainability
+- Performance
+- Responsiveness
+- Accessibility
+- Security
+- SEO
+- Extensibility
+- Clear component boundaries
+- Reusable design tokens
+- Content-driven curriculum architecture
+
+Do not rewrite a functioning project merely to change frameworks.
+
+Use GitHub for source control.
+
+Do not push, deploy, delete existing code, or change remotes without explicit approval.
+
+---
+
+## Dependencies and order
+
+1. Preserve source context and existing work; agree which current homepage iteration is under review.
+2. Review actual desktop/mobile previews and approve the homepage direction before building many additional pages.
+3. Obtain original detailed curriculum/lab sources and approve scope before publishing technical promises.
+4. Confirm offer operations, contacts, policies and data handling before implementing external enquiry/payment integrations.
+5. Prepare dedicated content routes and production discovery configuration where approved, then test production behavior.
+6. Publish only against verified domain/hosting details and explicit authorization; move into selling when delivery is ready.
+
+Plan around the founder's 5–7 available hours/week. Use one small deliverable and a review checkpoint at a time. Dates and phase durations are not committed.
+
+## Launch checklist
+
+- [ ] Owner approves actual homepage and responsive behavior.
+- [ ] Core pages/routes and navigation match the agreed Version 1 scope.
+- [ ] 18 modules, 14 projects, prerequisites, labs and capstone reconcile with approved originals.
+- [ ] AI-assisted learning is distinguished from additional AI/agentic engineering study.
+- [ ] Available versus future offerings and Azure/AWS coverage are accurate.
+- [ ] Instructor, fees, duration, schedule, support and lab-cost responsibilities are confirmed.
+- [ ] Verified contact details and real enquiry delivery work end to end, including error handling.
+- [ ] Required business/legal/privacy/cancellation content is approved.
+- [ ] Keyboard, screen reader, reduced motion, mobile and browser checks pass for the release.
+- [ ] Performance/security review is appropriate to the final functionality.
+- [ ] Domain ownership, hosting, HTTPS, canonical URLs, sitemap/crawler settings and approved analytics are verified.
+- [ ] Explicit publication authorization and production smoke testing are recorded.
+
+## Recorded verification versus current inspection
+
+[Refinement report](../../design-review/REFINEMENT-2026-10-26.md) and [QA JSON](../../design-review/refined-qa.json) record prior successful TypeScript/build checks, six viewport widths and empty axe violation lists for checked states. The current documentation task only inspected these artifacts and source; it did not rerun tests or verify a public URL. Formal accessibility compliance and business readiness are not established by these artifacts.
+
+## Current blockers and open technical choices
+
+Final design approval; original detailed curriculum/labs; live enquiry delivery; confirmed commercial/legal/contact details; and verified public deployment remain open. Separate page routing/prerendering/SEO architecture, approved analytics, lead storage and hosting choices also require decisions. Keep unresolved questions in [Decisions and open items](DECISIONS_AND_OPEN_ITEMS.md).
+
+## Screen-by-screen review checkpoint — 26 October 2026
+
+Screen 01 (header and hero) has a bounded corrective pass and recorded verification, and is awaiting owner review. Do not treat this as approval of the whole homepage. Follow [Homepage screen review](HOMEPAGE_SCREEN_REVIEW.md) before moving to the audience section or additional pages.
