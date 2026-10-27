@@ -301,3 +301,41 @@ Implemented From curiosity to capability with the exact owner-supplied light/dar
 ## 26 October 2026 - morphic navigation, account/search and rotating headline
 
 Owner requested tagline beneath logo, centered premium navigation, a compact left search, account dropdown and five-second headline phrases. Installed and adapted Kokonut MorphicNavbar/ProfileDropdown for React/Vite; used the supplied ActionSearchBar with actual curriculum/project destinations. Theme toggle remains separate from Login. Visitor menu is truthful about missing portal/auth; existing VITE_PORTAL_URL wiring retained. Added pauseable AI skills / DevOps automation / cloud headline alternatives with reduced-motion fallback. Preserved logo, topographic background, Screen 2, content and downstream sections. Checks and usage: Important_Documents/docs/HEADER_COMPONENT_USAGE.md; previews: design-review/header-morphic/. New utilities: clsx, tailwind-merge. No new animation framework, fabricated subscribers, deployment or Git push. Visual approval remains pending.
+
+## 27 October 2026 - coherent premium flow across Screens 1 and 2
+
+Owner requested implementation after reviewing rbp-shader-template.vercel.app. Applied its principles of editorial hierarchy, visual continuity and scroll-led storytelling through original project artwork; no template/code/artwork copied. Preserved the ribbon-E, approved topographic hero, current copy and both owner-supplied workspace images. Added JourneyBridge.tsx: an original lightweight SVG ribbon and readable learning philosophy between the first two screens. Existing Motion useScroll/useTransform drives a line reveal and restrained text-opacity progression without React state updates on scroll. Reduced motion shows complete static content. No autoplay/scroll takeover, external graphics packages or shader library added.
+
+Added premium-flow.css to unify type scale, spacing, quieter background density, controlled actions and workspace surfaces. Desktop workspace introduction stays alongside the learning panel with native CSS sticky positioning, returning to natural flow on tablet/mobile. Subsequent audience/curriculum/project/lifecycle sections were not developed or reworked. CTA destinations remain #programs and #about, the latter describing the planned solutions direction.
+
+Verification: TypeScript and production build passed. Both themes checked at 320, 390, 768, 1440px: no overflow. Full-page desktop axe A/AA scans report zero violations in tested states. Stage selection works; original photos load by theme. Normal scroll-linked ribbon progress, journey anchor and keyboard selection verified. Reduced-motion screenshots inspected on desktop/mobile. Evidence: design-review/premium-flow-2026-10-27/. Owner visual review remains pending. No deployment, commit or push.
+
+## 27 October 2026 - Intelligent Aurora and public header
+
+Refined public navigation, functional Search, separate theme toggle and Enquire; guest Login hidden. Added lightweight right/lower CSS aurora over retained topography, with reduced-motion and visibility handling. No new dependencies. Header/hero only; Screen 2 and logo artwork preserved. Verification and four previews: design-review/intelligent-aurora-2026-10-27/REPORT.md. Visual approval pending; no deployment.
+
+
+## 27 October 2026 - Screen 3 learning starting points
+
+Owner authorized Screen 3 after reviewing Screen 2. Consolidated duplicated audience sections into one interactive starting-point selector with a three-step progression, accurate future AI pathway status and curriculum destination. Removed the intervening tool strip. Screens 1 and 2 preserved. No dependencies added; no deployment. Verification and four previews: design-review/screen-03/REPORT.md. Screen 3 awaits owner visual review before further section work.
+
+
+## 27 October 2026 - Pathway catalogue and landing pages
+
+Owner authorized Pathway 1 Masterclass and separate pages for the other existing pathways. Homepage catalogue features Pathway 1 plus compact title links for Pathways 2-5. Masterclass now contains preserved curriculum, projects/capstone and engineering interactions. Query-based routing supports refresh, back-to-catalogue and browser history without dependencies. Other pages distinguish documented scope from unconfirmed syllabi. Evidence: design-review/pathway-pages/REPORT.md and qa.json. Visual review pending; no deployment or Git push.
+
+
+## 27 October 2026 - Business Solutions after learning pathways
+
+Added the owner-requested business-solutions section and business-specific enquiry draft dialog. Services cover AI workflow automation, websites, business applications and reviewed organic-growth systems. Both themes and responsive/form/accessibility checks recorded in design-review/business-solutions/REPORT.md. Enquiry delivery remains local draft only; live delivery not connected. No deployment. Visual approval pending.
+
+
+## 27 October 2026 - FAQ, footer and shared contour finish
+
+Owner requested additional questions, cleaner FAQ/footer and sitewide topo continuity. Added 13 questions grouped into learning/business topics, refined footer spacing and applied a faint static SVG motif to remaining sections and pathway pages. Existing hero/Screen 2 backgrounds retained. Both themes, four widths and scoped accessibility checks passed. Evidence: design-review/faq-footer-finish/REPORT.md. No new dependencies or deployment. Visual review pending.
+
+
+## 27 October 2026 - Google login required for conversations
+
+Owner requested removal of curriculum downloads and login before sending conversations, selecting Firebase Google sign-in. Removed download/local-draft actions; implemented a shared auth gate and Firestore enquiry write flow with explicit consent and write-acknowledged confirmation. Firebase project configuration, Google provider, authorized domains, database/rules setup and live testing remain pending. No production activation or deployment. See FIREBASE_CONVERSATIONS.md for setup, access rules, dependencies and verification limits. Earlier local-draft verification entries describe prior implementations only.
+

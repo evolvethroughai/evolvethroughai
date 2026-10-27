@@ -1,3 +1,4 @@
+import { IntelligentAurora } from './IntelligentAurora';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { useReducedMotion } from 'motion/react';
@@ -8,10 +9,9 @@ interface HeroProps {
   children: ReactNode;
 }
 
-/** Topographic background stays decorative and never intercepts hero controls. */
-export function Hero({ children }: HeroProps) {
+export function HeroBackground() {
   const reduced = useReducedMotion();
-  return <section className="cinematic-hero refined-hero landing-centered hero-contained" aria-labelledby="hero-heading">
+  return <>
     <div className="hero-topo-layer" aria-hidden="true">
       <TopoBackground
         key={reduced ? 'static' : 'animated'}
@@ -25,6 +25,15 @@ export function Hero({ children }: HeroProps) {
       <div className="hero-ambient-glow hero-ambient-glow--cyan" />
       <div className="hero-ambient-glow hero-ambient-glow--violet" />
     </div>
+    <div className="hero-workspace-wash" aria-hidden="true" />
+    <div className="hero-headline-lighting" aria-hidden="true"><div className="hero-headline-glow hero-headline-glow--cyan" /><div className="hero-headline-glow hero-headline-glow--violet" /></div>
+    <IntelligentAurora />
+  </>;
+}
+
+/** Topographic background stays decorative and never intercepts hero controls. */
+export function Hero({ children }: HeroProps) {
+  return <section className="cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified" aria-labelledby="hero-heading">
     {children}
   </section>;
 }
@@ -32,9 +41,9 @@ export function Hero({ children }: HeroProps) {
 export function HeroIntro() {
   return <>
     <p className="journey-intro hero-dual-caption"><span>Master modern Cloud, DevOps, and Enterprise AI architecture.</span><span>Bridging deep technical capability with production-grade execution.</span></p>
-    <div className="hero-primary-actions hero-dual-actions">
-      <a className="button primary" href="#programs">Explore Learning Paths <ArrowUpRight size={18} aria-hidden="true" /></a>
-      <a className="button hero-solutions-action" href="#about">Deploy AI Solutions <ArrowRight size={18} aria-hidden="true" /></a>
+    <div className="hero-primary-actions hero-dual-actions hero-premium-actions">
+      <a className="button primary hero-learning-action hero-premium-action" href="#path">Explore Learning Paths <ArrowUpRight size={18} aria-hidden="true" /></a>
+      <a className="button hero-solutions-action hero-premium-action" href="#solutions">Explore Digital Solutions <ArrowRight size={18} aria-hidden="true" /></a>
     </div>
   </>;
 }

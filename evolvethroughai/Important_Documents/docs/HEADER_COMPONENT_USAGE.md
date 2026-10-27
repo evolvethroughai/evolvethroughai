@@ -39,3 +39,17 @@ TypeScript/build passed. Chrome 320/390/768/1440 checked: no overflow, 18 phrase
 Owner requested exactly Search / Login / Enquire in the right header group. Moved SiteSearch from the logo area to the right, removed ThemeToggle and the direct download icon button. Curriculum download remains available through the existing account menu and page actions. Header is relative at z-index 50 with a white 90% backdrop, 12px blur and subtle 1px bottom separator; dark theme retains its solid dark equivalent. Hero.tsx now scopes paint containment/clipping to prevent topographic canvas overlap. Added 16px separation between headline lines (12px at narrow mobile). Existing logo, centered navbar, headline rotation and Screen 2 preserved.
 
 TypeScript/build passed. Chrome light/dark at 320/390/768/1440 confirmed exactly three action items, no theme/download buttons, no horizontal overflow, header/hero boundary, clipped backdrop and headline margins. Search, visitor login menu and enquiry dialog verified. Screenshots and QA: design-review/header-cleanup-2026-10-27/. No deployment.
+
+## 27 October 2026 - seamless hero/header and pathway navigation
+
+Owner superseded the separated header direction. Header.tsx now uses absolute transparent positioning at the top of the hero, z-index 50, 2px backdrop blur, no bottom border/fill/shadow and a cyan 5% atmospheric overlay. Hero.tsx uses a seamless layout scope: background begins at the top of the page behind navigation, while responsive top padding keeps copy clear of the controls. Canvas remains clipped to the hero; it no longer needs to extend outside it.
+
+Navigation pills: Roadmap -> #progression; Curriculum -> #curriculum; System Architecture -> #experience (existing engineering-system lifecycle); Live Labs -> #projects (existing learning project showcase, not connected remote infrastructure). Pill surfaces are restrained translucent theme-aware glass. Right actions remain exactly Search / Login / Enquire. Mobile navigation supports horizontal overflow within its own panel rather than page overflow. TypeScript/build and browser theme/layout/destination checks recorded in design-review/seamless-header-2026-10-27/. No deployment or additional sections.
+
+## 27 October 2026 - fixed dual-business navigation and atmospheric CTAs
+
+Owner requested fixed navigation after the transparent-header pass. Header now stays fixed at top 0/z-index 50, with a 70% light/dark backdrop and 12px blur. Compact pill labels are Learning Paths (#programs), Live Labs (#projects), Business Solutions (#about) and System Architecture (#experience). Right actions remain exactly Search / Login / Enquire. Actual project/company destinations preserve current planned-offering boundaries.
+
+Hero.tsx adds an atmospheric scope and explicit learning CTA class. Primary button uses a blue/indigo/violet gradient with slow CSS color-position motion, 1.05 hover / .95 active scale and a restrained glow; secondary uses a translucent 2px outline with matching hover/press feedback. Existing cyan/violet radial background glows are anchored behind headline/actions in both themes. Reduced motion disables animation, transforms and transitions. No new dependencies, sections or deployment.
+
+TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning, exactly three actions. Header stays at viewport top after scrolling 1500px. Normal-motion CTA gradient animation verified. Preview: design-review/fixed-header-2026-10-27/desktop.png.

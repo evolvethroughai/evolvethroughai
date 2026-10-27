@@ -5,8 +5,8 @@ set -euo pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 cd -- "$(git rev-parse --show-toplevel)"
 
-if [[ "$(git branch --show-current)" != "main" ]]; then
-  echo "Please switch to the main branch before running this script." >&2
+if [[ "$(git branch --show-current)" != "development" ]]; then
+  echo "Please switch to the development branch before running this script." >&2
   exit 1
 fi
 
@@ -19,5 +19,5 @@ else
   git commit -m "${1:-committing code}"
 fi
 
-git push origin main
+git push origin development
 

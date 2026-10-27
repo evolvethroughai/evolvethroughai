@@ -1,24 +1,25 @@
+
 import { RotatingHeadline } from './RotatingHeadline';
 import { Hero, HeroIntro } from './Hero';
 import { LazyMotion, domAnimation } from 'motion/react';
-import { AudiencePathways } from './AudiencePathways';
+
 import { EngineeringJourney } from './EngineeringJourney';
 import { useState } from 'react';
 import { ArrowRight, ArrowUpRight, Check, Cloud, Code2, Layers, Sparkles } from 'lucide-react';
 
-export function CinematicHero({ onChooseAudience }: { onChooseAudience: (index: number) => void }) {
+export function CinematicHero() {
   return <LazyMotion features={domAnimation}><Hero>
     <div className="container refined-hero-grid">
       <div className="journey-copy">
         <div className="eyebrow hero-brand-label">FOR THE ENGINEER YOU’RE BECOMING</div>
         <RotatingHeadline />
         <HeroIntro />
-        <div className="hero-proof" aria-label="Program curriculum structure"><span><strong>18</strong> modules</span><i aria-hidden="true" /><span><strong>14</strong> projects</span><i aria-hidden="true" /><span><strong>01</strong> capstone</span></div>
       </div>
     </div>
   </Hero>
+
   <EngineeringJourney />
-    <AudiencePathways onChooseAudience={onChooseAudience} />
+
 
   </LazyMotion>;
 }

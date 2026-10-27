@@ -1,0 +1,25 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /conversations/{conversationId} {
+      allow create: if request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.firebase.sign_in_provider == 'google.com'
+        && request.resource.data.keys().hasAll(['uid','email','name','organization','kind','topic','message','experience','budget','consent','status','createdAt'])
+        && request.resource.data.keys().hasOnly(['uid','email','name','organization','kind','topic','message','experience','budget','consent','status','createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.name is string && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 100
+        && request.resource.data.organization is string && request.resource.data.organization.size() <= 150
+        && request.resource.data.kind in ['learning','business']
+        && request.resource.data.topic is string && request.resource.data.topic.size() > 0 && request.resource.data.topic.size() <= 200
+        && request.resource.data.message is string && request.resource.data.message.size() > 0 && request.resource.data.message.size() <= 3000
+        && request.resource.data.experience is string && request.resource.data.experience.size() <= 100
+        && (request.resource.data.budget == null || (request.resource.data.budget is int && request.resource.data.budget >= 10000 && request.resource.data.budget <= 100000))
+        && request.resource.data.consent == true
+        && request.resource.data.status == 'new'
+        && request.resource.data.createdAt == request.time;
+      allow read, update, delete: if false;
+    }
+  }
+}

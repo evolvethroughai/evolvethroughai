@@ -1,0 +1,146 @@
+[
+  {
+    "theme": "light",
+    "width": 320,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  },
+  {
+    "theme": "dark",
+    "width": 320,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "checks": [
+      {
+        "topic": "Learning & careers",
+        "count": 7,
+        "violations": []
+      },
+      {
+        "topic": "Business solutions",
+        "count": 6,
+        "violations": []
+      }
+    ],
+    "footViolations": [],
+    "overflow": false
+  }
+]

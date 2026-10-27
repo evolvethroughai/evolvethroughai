@@ -552,14 +552,17 @@ export default function TopoBackground({
         labels ? slots : null
       );
       ctx.clearRect(0, 0, width, height);
-      ctx.strokeStyle = color;
+      const contourGradient = ctx.createLinearGradient(0, 0, width, height);
+      contourGradient.addColorStop(0, "#06B6D4");
+      contourGradient.addColorStop(1, "#6366F1");
+      ctx.strokeStyle = contourGradient;
       ctx.fillStyle = color;
       ctx.lineCap = "round";
-      ctx.globalAlpha = 0.16;
-      ctx.lineWidth = 0.75;
+      ctx.globalAlpha = 0.65;
+      ctx.lineWidth = 0.8;
       ctx.stroke(minor);
-      ctx.globalAlpha = 0.34;
-      ctx.lineWidth = 1.1;
+      ctx.globalAlpha = 0.9;
+      ctx.lineWidth = 1.15;
       ctx.stroke(major);
       if (labels) {
         drawLabels();
@@ -720,7 +723,7 @@ export default function TopoBackground({
           ref={canvasRef}
           style={{
             maskImage:
-              "linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent)",
+              "linear-gradient(to bottom, #000 0%, #000 82%, transparent)",
           }}
         />
       </div>
