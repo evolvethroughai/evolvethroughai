@@ -13,3 +13,5 @@ import './intelligent-aurora.css';
 
 createRoot(document.getElementById('root')!).render(<AccountProvider><App /></AccountProvider>);
 
+
+import './curated-backgrounds.css';

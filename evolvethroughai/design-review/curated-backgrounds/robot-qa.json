@@ -1,0 +1,26 @@
+[
+  {
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "image": "linear-gradient(90deg, rgba(238, 243, 252, 0.96) 0%, rgba(238, 243, 252, 0.96) 32%, rgba(238, 243, 252, 0.867) 100%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-768.webp\")"
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "overflow": false,
+    "image": "linear-gradient(90deg, rgba(238, 243, 252, 0.96) 0%, rgba(238, 243, 252, 0.96) 32%, rgba(238, 243, 252, 0.77) 100%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-1600.webp\")"
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "image": "linear-gradient(90deg, rgba(11, 18, 32, 0.96) 0%, rgba(11, 18, 32, 0.96) 32%, rgba(11, 18, 32, 0.82) 100%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-768.webp\")"
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false,
+    "image": "linear-gradient(90deg, rgba(11, 18, 32, 0.96) 0%, rgba(11, 18, 32, 0.96) 32%, rgba(11, 18, 32, 0.7) 100%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-1600.webp\")"
+  }
+]

@@ -16,7 +16,7 @@ export function HeroBackground() {
       <TopoBackground
         key={reduced ? 'static' : 'animated'}
         className="hero-topo-background"
-        interval={0.1}
+        interval={0.17}
         speed={reduced ? 0 : 0.15}
         seed={26}
         labels={false}

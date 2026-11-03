@@ -339,3 +339,18 @@ Owner requested additional questions, cleaner FAQ/footer and sitewide topo conti
 
 Owner requested removal of curriculum downloads and login before sending conversations, selecting Firebase Google sign-in. Removed download/local-draft actions; implemented a shared auth gate and Firestore enquiry write flow with explicit consent and write-acknowledged confirmation. Firebase project configuration, Google provider, authorized domains, database/rules setup and live testing remain pending. No production activation or deployment. See FIREBASE_CONVERSATIONS.md for setup, access rules, dependencies and verification limits. Earlier local-draft verification entries describe prior implementations only.
 
+
+## 3 November 2026 - Reversible editorial hero experiment
+
+Owner authorized trying a Visor-inspired hero with exact rollback available. Rounded existing concept-art frame, compact headline/CTAs and three angled exploration cards; no template replacement, new dependency, fake proof or lower-section redesign. Both themes/four widths, scoped axe and build checks passed. Snapshots and screenshots: design-review/visor-hero-experiment/REPORT.md. Visual approval pending; revert only this experiment if requested. No deployment.
+
+
+## 3 November 2026 - Hero experiment reverted
+
+Owner requested reverting the Visor-inspired trial. Restored the exact pre-experiment Hero.tsx and VisualExperience.tsx snapshots and removed the experiment component/styles. Other website changes remain intact. The experiment is historical, not the current visual direction.
+
+
+## 3 November 2026 - Curated background photography
+Owner-supplied AI network, skyline and calm ocean images integrated as subdued hero, Business Solutions and footer backgrounds. Responsive optimized WebP variants; existing layouts, logo, topographic layers and Screen 2 retained. TypeScript/build passed; 390px/1440px light/dark browser checks reported no horizontal overflow. Evidence: design-review/curated-backgrounds/REPORT.md and screenshots. Visual approval pending; no deployment or push.
+
+3 November contour refinement: removed duplicate landing contours; replaced static wave textures with sparse evolving topographic canvases across section surfaces. Existing imagery/content preserved. TypeScript/build and desktop browser checks passed; evidence in design-review/curated-backgrounds/REPORT.md. Visual review pending.
