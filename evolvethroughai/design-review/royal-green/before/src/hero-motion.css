@@ -1,0 +1,62 @@
+/* Hero depth and motion: static backgrounds; bounded, compositor-friendly entrance. */
+.refined-hero{
+  --hero-ease:cubic-bezier(.22,1,.36,1);
+  --hero-blue-glow:rgb(37 99 235 / 5%);
+  --hero-violet-glow:rgb(139 92 246 / 3%);
+  --hero-grid-dot:rgb(11 18 32 / 9%);
+  position:relative;
+  isolation:isolate;
+  background:linear-gradient(150deg,#f8fafc 0%,#f5f8fc 58%,#f8fafc 100%);
+}
+.refined-hero::before,.refined-hero::after{
+  content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+}
+.refined-hero::before{
+  background:radial-gradient(ellipse 48% 38% at 73% 22%,var(--hero-blue-glow),transparent 85%),radial-gradient(ellipse 35% 30% at 96% 40%,var(--hero-violet-glow),transparent 90%);
+}
+.refined-hero::after{
+  background-image:radial-gradient(circle,var(--hero-grid-dot) .7px,transparent .9px);
+  background-size:clamp(20px,2.1vw,30px) clamp(20px,2.1vw,30px);
+  -webkit-mask-image:radial-gradient(ellipse 65% 50% at 82% 20%,#000,transparent 90%);
+  mask-image:radial-gradient(ellipse 65% 50% at 82% 20%,#000,transparent 90%);
+}
+[data-theme=dark] .refined-hero{
+  --hero-grid-dot:rgb(185 208 247 / 12%);
+  background:linear-gradient(150deg,#0b1220 0%,#0e1829 58%,#0b1220 100%);
+}
+.refined-hero .hero-engineering-panel{
+  transition:box-shadow .4s var(--hero-ease),border-color .4s var(--hero-ease);
+}
+.refined-hero .connected-step-icon{
+  transition:box-shadow .4s var(--hero-ease),border-color .4s var(--hero-ease),background-color .4s var(--hero-ease),color .4s var(--hero-ease);
+}
+.refined-hero .hero-primary-actions a,.refined-hero .hero-curriculum-link svg{
+  transition:transform .4s var(--hero-ease),box-shadow .4s var(--hero-ease),border-color .4s var(--hero-ease),color .4s var(--hero-ease);
+}
+.refined-hero .hero-engineering-panel:focus-within{box-shadow:0 22px 50px -15px rgb(37 99 235 / 10%);border-color:#7595c3}
+.refined-hero .connected-journey button:focus-visible .connected-step-icon{box-shadow:0 8px 20px rgb(37 99 235 / 10%);border-color:#5282cc}
+@media(hover:hover) and (pointer:fine){
+  .refined-hero .hero-engineering-panel:hover{box-shadow:0 25px 50px -12px rgb(37 99 235 / 10%);border-color:#7595c3}
+  .refined-hero .connected-journey button:hover .connected-step-icon{box-shadow:0 10px 24px rgb(37 99 235 / 10%);border-color:#5282cc}
+}
+@keyframes hero-editorial-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:no-preference){
+  .refined-hero .journey-copy>.hero-brand-label,
+  .refined-hero .journey-copy>h1,
+  .refined-hero .journey-copy>.journey-intro,
+  .refined-hero .journey-copy>.hero-primary-actions{
+    animation:hero-editorial-enter .4s var(--hero-ease) both;
+  }
+  .refined-hero .journey-copy>.hero-brand-label{animation-delay:.02s}
+  .refined-hero .journey-copy>h1{animation-delay:.08s}
+  .refined-hero .journey-copy>.journey-intro{animation-delay:.16s}
+  .refined-hero .journey-copy>.hero-primary-actions{animation-delay:.24s}
+  .refined-hero .hero-primary-actions:focus-within{animation:none}
+}
+@media(max-width:640px){
+  .refined-hero::before{background:radial-gradient(ellipse 90% 28% at 78% 38%,var(--hero-blue-glow),transparent 85%),radial-gradient(ellipse 75% 24% at 95% 48%,var(--hero-violet-glow),transparent 90%)}
+  .refined-hero::after{-webkit-mask-image:radial-gradient(ellipse 90% 30% at 80% 35%,#000,transparent 90%);mask-image:radial-gradient(ellipse 90% 30% at 80% 35%,#000,transparent 90%)}
+}
+@media(prefers-reduced-motion:reduce){
+  .refined-hero .hero-engineering-panel,.refined-hero .connected-step-icon,.refined-hero .hero-primary-actions a,.refined-hero .hero-curriculum-link svg{transition:none}
+}

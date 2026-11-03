@@ -1,0 +1,33 @@
+{
+  "qa": [
+    {
+      "theme": "light",
+      "width": 390,
+      "contours": 1,
+      "oldContours": 0,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "contours": 1,
+      "oldContours": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "contours": 1,
+      "oldContours": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "contours": 1,
+      "oldContours": 0,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

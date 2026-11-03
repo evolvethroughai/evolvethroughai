@@ -553,8 +553,9 @@ export default function TopoBackground({
       );
       ctx.clearRect(0, 0, width, height);
       const contourGradient = ctx.createLinearGradient(0, 0, width, height);
-      contourGradient.addColorStop(0, "#06B6D4");
-      contourGradient.addColorStop(1, "#6366F1");
+      contourGradient.addColorStop(0, "#147756");
+      contourGradient.addColorStop(0.55, "#28578A");
+      contourGradient.addColorStop(1, "#956B37");
       ctx.strokeStyle = contourGradient;
       ctx.fillStyle = color;
       ctx.lineCap = "round";

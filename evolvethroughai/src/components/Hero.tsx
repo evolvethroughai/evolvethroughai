@@ -1,8 +1,6 @@
 import { IntelligentAurora } from './IntelligentAurora';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import type { ReactNode } from 'react';
-import { useReducedMotion } from 'motion/react';
-import TopoBackground from './kokonutui/topo-background';
 import './Hero.css';
 
 interface HeroProps {
@@ -10,21 +8,7 @@ interface HeroProps {
 }
 
 export function HeroBackground() {
-  const reduced = useReducedMotion();
   return <>
-    <div className="hero-topo-layer" aria-hidden="true">
-      <TopoBackground
-        key={reduced ? 'static' : 'animated'}
-        className="hero-topo-background"
-        interval={0.17}
-        speed={reduced ? 0 : 0.15}
-        seed={26}
-        labels={false}
-        interactive={false}
-      >{null}</TopoBackground>
-      <div className="hero-ambient-glow hero-ambient-glow--cyan" />
-      <div className="hero-ambient-glow hero-ambient-glow--violet" />
-    </div>
     <div className="hero-workspace-wash" aria-hidden="true" />
     <div className="hero-headline-lighting" aria-hidden="true"><div className="hero-headline-glow hero-headline-glow--cyan" /><div className="hero-headline-glow hero-headline-glow--violet" /></div>
     <IntelligentAurora />

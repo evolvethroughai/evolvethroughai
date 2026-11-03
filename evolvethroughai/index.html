@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script>try{document.documentElement.dataset.theme=localStorage.getItem("evolve-theme")==="light"?"light":"dark"}catch{document.documentElement.dataset.theme="dark"}</script>
+    <script>(function(){var requested=new URLSearchParams(location.search).get('theme');var theme=requested==='dark'?'dark':'light';try{var initialized=localStorage.getItem('evolve-theme-default')==='light-v1';if(requested!=='light'&&requested!=='dark'&&initialized){theme=localStorage.getItem('evolve-theme')==='dark'?'dark':'light'}localStorage.setItem('evolve-theme',theme);localStorage.setItem('evolve-theme-default','light-v1')}catch{}document.documentElement.dataset.theme=theme})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0B1220" />
     <title>Evolve Through AI — Learn. Build. Evolve.</title>

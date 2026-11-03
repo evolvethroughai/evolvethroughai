@@ -15,3 +15,5 @@ createRoot(document.getElementById('root')!).render(<AccountProvider><App /></Ac
 
 
 import './curated-backgrounds.css';
+
+import './royal-green-theme.css';
