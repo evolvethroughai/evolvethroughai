@@ -12,11 +12,18 @@ function HeroVideoBackground() {
   const video = useRef<HTMLVideoElement>(null);
   const reduced = useReducedMotion();
   const [source, setSource] = useState('');
+  const [light, setLight] = useState(() => document.documentElement.dataset.theme === 'light');
+  useEffect(() => {
+    const observer = new MutationObserver(() => setLight(document.documentElement.dataset.theme === 'light'));
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => observer.disconnect();
+  }, []);
   useEffect(() => {
     const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
     if (reduced !== false || connection?.saveData) { setSource(''); return; }
-    setSource(matchMedia('(max-width: 700px)').matches ? '/videos/robot-hero-960.mp4' : '/videos/robot-hero-1600.mp4');
-  }, [reduced]);
+    const mobile = matchMedia('(max-width: 700px)').matches;
+    setSource(light ? (mobile ? '/videos/robot-white-960.mp4' : '/videos/robot-white-1280.mp4') : (mobile ? '/videos/robot-hero-960.mp4' : '/videos/robot-hero-1600.mp4'));
+  }, [reduced, light]);
   useEffect(() => {
     const element = video.current;
     if (!element || !source) return;
@@ -31,7 +38,7 @@ function HeroVideoBackground() {
     sync();
     return () => { observer.disconnect(); element.pause(); document.removeEventListener('visibilitychange', sync); };
   }, [source]);
-  return <div className="hero-robot-video"><video ref={video} src={source || undefined} poster="/videos/robot-hero-poster.webp" muted playsInline loop preload="metadata" aria-hidden="true" /><div className="hero-robot-video-wash" /></div>;
+  return <div className="hero-robot-video"><video ref={video} src={source || undefined} poster={light ? '/videos/robot-white-poster.webp' : '/videos/robot-hero-poster.webp'} muted playsInline loop preload="metadata" aria-hidden="true" /><div className="hero-robot-video-wash" /></div>;
 }
 export function HeroBackground() {
   return <>

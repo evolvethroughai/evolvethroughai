@@ -26,3 +26,7 @@
 .hero-robot-layout .journey-copy .hero-dual-caption{color:var(--muted)}
 
 @media(min-width:701px){.hero-robot-video video{transform:translateX(-4%) scale(.84);transform-origin:left center}}
+/* White foreground composite for light mode; preserve natural dark-mode footage. */
+[data-theme=light] .hero-robot-video{background:#fff}
+[data-theme=light] .hero-robot-video-wash{background:linear-gradient(90deg,#ffffff00 0%,#ffffff00 30%,#ffffff60 46%,#ffffffe0 70%,#fffffff2 100%)}
+@media(max-width:700px){[data-theme=light] .hero-robot-video-wash{background:linear-gradient(180deg,#ffffff55 0%,#ffffffbd 35%,#ffffffdf 85%,#fffffff2)}}
