@@ -1,15 +1,41 @@
 import { IntelligentAurora } from './IntelligentAurora';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
-import type { ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { useReducedMotion } from 'motion/react';
 import './Hero.css';
 
 interface HeroProps {
   children: ReactNode;
 }
 
+function HeroVideoBackground() {
+  const video = useRef<HTMLVideoElement>(null);
+  const reduced = useReducedMotion();
+  const [source, setSource] = useState('');
+  useEffect(() => {
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    if (reduced !== false || connection?.saveData) { setSource(''); return; }
+    setSource(matchMedia('(max-width: 700px)').matches ? '/videos/robot-hero-960.mp4' : '/videos/robot-hero-1600.mp4');
+  }, [reduced]);
+  useEffect(() => {
+    const element = video.current;
+    if (!element || !source) return;
+    let visible = true;
+    const sync = () => {
+      if (visible && !document.hidden) void element.play().catch(() => {});
+      else element.pause();
+    };
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync(); }, { threshold: .01 });
+    observer.observe(element);
+    document.addEventListener('visibilitychange', sync);
+    sync();
+    return () => { observer.disconnect(); element.pause(); document.removeEventListener('visibilitychange', sync); };
+  }, [source]);
+  return <div className="hero-robot-video"><video ref={video} src={source || undefined} poster="/videos/robot-hero-poster.webp" muted playsInline loop preload="metadata" aria-hidden="true" /><div className="hero-robot-video-wash" /></div>;
+}
 export function HeroBackground() {
   return <>
-    <div className="hero-workspace-wash" aria-hidden="true" />
+    <HeroVideoBackground />
     <div className="hero-headline-lighting" aria-hidden="true"><div className="hero-headline-glow hero-headline-glow--cyan" /><div className="hero-headline-glow hero-headline-glow--violet" /></div>
     <IntelligentAurora />
   </>;
@@ -17,7 +43,7 @@ export function HeroBackground() {
 
 /** Topographic background stays decorative and never intercepts hero controls. */
 export function Hero({ children }: HeroProps) {
-  return <section className="cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified" aria-labelledby="hero-heading">
+  return <section className="cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout" aria-labelledby="hero-heading">
     {children}
   </section>;
 }

@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "src": "http://localhost:3000/videos/robot-hero-1600.mp4",
+      "time": 0.7767,
+      "paused": false,
+      "muted": true,
+      "videoWidth": 1600,
+      "overflow": false,
+      "copyLeft": 600
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "src": "http://localhost:3000/videos/robot-hero-1600.mp4",
+      "time": 1.0714,
+      "paused": false,
+      "muted": true,
+      "videoWidth": 1600,
+      "overflow": false,
+      "copyLeft": 285.453125
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "src": "http://localhost:3000/videos/robot-hero-960.mp4",
+      "time": 1.1196,
+      "paused": false,
+      "muted": true,
+      "videoWidth": 960,
+      "overflow": false,
+      "copyLeft": 20
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "src": "http://localhost:3000/videos/robot-hero-1600.mp4",
+      "time": 1.0783,
+      "paused": false,
+      "muted": true,
+      "videoWidth": 1600,
+      "overflow": false,
+      "copyLeft": 600
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "src": "http://localhost:3000/videos/robot-hero-1600.mp4",
+      "time": 1.094,
+      "paused": false,
+      "muted": true,
+      "videoWidth": 1600,
+      "overflow": false,
+      "copyLeft": 285.453125
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "src": "http://localhost:3000/videos/robot-hero-960.mp4",
+      "time": 1.0863,
+      "paused": false,
+      "muted": true,
+      "videoWidth": 960,
+      "overflow": false,
+      "copyLeft": 20
+    },
+    {
+      "manualPause": true
+    },
+    {
+      "manualResume": true
+    },
+    {
+      "offscreenPaused": true
+    },
+    {
+      "reducedMotionSource": null,
+      "paused": true
+    }
+  ],
+  "errors": []
+}

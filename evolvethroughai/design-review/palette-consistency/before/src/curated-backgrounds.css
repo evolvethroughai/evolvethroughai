@@ -1,0 +1,130 @@
+/* Selected owner-supplied photography: quiet atmosphere, unchanged layouts. */
+.hero-topo-unified .hero-workspace-wash{opacity:1;background-image:linear-gradient(90deg,#f8fafcee 0%,#f8fafce0 40%,#f8fafc8f 76%,#f8fafc75),linear-gradient(0deg,#f8fafc,transparent 48%),url('/images/curated-backgrounds/ai-network-1600.webp');background-position:center,center,center 57%;background-size:cover;pointer-events:none}
+[data-theme=dark] .hero-topo-unified .hero-workspace-wash{opacity:1;background-image:linear-gradient(90deg,#0b1320eb 0%,#0b1320d1 40%,#0b132082 76%,#0b132063),linear-gradient(0deg,#0b1320,transparent 48%),url('/images/curated-backgrounds/ai-network-1600.webp')}
+.business-solutions::before{background:linear-gradient(90deg,#0b1627e8 0%,#0b1627db 42%,#0b1627a8 100%),url('/images/curated-backgrounds/connected-city-1600.webp') center 65%/cover no-repeat}
+[data-theme=light] .business-solutions::before{background:linear-gradient(90deg,#eef3fbe8 0%,#eef3fbdb 42%,#eef3fba8 100%),url('/images/curated-backgrounds/connected-city-1600.webp') center 65%/cover no-repeat}
+.site-footer{background:linear-gradient(180deg,#0b1320eb 0%,#0b1320eb 45%,#0b1320bd 100%),url('/images/curated-backgrounds/calm-ocean-1600.webp') center 65%/cover no-repeat,#0b1320}
+@media(max-width:700px){.hero-topo-unified .hero-workspace-wash{background-image:linear-gradient(90deg,#f8fafcf5,#f8fafcde),linear-gradient(0deg,#f8fafc,transparent 50%),url('/images/curated-backgrounds/ai-network-768.webp');background-position:center,center,60% center}[data-theme=dark] .hero-topo-unified .hero-workspace-wash{background-image:linear-gradient(90deg,#0b1320ef,#0b1320cd),linear-gradient(0deg,#0b1320,transparent 50%),url('/images/curated-backgrounds/ai-network-768.webp')}.business-solutions::before{background-image:linear-gradient(180deg,#0b1627ee,#0b1627e3),url('/images/curated-backgrounds/connected-city-768.webp')}[data-theme=light] .business-solutions::before{background-image:linear-gradient(180deg,#eef3fbf2,#eef3fbe0),url('/images/curated-backgrounds/connected-city-768.webp')}.site-footer{background-image:linear-gradient(180deg,#0b1320f7,#0b1320d6),url('/images/curated-backgrounds/calm-ocean-768.webp')}}
+
+/* Robot photography adds atmosphere to the previously plain pathway surfaces. */
+.pathway-catalogue,.pathway-page{position:relative;isolation:isolate;overflow:hidden}
+.pathway-catalogue::before,.pathway-page::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,var(--robot-wash) 0%,var(--robot-wash) 32%,var(--robot-soft) 100%),var(--robot-image);background-size:cover;background-position:center,center 65%;--robot-wash:#eff4fbe8;--robot-soft:#eff4fb9e}
+.pathway-catalogue{--robot-image:url('/images/curated-backgrounds/robot-standing-1600.webp')}
+.pathway-page{--robot-image:url('/images/curated-backgrounds/robot-exploring-1600.webp');border-radius:0 0 28px 28px}
+[data-theme=dark] .pathway-catalogue::before,[data-theme=dark] .pathway-page::before{--robot-wash:#0b1320eb;--robot-soft:#0b13208f}
+.pathway-catalogue .program-list{position:relative;background:rgba(248,250,252,.72);border-radius:20px;padding-inline:clamp(16px,3vw,36px)}
+[data-theme=dark] .pathway-catalogue .program-list{background:rgba(11,32,23,.78)}
+@media(max-width:700px){.pathway-catalogue{--robot-image:url('/images/curated-backgrounds/robot-standing-768.webp')}.pathway-page{--robot-image:url('/images/curated-backgrounds/robot-exploring-768.webp')}.pathway-catalogue::before,.pathway-page::before{background-position:center,65% center;--robot-soft:#eff4fbdd}[data-theme=dark] .pathway-catalogue::before,[data-theme=dark] .pathway-page::before{--robot-soft:#0b1320d1}}
+/* One contour renderer per surface; photography stays underneath. */
+.hero-topo-unified .hero-topo-layer{z-index:2;pointer-events:none}
+.learning-route-section,.investment-section.investment-refined,.faq-section.faq-refined,.pathway-outline{
+ --surface-photo:url('/images/curated-backgrounds/robot-exploring-1600.webp');
+ --surface-wash:#f8fafce0;--surface-edge:#f8fafcb3;
+ background-image:linear-gradient(90deg,var(--surface-wash) 20%,var(--surface-edge)),var(--surface-photo);
+ background-size:cover;background-position:center,right center;
+}
+.investment-section.investment-refined{--surface-photo:url('/images/curated-backgrounds/robot-standing-1600.webp')}
+.faq-section.faq-refined{--surface-photo:url('/images/curated-backgrounds/calm-ocean-1600.webp')}
+[data-theme=dark] .learning-route-section,[data-theme=dark] .investment-section.investment-refined,
+[data-theme=dark] .faq-section.faq-refined,[data-theme=dark] .pathway-outline{--surface-wash:#0b1320e3;--surface-edge:#0b1320b8}
+@media(max-width:700px){
+ .learning-route-section,.pathway-outline{--surface-photo:url('/images/curated-backgrounds/robot-exploring-768.webp')}
+ .investment-section.investment-refined{--surface-photo:url('/images/curated-backgrounds/robot-standing-768.webp')}
+ .faq-section.faq-refined{--surface-photo:url('/images/curated-backgrounds/calm-ocean-768.webp')}
+}
+
+/* Remove the old translated wave texture and duplicate hero fallback. */
+.shared-landing-layout main>section:not(.cinematic-hero):not(.workspace-journey)::after,
+.masterclass-page>section::after,.pathway-outline::after,.site-footer::after,.pathway-page::after,
+.hero-topo-unified .hero-topo-layer::after{content:none;animation:none;background-image:none}
+.hero-topo-unified.hero-intelligent .hero-topo-layer .hero-topo-background,
+[data-theme=dark] .hero-topo-unified.hero-intelligent .hero-topo-layer .hero-topo-background{opacity:.19}
+.section-topo-surface{position:relative;isolation:isolate;overflow:clip}
+.section-topo-canvas{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.18;overflow:hidden}
+[data-theme=dark] .section-topo-canvas{opacity:.24}
+.section-topo-canvas>div{position:absolute;inset:0;width:100%;height:100%;min-height:0;background:transparent}
+.section-topo-canvas canvas{display:block;width:100%;height:100%}
+.section-topo-canvas>div>div[aria-hidden=true]{position:absolute;inset:0;pointer-events:none}
+
+/* A single viewport-sized contour field: no per-section seeds or restarts. */
+.site-continuous-topo{position:fixed;inset:0;z-index:3;pointer-events:none;opacity:.14;overflow:hidden;contain:strict}
+[data-theme=dark] .site-continuous-topo{opacity:.18}
+.site-continuous-topo>div{position:absolute;inset:0;min-height:0;height:100%;width:100%;background:transparent!important;pointer-events:none}
+.site-continuous-topo>div>div[aria-hidden=true]{position:absolute;inset:0;pointer-events:none}
+.site-continuous-topo canvas{display:block;width:100%;height:100%;mask-image:none!important}
+/* Fade photographic atmosphere at section edges without fading the content. */
+.business-solutions::before,.workspace-journey__backdrop,.pathway-catalogue::before,.pathway-page::before{mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent)}
+/* Section boundaries belong to the shared page plane, not boxed panels. */
+.shared-landing-layout main>section,.shared-landing-layout .masterclass-page>section,
+.shared-landing-layout .pathway-page,.shared-landing-layout .pathway-outline,
+.shared-landing-layout .site-footer{border-top:0;border-bottom:0;box-shadow:none}
+[data-theme=light] .shared-landing-layout{background-color:#f8fafc}
+[data-theme=dark] .shared-landing-layout{background-color:#0b1320}
+.shared-landing-layout .workspace-journey,.shared-landing-layout .learning-route-section,
+.shared-landing-layout .business-solutions{background-color:transparent}
+/* Blend full-width photo washes into the same base colour at both ends. */
+.learning-route-section,.investment-section.investment-refined,.faq-section.faq-refined,.pathway-outline{background-image:none;position:relative;isolation:isolate}
+.learning-route-section::before,.investment-section.investment-refined::before,
+.faq-section.faq-refined::before,.pathway-outline::before{
+ content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background-image:linear-gradient(90deg,var(--surface-wash) 20%,var(--surface-edge)),var(--surface-photo);
+ background-position:center,right center;background-size:cover;
+ mask-image:linear-gradient(to bottom,transparent,#000 16%,#000 84%,transparent)
+}
+.shared-landing-layout .pathway-page{border-radius:0}
+/* Softer photography; the shared contour layer keeps its existing contrast. */
+.hero-topo-unified .hero-workspace-wash,
+[data-theme=dark] .hero-topo-unified .hero-workspace-wash{opacity:.92}
+.workspace-journey__backdrop{opacity:.9}
+.business-solutions::before,
+[data-theme=light] .business-solutions::before,
+.pathway-catalogue::before,.pathway-page::before,
+.learning-route-section::before,.investment-section.investment-refined::before,
+.faq-section.faq-refined::before,.pathway-outline::before{opacity:.92}
+/* Fade the whole hero atmosphere, including glows, before its container ends. */
+.shared-landing-layout .shared-landing-background{
+ mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 200px),transparent 100%);
+ -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 200px),transparent 100%);
+}
+/* Every photo layer reaches zero at the boundary, sharing the same page colour. */
+.business-solutions::before,.workspace-journey__backdrop,
+.pathway-catalogue::before,.pathway-page::before,
+.learning-route-section::before,.investment-section.investment-refined::before,
+.faq-section.faq-refined::before,.pathway-outline::before{
+ mask-image:linear-gradient(to bottom,transparent 0%,#000 140px,#000 calc(100% - 140px),transparent 100%);
+ -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 140px,#000 calc(100% - 140px),transparent 100%);
+}
+/* Remove the remaining decorative rules inside the large screen layouts. */
+.learning-route-detail,
+.pathway-outline section,
+.business-solutions-grid,.business-solutions-close,.business-workflow-footer,
+.site-footer .footer-directory,.site-footer .footer-signature,.site-footer .footer-end{
+ border-top:0;border-bottom:0;
+}
+.pathway-catalogue .pathway-title-link{border-bottom:0}
+.pathway-catalogue .pathway-title-link+.pathway-title-link{margin-top:4px}
+.shared-landing-layout .pathway-catalogue .program-list,
+[data-theme=dark] .shared-landing-layout .pathway-catalogue .program-list{background:transparent;box-shadow:none;border:0}
+/* Outermost surfaces must never reintroduce a different solid colour. */
+.shared-landing-layout main>section:not(.cinematic-hero),
+.shared-landing-layout .masterclass-page>section,
+.shared-landing-layout .pathway-page,.shared-landing-layout .pathway-outline{
+ background-color:transparent;border-block:0;box-shadow:none;
+}
+/* Remove inherited SECTION GRADIENTS, not just their solid background colours.
+   Photography lives on edge-faded ::before layers; the page owns the base. */
+.shared-landing-layout main>section,
+.shared-landing-layout .masterclass-page>section,
+.shared-landing-layout .pathway-page,.shared-landing-layout .pathway-outline{
+ background-image:none!important;background-color:transparent!important;
+ border-top-width:0!important;border-bottom-width:0!important;box-shadow:none!important;
+}
+/* Full-bleed decoration for sections that also use the content-width container. */
+.shared-landing-layout .investment-section.investment-refined,
+.shared-landing-layout .faq-section.faq-refined,
+.shared-landing-layout .pathway-outline,
+.shared-landing-layout .pathway-page{overflow:visible}
+.investment-section.investment-refined::before,.faq-section.faq-refined::before,
+.pathway-outline::before,.pathway-page::before{
+ left:calc((100% - 100vw) / 2);right:auto;width:100vw;
+}

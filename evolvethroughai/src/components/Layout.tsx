@@ -9,6 +9,13 @@ export function Layout({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
   const pathway = new URLSearchParams(location.search).get('pathway');
   useEffect(() => {
+    const syncWidth = () => root.current?.style.setProperty('--site-viewport-width', document.documentElement.clientWidth + 'px');
+    syncWidth();
+    const observer = new ResizeObserver(syncWidth);
+    observer.observe(document.documentElement);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
     const shell = root.current;
     const hero = shell?.querySelector<HTMLElement>('.cinematic-hero');
     if (!shell || !hero) return;
