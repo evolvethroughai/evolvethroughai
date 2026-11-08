@@ -77,3 +77,205 @@
 
 /* Extra framing space for the robot's extended hand throughout the loop. */
 @media(min-width:701px){.hero-robot-video video{transform:translateX(0) scale(.74);transform-origin:left center}}
+
+
+/* Compact caption-to-card rhythm; preserve the rotating headline and imagery. */
+.hero-robot-layout.landing-centered .journey-copy .hero-dual-caption{margin-top:12px;line-height:1.65}
+.hero-robot-layout .hero-path-cards{margin-top:12px}
+
+/* Screen 2 only: contain the complete video on the right; leave hero untouched. */
+.shared-landing-layout .learning-video-screen{background:#18191c!important}
+.shared-landing-layout .learning-video-screen::before{content:'';position:absolute;inset:-100px 0 0;background:linear-gradient(to bottom,transparent,#18191c 100px);z-index:-2;pointer-events:none}
+.shared-landing-layout .learning-video-screen .learning-screen-media{left:48%;right:0;top:24px;bottom:24px;z-index:0;mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 90%,transparent)}
+.shared-landing-layout .learning-video-screen .learning-screen-media video{width:100%;height:100%;object-fit:contain;object-position:center;transform:none}
+.shared-landing-layout .learning-video-screen .learning-screen-media::after{background:linear-gradient(90deg,#18191c 0%,transparent 18%,transparent 85%,#18191c 100%)}
+.shared-landing-layout .learning-video-screen .learning-screen-layout{position:relative;z-index:1;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
+.shared-landing-layout .learning-video-screen .dual-track-card{grid-column:1;background:transparent!important;backdrop-filter:none;border-color:transparent!important;box-shadow:none}
+@media(max-width:700px){
+ .shared-landing-layout .learning-video-screen .learning-screen-layout{grid-template-columns:1fr;padding-top:0;padding-bottom:300px}
+ .shared-landing-layout .learning-video-screen .learning-screen-media{left:0;top:auto;bottom:24px;height:280px}
+}
+
+/* Let the second robot occupy the right stage rather than a small video inset. */
+@media(min-width:701px){
+ .shared-landing-layout .learning-video-screen{min-height:760px}
+ .shared-landing-layout .learning-video-screen .learning-screen-media{left:44%;top:0;bottom:0;mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 94%,transparent)}
+ .shared-landing-layout .learning-video-screen .learning-screen-media video{position:absolute;left:-16%;width:133%;height:100%;object-fit:contain;object-position:center}
+ .shared-landing-layout .learning-video-screen .learning-screen-media::after{background:linear-gradient(90deg,#18191c 0%,#18191c80 9%,transparent 25%,transparent 90%,#18191c55 100%)}
+}
+
+
+
+/* Lift only the supporting caption between the headline and image cards. */
+.hero-robot-layout.landing-centered .journey-copy .hero-dual-caption{position:relative;top:-18px}
+@media(max-width:700px){.hero-robot-layout.landing-centered .journey-copy .hero-dual-caption{top:-10px}}
+
+/* Fade the hero media into Screen 2 charcoal instead of exposing light page paper. */
+.shared-landing-layout:has(.learning-video-screen) .shared-landing-background{mask-image:none;-webkit-mask-image:none;background-color:#18191c}
+.shared-landing-layout:has(.learning-video-screen) .shared-landing-background::after{content:'';position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(to bottom,transparent,#18191c);pointer-events:none;z-index:2}
+
+
+/* Feather the actual video picture, including its letterbox boundary. */
+@media(min-width:701px){
+ .shared-landing-layout .learning-video-screen .learning-screen-media video{top:50%;height:auto;aspect-ratio:16/9;transform:translateY(-50%);mask-image:linear-gradient(to bottom,transparent 0%,#000 22%,#000 80%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 22%,#000 80%,transparent 100%)}
+}
+
+
+/* Lift the eyebrow and headline together without moving caption/cards. */
+.hero-robot-layout .journey-copy>.hero-brand-label,.hero-robot-layout .journey-copy>.hero-headline-group{position:relative;top:-16px}
+@media(max-width:700px){.hero-robot-layout .journey-copy>.hero-brand-label,.hero-robot-layout .journey-copy>.hero-headline-group{top:-8px}}
+
+/* Hide the scaled homepage video's rectangular lower edge at its actual bounds. */
+.hero-robot-video video{mask-image:linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%)}
+
+
+
+
+
+
+/* Screen 3: owner-supplied team video on the left, business copy on the right. */
+.shared-landing-layout .solutions-intro-screen{background:#18191c!important;color:#f4f6fb}
+.business-screen-media{position:absolute;left:0;top:0;bottom:0;width:55%;z-index:0;pointer-events:none;overflow:hidden;mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent)}
+.business-screen-media video{width:100%;height:100%;object-fit:cover;object-position:center}
+.business-screen-media::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#18191c30,#18191c15 40%,#18191c 100%)}
+.shared-landing-layout .solutions-screen-layout{position:relative;z-index:1}
+.shared-landing-layout .solutions-intro-screen .dual-track-card{grid-column:2;background:transparent!important;border-color:transparent!important;box-shadow:none}
+.shared-landing-layout .solutions-intro-screen .dual-track-card :is(h3,.dual-track-benefits){color:#f4f6fb!important}
+.shared-landing-layout .solutions-intro-screen .dual-track-card :is(.dual-track-summary,.dual-track-kicker){color:#d0dce9!important}
+@media(max-width:700px){.business-screen-media{width:100%;height:250px;bottom:auto}.business-screen-media::after{background:linear-gradient(to bottom,#18191c15,#18191c 100%)}.shared-landing-layout .solutions-screen-layout{padding-top:210px}.shared-landing-layout .solutions-intro-screen .dual-track-card{grid-column:1}}
+
+/* Lift Screen 2's content and robot together for a more balanced desktop composition. */
+@media(min-width:701px){
+ .shared-landing-layout .learning-video-screen .learning-screen-layout{top:-24px}
+ .shared-landing-layout .learning-video-screen .learning-screen-media video{top:calc(50% - 24px)}
+}
+
+
+
+/* Restrain the bright puzzle footage within the existing charcoal composition. */
+.business-screen-media video{filter:brightness(.72) saturate(.8)}
+
+
+/* Small breathing space before the third screen. */
+.shared-landing-layout .solutions-intro-screen{padding-top:88px!important}
+@media(min-width:701px){.solutions-intro-screen .business-screen-media{top:24px}}
+@media(max-width:700px){.shared-landing-layout .solutions-intro-screen{padding-top:56px!important}.solutions-intro-screen .business-screen-media{top:16px}}
+
+/* Keep the left atmosphere broad while reducing the puzzle/hands footprint. */
+.business-screen-media{background:#292724}
+.business-screen-media video{transform:scale(.88);transform-origin:center;mask-image:radial-gradient(ellipse 72% 72% at center,#000 55%,transparent 100%)}
+
+
+/* Fill Screen 3's left stage and feather all picture edges into charcoal. */
+.solutions-intro-screen .business-screen-media{width:60%;background:transparent;mask-image:radial-gradient(ellipse 76% 78% at 42% 50%,#000 40%,transparent 85%)}
+.solutions-intro-screen .business-screen-media video{transform:none;object-fit:cover;mask-image:none}
+.solutions-intro-screen .business-screen-media::after{background:linear-gradient(90deg,#18191c15 0%,#18191c10 35%,#18191ca6 75%,#18191c 100%)}
+@media(max-width:700px){.solutions-intro-screen .business-screen-media{width:100%;mask-image:radial-gradient(ellipse 80% 80% at center,#000 35%,transparent 85%)}}
+
+
+/* Reach zero opacity at every rectangular video boundary. */
+.shared-landing-layout .solutions-intro-screen .business-screen-media{mask-image:linear-gradient(to bottom,transparent 0%,#000 22%,#000 76%,transparent 100%),linear-gradient(to right,transparent 0%,#000 12%,#000 66%,transparent 100%);mask-composite:intersect;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 22%,#000 76%,transparent 100%),linear-gradient(to right,transparent 0%,#000 12%,#000 66%,transparent 100%);-webkit-mask-composite:source-in}
+
+
+/* Shorter video stage, retaining the same width and edge blending. */
+@media(min-width:701px){.solutions-intro-screen .business-screen-media{top:60px;bottom:36px}}
+@media(max-width:700px){.solutions-intro-screen .business-screen-media{height:220px}}
+
+
+/* Broad gradual graphite falloff alongside the business text. */
+.shared-landing-layout .solutions-intro-screen .business-screen-media::after{background:linear-gradient(90deg,#18191c10 0%,#18191c25 25%,#18191c80 48%,#18191cd9 68%,#18191c 88%);}
+.shared-landing-layout .solutions-intro-screen .business-screen-media{mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 76%,transparent),linear-gradient(to right,transparent 0%,#000 12%,#000 38%,transparent 94%);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 76%,transparent),linear-gradient(to right,transparent 0%,#000 12%,#000 38%,transparent 94%);}
+
+
+/* Reduce Screen 3 footage within its existing blended stage. */
+.shared-landing-layout .solutions-intro-screen .business-screen-media video{transform:scale(.88);transform-origin:center;mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent),linear-gradient(to right,transparent,#000 12%,#000 80%,transparent);mask-composite:intersect;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent),linear-gradient(to right,transparent,#000 12%,#000 80%,transparent);-webkit-mask-composite:source-in}
+
+
+/* Use content-led spacing rather than unequal full-screen blank areas. */
+@media(min-width:701px){
+ .shared-landing-layout .hero-robot-layout{min-height:0}
+ .shared-landing-layout .hero-robot-layout .refined-hero-grid{min-height:0;padding-bottom:36px}
+ .shared-landing-layout .learning-video-screen,.shared-landing-layout .solutions-intro-screen{min-height:0;padding-block:64px!important}
+ .shared-landing-layout .learning-video-screen .learning-screen-layout{top:0}
+}
+@media(max-width:700px){.shared-landing-layout .learning-video-screen,.shared-landing-layout .solutions-intro-screen{padding-block:40px!important}}
+
+
+@media(min-width:701px){.shared-landing-layout .hero-robot-layout{height:auto!important}.shared-landing-layout .hero-robot-layout .refined-hero-grid{height:auto!important}}
+
+
+@media(min-width:701px){.shared-landing-layout .hero-robot-layout .refined-hero-grid{min-height:0!important;padding-bottom:36px!important}}
+
+
+/* Screen 4: subdued owner-supplied cyan/violet atmosphere beneath readable content. */
+.shared-landing-layout .pathway-video-screen{background:#18191c!important;color:#f0f2f7;--ink:#f0f2f7;--route-muted:#cbd2df;--route-panel:#252a36;--route-line:#52607850}
+.shared-landing-layout .pathway-video-screen::before{content:none}
+.learning-route-video-media{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
+.learning-route-video-media video{width:100%;height:100%;object-fit:cover;filter:saturate(.65);opacity:.23}
+.learning-route-video-media::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#18191cd9,#18191c99 55%,#18191cb8)}
+.pathway-video-screen .learning-route-layout{position:relative;z-index:1}
+.shared-landing-layout .pathway-video-screen :is(h2,h3,h4,.learning-route-future strong){color:#f0f2f7}
+.shared-landing-layout .pathway-video-screen :is(.learning-route-eyebrow,.learning-route-intro>p,.learning-route-detail>p,.learning-route-future p,.learning-route-steps p){color:#cbd2df}
+.shared-landing-layout .pathway-video-screen .learning-route-choices button{color:#edf1f8;background:#20242ed9;border-color:#76819b55}
+.shared-landing-layout .pathway-video-screen .learning-route-choices button[aria-pressed=true]{background:#30364de8;border-color:#94aaf0}
+
+
+/* Reveal the moving colour while retaining a dark reading surface. */
+.learning-route-video-media video{opacity:.65;filter:saturate(.8) brightness(.85)}
+.learning-route-video-media::after{background:linear-gradient(90deg,#18191cb8,#18191c80 55%,#18191c99)}
+
+
+.shared-landing-layout .pathway-video-screen>.container{position:relative;z-index:1}
+.shared-landing-layout .pathway-video-screen :is(.section-heading h2,.pathway-title-link){color:#f0f2f7}
+.shared-landing-layout .pathway-video-screen .section-heading p{color:#cbd2df}
+
+/* Screen 4 owner-selected footage; Screen 5 retains its own abstract video. */
+.shared-landing-layout .screen-four-video{background:#18191c!important;color:#f0f2f7;--ink:#f0f2f7;--route-muted:#cbd2df;--route-panel:#252a36;--route-line:#52607850}
+.shared-landing-layout .screen-four-video::before{content:none}
+.screen-four-video .learning-route-layout{position:relative;z-index:1}
+.screen-four-video .learning-route-video-media video{opacity:.6;filter:brightness(.75) saturate(.8)}
+.shared-landing-layout .screen-four-video :is(h2,h3,h4,.learning-route-future strong){color:#f0f2f7}
+.shared-landing-layout .screen-four-video :is(.learning-route-eyebrow,.learning-route-intro>p,.learning-route-detail>p,.learning-route-future p,.learning-route-steps p){color:#cbd2df}
+.shared-landing-layout .screen-four-video .learning-route-choices button{color:#edf1f8;background:#20242ed9;border-color:#76819b55}
+.shared-landing-layout .screen-four-video .learning-route-choices button[aria-pressed=true]{background:#30364de8;border-color:#94aaf0}
+
+
+/* Screen 5: show the selected flowing colour clearly, with local text contrast. */
+.pathway-video-screen .learning-route-video-media video{opacity:.92;filter:saturate(1.05) brightness(.95)}
+.pathway-video-screen .learning-route-video-media::after{background:linear-gradient(90deg,#18191c66,#18191c33 55%,#18191c55)}
+.shared-landing-layout .pathway-video-screen .program-list{background:#181c2999;backdrop-filter:blur(8px);border-radius:20px}
+.shared-landing-layout .pathway-video-screen .section-heading{text-shadow:0 2px 14px #080b1899}
+
+
+/* Screen 5: original video colours over a soft pearl surface. */
+.shared-landing-layout .pathway-video-screen{background:#f4f1f5!important;color:#202232;--ink:#202232;--muted:#53566b}
+.pathway-video-screen .learning-route-video-media video{opacity:1;filter:none}
+.pathway-video-screen .learning-route-video-media::after{background:linear-gradient(90deg,#f4f1f533,transparent 55%,#f4f1f51a)}
+.shared-landing-layout .pathway-video-screen .section-heading{text-shadow:none}
+.shared-landing-layout .pathway-video-screen :is(.section-heading h2,.pathway-title-link){color:#202232}
+.shared-landing-layout .pathway-video-screen .section-heading p{color:#3e4257}
+.shared-landing-layout .pathway-video-screen .program-list{background:#ffffffe0;backdrop-filter:blur(8px)}
+
+
+.pathway-video-screen .learning-route-video-media{overflow:visible}
+.colour-flow-play{position:absolute;right:24px;top:36px;z-index:4;pointer-events:auto;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:10px 18px;border:1px solid #7066bb70;border-radius:999px;background:#fffffff0;color:#30245a;font-size:13px;font-weight:600;box-shadow:0 5px 20px #41307320;cursor:pointer}
+.colour-flow-play:focus-visible{outline:3px solid #6554c8;outline-offset:4px}
+.pathway-video-screen .learning-route-video-media{mask-image:none}
+@media(max-width:700px){.colour-flow-play{top:12px;right:16px}}
+
+
+.pathway-video-screen video[data-manual=true]:not([data-started=true]){visibility:hidden}
+.pathway-video-screen video[data-started=true]{animation-duration:2.8s;animation-timing-function:cubic-bezier(.22,.61,.36,1);animation-fill-mode:both;object-position:center top}
+@keyframes pour-reveal-a{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+@keyframes pour-reveal-b{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+@media(prefers-reduced-motion:reduce){.pathway-video-screen video[data-started=true]{animation:none}}
+
+
+/* Small tactile pull cord centred above the pathway list. */
+.colour-flow-play.colour-pull-cord{left:50%;right:auto;top:0;transform:translateX(-50%);width:120px;height:135px;padding:0;border:0;background:transparent;box-shadow:none;display:flex;flex-direction:column;justify-content:flex-start;gap:0;touch-action:none;user-select:none;cursor:grab;color:#493c72}
+.colour-pull-cord:active{cursor:grabbing}
+.colour-cord-line{display:block;width:2px;height:calc(48px + var(--cord-pull,0px));background:linear-gradient(#a79cbf,#6a55a4);box-shadow:1px 0 #fff9;flex-shrink:0}
+.colour-cord-handle{display:block;width:16px;height:23px;border-radius:9px;background:linear-gradient(135deg,#faf7ff,#9c88d3);border:1px solid #756196;box-shadow:0 3px 8px #51407330;flex-shrink:0}
+.colour-cord-caption{font-size:10px;letter-spacing:.04em;margin-top:8px;white-space:nowrap;background:#faf7f1d9;padding:3px 6px;border-radius:6px}
+@media(max-width:700px){.colour-flow-play.colour-pull-cord{left:auto;right:16px;transform:none;width:90px}.colour-cord-line{height:calc(30px + var(--cord-pull,0px))}}
+

@@ -3,6 +3,7 @@ import { ArrowUpRight, ArrowRight, BookOpen, GitBranch, Sparkles } from 'lucide-
 import { LazyMotion, domAnimation, useReducedMotion } from 'motion/react';
 import * as m from 'motion/react-m';
 import './LearningPathSection.css';
+import { SectionVideo } from './EngineeringJourney';
 
 interface LearningStep { title: string; copy: string; }
 interface LearningRoute { label: string; title: string; summary: string; steps: readonly LearningStep[]; }
@@ -28,7 +29,7 @@ export function LearningPathSection({ selected, onSelect }: LearningPathSectionP
     if (next === null) return;
     event.preventDefault(); onSelect(next); controls.current[next]?.focus();
   };
-  return <LazyMotion features={domAnimation}><section className="learning-route-section" id="path" aria-labelledby="learning-route-heading">
+  return <LazyMotion features={domAnimation}><section className="learning-route-section screen-four-video" id="path" aria-labelledby="learning-route-heading"><div className="learning-route-video-media" aria-hidden="true"><SectionVideo src="/videos/screen4-learning.mp4" poster="/videos/screen4-learning.webp" /></div>
     <m.div className="container learning-route-layout" initial={false} whileInView={reduced ? undefined : { opacity: [.7,1], y: [14,0] }} viewport={{ once:true, amount:.12 }} transition={{ duration:.45, ease:[.22,1,.36,1] }}>
       <div className="learning-route-intro"><span className="learning-route-eyebrow">YOUR NEXT STEP IN ENGINEERING</span><h2 id="learning-route-heading">Begin where you are.<br /><span>Build what comes next.</span></h2><p>One connected learning approach. A starting point shaped around your experience.</p>
         <div className="learning-route-choices" role="group" aria-label="Choose your learning starting point">{routes.map((item,index)=><button key={item.label} ref={el=>{controls.current[index]=el;}} type="button" aria-pressed={selected===index} aria-controls="learning-route-detail" onClick={()=>onSelect(index)} onKeyDown={event=>keyboard(event,index)}><span>{index===0?<GitBranch size={18} aria-hidden="true" />:<BookOpen size={18} aria-hidden="true" />}<span className="learning-route-choice-copy"><span>{item.label}</span><small>{index === 0 ? 'Working professionals' : 'Freshers & early-career'}</small></span></span><ArrowRight size={16} aria-hidden="true" /></button>)}</div>
