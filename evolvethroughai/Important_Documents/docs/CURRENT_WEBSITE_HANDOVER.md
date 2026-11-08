@@ -49,3 +49,22 @@ Production builds passed after recent header/card/framing changes, including the
 Existing evidence: design-review/graphite-hero/, design-review/robot-video-hero/, and earlier route/theme reports. design-review/graphite-spotlight/ records a REMOVED trial. Source of truth for final appearance is the running current code.
 
 Next: review the current hero/cards on desktop and mobile in both themes; verify complete robot loop framing, card destinations, keyboard interaction, contrasts and seamless transitions. Final homepage approval, detailed original curriculum, actual offer availability/fees/schedules, privacy/legal/retention/spam handling, enquiry follow-up ownership, domain/hosting and explicit publication approval remain open.
+
+## 8 November - final targeted hero copy pass
+
+Secondary headline is now fixed to Engineer the future., retaining the motion entrance; previous five-second phrase rotation is disabled for this homepage instance. Supporting paragraph: Master Cloud, DevOps, and AI through practical learning, real-world projects, and production-ready engineering. Learning tag: LEARN • BUILD • GROW. Solutions tag: BUILD • AUTOMATE • SCALE; subtitle: Websites, apps & AI-powered solutions. Images and destinations preserved. Supporting contrast, bottom image gradients and spacing refined; mobile cards equal width. Firebase Login retained because Google authentication exists. TypeScript/build passed; both themes at 390/768/1440px checked with no overflow or page errors, images loaded, hover transforms and reduced-motion fallback verified. Screenshots and QA: design-review/hero-copy-refinement/. No unrelated sections changed or deployment performed.
+
+
+8 November correction: Owner requested reverting the final targeted hero copy pass above. Restored prior rotating headline, two-line supporting caption, LEARN & BUILD / AUTOMATE & EVOLVE tags, Connected systems. Smarter workflows. subtitle, and previous contrast/spacing/card width styles. Supplied card images and earlier design remain. The final targeted copy entry and its screenshots describe a reverted trial.
+
+8 November follow-up: Owner retained the previous rotating headline and supporting caption, requested tighter gaps and only card-copy changes. Caption top margin and card top margin now 12px; caption line-height 1.65. Learning tag LEARN • BUILD • GROW; solutions tag BUILD • AUTOMATE • SCALE, subtitle Websites, apps & AI-powered solutions. Images, titles, robot and navigation preserved.
+
+8 November screen split: EngineeringJourney now renders consecutive learning-only Screen 2 (#engineering-journey) and Business Solutions introduction Screen 3 (#business-introduction). Academy content is left aligned over the supplied 8084756 video, optimized as silent local footage with poster, visibility-aware playback and reduced-motion/Save-Data fallback. Business introduction retains its text/CTA and supplied digital-solutions image. Homepage hero unchanged; downstream learning/pathways and detailed solutions preserved. TypeScript/build passed; 390/768/1440 browser checks confirmed loaded playing video and no overflow.
+
+8 November Screen 2 framing refinement: learning screen now uses full graphite charcoal to continue the homepage, smaller contained video on the left and Academy copy on the right. Mobile places contained video above copy. Removed the pale hero-to-learning transition with a shared charcoal base and soft media edges. Production build passed; browser verification attempted separately.
+
+8 November Screen 2 visual scale: enlarged the contained video within the right-hand stage (145% media width, centered offset) and increased desktop section height to 760px, retaining left learning copy and homepage hero. Mobile layout unchanged. Production build passed.
+
+8 November continuity repair: Layout now measures the combined hero/learning opening height for one charcoal backing beneath both video masks. This prevents light-mode paper showing as a pale seam while preserving the original hero video layer and continuous topo. Removed the separate overlapping learning pseudo backing. TypeScript passed; build verification recorded in session.
+
+8 November rollback: Owner reported the shared charcoal backing collapsed the layout. Removed that backing and combined-height measurement, restoring the preceding Layout and screen styling. Continuity repair remains unresolved; do not treat the previous entry as accepted.

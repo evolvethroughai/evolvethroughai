@@ -1,0 +1,181 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "headline": "Engineer the future.",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/images/learning-path-card.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/images/digital-solutions-card.webp"
+        }
+      ],
+      "cards": [
+        {
+          "width": 350,
+          "height": 140,
+          "href": "#path"
+        },
+        {
+          "width": 350,
+          "height": 140,
+          "href": "#solutions"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "overflow": false,
+      "headline": "Engineer the future.",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/images/learning-path-card.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/images/digital-solutions-card.webp"
+        }
+      ],
+      "cards": [
+        {
+          "width": 217.265625,
+          "height": 168,
+          "href": "#path"
+        },
+        {
+          "width": 217.28125,
+          "height": 168,
+          "href": "#solutions"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "headline": "Engineer the future.",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/images/learning-path-card.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/images/digital-solutions-card.webp"
+        }
+      ],
+      "cards": [
+        {
+          "width": 352,
+          "height": 168,
+          "href": "#path"
+        },
+        {
+          "width": 352,
+          "height": 168,
+          "href": "#solutions"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "headline": "Engineer the future.",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/images/learning-path-card.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/images/digital-solutions-card.webp"
+        }
+      ],
+      "cards": [
+        {
+          "width": 350,
+          "height": 139.99996948242188,
+          "href": "#path"
+        },
+        {
+          "width": 350,
+          "height": 140,
+          "href": "#solutions"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "overflow": false,
+      "headline": "Engineer the future.",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/images/learning-path-card.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/images/digital-solutions-card.webp"
+        }
+      ],
+      "cards": [
+        {
+          "width": 217.265625,
+          "height": 167.99996948242188,
+          "href": "#path"
+        },
+        {
+          "width": 217.28125,
+          "height": 167.99996948242188,
+          "href": "#solutions"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "headline": "Engineer the future.",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/images/learning-path-card.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/images/digital-solutions-card.webp"
+        }
+      ],
+      "cards": [
+        {
+          "width": 352,
+          "height": 168,
+          "href": "#path"
+        },
+        {
+          "width": 352,
+          "height": 168,
+          "href": "#solutions"
+        }
+      ]
+    }
+  ],
+  "hover": {
+    "card": "matrix(1.02, 0, 0, 1.02, 0, -4)",
+    "image": "matrix(1.13712, 0, 0, 1.13712, 0, 0)"
+  },
+  "reduced": {
+    "card": "none",
+    "image": "none"
+  },
+  "errors": []
+}
