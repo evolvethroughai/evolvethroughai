@@ -1,0 +1,117 @@
+[
+  {
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "heroZ": "2",
+    "sections": [
+      {
+        "s": "#path",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.933) 20%, rgba(248, 250, 252, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-exploring-768.webp\")"
+      },
+      {
+        "s": "#programs",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(135deg, rgb(238, 245, 253), rgb(240, 239, 251))"
+      },
+      {
+        "s": "#enquire",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.933) 20%, rgba(248, 250, 252, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-768.webp\")"
+      },
+      {
+        "s": "#questions",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.933) 20%, rgba(248, 250, 252, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/calm-ocean-768.webp\")"
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "overflow": false,
+    "heroZ": "2",
+    "sections": [
+      {
+        "s": "#path",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.933) 20%, rgba(248, 250, 252, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-exploring-1600.webp\")"
+      },
+      {
+        "s": "#programs",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(135deg, rgb(238, 245, 253), rgb(240, 239, 251))"
+      },
+      {
+        "s": "#enquire",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.933) 20%, rgba(248, 250, 252, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-1600.webp\")"
+      },
+      {
+        "s": "#questions",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.933) 20%, rgba(248, 250, 252, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/calm-ocean-1600.webp\")"
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "heroZ": "2",
+    "sections": [
+      {
+        "s": "#path",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.94) 20%, rgba(11, 18, 32, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-exploring-768.webp\")"
+      },
+      {
+        "s": "#programs",
+        "motion": "site-contour-flow",
+        "background": "radial-gradient(at 95% 30%, rgba(99, 52, 174, 0.098), rgba(0, 0, 0, 0) 60%), none"
+      },
+      {
+        "s": "#enquire",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.94) 20%, rgba(11, 18, 32, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-768.webp\")"
+      },
+      {
+        "s": "#questions",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.94) 20%, rgba(11, 18, 32, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/calm-ocean-768.webp\")"
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false,
+    "heroZ": "2",
+    "sections": [
+      {
+        "s": "#path",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.94) 20%, rgba(11, 18, 32, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-exploring-1600.webp\")"
+      },
+      {
+        "s": "#programs",
+        "motion": "site-contour-flow",
+        "background": "radial-gradient(at 95% 30%, rgba(99, 52, 174, 0.098), rgba(0, 0, 0, 0) 60%), none"
+      },
+      {
+        "s": "#enquire",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.94) 20%, rgba(11, 18, 32, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/robot-standing-1600.webp\")"
+      },
+      {
+        "s": "#questions",
+        "motion": "site-contour-flow",
+        "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.94) 20%, rgba(11, 18, 32, 0.85)), url(\"http://127.0.0.1:3000/images/curated-backgrounds/calm-ocean-1600.webp\")"
+      }
+    ]
+  },
+  {
+    "reducedMotion": "none"
+  }
+]

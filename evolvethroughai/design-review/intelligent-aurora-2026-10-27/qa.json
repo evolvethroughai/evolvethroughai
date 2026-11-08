@@ -1,0 +1,304 @@
+[
+  {
+    "theme": "light",
+    "width": 320,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ],
+    "axe": [],
+    "search": 1,
+    "mobileNav": true,
+    "escapeClosed": true
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1024,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ],
+    "axe": [],
+    "search": 1
+  },
+  {
+    "theme": "dark",
+    "width": 320,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ],
+    "axe": [],
+    "search": 1,
+    "mobileNav": true,
+    "escapeClosed": true
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1024,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false,
+    "header": "fixed",
+    "animation": "none",
+    "links": [
+      {
+        "label": "Programs",
+        "target": true
+      },
+      {
+        "label": "Experience",
+        "target": true
+      },
+      {
+        "label": "Projects",
+        "target": true
+      },
+      {
+        "label": "Solutions",
+        "target": true
+      },
+      {
+        "label": "About",
+        "target": true
+      }
+    ],
+    "axe": [],
+    "search": 1
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "route": "home",
+      "theme": "light",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "home",
+      "theme": "dark",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "masterclass",
+      "theme": "light",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "masterclass",
+      "theme": "dark",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "azure-cloud-devops",
+      "theme": "light",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "azure-cloud-devops",
+      "theme": "dark",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "aws-cloud-devops",
+      "theme": "light",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "aws-cloud-devops",
+      "theme": "dark",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "forward-deployed-ai",
+      "theme": "light",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "forward-deployed-ai",
+      "theme": "dark",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "career-development",
+      "theme": "light",
+      "overflow": false,
+      "outerRules": []
+    },
+    {
+      "route": "career-development",
+      "theme": "dark",
+      "overflow": false,
+      "outerRules": []
+    }
+  ],
+  "errors": []
+}

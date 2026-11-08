@@ -1,0 +1,19 @@
+/* Royal emerald / jade with restrained champagne detail. Official logo unchanged. */
+:root{--blue:#147d58;--teal:#087f72;--accent-ink:#126647;--brand-gradient:linear-gradient(115deg,#095c43 0%,#147d58 52%,#248b79 100%)}
+[data-theme=light]{--blue:#147d58;--teal:#087f72;--accent-ink:#126647}
+[data-theme=dark]{--blue:#48c99c;--teal:#69d9bd;--accent-ink:#78dfb3}
+.hero-topo-unified .hero-premium-actions>a.hero-learning-action,.header .header-enquire,.button.primary{background:var(--brand-gradient);border-color:#62b99766;box-shadow:0 8px 25px #095c4326;color:#fff}
+h1 em,h2 em{background:linear-gradient(105deg,#106648,#16836e 55%,#99804d)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important}
+[data-theme=dark] h1 em,[data-theme=dark] h2 em{background:linear-gradient(105deg,#7ce0b2,#69cfbe 58%,#d8c28e)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important}
+:focus-visible{outline-color:#21835f}
+
+:root{--brand-blue:#147d58;--brand-cyan:#16836e;--brand-violet:#99804d;--brand-spectrum:linear-gradient(110deg,#106648,#16836e 58%,#99804d);--brand-action-spectrum:var(--brand-gradient)}
+[data-theme=dark]{--brand-spectrum:linear-gradient(110deg,#7ce0b2,#69cfbe 58%,#d8c28e)}
+/* Footer continues the same page plane in each theme, without a dark block edge. */
+.shared-landing-layout .site-footer{background:none;position:relative;isolation:isolate;color:var(--ink)}
+.shared-landing-layout .site-footer::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#f8fafce6,#f8fafcbb),url('/images/curated-backgrounds/calm-ocean-1600.webp') center/cover no-repeat;mask-image:linear-gradient(to bottom,transparent,#000 180px)}
+[data-theme=dark] .shared-landing-layout .site-footer::before{background-image:linear-gradient(180deg,#0b2017e6,#0b2017bb),url('/images/curated-backgrounds/calm-ocean-1600.webp')}
+[data-theme=light] .shared-landing-layout .site-footer :is(h2,.footer-column>a,.footer-column>button,.footer-end,.footer-end>a){color:#192f29}
+[data-theme=light] .shared-landing-layout .site-footer :is(.eyebrow,.mini-label,.footer-invitation p,.footer-brand p,.footer-brand-tagline,.footer-invitation-actions>span){color:#48665b}
+.shared-landing-layout .site-footer .footer-primary{background:var(--brand-gradient);color:#fff;border-color:#62b99766}
+@media(max-width:700px){.shared-landing-layout .site-footer::before{background-image:linear-gradient(180deg,#f8fafce6,#f8fafcbb),url('/images/curated-backgrounds/calm-ocean-768.webp')}[data-theme=dark] .shared-landing-layout .site-footer::before{background-image:linear-gradient(180deg,#0b2017e6,#0b2017bb),url('/images/curated-backgrounds/calm-ocean-768.webp')}}

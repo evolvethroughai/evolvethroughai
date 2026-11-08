@@ -1,6 +1,9 @@
 # Design Requirements
 
-> Updated: 26 October 2026 Â· Timezone: Asia/Kolkata (IST).
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
+> Updated: 8 November 2026 Â· Timezone: Asia/Kolkata (IST).
 > Business intention: the ownerâ€™s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -363,17 +366,17 @@ The owner approved implementation of the reconstructed blueâ€“cyanâ€“violet ribb
 
 Brand approval covers these assets and their integration; it does not imply final approval of unrelated homepage sections or public deployment. Enquiries still download local drafts. Social preview metadata uses a local image path until the production origin is confirmed.
 
-## 26 October 2026 — logo-led website theme
+## 26 October 2026 ï¿½ logo-led website theme
 
-Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blue–violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
+Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blueï¿½violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
 
 Evidence: design-review/brand-theme/qa.json and dark/light screenshots. Both themes checked at 320, 390, 640, 768, 1024 and 1440px: no horizontal overflow or header overlap. Desktop axe WCAG A/AA scans in each theme: zero reported violations after contrast repairs. Theme survives reload. Mobile navigation, enquiry open/Escape close, curriculum download and normal/reduced circuit motion passed. TypeScript and production build passed. Automated checks do not replace owner visual approval. Earlier Sora typography and light-only implementation notes are historical; the current heading font is Inter.
 
-## 26 October 2026 — homepage premium refinement for review
+## 26 October 2026 ï¿½ homepage premium refinement for review
 
 Owner requested refinement of the existing homepage, preserving the logo/headline/architecture. Replaced floating hero labels and cropped overlay with a connected, keyboard-operable engineering journey and illustrative workflows. Refined header, CTA hierarchy and audience transition; removed decorative hero ribbon and image drift. Both themes checked at six widths; all stage panels stable, CTA/stage/audience targets verified, zero desktop axe violations, no console errors. Homepage approval is pending. No other pages or deployment. Evidence: design-review/homepage-premium/REPORT.md and qa.json. This supersedes prior hero composition notes, not the approved brand identity.
 
-## 26 October 2026 — immersive direction, milestone 01
+## 26 October 2026 ï¿½ immersive direction, milestone 01
 
 Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
 
@@ -443,3 +446,25 @@ TypeScript/build passed. Chrome 320/390/768/1440 checked: no overflow, 18 phrase
 Owner requested exactly Search / Login / Enquire in the right header group. Moved SiteSearch from the logo area to the right, removed ThemeToggle and the direct download icon button. Curriculum download remains available through the existing account menu and page actions. Header is relative at z-index 50 with a white 90% backdrop, 12px blur and subtle 1px bottom separator; dark theme retains its solid dark equivalent. Hero.tsx now scopes paint containment/clipping to prevent topographic canvas overlap. Added 16px separation between headline lines (12px at narrow mobile). Existing logo, centered navbar, headline rotation and Screen 2 preserved.
 
 TypeScript/build passed. Chrome light/dark at 320/390/768/1440 confirmed exactly three action items, no theme/download buttons, no horizontal overflow, header/hero boundary, clipped backdrop and headline margins. Search, visitor login menu and enquiry dialog verified. Screenshots and QA: design-review/header-cleanup-2026-10-27/. No deployment.
+
+## 27 October 2026 - coherent premium flow across Screens 1 and 2
+
+Owner requested implementation after reviewing rbp-shader-template.vercel.app. Applied its principles of editorial hierarchy, visual continuity and scroll-led storytelling through original project artwork; no template/code/artwork copied. Preserved the ribbon-E, approved topographic hero, current copy and both owner-supplied workspace images. Added JourneyBridge.tsx: an original lightweight SVG ribbon and readable learning philosophy between the first two screens. Existing Motion useScroll/useTransform drives a line reveal and restrained text-opacity progression without React state updates on scroll. Reduced motion shows complete static content. No autoplay/scroll takeover, external graphics packages or shader library added.
+
+Added premium-flow.css to unify type scale, spacing, quieter background density, controlled actions and workspace surfaces. Desktop workspace introduction stays alongside the learning panel with native CSS sticky positioning, returning to natural flow on tablet/mobile. Subsequent audience/curriculum/project/lifecycle sections were not developed or reworked. CTA destinations remain #programs and #about, the latter describing the planned solutions direction.
+
+Verification: TypeScript and production build passed. Both themes checked at 320, 390, 768, 1440px: no overflow. Full-page desktop axe A/AA scans report zero violations in tested states. Stage selection works; original photos load by theme. Normal scroll-linked ribbon progress, journey anchor and keyboard selection verified. Reduced-motion screenshots inspected on desktop/mobile. Evidence: design-review/premium-flow-2026-10-27/. Owner visual review remains pending. No deployment, commit or push.
+
+## 27 October 2026 - seamless hero/header and pathway navigation
+
+Owner superseded the separated header direction. Header.tsx now uses absolute transparent positioning at the top of the hero, z-index 50, 2px backdrop blur, no bottom border/fill/shadow and a cyan 5% atmospheric overlay. Hero.tsx uses a seamless layout scope: background begins at the top of the page behind navigation, while responsive top padding keeps copy clear of the controls. Canvas remains clipped to the hero; it no longer needs to extend outside it.
+
+Navigation pills: Roadmap -> #progression; Curriculum -> #curriculum; System Architecture -> #experience (existing engineering-system lifecycle); Live Labs -> #projects (existing learning project showcase, not connected remote infrastructure). Pill surfaces are restrained translucent theme-aware glass. Right actions remain exactly Search / Login / Enquire. Mobile navigation supports horizontal overflow within its own panel rather than page overflow. TypeScript/build and browser theme/layout/destination checks recorded in design-review/seamless-header-2026-10-27/. No deployment or additional sections.
+
+## 27 October 2026 - fixed dual-business navigation and atmospheric CTAs
+
+Owner requested fixed navigation after the transparent-header pass. Header now stays fixed at top 0/z-index 50, with a 70% light/dark backdrop and 12px blur. Compact pill labels are Learning Paths (#programs), Live Labs (#projects), Business Solutions (#about) and System Architecture (#experience). Right actions remain exactly Search / Login / Enquire. Actual project/company destinations preserve current planned-offering boundaries.
+
+Hero.tsx adds an atmospheric scope and explicit learning CTA class. Primary button uses a blue/indigo/violet gradient with slow CSS color-position motion, 1.05 hover / .95 active scale and a restrained glow; secondary uses a translucent 2px outline with matching hover/press feedback. Existing cyan/violet radial background glows are anchored behind headline/actions in both themes. Reduced motion disables animation, transforms and transitions. No new dependencies, sections or deployment.
+
+TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning, exactly three actions. Header stays at viewport top after scrolling 1500px. Normal-motion CTA gradient animation verified. Preview: design-review/fixed-header-2026-10-27/desktop.png.

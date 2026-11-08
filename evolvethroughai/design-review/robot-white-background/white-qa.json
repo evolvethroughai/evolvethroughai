@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "playing": true,
+      "time": 0.5206,
+      "src": "http://localhost:3000/videos/robot-white-1280.mp4",
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -57.6, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 2560,
+      "playing": true,
+      "time": 0.7403,
+      "src": "http://localhost:3000/videos/robot-white-1280.mp4",
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -102.4, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "playing": true,
+      "time": 0.7953,
+      "src": "http://localhost:3000/videos/robot-white-960.mp4",
+      "loop": true,
+      "transform": "none",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "playing": true,
+      "time": 0.8406,
+      "src": "http://localhost:3000/videos/robot-hero-1600.mp4",
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -57.6, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 2560,
+      "playing": true,
+      "time": 0.8596,
+      "src": "http://localhost:3000/videos/robot-hero-1600.mp4",
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -102.4, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "playing": true,
+      "time": 0.6837,
+      "src": "http://localhost:3000/videos/robot-hero-960.mp4",
+      "loop": true,
+      "transform": "none",
+      "pauseControls": 0,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

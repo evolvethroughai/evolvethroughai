@@ -1,6 +1,9 @@
 # Website Roadmap
 
-> Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
+> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -282,7 +285,7 @@ Final design approval; original detailed curriculum/labs; live enquiry delivery;
 
 Screen 01 (header and hero) has a bounded corrective pass and recorded verification, and is awaiting owner review. Do not treat this as approval of the whole homepage. Follow [Homepage screen review](HOMEPAGE_SCREEN_REVIEW.md) before moving to the audience section or additional pages.
 
-## 26 October 2026 � immersive direction, milestone 01
+## 26 October 2026 � immersive direction, milestone 01
 
 Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
 
@@ -301,3 +304,104 @@ Implemented From curiosity to capability with the exact owner-supplied light/dar
 ## 26 October 2026 - morphic navigation, account/search and rotating headline
 
 Owner requested tagline beneath logo, centered premium navigation, a compact left search, account dropdown and five-second headline phrases. Installed and adapted Kokonut MorphicNavbar/ProfileDropdown for React/Vite; used the supplied ActionSearchBar with actual curriculum/project destinations. Theme toggle remains separate from Login. Visitor menu is truthful about missing portal/auth; existing VITE_PORTAL_URL wiring retained. Added pauseable AI skills / DevOps automation / cloud headline alternatives with reduced-motion fallback. Preserved logo, topographic background, Screen 2, content and downstream sections. Checks and usage: Important_Documents/docs/HEADER_COMPONENT_USAGE.md; previews: design-review/header-morphic/. New utilities: clsx, tailwind-merge. No new animation framework, fabricated subscribers, deployment or Git push. Visual approval remains pending.
+
+## 27 October 2026 - coherent premium flow across Screens 1 and 2
+
+Owner requested implementation after reviewing rbp-shader-template.vercel.app. Applied its principles of editorial hierarchy, visual continuity and scroll-led storytelling through original project artwork; no template/code/artwork copied. Preserved the ribbon-E, approved topographic hero, current copy and both owner-supplied workspace images. Added JourneyBridge.tsx: an original lightweight SVG ribbon and readable learning philosophy between the first two screens. Existing Motion useScroll/useTransform drives a line reveal and restrained text-opacity progression without React state updates on scroll. Reduced motion shows complete static content. No autoplay/scroll takeover, external graphics packages or shader library added.
+
+Added premium-flow.css to unify type scale, spacing, quieter background density, controlled actions and workspace surfaces. Desktop workspace introduction stays alongside the learning panel with native CSS sticky positioning, returning to natural flow on tablet/mobile. Subsequent audience/curriculum/project/lifecycle sections were not developed or reworked. CTA destinations remain #programs and #about, the latter describing the planned solutions direction.
+
+Verification: TypeScript and production build passed. Both themes checked at 320, 390, 768, 1440px: no overflow. Full-page desktop axe A/AA scans report zero violations in tested states. Stage selection works; original photos load by theme. Normal scroll-linked ribbon progress, journey anchor and keyboard selection verified. Reduced-motion screenshots inspected on desktop/mobile. Evidence: design-review/premium-flow-2026-10-27/. Owner visual review remains pending. No deployment, commit or push.
+
+## 27 October 2026 - Intelligent Aurora and public header
+
+Refined public navigation, functional Search, separate theme toggle and Enquire; guest Login hidden. Added lightweight right/lower CSS aurora over retained topography, with reduced-motion and visibility handling. No new dependencies. Header/hero only; Screen 2 and logo artwork preserved. Verification and four previews: design-review/intelligent-aurora-2026-10-27/REPORT.md. Visual approval pending; no deployment.
+
+
+## 27 October 2026 - Screen 3 learning starting points
+
+Owner authorized Screen 3 after reviewing Screen 2. Consolidated duplicated audience sections into one interactive starting-point selector with a three-step progression, accurate future AI pathway status and curriculum destination. Removed the intervening tool strip. Screens 1 and 2 preserved. No dependencies added; no deployment. Verification and four previews: design-review/screen-03/REPORT.md. Screen 3 awaits owner visual review before further section work.
+
+
+## 27 October 2026 - Pathway catalogue and landing pages
+
+Owner authorized Pathway 1 Masterclass and separate pages for the other existing pathways. Homepage catalogue features Pathway 1 plus compact title links for Pathways 2-5. Masterclass now contains preserved curriculum, projects/capstone and engineering interactions. Query-based routing supports refresh, back-to-catalogue and browser history without dependencies. Other pages distinguish documented scope from unconfirmed syllabi. Evidence: design-review/pathway-pages/REPORT.md and qa.json. Visual review pending; no deployment or Git push.
+
+
+## 27 October 2026 - Business Solutions after learning pathways
+
+Added the owner-requested business-solutions section and business-specific enquiry draft dialog. Services cover AI workflow automation, websites, business applications and reviewed organic-growth systems. Both themes and responsive/form/accessibility checks recorded in design-review/business-solutions/REPORT.md. Enquiry delivery remains local draft only; live delivery not connected. No deployment. Visual approval pending.
+
+
+## 27 October 2026 - FAQ, footer and shared contour finish
+
+Owner requested additional questions, cleaner FAQ/footer and sitewide topo continuity. Added 13 questions grouped into learning/business topics, refined footer spacing and applied a faint static SVG motif to remaining sections and pathway pages. Existing hero/Screen 2 backgrounds retained. Both themes, four widths and scoped accessibility checks passed. Evidence: design-review/faq-footer-finish/REPORT.md. No new dependencies or deployment. Visual review pending.
+
+
+## 27 October 2026 - Google login required for conversations
+
+Owner requested removal of curriculum downloads and login before sending conversations, selecting Firebase Google sign-in. Removed download/local-draft actions; implemented a shared auth gate and Firestore enquiry write flow with explicit consent and write-acknowledged confirmation. Firebase project configuration, Google provider, authorized domains, database/rules setup and live testing remain pending. No production activation or deployment. See FIREBASE_CONVERSATIONS.md for setup, access rules, dependencies and verification limits. Earlier local-draft verification entries describe prior implementations only.
+
+
+## 3 November 2026 - Reversible editorial hero experiment
+
+Owner authorized trying a Visor-inspired hero with exact rollback available. Rounded existing concept-art frame, compact headline/CTAs and three angled exploration cards; no template replacement, new dependency, fake proof or lower-section redesign. Both themes/four widths, scoped axe and build checks passed. Snapshots and screenshots: design-review/visor-hero-experiment/REPORT.md. Visual approval pending; revert only this experiment if requested. No deployment.
+
+
+## 3 November 2026 - Hero experiment reverted
+
+Owner requested reverting the Visor-inspired trial. Restored the exact pre-experiment Hero.tsx and VisualExperience.tsx snapshots and removed the experiment component/styles. Other website changes remain intact. The experiment is historical, not the current visual direction.
+
+
+## 3 November 2026 - Curated background photography
+Owner-supplied AI network, skyline and calm ocean images integrated as subdued hero, Business Solutions and footer backgrounds. Responsive optimized WebP variants; existing layouts, logo, topographic layers and Screen 2 retained. TypeScript/build passed; 390px/1440px light/dark browser checks reported no horizontal overflow. Evidence: design-review/curated-backgrounds/REPORT.md and screenshots. Visual approval pending; no deployment or push.
+
+3 November contour refinement: removed duplicate landing contours; replaced static wave textures with sparse evolving topographic canvases across section surfaces. Existing imagery/content preserved. TypeScript/build and desktop browser checks passed; evidence in design-review/curated-backgrounds/REPORT.md. Visual review pending.
+
+3 November seamless light-mode pass: outer screen divider borders removed, shared base colours and softly faded photographic edges applied. Continuous contour plane preserved. Build/TypeScript and computed border checks passed; updated light-mode previews under design-review/curated-backgrounds/. No deployment.
+
+3 November royal green direction: owner requested replacing blue UI accents with a premium green gradient. Implemented emerald/jade with muted champagne heading detail, preserved official logo and current layouts/background continuity. No dependencies added. TypeScript/build and four theme/width checks passed; design-review/royal-green/ contains previews, evidence and original style backups. Visual approval pending.
+
+3 November richer palette refinement: owner requested stronger green with blue, burgundy and gold. Applied forest emerald/midnight primary actions, burgundy secondary accents and antique gold details, with coordinated headings, lighting and contours. Logo and seamless layout preserved. TypeScript/build and four theme/width browser checks passed. Evidence: design-review/royal-jewel/. Owner visual approval pending.
+
+4 November powder blue / yellow refinement: owner requested a new palette after jewel colours. Applied powder-blue atmosphere and warm yellow details with deeper blue actions for contrast. Existing content, logo and seamless photo/contour layers retained. TypeScript/build passed; previews and viewport verification saved in design-review/powder-blue-yellow/. No dependencies or deployment.
+
+4 November violet/blush palette trial: owner selected electric purple, deep violet and soft blush pink. Applied coordinated UI accents, violet primary actions, blush secondary actions, atmospheric glows and contour strokes. Official logo, content and seamless layout retained. No dependencies. TypeScript/build and light/dark mobile/desktop checks passed. Reversible styles and previews: design-review/violet-blush/. Visual approval pending.
+
+4 November palette selection: owner supplied five combinations and authorized selecting/implementing the best fit. Chose option 5, midnight/electric blue/cantaloupe, for clear technical identity and warm contrasting business CTA. Applied both themes, retained logo/content/seamless background plane. TypeScript/build and mobile/desktop light/dark layout checks passed. Previews and backups: design-review/midnight-blue-orange/. Visual approval pending; no deployment.
+
+4 November alternative palette trial: owner rejected midnight/electric-blue/cantaloupe. Applied option 4 from owner's list: powder blue, pure white and racing orange, with orange primary actions, blue headings and pale photographic atmosphere. Existing layout/logo preserved. Build and four theme/width browser checks passed; previews: design-review/powder-racing-orange/. Visual approval pending.
+
+4 November legacy colour correction: remaining fixed dark-blue Masterclass showcase/stack/lifecycle surfaces now use white/pale sky in light mode, with pink active controls and dark readable labels. Dark mode retained. Production build passed; computed large-surface audit found no remaining dark-blue fills on homepage or Masterclass in light mode.
+
+4 November Screen 2/3 palette correction: Academy CTA now hot pink; dual-track cards white/blush in light mode and neutral/plum in dark mode; learning selector and step fills pink rather than inherited blue. Build passed; computed browser styles verified in both themes.
+
+4 November route-wide box-colour audit: corrected inherited fixed blue/green background fills across 18 component stylesheets and variable-driven dark header controls. Preserved sky-blue text/photo identity; neutral surfaces and pink controls now consistent across home, Masterclass and four additional pathways, including account dialog. TypeScript/build passed; all-route theme audit and screenshots: design-review/palette-consistency/.
+
+4 November ivory/charcoal direction: owner authorized warm ivory, charcoal and burnt orange. Applied across 20 stylesheets and unified interaction tokens; official logo/photo assets and continuous layout retained. TypeScript/build passed. Homepage and all five pathways checked in both themes, plus account panel; no legacy blue box fills or browser errors. Evidence: design-review/ivory-charcoal/. Visual approval pending.
+
+6 November logo palette restoration: owner approved blue/cyan/violet accents over ivory/charcoal. Applied across component styles and all interactive states, including account/curriculum surfaces, retaining seamless layout and original logo/photo assets. No dependencies. TypeScript/build, all-six-route light/dark audit and mobile/desktop checks passed. Evidence and reversible backups: design-review/logo-palette-restored/. Visual approval pending.
+
+6 November electric blue/purple refinement: owner requested a stronger mix across every page. Intensified global action and headline gradients, purple secondary controls, selected states, card accents, atmospheric glows and shared contour strokes. Ivory/charcoal base, official logo and seamless layout preserved. No dependencies. TypeScript/build, all-six-route both-theme audit and mobile/desktop checks passed. Evidence: design-review/electric-blue-purple/. Visual approval pending.
+
+6 November restraint correction: owner rejected the excessive electric-purple appearance. Reduced violet to a small gradient accent, restored deep-blue-led actions, neutral cards/selected surfaces, softer shadows and much quieter atmospheric glows/contour colours. Build and mobile/desktop both-theme layout checks passed. Evidence: design-review/restrained-blue-violet/. Visual approval pending.
+
+6 November logo spectrum with orange tint: owner requested more depth than the muted treatment. Restored clear blue/cyan/violet heading/action/glow colours; added restrained electric-orange icon, warm secondary-surface, hover-ring and ambient accents. Logo and seamless layout preserved. Build and mobile/desktop both-theme checks passed; previews: design-review/logo-orange-tint/. Visual approval pending.
+
+6 November champagne warmth: owner authorized a subtle yellowish background highlight. Added a faint champagne radial glow beside the existing orange warmth in both themes; logo spectrum remains dominant, controls and typography unchanged. Production build passed. Visual approval pending.
+
+7 November robot video hero: owner supplied MP4 and authorized left robot/background playback with right-shifted landing copy. Added optimized silent 1600/960px videos, poster, theme-aware readability, pause/resume, offscreen/tab pause and reduced-motion/Save-Data fallback. Logo, content and downstream sections preserved. No app dependencies. TypeScript/build and six theme/width playback checks passed, including manual controls and reduced motion; design-review/robot-video-hero/ contains evidence. Visual approval pending; no deployment.
+
+7 November robot framing correction: reduced desktop robot/video scale 16%, shifted left 5% and removed pause button per owner request. Continuous silent loop retained with reduced-motion fallback. Fixed background width sizing for classic scrollbars. TypeScript/build and six theme/width playback/overflow checks passed; design-review/robot-video-hero/smaller-qa.json. Visual approval pending.
+
+8 November revert: owner rejected white-background robot processing. Restored Hero.tsx from the exact pre-experiment snapshot and removed only the white-composite CSS block. Original charcoal footage/poster restored in both themes; approved .84 size, -4% horizontal framing, continuous loop and no pause control retained. TypeScript/build passed. White derivatives remain unused review artifacts; no deployment.
+
+8 November full graphite first-screen trial: owner requested charcoal across the landing page. Applied full-width graphite wash, light hero typography and readable top navigation/logo variant, retaining logo-colour accents and robot framing. Later sections retain existing theme; transition fade preserved. TypeScript/build and six theme/width playback/overflow checks passed. Evidence: design-review/graphite-hero/. Visual approval pending.
+
+## 8 November 2026 - Champagne spotlight on graphite hero
+
+Owner approved trying a restrained warm spotlight after positive feedback on the graphite hero direction. Added a static champagne light focused on the robot, with a softer mobile treatment, preserving logo, framing and text layout. Production build and six browser theme/width checks passed. Evidence: design-review/graphite-spotlight/REPORT.md. Spotlight visual review remains pending; no deployment or push performed.
+
+## 8 November 2026 - current handover reconciled
+
+Graphite hero retained; spotlight trials removed. Glass navigation pills, interactive image-backed learning/solutions cards, upward hero spacing and smaller robot framing implemented. Both latest owner-provided images are connected as optimized WebP assets. Firebase login/enquiry saving previously confirmed by owner; old pending/local-draft statements are historical. See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for exact state and verification limits. Full homepage approval and launch remain open; no push/deployment.

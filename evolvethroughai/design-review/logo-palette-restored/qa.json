@@ -1,0 +1,72 @@
+{
+  "results": [
+    {
+      "route": "home",
+      "theme": "light",
+      "boxes": []
+    },
+    {
+      "route": "home",
+      "theme": "dark",
+      "boxes": []
+    },
+    {
+      "route": "account",
+      "styles": {
+        "bg": "rgb(43, 39, 37)",
+        "button": "linear-gradient(110deg, rgb(36, 84, 213), rgb(56, 85, 212) 52%, rgb(117, 65, 199))"
+      }
+    },
+    {
+      "route": "masterclass",
+      "theme": "light",
+      "boxes": []
+    },
+    {
+      "route": "masterclass",
+      "theme": "dark",
+      "boxes": []
+    },
+    {
+      "route": "azure-cloud-devops",
+      "theme": "light",
+      "boxes": []
+    },
+    {
+      "route": "azure-cloud-devops",
+      "theme": "dark",
+      "boxes": []
+    },
+    {
+      "route": "aws-cloud-devops",
+      "theme": "light",
+      "boxes": []
+    },
+    {
+      "route": "aws-cloud-devops",
+      "theme": "dark",
+      "boxes": []
+    },
+    {
+      "route": "forward-deployed-ai",
+      "theme": "light",
+      "boxes": []
+    },
+    {
+      "route": "forward-deployed-ai",
+      "theme": "dark",
+      "boxes": []
+    },
+    {
+      "route": "career-development",
+      "theme": "light",
+      "boxes": []
+    },
+    {
+      "route": "career-development",
+      "theme": "dark",
+      "boxes": []
+    }
+  ],
+  "errors": []
+}

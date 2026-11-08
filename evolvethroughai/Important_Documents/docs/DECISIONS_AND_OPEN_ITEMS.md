@@ -1,6 +1,9 @@
 # Decisions and Open Items
 
-> Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
+> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -23,7 +26,7 @@
 
 ## Implemented observations — not final owner approval
 
-React/Vite single-page source exists with self-hosted Sora/Inter, the current “Build real skills. Shape what’s next.” hero, reference images, an 18-module overview, 14 project concepts, 8 lifecycle controls, a 9-stage capstone UI, 5 progression controls, curriculum download, footer/quick actions and local enquiry drafts. Prior QA is recorded. No live enquiry backend, dedicated page routing or verified public launch was established in this inspection.
+React/Vite source now includes query-based pathway views, a graphite robot-video hero, image-backed pathway cards, glass navigation, functional search and Firebase Google-authenticated Firestore enquiries. Curriculum downloads and local draft submission are removed. The current implementation is described in CURRENT_WEBSITE_HANDOVER.md; full-site approval and release verification remain open.
 
 ## Proposed decisions
 
@@ -259,12 +262,12 @@ The owner approved implementation of the reconstructed blue–cyan–violet ribb
 
 Brand approval covers these assets and their integration; it does not imply final approval of unrelated homepage sections or public deployment. Enquiries still download local drafts. Social preview metadata uses a local image path until the production origin is confirmed.
 
-## 26 October 2026 � logo-led website theme
+## 26 October 2026 � logo-led website theme
 
-Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blue�violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
+Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blue�violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
 
 Evidence: design-review/brand-theme/qa.json and dark/light screenshots. Both themes checked at 320, 390, 640, 768, 1024 and 1440px: no horizontal overflow or header overlap. Desktop axe WCAG A/AA scans in each theme: zero reported violations after contrast repairs. Theme survives reload. Mobile navigation, enquiry open/Escape close, curriculum download and normal/reduced circuit motion passed. TypeScript and production build passed. Automated checks do not replace owner visual approval. Earlier Sora typography and light-only implementation notes are historical; the current heading font is Inter.
 
-## 26 October 2026 � homepage premium refinement for review
+## 26 October 2026 � homepage premium refinement for review
 
 Owner requested refinement of the existing homepage, preserving the logo/headline/architecture. Replaced floating hero labels and cropped overlay with a connected, keyboard-operable engineering journey and illustrative workflows. Refined header, CTA hierarchy and audience transition; removed decorative hero ribbon and image drift. Both themes checked at six widths; all stage panels stable, CTA/stage/audience targets verified, zero desktop axe violations, no console errors. Homepage approval is pending. No other pages or deployment. Evidence: design-review/homepage-premium/REPORT.md and qa.json. This supersedes prior hero composition notes, not the approved brand identity.

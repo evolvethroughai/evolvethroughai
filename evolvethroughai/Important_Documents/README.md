@@ -1,6 +1,8 @@
 # Evolve Through AI — Important Documents
 
-**Documentation snapshot: 26 October 2026 (IST).** This folder is the canonical project-knowledge location. The latest explicit owner decision takes precedence over earlier notes.
+**Documentation updated through 8 November 2026 (IST).** This folder is the canonical project-knowledge location. The latest explicit owner decision takes precedence over earlier notes.
+
+Current implementation: [8 November handover](docs/CURRENT_WEBSITE_HANDOVER.md). Older dated evidence below remains historical.
 
 ## Start here
 
@@ -42,13 +44,7 @@ The [application-root AGENTS.md](../AGENTS.md) is a short discovery pointer to t
 
 ## Current state in plain language
 
-- The website is an existing React/TypeScript/Vite single-page application with working local interactions, not the historical Next.js prototype.
-- Latest implemented typography is **Sora + Inter**, self-hosted. Older introductory paragraphs in the preserved logs describe previous font directions.
-- The latest hero says **“Build real skills. Shape what’s next.”** The owner has not given final homepage/design approval in the new handover.
-- The public enquiry action currently downloads a local draft; no verified enquiry delivery backend is present.
-- Source/QA records exist for the 18-module overview, 14 project concepts and 9-stage capstone UI. This does not verify a full detailed original syllabus, completed deployments or business readiness.
-- Root-level `REDESIGN.md` and `developer_notes.md` are currently absent and marked deleted in the existing worktree; copies already exist here. This documentation task preserves those copies and does not undo the owner's move.
-- Git is rooted at `WEBSITE/`, above `evolvethroughai/`. Domain ownership and public hosting are not established by Git configuration.
+Read [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md) for the reconciled implementation through 8 November 2026: graphite robot-video hero, glass navigation, supplied image cards, five pathway views, continuous contours and authenticated Firebase enquiries. Latest production build passed; final visual/release checks remain open. Spotlight and white-robot experiments are reverted. No public deployment or push.
 
 ## Evidence and history
 

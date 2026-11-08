@@ -1,0 +1,26 @@
+[
+  {
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "primary": "linear-gradient(115deg, rgb(72, 32, 128), rgb(124, 58, 237))"
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "overflow": false,
+    "primary": "linear-gradient(115deg, rgb(72, 32, 128), rgb(124, 58, 237))"
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "primary": "linear-gradient(115deg, rgb(72, 32, 128), rgb(124, 58, 237))"
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false,
+    "primary": "linear-gradient(115deg, rgb(72, 32, 128), rgb(124, 58, 237))"
+  }
+]

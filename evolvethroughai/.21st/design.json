@@ -16,7 +16,8 @@
                                    "src/brand-theme.css",
                                    "src/homepage-refinement.css",
                                    "src/immersive-milestone.css",
-                                   "src/components/HeaderRefinement.css"
+                                   "src/components/HeaderRefinement.css",
+                                   "src/premium-flow.css"
                                ],
                     "components":  [
 
@@ -111,6 +112,10 @@
                       {
                           "date":  "2026-10-26",
                           "decision":  "Owner-requested centered morphic navigation, tagline beneath logo, left search, truthful visitor account menu, separate theme toggle and pauseable five-second headline rotation; implementation awaiting visual approval."
+                      },
+                      {
+                          "date":  "2026-10-27",
+                          "decision":  "Reference-inspired editorial hierarchy and original scroll-linked ribbon bridge across Screens 1–2. Approved logo/topography/workspace assets retained; visual review pending; later sections untouched."
                       }
                   ],
     "evidence":  [

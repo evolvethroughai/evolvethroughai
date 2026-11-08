@@ -1,0 +1,266 @@
+[
+  {
+    "theme": "light",
+    "width": 320,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 390,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 768,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "theme": "light",
+    "width": 1440,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 320,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 390,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 768,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "width": 1440,
+    "overflow": false,
+    "background": "rgba(0, 0, 0, 0)",
+    "border": "0px",
+    "position": "absolute",
+    "heroStartsAt": 0,
+    "copyBelowHeader": true,
+    "actions": 3,
+    "labels": [
+      {
+        "label": "Roadmap",
+        "href": "#progression",
+        "exists": true
+      },
+      {
+        "label": "Curriculum",
+        "href": "#curriculum",
+        "exists": true
+      },
+      {
+        "label": "System Architecture",
+        "href": "#experience",
+        "exists": true
+      },
+      {
+        "label": "Live Labs",
+        "href": "#projects",
+        "exists": true
+      }
+    ]
+  }
+]

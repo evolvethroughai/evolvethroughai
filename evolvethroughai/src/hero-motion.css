@@ -1,12 +1,12 @@
 /* Hero depth and motion: static backgrounds; bounded, compositor-friendly entrance. */
 .refined-hero{
   --hero-ease:cubic-bezier(.22,1,.36,1);
-  --hero-blue-glow:rgb(37 99 235 / 5%);
-  --hero-violet-glow:rgb(139 92 246 / 3%);
-  --hero-grid-dot:rgb(11 18 32 / 9%);
+  --hero-blue-glow:rgb(38 75 175 / 5%);
+  --hero-violet-glow:rgb(53 95 211 / 3%);
+  --hero-grid-dot:rgb(23 21 20 / 9%);
   position:relative;
   isolation:isolate;
-  background:linear-gradient(150deg,#f8fafc 0%,#f5f8fc 58%,#f8fafc 100%);
+  background:linear-gradient(150deg,#fbfaf9 0%,#faf8f7 58%,#fbfaf9 100%);
 }
 .refined-hero::before,.refined-hero::after{
   content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
@@ -21,8 +21,8 @@
   mask-image:radial-gradient(ellipse 65% 50% at 82% 20%,#000,transparent 90%);
 }
 [data-theme=dark] .refined-hero{
-  --hero-grid-dot:rgb(185 208 247 / 12%);
-  background:linear-gradient(150deg,#0b1220 0%,#0e1829 58%,#0b1220 100%);
+  --hero-grid-dot:rgb(226 214 206 / 12%);
+  background:linear-gradient(150deg,#2b2725 0%,#2b2725 58%,#2b2725 100%);
 }
 .refined-hero .hero-engineering-panel{
   transition:box-shadow .4s var(--hero-ease),border-color .4s var(--hero-ease);
@@ -33,11 +33,11 @@
 .refined-hero .hero-primary-actions a,.refined-hero .hero-curriculum-link svg{
   transition:transform .4s var(--hero-ease),box-shadow .4s var(--hero-ease),border-color .4s var(--hero-ease),color .4s var(--hero-ease);
 }
-.refined-hero .hero-engineering-panel:focus-within{box-shadow:0 22px 50px -15px rgb(37 99 235 / 10%);border-color:#7595c3}
-.refined-hero .connected-journey button:focus-visible .connected-step-icon{box-shadow:0 8px 20px rgb(37 99 235 / 10%);border-color:#5282cc}
+.refined-hero .hero-engineering-panel:focus-within{box-shadow:0 22px 50px -15px rgb(38 75 175 / 10%);border-color:#284eb8}
+.refined-hero .connected-journey button:focus-visible .connected-step-icon{box-shadow:0 8px 20px rgb(38 75 175 / 10%);border-color:#284eb8}
 @media(hover:hover) and (pointer:fine){
-  .refined-hero .hero-engineering-panel:hover{box-shadow:0 25px 50px -12px rgb(37 99 235 / 10%);border-color:#7595c3}
-  .refined-hero .connected-journey button:hover .connected-step-icon{box-shadow:0 10px 24px rgb(37 99 235 / 10%);border-color:#5282cc}
+  .refined-hero .hero-engineering-panel:hover{box-shadow:0 25px 50px -12px rgb(38 75 175 / 10%);border-color:#284eb8}
+  .refined-hero .connected-journey button:hover .connected-step-icon{box-shadow:0 10px 24px rgb(38 75 175 / 10%);border-color:#284eb8}
 }
 @keyframes hero-editorial-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:no-preference){

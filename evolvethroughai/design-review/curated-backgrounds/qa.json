@@ -1,0 +1,26 @@
+[
+  {
+    "width": 390,
+    "theme": "light",
+    "overflow": false,
+    "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.87)), linear-gradient(0deg, rgb(248, 250, 252), rgba(0, 0, 0, 0) 50%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/ai-network-768.webp\")"
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "background": "linear-gradient(90deg, rgba(248, 250, 252, 0.97) 0%, rgba(248, 250, 252, 0.933) 40%, rgba(248, 250, 252, 0.72) 76%, rgba(248, 250, 252, 0.62)), linear-gradient(0deg, rgb(248, 250, 252), rgba(0, 0, 0, 0) 48%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/ai-network-1600.webp\")"
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "overflow": false,
+    "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.937), rgba(11, 18, 32, 0.804)), linear-gradient(0deg, rgb(11, 18, 32), rgba(0, 0, 0, 0) 50%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/ai-network-768.webp\")"
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "overflow": false,
+    "background": "linear-gradient(90deg, rgba(11, 18, 32, 0.96) 0%, rgba(11, 18, 32, 0.9) 40%, rgba(11, 18, 32, 0.62) 76%, rgba(11, 18, 32, 0.47)), linear-gradient(0deg, rgb(11, 18, 32), rgba(0, 0, 0, 0) 48%), url(\"http://127.0.0.1:3000/images/curated-backgrounds/ai-network-1600.webp\")"
+  }
+]

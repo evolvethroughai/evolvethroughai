@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "playing": true,
+      "time": 0.5239,
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -57.6, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 2560,
+      "playing": true,
+      "time": 0.7184,
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -102.4, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "playing": true,
+      "time": 0.8473,
+      "loop": true,
+      "transform": "none",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "playing": true,
+      "time": 0.8507,
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -57.6, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 2560,
+      "playing": true,
+      "time": 0.8323,
+      "loop": true,
+      "transform": "matrix(0.84, 0, 0, 0.84, -102.4, 0)",
+      "pauseControls": 0,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "playing": true,
+      "time": 0.8791,
+      "loop": true,
+      "transform": "none",
+      "pauseControls": 0,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}
