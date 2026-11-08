@@ -113,3 +113,8 @@ The owner requested a more attractive font system, smoother motion/scroll behavi
 - Final build: CSS 109.61 KB (22.24 KB gzip), JavaScript 285.48 KB (87.16 KB gzip). Locally served font files are separate assets.
 
 The previous App, entry file, hero component and document HTML are preserved under `.redesign-backup/2026-10-26-type-motion/`. No Git commit, push or public deployment was performed. Enquiries still download local drafts; live delivery, confirmed commercial details and approved legal content remain launch work.
+
+
+## 8 November 2026 - documentation reconciliation
+
+Current source, latest owner feedback, image assets, removed spotlight experiments, header/cards and robot framing are reconciled in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). This is the current implementation reference; earlier design trials remain historical. No deployment or Git push.

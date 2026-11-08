@@ -1,6 +1,9 @@
 # Website Roadmap
 
-> Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
+> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -282,7 +285,7 @@ Final design approval; original detailed curriculum/labs; live enquiry delivery;
 
 Screen 01 (header and hero) has a bounded corrective pass and recorded verification, and is awaiting owner review. Do not treat this as approval of the whole homepage. Follow [Homepage screen review](HOMEPAGE_SCREEN_REVIEW.md) before moving to the audience section or additional pages.
 
-## 26 October 2026 � immersive direction, milestone 01
+## 26 October 2026 � immersive direction, milestone 01
 
 Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
 
@@ -390,3 +393,15 @@ Owner-supplied AI network, skyline and calm ocean images integrated as subdued h
 7 November robot video hero: owner supplied MP4 and authorized left robot/background playback with right-shifted landing copy. Added optimized silent 1600/960px videos, poster, theme-aware readability, pause/resume, offscreen/tab pause and reduced-motion/Save-Data fallback. Logo, content and downstream sections preserved. No app dependencies. TypeScript/build and six theme/width playback checks passed, including manual controls and reduced motion; design-review/robot-video-hero/ contains evidence. Visual approval pending; no deployment.
 
 7 November robot framing correction: reduced desktop robot/video scale 16%, shifted left 5% and removed pause button per owner request. Continuous silent loop retained with reduced-motion fallback. Fixed background width sizing for classic scrollbars. TypeScript/build and six theme/width playback/overflow checks passed; design-review/robot-video-hero/smaller-qa.json. Visual approval pending.
+
+8 November revert: owner rejected white-background robot processing. Restored Hero.tsx from the exact pre-experiment snapshot and removed only the white-composite CSS block. Original charcoal footage/poster restored in both themes; approved .84 size, -4% horizontal framing, continuous loop and no pause control retained. TypeScript/build passed. White derivatives remain unused review artifacts; no deployment.
+
+8 November full graphite first-screen trial: owner requested charcoal across the landing page. Applied full-width graphite wash, light hero typography and readable top navigation/logo variant, retaining logo-colour accents and robot framing. Later sections retain existing theme; transition fade preserved. TypeScript/build and six theme/width playback/overflow checks passed. Evidence: design-review/graphite-hero/. Visual approval pending.
+
+## 8 November 2026 - Champagne spotlight on graphite hero
+
+Owner approved trying a restrained warm spotlight after positive feedback on the graphite hero direction. Added a static champagne light focused on the robot, with a softer mobile treatment, preserving logo, framing and text layout. Production build and six browser theme/width checks passed. Evidence: design-review/graphite-spotlight/REPORT.md. Spotlight visual review remains pending; no deployment or push performed.
+
+## 8 November 2026 - current handover reconciled
+
+Graphite hero retained; spotlight trials removed. Glass navigation pills, interactive image-backed learning/solutions cards, upward hero spacing and smaller robot framing implemented. Both latest owner-provided images are connected as optimized WebP assets. Firebase login/enquiry saving previously confirmed by owner; old pending/local-draft statements are historical. See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for exact state and verification limits. Full homepage approval and launch remain open; no push/deployment.

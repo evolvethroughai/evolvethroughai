@@ -1,5 +1,8 @@
 # Homepage Screen Review
 
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
 Updated: 26 October 2026 (IST).
 
 ## Current checkpoint
@@ -52,7 +55,7 @@ After the homepage sections are reviewed and approved, determine the order for s
 
 Record owner feedback and approval here before marking a screen approved or advancing. No additional design changes are presumed from the test results alone.
 
-## 26 October 2026 — homepage premium refinement for review
+## 26 October 2026 ï¿½ homepage premium refinement for review
 
 Owner requested refinement of the existing homepage, preserving the logo/headline/architecture. Replaced floating hero labels and cropped overlay with a connected, keyboard-operable engineering journey and illustrative workflows. Refined header, CTA hierarchy and audience transition; removed decorative hero ribbon and image drift. Both themes checked at six widths; all stage panels stable, CTA/stage/audience targets verified, zero desktop axe violations, no console errors. Homepage approval is pending. No other pages or deployment. Evidence: design-review/homepage-premium/REPORT.md and qa.json. This supersedes prior hero composition notes, not the approved brand identity.
 

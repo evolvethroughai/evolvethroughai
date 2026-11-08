@@ -19,3 +19,5 @@ import './curated-backgrounds.css';
 import './royal-green-theme.css';
 
 import './hero-robot-video.css';
+
+import './hero-graphite.css';

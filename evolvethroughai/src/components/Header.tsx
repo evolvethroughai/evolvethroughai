@@ -42,11 +42,11 @@ export default function Header({ onEnquire }: HeaderProps) {
 
   const enquire = () => { setMenuOpen(false); onEnquire(); };
   return <>
-    <header className={`header portal-header header-seamless header-floating header-aurora header-transparent-compact header-slim header-text-navigation header-scroll-shield${scrolled ? ' is-scrolled' : ''}`} ref={headerRef}>
+    <header className={`header portal-header header-seamless header-floating header-aurora header-transparent-compact header-slim header-text-navigation header-scroll-shield header-cinematic-pills${scrolled ? ' is-scrolled' : ''}`} ref={headerRef}>
       <div className="nav-wrap">
         <div className="header-brand-search"><BrandLogo tagline /></div>
         <nav id="main-navigation" aria-label="Main navigation" className={`portal-navigation public-site-navigation${menuOpen ? ' is-open' : ''}`}>
-          {navigation.map(item=><a key={item.label} href={new URLSearchParams(location.search).has('pathway') ? './'+item.href : item.href} onClick={()=>setMenuOpen(false)}>{item.label}</a>)}
+          {navigation.map(item=><a key={item.label} href={new URLSearchParams(location.search).has('pathway') ? './'+item.href : item.href} onClick={()=>setMenuOpen(false)}><span className="nav-pill-label">{item.label}</span></a>)}
         </nav>
         <div className="portal-controls">
           <div className="portal-search"><SiteSearch /></div>

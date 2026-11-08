@@ -1,5 +1,8 @@
 # Immersive direction — 26 October 2026
 
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
 Owner-authorized direction; first visual milestone pending approval. Architecture inspection confirms React 19 / TypeScript / Vite, not Next.js. Keep existing architecture. No dependency additions.
 
 | Section | Opportunity and proposed component | Interaction | Gate |

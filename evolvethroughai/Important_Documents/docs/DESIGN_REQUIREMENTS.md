@@ -1,6 +1,9 @@
 # Design Requirements
 
-> Updated: 26 October 2026 Â· Timezone: Asia/Kolkata (IST).
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
+> Updated: 8 November 2026 Â· Timezone: Asia/Kolkata (IST).
 > Business intention: the ownerâ€™s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -363,17 +366,17 @@ The owner approved implementation of the reconstructed blueâ€“cyanâ€“violet ribb
 
 Brand approval covers these assets and their integration; it does not imply final approval of unrelated homepage sections or public deployment. Enquiries still download local drafts. Social preview metadata uses a local image path until the production origin is confirmed.
 
-## 26 October 2026 — logo-led website theme
+## 26 October 2026 ï¿½ logo-led website theme
 
-Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blue–violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
+Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blueï¿½violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
 
 Evidence: design-review/brand-theme/qa.json and dark/light screenshots. Both themes checked at 320, 390, 640, 768, 1024 and 1440px: no horizontal overflow or header overlap. Desktop axe WCAG A/AA scans in each theme: zero reported violations after contrast repairs. Theme survives reload. Mobile navigation, enquiry open/Escape close, curriculum download and normal/reduced circuit motion passed. TypeScript and production build passed. Automated checks do not replace owner visual approval. Earlier Sora typography and light-only implementation notes are historical; the current heading font is Inter.
 
-## 26 October 2026 — homepage premium refinement for review
+## 26 October 2026 ï¿½ homepage premium refinement for review
 
 Owner requested refinement of the existing homepage, preserving the logo/headline/architecture. Replaced floating hero labels and cropped overlay with a connected, keyboard-operable engineering journey and illustrative workflows. Refined header, CTA hierarchy and audience transition; removed decorative hero ribbon and image drift. Both themes checked at six widths; all stage panels stable, CTA/stage/audience targets verified, zero desktop axe violations, no console errors. Homepage approval is pending. No other pages or deployment. Evidence: design-review/homepage-premium/REPORT.md and qa.json. This supersedes prior hero composition notes, not the approved brand identity.
 
-## 26 October 2026 — immersive direction, milestone 01
+## 26 October 2026 ï¿½ immersive direction, milestone 01
 
 Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
 

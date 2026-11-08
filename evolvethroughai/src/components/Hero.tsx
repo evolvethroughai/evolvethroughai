@@ -3,6 +3,7 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useReducedMotion } from 'motion/react';
 import './Hero.css';
+import './HeroPathCards.css';
 
 interface HeroProps {
   children: ReactNode;
@@ -12,18 +13,11 @@ function HeroVideoBackground() {
   const video = useRef<HTMLVideoElement>(null);
   const reduced = useReducedMotion();
   const [source, setSource] = useState('');
-  const [light, setLight] = useState(() => document.documentElement.dataset.theme === 'light');
-  useEffect(() => {
-    const observer = new MutationObserver(() => setLight(document.documentElement.dataset.theme === 'light'));
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-    return () => observer.disconnect();
-  }, []);
   useEffect(() => {
     const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
     if (reduced !== false || connection?.saveData) { setSource(''); return; }
-    const mobile = matchMedia('(max-width: 700px)').matches;
-    setSource(light ? (mobile ? '/videos/robot-white-960.mp4' : '/videos/robot-white-1280.mp4') : (mobile ? '/videos/robot-hero-960.mp4' : '/videos/robot-hero-1600.mp4'));
-  }, [reduced, light]);
+    setSource(matchMedia('(max-width: 700px)').matches ? '/videos/robot-hero-960.mp4' : '/videos/robot-hero-1600.mp4');
+  }, [reduced]);
   useEffect(() => {
     const element = video.current;
     if (!element || !source) return;
@@ -38,7 +32,7 @@ function HeroVideoBackground() {
     sync();
     return () => { observer.disconnect(); element.pause(); document.removeEventListener('visibilitychange', sync); };
   }, [source]);
-  return <div className="hero-robot-video"><video ref={video} src={source || undefined} poster={light ? '/videos/robot-white-poster.webp' : '/videos/robot-hero-poster.webp'} muted playsInline loop preload="metadata" aria-hidden="true" /><div className="hero-robot-video-wash" /></div>;
+  return <div className="hero-robot-video"><video ref={video} src={source || undefined} poster="/videos/robot-hero-poster.webp" muted playsInline loop preload="metadata" aria-hidden="true" /><div className="hero-robot-video-wash" /></div>;
 }
 export function HeroBackground() {
   return <>
@@ -58,9 +52,9 @@ export function Hero({ children }: HeroProps) {
 export function HeroIntro() {
   return <>
     <p className="journey-intro hero-dual-caption"><span>Master modern Cloud, DevOps, and Enterprise AI architecture.</span><span>Bridging deep technical capability with production-grade execution.</span></p>
-    <div className="hero-primary-actions hero-dual-actions hero-premium-actions">
-      <a className="button primary hero-learning-action hero-premium-action" href="#path">Explore Learning Paths <ArrowUpRight size={18} aria-hidden="true" /></a>
-      <a className="button hero-solutions-action hero-premium-action" href="#solutions">Explore Digital Solutions <ArrowRight size={18} aria-hidden="true" /></a>
+    <div className="hero-primary-actions hero-dual-actions hero-premium-actions hero-path-cards">
+      <a className="hero-path-card hero-path-card--learning" href="#path"><img src="/images/learning-path-card.webp" alt="" width="1000" height="563" decoding="async" /><span className="hero-path-card-content"><span className="hero-path-card-eyebrow">LEARN & BUILD</span><strong>Explore Learning Paths</strong><span className="hero-path-card-detail">Practical skills. Real engineering.</span></span><ArrowUpRight className="hero-path-card-arrow" size={20} aria-hidden="true" /></a>
+      <a className="hero-path-card hero-path-card--solutions" href="#solutions"><img src="/images/digital-solutions-card.webp" alt="" width="1000" height="563" decoding="async" /><span className="hero-path-card-content"><span className="hero-path-card-eyebrow">AUTOMATE & EVOLVE</span><strong>Explore Digital Solutions</strong><span className="hero-path-card-detail">Connected systems. Smarter workflows.</span></span><ArrowRight className="hero-path-card-arrow" size={20} aria-hidden="true" /></a>
     </div>
   </>;
 }

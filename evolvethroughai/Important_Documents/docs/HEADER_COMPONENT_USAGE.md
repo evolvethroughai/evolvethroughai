@@ -1,5 +1,8 @@
 # Header components and headline motion
 
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
 26 October 2026. Integrated locally; no deployment. Current usages are complete and live in src/components/Header.tsx and VisualExperience.tsx.
 
 ## Where to change things
@@ -53,3 +56,7 @@ Owner requested fixed navigation after the transparent-header pass. Header now s
 Hero.tsx adds an atmospheric scope and explicit learning CTA class. Primary button uses a blue/indigo/violet gradient with slow CSS color-position motion, 1.05 hover / .95 active scale and a restrained glow; secondary uses a translucent 2px outline with matching hover/press feedback. Existing cyan/violet radial background glows are anchored behind headline/actions in both themes. Reduced motion disables animation, transforms and transitions. No new dependencies, sections or deployment.
 
 TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning, exactly three actions. Header stays at viewport top after scrolling 1500px. Normal-motion CTA gradient animation verified. Preview: design-review/fixed-header-2026-10-27/desktop.png.
+
+## 8 November 2026 - active component usage
+
+Current Header.tsx renders native navigation anchors with nav-pill-label spans, SiteSearch and Firebase AccountButton. Search/Login/Enquire are the right controls; no theme/download control is rendered. Old MorphicNavbar/ProfileDropdown integration instructions above describe history. HeroIntro now uses image cards and HeroPathCards.css, not the old button CTA classes. Final framing, image sources and motion limits: CURRENT_WEBSITE_HANDOVER.md.

@@ -417,3 +417,8 @@ Owner requested fixed navigation after the transparent-header pass. Header now s
 Hero.tsx adds an atmospheric scope and explicit learning CTA class. Primary button uses a blue/indigo/violet gradient with slow CSS color-position motion, 1.05 hover / .95 active scale and a restrained glow; secondary uses a translucent 2px outline with matching hover/press feedback. Existing cyan/violet radial background glows are anchored behind headline/actions in both themes. Reduced motion disables animation, transforms and transitions. No new dependencies, sections or deployment.
 
 TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning, exactly three actions. Header stays at viewport top after scrolling 1500px. Normal-motion CTA gradient animation verified. Preview: design-review/fixed-header-2026-10-27/desktop.png.
+
+
+## 8 November 2026 - documentation reconciliation
+
+Current source, latest owner feedback, image assets, removed spotlight experiments, header/cards and robot framing are reconciled in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). This is the current implementation reference; earlier design trials remain historical. No deployment or Git push.

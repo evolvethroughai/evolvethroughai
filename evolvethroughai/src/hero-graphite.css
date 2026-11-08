@@ -1,0 +1,79 @@
+﻿/* Homepage hero trial: graphite throughout, preserving the selected logo palette. */
+.shared-landing-layout .hero-robot-video{background:#18191c}
+[data-theme=light] .shared-landing-layout .hero-robot-video-wash,
+[data-theme=dark] .shared-landing-layout .hero-robot-video-wash{background:linear-gradient(90deg,#18191c05 0%,#18191c10 28%,#1d1f24a3 48%,#20232be8 72%,#1b1e26f5 100%)}
+.shared-landing-layout .shared-landing-background{mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 100px),transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 100px),transparent 100%)}
+.hero-robot-layout.landing-centered .journey-copy h1{color:#f4f5fa}
+.hero-robot-layout.landing-centered .journey-copy :is(.rolling-headline-current,.rolling-headline-measure){background:linear-gradient(105deg,#a6c8ff,#80d9e8 48%,#c3a5f3)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important}
+.hero-robot-layout.landing-centered .journey-copy .hero-dual-caption{color:#c9ced9}
+.hero-robot-layout.landing-centered .hero-brand-label{color:#bdcbe6}
+.hero-robot-layout .hero-premium-actions>a.hero-solutions-action,
+[data-theme=light] .hero-robot-layout .hero-premium-actions>a.hero-solutions-action{background:#282c36e8;border-color:#8d87a8;color:#e8e4f1}
+.shared-landing-layout:has(.hero-robot-layout) .header:not(.is-scrolled){background:transparent!important;border-bottom:0;box-shadow:none;color:#f1f3fa;--portal-text:#f1f3fa;--portal-surface:#292d37df;--portal-border:#737b8e70}
+.shared-landing-layout:has(.hero-robot-layout) .header:not(.is-scrolled) .public-site-navigation>a{color:#eef1f8}
+.shared-landing-layout:has(.hero-robot-layout) .header:not(.is-scrolled) .brand-logo--light{display:none}
+.shared-landing-layout:has(.hero-robot-layout) .header:not(.is-scrolled) .brand-logo--dark{display:block}
+.shared-landing-layout:has(.hero-robot-layout) .header:not(.is-scrolled) .brand-tagline{color:#d3d5de}
+.shared-landing-layout:has(.hero-robot-layout) .header:not(.is-scrolled) :is(.header-search-button,.portal-control:not(.portal-control--primary),.portal-menu-toggle){background:#292d37df;color:#f1f3fa;border-color:#737b8e70}
+@media(max-width:700px){[data-theme=light] .shared-landing-layout .hero-robot-video-wash,[data-theme=dark] .shared-landing-layout .hero-robot-video-wash{background:linear-gradient(180deg,#181b2285 0%,#1b1e27d9 35%,#1b1e27e6 85%,#1b1e27f2)}.shared-landing-layout:has(.hero-robot-layout) .header:not(.is-scrolled) .public-site-navigation.is-open{background:#242935f5}}
+
+/* Refined public navigation: editorial links and distinct compact actions. */
+.header.portal-header .public-site-navigation{gap:clamp(16px,1.8vw,30px)}
+.header.portal-header .public-site-navigation>a{position:relative;padding:8px 0;font-size:13px;font-weight:550;letter-spacing:.015em;transition:color .2s ease;isolation:isolate}
+.header.portal-header .public-site-navigation>a::after{content:'';position:absolute;left:0;right:0;bottom:3px;height:2px;border-radius:2px;background:linear-gradient(90deg,#56d9ea,#8981f6);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+.header.portal-header .public-site-navigation>a:hover::after,.header.portal-header .public-site-navigation>a:focus-visible::after{transform:scaleX(1)}
+.header.portal-header .portal-controls{gap:10px}
+.header.portal-header .portal-controls :is(.header-search-button,.portal-control){height:38px;min-height:38px;padding:0 15px;border-radius:11px;font-size:12px;font-weight:600;letter-spacing:.01em;box-shadow:none;transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}
+.header.portal-header .portal-controls .header-search-button{border-color:transparent;background:transparent!important;padding-inline:10px}
+.header.portal-header .portal-controls>.portal-control:not(.portal-control--primary){background:transparent;border-color:#8c92a64d}
+.header.portal-header .portal-controls .portal-control--primary{padding-inline:18px;background:linear-gradient(115deg,#2458df,#6651cf)!important;border:1px solid #9099ff70;color:#fff;box-shadow:inset 0 1px 0 #ffffff38,0 5px 18px #3155d52b}
+.header.portal-header .portal-controls :is(.header-search-button,.portal-control):hover{transform:translateY(-1px);border-color:#8c9fec;background-color:#8998b912}
+.header.portal-header .portal-controls .portal-control--primary:hover{box-shadow:inset 0 1px 0 #ffffff50,0 7px 22px #5159e047}
+.header.portal-header .portal-controls .portal-control--primary svg{width:23px;height:23px;padding:4px;border-radius:50%;background:#ffffff1f;transition:transform .2s}
+.header.portal-header .portal-controls .portal-control--primary:hover svg{transform:translate(1px,-1px)}
+@media(max-width:700px){.header.portal-header .portal-controls :is(.header-search-button,.portal-control){padding-inline:11px;min-height:38px}.header.portal-header .public-site-navigation{gap:8px 24px}}
+@media(prefers-reduced-motion:reduce){.header.portal-header .public-site-navigation>a::after,.header.portal-header .portal-controls :is(.header-search-button,.portal-control,.portal-control--primary svg){transition:none;transform:none}}
+
+/* Cinematic glass navigation, with text illumination inside each pill. */
+.header.portal-header.header-cinematic-pills .public-site-navigation{gap:8px}
+.header.portal-header.header-cinematic-pills .public-site-navigation>a{min-height:34px;padding:6px 16px;border-radius:999px;border:1px solid #8a96b533;background:#8194b008;font-size:12px;font-weight:600;box-shadow:0 2px 10px #00000012;transition:background .3s,border-color .3s,box-shadow .3s}
+.header.portal-header.header-cinematic-pills .public-site-navigation>a::after{content:none}
+.header-cinematic-pills .nav-pill-label{color:inherit}
+.header.portal-header.header-cinematic-pills .public-site-navigation>a:is(:hover,:focus-visible,[aria-current=page]){background:#06b6d41a;border-color:#22d3ee80;box-shadow:0 2px 12px #06b6d414;color:inherit}
+.header-cinematic-pills .public-site-navigation>a:is(:hover,:focus-visible,[aria-current=page]) .nav-pill-label{background:linear-gradient(90deg,#087f97,#5748c4);background-clip:text;-webkit-background-clip:text;color:transparent}
+[data-theme=dark] .header-cinematic-pills .public-site-navigation>a .nav-pill-label,.shared-landing-layout:has(.hero-robot-layout) .header-cinematic-pills:not(.is-scrolled) .public-site-navigation>a .nav-pill-label{color:#cbd5e1}
+[data-theme=dark] .header-cinematic-pills .public-site-navigation>a:is(:hover,:focus-visible,[aria-current=page]) .nav-pill-label,.shared-landing-layout:has(.hero-robot-layout) .header-cinematic-pills:not(.is-scrolled) .public-site-navigation>a:is(:hover,:focus-visible,[aria-current=page]) .nav-pill-label{background:linear-gradient(90deg,#67e8f9,#a5b4fc);background-clip:text;-webkit-background-clip:text;color:transparent}
+.header.portal-header.header-cinematic-pills .portal-controls :is(.header-search-button,.portal-control:not(.portal-control--primary)){border:1px solid #8a96b533;border-radius:999px;background:#8194b008!important;box-shadow:0 2px 10px #00000012;backdrop-filter:blur(10px)}
+.header.portal-header.header-cinematic-pills .portal-controls :is(.header-search-button,.portal-control:not(.portal-control--primary)):hover{border-color:#22d3ee80;background:#06b6d41a!important;box-shadow:0 2px 12px #06b6d414}
+.header.portal-header.header-cinematic-pills .portal-controls .portal-control--primary{border-radius:999px;backdrop-filter:blur(10px)}
+@media(min-width:1101px) and (max-width:1300px){.header.portal-header.header-cinematic-pills .public-site-navigation>a{padding-inline:10px}.header.portal-header.header-cinematic-pills .public-site-navigation{gap:5px}}
+@media(prefers-reduced-motion:reduce){.header.portal-header.header-cinematic-pills .public-site-navigation>a{transition:none}}
+
+/* Hero CTA depth feedback, scoped to preserve the approved layout and palette. */
+.hero-robot-layout .hero-pop-actions>a.hero-premium-action{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:16px;transition:transform .3s ease-out,box-shadow .3s ease-out,border-color .3s ease-out,background-color .3s ease-out;transform:translateY(0) scale(1)}
+@media(hover:hover){
+ .hero-robot-layout .hero-pop-actions>a.hero-premium-action:hover{transform:translateY(-4px) scale(1.02)}
+ .hero-robot-layout .hero-pop-actions>a.hero-learning-action:hover{box-shadow:0 20px 40px -10px rgba(99,102,241,.5)}
+ .hero-robot-layout .hero-pop-actions>a.hero-solutions-action:hover{border-color:#22d3ee;box-shadow:0 20px 40px -10px rgba(6,182,212,.25)}
+ .hero-robot-layout .hero-pop-actions>a.hero-learning-action:hover svg{transform:translate(3px,-2px)}
+ .hero-robot-layout .hero-pop-actions>a.hero-solutions-action:hover svg{transform:translateX(4px)}
+}
+.hero-robot-layout .hero-pop-actions>a.hero-premium-action:active{transform:translateY(0) scale(.98)}
+.hero-robot-layout .hero-pop-actions>a.hero-premium-action svg{transition:transform .2s ease-out}
+@media(prefers-reduced-motion:reduce){.hero-robot-layout .hero-pop-actions>a.hero-premium-action,.hero-robot-layout .hero-pop-actions>a.hero-premium-action svg{transition:none!important;transform:none!important}}
+
+.hero-robot-layout .hero-pop-actions>a.hero-learning-action{background:linear-gradient(110deg,#245bea,#5544df 58%,#793cd6);border:1px solid #a29aff80;box-shadow:0 8px 22px #4659db45,inset 0 1px 0 #ffffff45}
+.hero-robot-layout .hero-pop-actions>a.hero-premium-action::before{content:'';position:absolute;inset:-5px;border-radius:20px;pointer-events:none;opacity:0;background:linear-gradient(110deg,#4263ed55,#8b5cf655);filter:blur(13px);z-index:-1;transition:opacity .3s ease-out}
+.hero-robot-layout .hero-pop-actions>a.hero-solutions-action::before{background:#22d3ee40}
+@media(hover:hover){.hero-robot-layout .hero-pop-actions>a.hero-premium-action:hover::before{opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero-robot-layout .hero-pop-actions>a.hero-premium-action::before{transition:none}}
+
+/* Give the expanded image cards breathing room in the first viewport. */
+@media(min-width:701px){
+ .hero-robot-layout.landing-centered .journey-copy{position:relative;top:-28px}
+ .hero-robot-video video{transform:translateX(-3%) scale(.79)}
+ .hero-robot-layout .hero-path-cards{margin-top:24px}
+}
+
+/* Extra framing space for the robot's extended hand throughout the loop. */
+@media(min-width:701px){.hero-robot-video video{transform:translateX(0) scale(.74);transform-origin:left center}}

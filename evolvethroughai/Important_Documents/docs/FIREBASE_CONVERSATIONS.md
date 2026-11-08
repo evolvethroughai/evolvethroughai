@@ -1,5 +1,8 @@
 # Google login and authenticated enquiries
 
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
 Updated: 27 October 2026.
 
 ## Implemented locally

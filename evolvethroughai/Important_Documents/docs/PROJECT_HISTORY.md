@@ -1,6 +1,9 @@
 # Project History
 
-> Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
+> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+
+
+> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
