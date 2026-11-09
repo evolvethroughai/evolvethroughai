@@ -1,9 +1,9 @@
 # Project History
 
-> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+> Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
-> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
+> Updated: 9 November 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -264,3 +264,7 @@ The full named Stitch package (01_Homepage, 02_Learning_Programs, 03_DevOps_Mast
 ## Lessons to retain
 
 Review real rendered output, not library names. Preserve content depth and truthful boundaries. Reference imagery/motion must be evaluated explicitly when the owner highlights it. Keep stable click targets, useful actions, readable fonts and reduced-motion behavior. Record what was actually tested, obtain approval at meaningful milestones, and do not turn proposals into launched offerings.
+
+## 9 November 2026 - five-screen video and interaction reconciliation
+
+See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.

@@ -1,8 +1,8 @@
 # Evolve Through AI — Important Documents
 
-**Documentation updated through 8 November 2026 (IST).** This folder is the canonical project-knowledge location. The latest explicit owner decision takes precedence over earlier notes.
+**Documentation updated through 9 November 2026 (IST).** This folder is the canonical project-knowledge location. The latest explicit owner decision takes precedence over earlier notes.
 
-Current implementation: [8 November handover](docs/CURRENT_WEBSITE_HANDOVER.md). Older dated evidence below remains historical.
+Current implementation: [9 November handover](docs/CURRENT_WEBSITE_HANDOVER.md). Older dated evidence below remains historical.
 
 ## Start here
 
@@ -44,7 +44,7 @@ The [application-root AGENTS.md](../AGENTS.md) is a short discovery pointer to t
 
 ## Current state in plain language
 
-Read [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md) for the reconciled implementation through 8 November 2026: graphite robot-video hero, glass navigation, supplied image cards, five pathway views, continuous contours and authenticated Firebase enquiries. Latest production build passed; final visual/release checks remain open. Spotlight and white-robot experiments are reverted. No public deployment or push.
+Read [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md) for the reconciled implementation through 9 November 2026: graphite robot-video hero, glass navigation, supplied image cards, five pathway views, continuous contours and authenticated Firebase enquiries. Latest production build passed; final visual/release checks remain open. Spotlight and white-robot experiments are reverted. No public deployment or push.
 
 ## Evidence and history
 

@@ -118,3 +118,8 @@ The previous App, entry file, hero component and document HTML are preserved und
 ## 8 November 2026 - documentation reconciliation
 
 Current source, latest owner feedback, image assets, removed spotlight experiments, header/cards and robot framing are reconciled in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). This is the current implementation reference; earlier design trials remain historical. No deployment or Git push.
+
+
+## 9 November 2026 - current design handover
+
+Reconciled five-screen layout, media swaps, spacing, edge blending, pearl pathway catalogue and premium pull-cord interaction in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). Earlier tests/trials are historical; no final approval or deployment implied. TypeScript/build passed; new interaction still needs full touch/keyboard/browser QA.

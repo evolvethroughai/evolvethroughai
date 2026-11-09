@@ -1,6 +1,65 @@
 # Current website handover
 
-Updated: 8 November 2026 (Asia/Kolkata). Inspected current local source and this session's changes. This is the current-state summary; older dated entries remain historical. No public deployment or Git push was performed.
+Updated: 9 November 2026 (Asia/Kolkata). Inspected current local source and this session's changes. This is the current-state summary; older dated entries remain historical. No public deployment or Git push was performed.
+
+## Current implementation — 9 November 2026
+
+This section supersedes earlier implementation snapshots and dated trials below. Final homepage approval and publication authorization remain open. No deployment, Git push or external message was performed.
+
+### Current screen order and assets
+
+| Screen | Content and layout | Active media |
+| --- | --- | --- |
+| 1 | Graphite hero; robot left, rotating headline and two image-backed pathway links right | robot-hero-1600.mp4 / robot-hero-960.mp4 and poster; learning-path-card.webp / digital-solutions-card.webp |
+| 2 | Academy learning content left; second robot right; charcoal background and soft media edges | learning-screen-1280.mp4 and learning-screen-poster.webp |
+| 3 | Business Solutions copy right; puzzle/teamwork video left | business-puzzle-960.mp4 and business-puzzle-poster.webp |
+| 4 | Working professional / fresher learning-start selector and detail panel; charcoal reading surface | screen4-learning.mp4 and screen4-learning.webp |
+| 5 | Five named pathway links on soft pearl; colour-pouring video triggered by a pull cord | thread-colour-pour.mp4 and thread-colour-pour.webp |
+
+Media paths above are under public/videos except the two card images under public/images. All footage is owner-supplied and optimized locally; original downloads are unchanged. Installed application dependencies were not expanded for these changes. Temporary encoding tools are not application dependencies.
+
+### Hero, navigation and spacing
+
+- Preserve official logo, graphite hero, current header glass pills and Search / Firebase Login or Account / Enquire controls. Enquire remains the primary action.
+- Hero headline remains Build real skills. with the existing rotating secondary phrases. The fixed Engineer the future. trial was reverted.
+- Supporting caption remains the two original lines beginning Master modern Cloud, DevOps, and Enterprise AI architecture. It is lifted 18px on desktop / 10px on mobile. Eyebrow/headline lift: 16px desktop / 8px mobile.
+- Hero card copy: LEARN • BUILD • GROW / Explore Learning Paths / Practical skills. Real engineering.; BUILD • AUTOMATE • SCALE / Explore Digital Solutions / Websites, apps & AI-powered solutions.
+- Owner card originals retained: Glowing Path to Achievement-2.png and Collaborative Digital Business Growth-1.png. The cards use optimized WebP derivatives, warm/cool readable overlays and image-zoom/lift hover feedback.
+- Homepage robot desktop video framing remains translateX(0) scale(.74). Screen 2 robot is slightly reduced (133% video width within its stage, left offset -16%); homepage robot was not changed by that adjustment.
+- Screen 2 robot/content was lifted 24px on desktop. Subsequent spacing normalization sets the learning layout top to zero; video retains its existing lift. CSS cascade, not older numbers, controls final appearance.
+- Removed unequal fixed-height blank areas between Screens 1–3. Last desktop browser measurement at 1440px showed both visible content gaps at 128px. This is a measured viewport result, not a guarantee at all responsive sizes.
+- Hero bottom fade now goes to charcoal, not transparent paper. Actual video edges are feathered. Shared topo canvas remains continuous. Do not add an opaque hero surface that covers the separate video plane.
+
+### Screen 3 video treatment
+
+The earlier digital-marketing team clip (6558232) was replaced with puzzle/team clip 6193976. It plays silently on the left, with broad top/bottom/side masks and a gradual graphite fade before the copy. Current video scale is .88. The visible video stage is shorter (desktop top 60px / bottom 36px; mobile height 220px). Business introduction has modest additional top spacing; later shared spacing normalization overrides section padding to 64px desktop / 40px mobile. The artwork file is still retained for the homepage Solutions card.
+
+### Screen 4 and Screen 5 playback
+
+Screen 4 uses owner video 12676758 (white dotted flowing geometry). The earlier cyan/violet clip 7077358 was moved to Screen 5, then superseded there by owner clip 6721009. These older files remain on disk but are not the current Screen 5 source.
+
+SectionVideo is exported from EngineeringJourney.tsx and reused by the learning, business, learning-selector and pathway sections. Automatic media starts on visibility, pauses offscreen/hidden, and uses a poster under reduced-motion or Save-Data. Screen 5 uses manualPlay instead: video is hidden before user activation, leaving pearl visible; explicit activation can play even when automatic playback is suppressed. All current videos loop silently with inline playback. There is no audio playback.
+
+The Screen 5 trigger is a small central pull cord on desktop (right aligned on mobile): braided thread, pearl/violet mount and ring, subtle caption, hover polish and spring-back. Drag downward at least 28px to trigger; travel is capped at 85px. Tap/click or keyboard button activation also starts playback. Subsequent activation restarts at time zero. Captions change from Pull for colour to Pull to replay. The control is not aria-hidden; the decorative video remains hidden from accessibility APIs.
+
+A 2.8-second top-down reveal remains on activation/replay, disabled under reduced motion. This is a presentation effect, not newly generated pouring footage. Do not claim it changes the source clip's underlying content. The new supplied clip replaced the previous mid-pour opening. Full pull/replay behavior still needs browser validation on touch and keyboard after the premium styling change.
+
+### Reverted experiments and preserved boundaries
+
+- White robot compositing, spotlights, fixed-headline trial and multiple intermediary white/purple transition-glow trials were rejected/reverted. No spotlight or added middle-shade glow is active.
+- A combined-height shared charcoal backing broke the layout and was reverted. Layout.tsx retains its hero-only background-height measurement; later targeted video masks address seams instead.
+- Some superseded CSS rules and unused media remain as historical worktree artifacts. Do not assume every asset or earlier selector is active. Review the final rules in hero-graphite.css and the imported component styles before changing layout.
+- Preserve authenticated Firebase enquiries, current business copy, 18 modules / 14 projects / one capstone and the five named pathway views. Named future pathways are not proof of commercial availability. No fake reviews, outcome metrics or price claims were added.
+
+### Verification and next review
+
+Recent TypeScript checks and production builds passed, including the premium pull-cord change. Earlier browser checks confirmed the first robot/video structure, Screen 2 playing at 390/768/1440px, the corrected Screen 1–2 charcoal seam, and equal desktop content gaps. Screen 4 playback was confirmed before the clips were reassigned. No new all-route accessibility audit, formal compliance test or complete five-screen mobile/desktop review has been performed after the latest video and cord changes. Build success alone does not prove visual acceptance or gesture correctness.
+
+Local development: npm run dev; http://localhost:3000/. A local HTTP 200 was verified when the server was started. Do not treat that as public deployment. Next review: current five-screen flow in both themes and mobile/tablet/desktop, full robot movement bounds, all video edge fades, manual pull/tap/keyboard replay, offscreen/reduced-motion behavior and text contrast. Screen 4 media is about 10.8 MB and Screen 5 about 5.6 MB; further encoding/performance review remains appropriate before release.
+
+## Historical snapshots through 8 November 2026
+
+The entries below are retained as history; use the current implementation above for handover.
 
 ## Application and business structure
 

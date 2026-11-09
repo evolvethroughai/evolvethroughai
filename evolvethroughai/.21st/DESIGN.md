@@ -11,3 +11,7 @@ Updated 26 October 2026.
 - Detailed decisions and constraints are in design.json.
 
 26 October theme update: Inter headings/body; midnight dark default, persistent light toggle, gradient brand actions and reduced-motion-safe ribbon/circuit motif. Active overrides: src/brand-theme.css.
+
+## 9 November 2026 - current local design
+
+Use Important_Documents/docs/CURRENT_WEBSITE_HANDOVER.md for the current five-screen video composition and constraints. Graphite opening screens, official logo spectrum, native glass-pill header, image-backed hero links, and pearl Screen 5 with braided pearl/violet pull cord. Curriculum downloads remain removed. Earlier palette/theme-toggle instructions above are historical. No new application dependency, catalog import, publication or deployment. Latest visual and gesture approval remains pending.

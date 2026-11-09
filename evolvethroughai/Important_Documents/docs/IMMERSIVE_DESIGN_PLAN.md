@@ -1,6 +1,6 @@
 # Immersive direction — 26 October 2026
 
-> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+> Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
 Owner-authorized direction; first visual milestone pending approval. Architecture inspection confirms React 19 / TypeScript / Vite, not Next.js. Keep existing architecture. No dependency additions.
@@ -28,3 +28,7 @@ Owner-authorized direction; first visual milestone pending approval. Architectur
 - https://www.getlayers.ai/templates?tier=free: browsing tool could not access; not represented as reviewed or licensed.
 
 Existing engineering-journey.jpg is retained as an explicitly illustrative conceptual scene, not authentic learner photography. Its creator/license provenance is not verified by existing SOURCES.md. No external photo was fetched or presented as licensed. Confirm publication rights or replace with a verified licensed image before public release. Original SVG logo assets remain unchanged.
+
+## 9 November 2026 - five-screen video and interaction reconciliation
+
+See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.

@@ -1,9 +1,9 @@
 # Decisions and Open Items
 
-> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+> Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
-> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
+> Updated: 9 November 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -271,3 +271,7 @@ Evidence: design-review/brand-theme/qa.json and dark/light screenshots. Both the
 ## 26 October 2026 � homepage premium refinement for review
 
 Owner requested refinement of the existing homepage, preserving the logo/headline/architecture. Replaced floating hero labels and cropped overlay with a connected, keyboard-operable engineering journey and illustrative workflows. Refined header, CTA hierarchy and audience transition; removed decorative hero ribbon and image drift. Both themes checked at six widths; all stage panels stable, CTA/stage/audience targets verified, zero desktop axe violations, no console errors. Homepage approval is pending. No other pages or deployment. Evidence: design-review/homepage-premium/REPORT.md and qa.json. This supersedes prior hero composition notes, not the approved brand identity.
+
+## 9 November 2026 - five-screen video and interaction reconciliation
+
+See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.

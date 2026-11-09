@@ -1,9 +1,9 @@
 # Design Requirements
 
-> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+> Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
-> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
+> Updated: 9 November 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
@@ -468,3 +468,7 @@ Owner requested fixed navigation after the transparent-header pass. Header now s
 Hero.tsx adds an atmospheric scope and explicit learning CTA class. Primary button uses a blue/indigo/violet gradient with slow CSS color-position motion, 1.05 hover / .95 active scale and a restrained glow; secondary uses a translucent 2px outline with matching hover/press feedback. Existing cyan/violet radial background glows are anchored behind headline/actions in both themes. Reduced motion disables animation, transforms and transitions. No new dependencies, sections or deployment.
 
 TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning, exactly three actions. Header stays at viewport top after scrolling 1500px. Normal-motion CTA gradient animation verified. Preview: design-review/fixed-header-2026-10-27/desktop.png.
+
+## 9 November 2026 - five-screen video and interaction reconciliation
+
+See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.

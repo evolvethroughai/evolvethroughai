@@ -279,3 +279,49 @@
 .colour-cord-caption{font-size:10px;letter-spacing:.04em;margin-top:8px;white-space:nowrap;background:#faf7f1d9;padding:3px 6px;border-radius:6px}
 @media(max-width:700px){.colour-flow-play.colour-pull-cord{left:auto;right:16px;transform:none;width:90px}.colour-cord-line{height:calc(30px + var(--cord-pull,0px))}}
 
+
+/* Pearl and brushed-violet pull cord, with a tactile ring and quiet instruction. */
+.colour-flow-play.colour-pull-cord{width:132px;height:154px;overflow:visible;border-radius:14px}
+.colour-cord-mount{width:22px;height:6px;border:1px solid #c7bdd4;border-radius:0 0 7px 7px;background:linear-gradient(90deg,#b8afc6,#fff,#b8afc6);box-shadow:0 2px 5px #49356718;flex-shrink:0}
+.colour-cord-line{width:3px;height:calc(48px + var(--cord-pull,0px));background:repeating-linear-gradient(135deg,#d8d0e3 0 2px,#8a799f 2px 3px,#ede8f3 3px 4px);box-shadow:1px 0 2px #fff8;transition:height .45s cubic-bezier(.2,.8,.2,1)}
+.colour-pull-cord[data-pulling=true] .colour-cord-line{transition:none}
+.colour-cord-handle{position:relative;display:grid;place-items:center;width:28px;height:36px;border-radius:11px 11px 14px 14px;border:1px solid #afa0c7;background:linear-gradient(115deg,#fdfbff 0%,#ded3ee 35%,#aa94ce 70%,#e7def3 100%);box-shadow:inset 1px 1px 2px #fff,inset -1px -1px 2px #70588b35,0 5px 12px #4a326429;transition:box-shadow .25s,border-color .25s}
+.colour-cord-handle>span{width:12px;height:17px;border:1px solid #af9ec4;border-radius:8px;background:#f4f1f5;box-shadow:inset 0 2px 3px #49346720,0 1px #fff}
+.colour-cord-caption{margin-top:10px;background:#fff9;border:1px solid #ded5e680;padding:4px 9px;border-radius:999px;font-size:9px;letter-spacing:.065em;color:#61516f;backdrop-filter:blur(8px)}
+.colour-pull-cord:hover .colour-cord-handle{border-color:#8e72b8;box-shadow:inset 1px 1px 2px #fff,0 5px 16px #7956ae38}
+.colour-pull-cord:focus-visible{outline:2px solid #7a5da9;outline-offset:6px}
+@media(max-width:700px){.colour-flow-play.colour-pull-cord{width:100px}.colour-cord-line{height:calc(30px + var(--cord-pull,0px))}}
+@media(prefers-reduced-motion:reduce){.colour-cord-line,.colour-cord-handle{transition:none}}
+
+
+/* Robot-image pull handle; native ring remains until the supplied asset is available. */
+.colour-cord-handle.colour-cord-handle--robot{width:62px;height:66px;background:transparent;border:0;border-radius:18px;box-shadow:none}
+.colour-cord-handle--robot img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;filter:drop-shadow(0 4px 5px #77639630)}
+.colour-cord-caption{max-width:180px;white-space:normal;text-align:center;line-height:1.5}
+.colour-flow-play.colour-pull-cord{height:190px}
+
+
+/* Screen 6: restrained dark motion and an occasional small astronaut accent. */
+.shared-landing-layout .business-cinematic-screen{position:relative;isolation:isolate;background:#18191c!important;color:#f0f2f7;--ink:#f0f2f7;--muted:#c4cbd8}
+.shared-landing-layout .business-cinematic-screen::before{content:none}
+.business-cinema-backdrop{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
+.business-cinema-backdrop video{width:100%;height:100%;object-fit:cover;opacity:.18;filter:grayscale(.4)}
+.business-cinematic-screen>.container{position:relative;z-index:1}
+.business-astronaut-accent{position:absolute;right:4%;top:12px;width:110px;height:130px;z-index:0;pointer-events:none;overflow:hidden;mask-image:radial-gradient(ellipse,#000 25%,transparent 72%);opacity:0;animation:astronaut-visit 24s ease-in-out infinite}
+.business-astronaut-accent video{width:100%;height:100%;object-fit:cover;object-position:center 65%}
+@keyframes astronaut-visit{0%,68%,100%{opacity:0;transform:translateY(8px)}75%,87%{opacity:.5;transform:translateY(0)}}
+.shared-landing-layout .business-cinematic-screen :is(h2,h3,.business-solutions-close>p){color:#f0f2f7}
+.shared-landing-layout .business-cinematic-screen :is(.business-solutions-intro p,.business-solutions-grid p,.business-workflow p,.business-solutions-caption,.business-solutions-close p span){color:#c4cbd8}
+.shared-landing-layout .business-cinematic-screen :is(.business-workflow,.business-solutions-grid article){background:#222733d9;border-color:#71809b40}
+@media(prefers-reduced-motion:reduce){.business-astronaut-accent{display:none}}
+
+
+/* Slightly reduce only Screen 6's main background footage. */
+.business-cinematic-screen .business-cinema-backdrop video{transform:scale(.9);transform-origin:center;mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%)}
+
+
+
+/* Attach the cord to the raised hand rather than the robot's head. */
+.colour-pull-cord:has(.colour-cord-handle--robot) .colour-cord-mount,.colour-pull-cord:has(.colour-cord-handle--robot) .colour-cord-line{transform:translateX(20px)}
+.colour-cord-handle.colour-cord-handle--robot{margin-top:-25px;position:relative;z-index:1}
+
