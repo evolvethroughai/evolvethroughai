@@ -1,0 +1,35 @@
+.finish-motion-section{position:relative;isolation:isolate}
+.finish-atmosphere{position:absolute;top:0;bottom:0;left:calc((100% - var(--site-viewport-width,100%))/2);width:var(--site-viewport-width,100%);overflow:hidden;z-index:0;pointer-events:none;mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 80%,transparent)}
+.finish-atmosphere video{width:100%;height:100%;object-fit:cover;opacity:.13;filter:saturate(.65)}
+.finish-atmosphere--conversation video{opacity:.18;mix-blend-mode:multiply;object-position:center 65%}
+.finish-atmosphere-wash{position:absolute;inset:0;background:linear-gradient(90deg,#faf7f1b3,#faf7f180 55%,#faf7f1b3)}
+.finish-ambient-light{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 60%,#66cbd818,transparent 60%),radial-gradient(ellipse at 80% 30%,#a889d61a,transparent 65%)}
+.finish-motion-section>div:not(.finish-atmosphere){position:relative;z-index:1}
+.finish-motion-section[data-finish-visible=true] .finish-ambient-light{animation:finish-light-drift 20s ease-in-out infinite alternate}
+.finish-motion-section[data-finish-visible=false] .finish-ambient-light{animation-play-state:paused}
+@keyframes finish-light-drift{from{transform:translateY(0) scale(1)}to{transform:translateY(-12px) scale(1.04)}}
+.investment-section.finish-motion-section::before,.faq-section.finish-motion-section::before{content:none}
+.investment-section.finish-motion-section .investment-card{background:#fffdf9ed;box-shadow:0 18px 60px #404a7414}
+.finish-motion-section .investment-conversation-steps>span>span{transition:box-shadow .25s,border-color .25s}
+.finish-motion-section .investment-conversation-steps>span:hover>span{border-color:#8b8ddd;box-shadow:0 0 18px #8b8ddd26}
+.faq-section.finish-motion-section .faq-list{background:#fffdf9d9;border-radius:18px;padding-inline:20px;border-top:0}
+.faq-section.finish-motion-section details[open]>p{animation:finish-answer-in .25s ease-out both}
+@keyframes finish-answer-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.site-footer.finish-motion-section .finish-atmosphere video{opacity:.17;filter:saturate(.7) brightness(.7)}
+.site-footer.finish-motion-section .finish-atmosphere-wash{background:linear-gradient(90deg,#18191cdb,#18191c99,#18191cd9)}
+.site-footer.finish-motion-section .finish-atmosphere{left:0;width:100%;mask-image:linear-gradient(transparent,#000 18%,#000 90%,transparent)}
+.site-footer.finish-motion-section .footer-invitation-actions .footer-primary{transition:transform .25s,box-shadow .25s}
+.site-footer.finish-motion-section .footer-invitation-actions .footer-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px #5d66dc30}
+[data-theme=dark] .finish-atmosphere-wash{background:linear-gradient(90deg,#191b22d9,#191b22a6,#191b22d9)}
+[data-theme=dark] .finish-atmosphere--conversation video{mix-blend-mode:screen;opacity:.12}
+[data-theme=dark] .investment-section.finish-motion-section .investment-card,[data-theme=dark] .faq-section.finish-motion-section .faq-list{background:#242833ed}
+@media(max-width:700px){.finish-atmosphere video{opacity:.1}.faq-section.finish-motion-section .faq-list{padding-inline:14px}}
+@media(prefers-reduced-motion:reduce){.finish-motion-section .finish-ambient-light,.faq-section.finish-motion-section details[open]>p{animation:none!important}.finish-motion-section .footer-primary,.finish-motion-section .investment-conversation-steps>span>span{transition:none!important;transform:none!important}}
+
+[data-theme=dark] .investment-section.finish-motion-section .investment-promises,[data-theme=dark] .investment-section.finish-motion-section .investment-promises li,[data-theme=dark] .faq-section.finish-motion-section .faq-eyebrow{color:#cbd5e1}
+
+/* Distinct custom film loops, with clear colour depth and soft section edges. */
+.finish-atmosphere video,.finish-atmosphere--conversation video{opacity:.48;mix-blend-mode:normal;filter:saturate(.85)}
+[data-theme=dark] .finish-atmosphere--conversation video{opacity:.48;mix-blend-mode:normal}
+.site-footer.finish-motion-section .finish-atmosphere video{opacity:.52;filter:saturate(.85)}
+

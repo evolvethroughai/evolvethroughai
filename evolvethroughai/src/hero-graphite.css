@@ -325,3 +325,44 @@
 .colour-pull-cord:has(.colour-cord-handle--robot) .colour-cord-mount,.colour-pull-cord:has(.colour-cord-handle--robot) .colour-cord-line{transform:translateX(20px)}
 .colour-cord-handle.colour-cord-handle--robot{margin-top:-25px;position:relative;z-index:1}
 
+
+/* Screen 6 connected-world visual replaces both earlier decorative clips. */
+.business-cinematic-screen .business-cinema-backdrop{inset:0 0 auto auto;width:58%;height:460px;top:70px;mask-image:linear-gradient(to bottom,transparent,#000 16%,#000 80%,transparent)}
+.business-cinematic-screen .business-cinema-backdrop video{object-fit:contain;object-position:center;transform:none;opacity:.4;filter:saturate(.8);mask-image:linear-gradient(to right,transparent,#000 20%,#000 85%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,#000 20%,#000 85%,transparent)}
+.business-video-disclosure{position:absolute;bottom:70px;left:25%;color:#d6ddea;background:#18191ccc;border-radius:5px;padding:3px 7px;font-size:9px}
+@media(max-width:700px){.business-cinematic-screen .business-cinema-backdrop{top:0;width:100%;height:300px;opacity:.7}.business-video-disclosure{bottom:35px}}
+
+
+/* Position Screen 6's cropped world footage on the left. */
+.business-cinematic-screen .business-cinema-backdrop{left:0;right:auto}
+
+
+/* Expand Screen 6's world footage within the left background. */
+.business-cinematic-screen .business-cinema-backdrop{width:72%;height:620px;top:32px}
+.business-cinematic-screen .business-cinema-backdrop video{object-fit:cover;opacity:.5}
+@media(max-width:700px){.business-cinematic-screen .business-cinema-backdrop{width:100%;height:360px;top:0}}
+
+
+/* Avoid cropping/upscaling softness and unnecessary colour filtering on the globe. */
+.business-cinematic-screen .business-cinema-backdrop video{object-fit:contain;filter:none;opacity:.65}
+
+
+/* Screen 6 uses one uninterrupted globe shot across the complete section. */
+.shared-landing-layout .business-cinematic-screen .business-cinema-backdrop{inset:0;width:100%;height:100%;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent)}
+.business-cinematic-screen .business-cinema-backdrop video{width:100%;height:100%;object-fit:cover;opacity:.48;filter:none;mask-image:none;-webkit-mask-image:none}
+.business-cinematic-screen .business-cinema-backdrop::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#18191c80,#18191c33 50%,#18191c80)}
+
+
+/* Static globe backdrop: no playback, sharper presentation. */
+.business-cinematic-screen .business-cinema-backdrop img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.65}
+
+
+/* Screen 6 contrast: readable labels and light-spectrum type over the detailed globe. */
+.business-cinematic-screen .business-cinema-backdrop::after{background:linear-gradient(90deg,#18191cce 0%,#18191c8c 52%,#18191cb8 100%)}
+.shared-landing-layout .business-cinematic-screen .business-solutions-intro h2>span{background:linear-gradient(105deg,#a6c8ff,#8de0eb 48%,#cbb3f5);background-clip:text;-webkit-background-clip:text;color:transparent}
+.shared-landing-layout .business-cinematic-screen :is(.business-solutions-eyebrow,.business-workflow-top,.business-workflow-tag,.business-workflow-footer,.business-workflow-number){color:#d4deef}
+.shared-landing-layout .business-cinematic-screen .business-workflow-number{background:#353d50;border-color:#97a8cb70}
+.shared-landing-layout .business-cinematic-screen :is(.business-workflow,.business-solutions-grid article){background:#202530ed;border-color:#7a8ba650}
+.shared-landing-layout .business-cinematic-screen .business-solutions-grid article>svg{color:#a8c8ff}
+.shared-landing-layout .business-cinematic-screen :is(.business-solutions-intro p,.business-solutions-grid p,.business-workflow p,.business-solutions-caption,.business-solutions-close p span){color:#e0e5ef}
+

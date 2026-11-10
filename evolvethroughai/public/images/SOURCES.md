@@ -6,3 +6,5 @@ Digital Solutions card: business analytics laptop photograph, https://images.uns
 9 November 2026: Current hero card originals/optimized WebPs are retained. The business puzzle video supersedes the former business introduction photo only; the homepage Solutions card still uses digital-solutions-card.webp. Current video mapping and provenance: ../videos/SOURCES.md.
 
 9 November 2026: pull-cord-robot.png is an AI-derived transparent cutout based on the owner's cute robot reference. Used only as the Screen 5 draggable handle; not the official logo.
+
+10 November 2026: business-world-enhanced.webp is an AI-enhanced illustration derived from the selected world1 video still, improving visual detail. Not recovered native HD footage or a measured real infrastructure map. Original still retained.

@@ -3,8 +3,8 @@
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
-> Updated: 9 November 2026 · Timezone: Asia/Kolkata (IST).
-> Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
+> Updated: 9 November 2026 Â· Timezone: Asia/Kolkata (IST).
+> Business intention: the ownerâ€™s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
 ## Current milestone
@@ -17,25 +17,25 @@ An existing local implementation already covers parts of Phases 2 and 3. Do not 
 
 | Phase | Inspection snapshot | Acceptance still needed |
 | --- | --- | --- |
-| 1 — Foundation/design approval | Existing app, exports, notes, source context and latest QA artifacts inspected; documentation being established | Owner review and explicit homepage approval |
-| 2 — Core website | Navigation and one composed homepage exist in React/Vite | Dedicated Learning Programs and Masterclass routes, agreed page architecture and owner review |
-| 3 — Curriculum/interactions | 18-module overview, 14 project concepts, 8 lifecycle controls, 9 capstone UI stages and 5 progression controls exist | Original detailed source reconciliation, approved lab scope and content review |
-| 4 — Business functionality | Browser validation and local enquiry/curriculum downloads exist | Real delivery backend, verified contacts, spam handling, data practices, legal pages and approved analytics |
-| 5 — Production launch | Earlier build/TypeScript/browser/axe results are recorded; local build output exists | Full release review, domain/HTTPS/hosting verification, production forms and deployment smoke tests |
-| 6 — Content/marketing | Channels and strategy discussed | Owner-approved publication cadence, real accounts/content and measured enquiries |
-| 7 — Expansion | Future program/service/product directions documented | Demand, capacity, detailed scope and explicit approval |
+| 1 â€” Foundation/design approval | Existing app, exports, notes, source context and latest QA artifacts inspected; documentation being established | Owner review and explicit homepage approval |
+| 2 â€” Core website | Navigation and one composed homepage exist in React/Vite | Dedicated Learning Programs and Masterclass routes, agreed page architecture and owner review |
+| 3 â€” Curriculum/interactions | 18-module overview, 14 project concepts, 8 lifecycle controls, 9 capstone UI stages and 5 progression controls exist | Original detailed source reconciliation, approved lab scope and content review |
+| 4 â€” Business functionality | Browser validation and local enquiry/curriculum downloads exist | Real delivery backend, verified contacts, spam handling, data practices, legal pages and approved analytics |
+| 5 â€” Production launch | Earlier build/TypeScript/browser/axe results are recorded; local build output exists | Full release review, domain/HTTPS/hosting verification, production forms and deployment smoke tests |
+| 6 â€” Content/marketing | Channels and strategy discussed | Owner-approved publication cadence, real accounts/content and measured enquiries |
+| 7 â€” Expansion | Future program/service/product directions documented | Demand, capacity, detailed scope and explicit approval |
 
 ## Founder roadmap and acceptance criteria
 
-## PART 20 — WEBSITE DEVELOPMENT ROADMAP
+## PART 20 â€” WEBSITE DEVELOPMENT ROADMAP
 
 These are planning targets, not guaranteed deadlines.
 
-I have approximately 5–7 hours per week available for this project.
+I have approximately 5â€“7 hours per week available for this project.
 
 Adjust the timeline based on actual implementation complexity.
 
-### PHASE 1 — FOUNDATION AND DESIGN APPROVAL
+### PHASE 1 â€” FOUNDATION AND DESIGN APPROVAL
 
 Objectives:
 
@@ -54,7 +54,7 @@ Acceptance criteria:
 - Visual direction clearly established.
 - Homepage reviewed and approved by me.
 
-### PHASE 2 — CORE WEBSITE
+### PHASE 2 â€” CORE WEBSITE
 
 Build or refine:
 
@@ -74,7 +74,7 @@ Acceptance criteria:
 - Mobile experience is usable.
 - No fabricated business claims.
 
-### PHASE 3 — CURRICULUM AND INTERACTIVE EXPERIENCES
+### PHASE 3 â€” CURRICULUM AND INTERACTIVE EXPERIENCES
 
 Implement:
 
@@ -94,7 +94,7 @@ Acceptance criteria:
 - Mobile layouts are usable.
 - Motion does not block accessibility.
 
-### PHASE 4 — BUSINESS FUNCTIONALITY
+### PHASE 4 â€” BUSINESS FUNCTIONALITY
 
 Implement:
 
@@ -115,7 +115,7 @@ Acceptance criteria:
 - Contact information is verified.
 - Personal information is handled responsibly.
 
-### PHASE 5 — QUALITY AND PRODUCTION LAUNCH
+### PHASE 5 â€” QUALITY AND PRODUCTION LAUNCH
 
 Tasks:
 
@@ -139,7 +139,7 @@ Acceptance criteria:
 - Forms work.
 - The website is ready for public visitors.
 
-### PHASE 6 — CONTENT AND MARKETING
+### PHASE 6 â€” CONTENT AND MARKETING
 
 Potential activities:
 
@@ -154,7 +154,7 @@ Potential activities:
 
 Content should provide genuine value rather than rely on exaggerated marketing.
 
-### PHASE 7 — BUSINESS EXPANSION
+### PHASE 7 â€” BUSINESS EXPANSION
 
 After validating initial demand:
 
@@ -171,7 +171,7 @@ After validating initial demand:
 
 ## Version 1 boundaries
 
-## PART 22 — WEBSITE VERSION 1 SCOPE
+## PART 22 â€” WEBSITE VERSION 1 SCOPE
 
 The first public version should prioritize:
 
@@ -202,7 +202,7 @@ Build a strong foundation without overengineering.
 
 ---
 
-## PART 13 — TECHNICAL DIRECTION
+## PART 13 â€” TECHNICAL DIRECTION
 
 Previously discussed technologies:
 
@@ -256,7 +256,7 @@ Do not push, deploy, delete existing code, or change remotes without explicit ap
 5. Prepare dedicated content routes and production discovery configuration where approved, then test production behavior.
 6. Publish only against verified domain/hosting details and explicit authorization; move into selling when delivery is ready.
 
-Plan around the founder's 5–7 available hours/week. Use one small deliverable and a review checkpoint at a time. Dates and phase durations are not committed.
+Plan around the founder's 5â€“7 available hours/week. Use one small deliverable and a review checkpoint at a time. Dates and phase durations are not committed.
 
 ## Launch checklist
 
@@ -281,11 +281,11 @@ Plan around the founder's 5–7 available hours/week. Use one small deliverable 
 
 Final design approval; original detailed curriculum/labs; live enquiry delivery; confirmed commercial/legal/contact details; and verified public deployment remain open. Separate page routing/prerendering/SEO architecture, approved analytics, lead storage and hosting choices also require decisions. Keep unresolved questions in [Decisions and open items](DECISIONS_AND_OPEN_ITEMS.md).
 
-## Screen-by-screen review checkpoint — 26 October 2026
+## Screen-by-screen review checkpoint â€” 26 October 2026
 
 Screen 01 (header and hero) has a bounded corrective pass and recorded verification, and is awaiting owner review. Do not treat this as approval of the whole homepage. Follow [Homepage screen review](HOMEPAGE_SCREEN_REVIEW.md) before moving to the audience section or additional pages.
 
-## 26 October 2026 � immersive direction, milestone 01
+## 26 October 2026 ï¿½ immersive direction, milestone 01
 
 Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
 
@@ -409,3 +409,8 @@ Graphite hero retained; spotlight trials removed. Glass navigation pills, intera
 ## 9 November 2026 - five-screen video and interaction reconciliation
 
 See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.
+
+## 10 November 2026 - Screens 7–9 atmosphere refinement
+Added local video atmospheres to the enquiry, FAQ and footer sections, with soft edge fades, restrained ambient drift, answer reveals and CTA feedback. Reuses existing media; no new application dependencies. Videos load near view, pause offscreen and use posters under reduced motion. Desktop/mobile light/dark browser checks found no horizontal overflow; TypeScript and production build passed. Visual approval remains pending. No deployment.
+
+Screens 7�9 correction: each now has its own locally generated abstract video (aurora, cyan contours, orbital glow), replacing the reused dotted/pour media. Existing lazy playback and reduced-motion posters retained. No content changes or deployment.

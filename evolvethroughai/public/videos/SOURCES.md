@@ -11,3 +11,5 @@ Updated 9 November 2026. All source filenames below were supplied by the owner f
 | 5 | 6721009-uhd_4096_2160_30fps.mp4 | thread-colour-pour.mp4 |
 
 Superseded: business-screen-960.mp4 (6558232) and learning-path-atmosphere.mp4 (7077358). White robot derivatives are a rejected experiment. Retained files are not all actively rendered. Screen 5 starts only after pull/tap/keyboard activation; other screens respect automatic playback preferences. See ../../Important_Documents/docs/CURRENT_WEBSITE_HANDOVER.md for behavior and QA limits.
+
+10 November 2026: Screens 7, 8 and 9 now use distinct custom procedural abstract loops: finish-aurora.mp4, finish-contours.mp4 and finish-orbit.mp4. Generated locally with mathematical colour fields, 640x360, 24 fps, eight-second cyclic animation, silent H.264. Each has a WebP poster. No external footage or new dependencies. Supersedes shared dotted/pouring footage on these three screens.
