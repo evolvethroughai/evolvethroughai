@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ArrowUpRight, Check, Code2, Layers } from 'lucide-react';
 import { useReducedMotion } from 'motion/react';
@@ -7,13 +8,14 @@ import './LearningSolutionsScreens.css';
 
 export function SectionVideo({src='/videos/learning-screen-1280.mp4',poster='/videos/learning-screen-poster.webp',restartOnEnter=false,manualPlay=false}:{src?:string;poster?:string;restartOnEnter?:boolean;manualPlay?:boolean}) {
  const video = useRef<HTMLVideoElement>(null);
+ const [cordSlot,setCordSlot]=useState<HTMLElement|null>(null);
+ useEffect(()=>{if(manualPlay)setCordSlot(document.getElementById('learning-path-cord-slot'));},[manualPlay]);
  const [started,setStarted]=useState(false);
  const [playCount,setPlayCount]=useState(0);
  const [pull,setPull]=useState(0);
- const [robotImageAvailable,setRobotImageAvailable]=useState(true);
  const pullStart=useRef(0);
  const dragged=useRef(false);
- const startVideo=()=>{setStarted(true);setPlayCount(v=>v+1);const element=video.current;if(element){if(!element.src)element.src=src;element.currentTime=0;void element.play().catch(()=>{});}};
+ const startVideo=()=>{document.getElementById('programs')?.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});setStarted(true);setPlayCount(v=>v+1);const element=video.current;if(element){if(!element.src)element.src=src;element.currentTime=0;void element.play().catch(()=>{});}};
  const reduced = useReducedMotion();
  const inView=useRef(false);
  const [source,setSource] = useState<string>();
@@ -28,7 +30,7 @@ export function SectionVideo({src='/videos/learning-screen-1280.mp4',poster='/vi
   return()=>{observer.disconnect();document.removeEventListener('visibilitychange',sync);element.pause();};
  },[reduced,src,restartOnEnter,manualPlay,started]);
  useEffect(()=>{if(source&&inView.current&&!document.hidden)void video.current?.play().catch(()=>{});},[source]);
- return <><video ref={video} data-manual={manualPlay || undefined} data-started={started || undefined} data-play-count={playCount} style={manualPlay ? {animationName:started ? (playCount % 2 ? 'pour-reveal-a' : 'pour-reveal-b') : undefined} : undefined} src={source} poster={manualPlay&&!started?undefined:poster} muted loop playsInline preload={source?'auto':'none'} aria-hidden="true" />{manualPlay&&<button type="button" className="colour-flow-play colour-pull-cord" data-pulling={pull>0 || undefined} aria-label={started?'Pull to replay colour pour':'Pull to start colour pour'} style={{'--cord-pull':pull+'px'} as import('react').CSSProperties} onPointerDown={event=>{pullStart.current=event.clientY;dragged.current=false;event.currentTarget.setPointerCapture(event.pointerId);}} onPointerMove={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))setPull(Math.max(0,Math.min(85,event.clientY-pullStart.current)));}} onPointerUp={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))event.currentTarget.releasePointerCapture(event.pointerId);if(pull>=28){dragged.current=true;startVideo();}setPull(0);}} onPointerCancel={()=>setPull(0)} onClick={()=>{if(dragged.current){dragged.current=false;return;}startVideo();}}><span className="colour-cord-mount" aria-hidden="true"/><span className="colour-cord-line" aria-hidden="true"/><span className={`colour-cord-handle${robotImageAvailable?' colour-cord-handle--robot':''}`} aria-hidden="true">{robotImageAvailable?<img src="/images/pull-cord-robot.png" alt="" draggable={false} onError={()=>setRobotImageAvailable(false)} />:<span/>}</span><span className="colour-cord-caption">Pull me to fill colour to your life</span></button>}</>;
+ return <><video ref={video} data-manual={manualPlay || undefined} data-started={started || undefined} data-play-count={playCount} style={manualPlay ? {animationName:started ? (playCount % 2 ? 'pour-reveal-a' : 'pour-reveal-b') : undefined} : undefined} src={source} poster={manualPlay&&!started?undefined:poster} muted loop playsInline preload={source?'auto':'none'} aria-hidden="true" />{manualPlay&&cordSlot&&createPortal(<div className="learning-path-cord-control"><button type="button" className="colour-flow-play colour-pull-cord" data-pulling={pull>0 || undefined} aria-label="Drag robot down to play colours; click to explore learning pathways. Keyboard: Arrow Down plays colours." style={{'--cord-pull':pull+'px'} as import('react').CSSProperties} onPointerDown={event=>{pullStart.current=event.clientY;dragged.current=false;event.currentTarget.setPointerCapture(event.pointerId);}} onPointerMove={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))setPull(Math.max(0,Math.min(85,event.clientY-pullStart.current)));}} onPointerUp={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))event.currentTarget.releasePointerCapture(event.pointerId);if(pull>=28){dragged.current=true;startVideo();}setPull(0);}} onPointerCancel={()=>setPull(0)} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();startVideo();}}} onClick={()=>{if(dragged.current){dragged.current=false;return;}window.location.hash='programs';}}><span className="pull-art-title">Explore the <strong>Learning Pathways</strong><ArrowUpRight size={23} aria-hidden="true"/></span><span className="pull-art-anchor" aria-hidden="true"><span className="pull-art-knot"><img src="/images/pathway-rope-knot.png" alt="" draggable={false}/></span></span><span className="pull-art-rope" aria-hidden="true"><img src="/images/pathway-gold-rope.png" alt="" draggable={false}/></span><span className="pull-art-robot"><img src="/images/pathway-pull-robot.png" alt="" draggable={false}/><span className="pull-robot-ring" aria-hidden="true"/></span><span className="pull-art-caption"><strong>Pull the thread.</strong><span>Unlock your next journey.</span></span></button></div>,cordSlot)}</>;
 }
 export function EngineeringJourney(){return <>
  <section id="engineering-journey" className="workspace-journey dual-track-showcase learning-video-screen" aria-labelledby="academy-heading">

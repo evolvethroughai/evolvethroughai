@@ -33,3 +33,49 @@
 [data-theme=dark] .finish-atmosphere--conversation video{opacity:.48;mix-blend-mode:normal}
 .site-footer.finish-motion-section .finish-atmosphere video{opacity:.52;filter:saturate(.85)}
 
+
+/* Owner-supplied stairway film: preserve square framing, fade into the shared plane. */
+.finish-atmosphere--conversation video{object-fit:contain;object-position:center;opacity:.65;filter:saturate(.85);mask-image:radial-gradient(ellipse 65% 70% at center,#000 35%,transparent 80%)}
+[data-theme=dark] .finish-atmosphere--conversation video{opacity:.65}
+
+
+.finish-atmosphere--conversation img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.85}
+.finish-atmosphere--conversation .finish-atmosphere-wash{background:linear-gradient(90deg,#142029e8 0%,#142029b0 45%,#14202938 75%,#14202960)} 
+.investment-section.finish-motion-section:has(.finish-atmosphere--conversation img)>div:not(.investment-card):not(.finish-atmosphere){color:#f2f5fa}
+.investment-section.finish-motion-section:has(.finish-atmosphere--conversation img) .investment-eyebrow,.investment-section.finish-motion-section:has(.finish-atmosphere--conversation img) .investment-checks,.investment-section.finish-motion-section:has(.finish-atmosphere--conversation img)>div:not(.investment-card)>p{color:#e0e8f2}
+
+
+.investment-section.finish-motion-section:has(.finish-atmosphere--conversation img)>div:not(.investment-card) h2{color:#f3f6fc}
+
+
+/* Screen 7: retain the supplied image's full colour and clarity. */
+.investment-section.investment-refined.finish-motion-section::before,
+.investment-section.investment-refined.finish-motion-section::after{content:none!important;display:none!important}
+.investment-section .finish-atmosphere--conversation{mask-image:none;-webkit-mask-image:none}
+.investment-section .finish-atmosphere--conversation img{opacity:1;filter:none;mix-blend-mode:normal}
+.investment-section .finish-atmosphere--conversation .finish-atmosphere-wash,
+.investment-section .finish-atmosphere--conversation .finish-ambient-light{display:none}
+.investment-section.finish-motion-section>div:not(.finish-atmosphere):not(.investment-card){background:linear-gradient(120deg,#121e29d9,#121e29a8);padding:28px;border-radius:20px;text-shadow:0 1px 3px #0005}
+.investment-section.finish-motion-section .investment-card{background:#1c2532ed!important;border-color:#a2b5ce50;color:#f1f5fc;box-shadow:0 12px 38px #0003}
+.investment-section.finish-motion-section .investment-card h3,
+.investment-section.finish-motion-section .investment-card p,
+.investment-section.finish-motion-section .investment-card label,
+.investment-section.finish-motion-section .investment-card .mini-label,
+.investment-section.finish-motion-section .investment-conversation-steps{color:#e1e9f4}
+.investment-section.finish-motion-section .investment-card .price-status span{color:#aacfff}
+@media(max-width:600px){.investment-section.finish-motion-section>div:not(.finish-atmosphere):not(.investment-card){padding:20px}}
+.investment-section.finish-motion-section .investment-checks span,.investment-section.finish-motion-section .investment-conversation-steps>span,.investment-section.finish-motion-section .investment-conversation-steps>span>span{color:#e1e9f4!important}
+.investment-section.finish-motion-section>div:not(.investment-card) h2 em{background:linear-gradient(100deg,#acd1ff,#8fe2ed,#c7b1f6);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:none}
+
+/* Screen 8: owner-selected connected-node film, softer behind the answers. */
+.faq-section .finish-atmosphere--clarity video{opacity:.55;filter:none;object-fit:cover}
+.faq-section .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#181b2399,#181b2366 43%,#181b23c9 65%,#181b23c9)}
+.faq-section .finish-atmosphere--clarity .finish-ambient-light{display:none}
+.faq-section.finish-motion-section:has(.finish-atmosphere--clarity){color:#edf3fb}
+.faq-section.finish-motion-section:has(.finish-atmosphere--clarity) h2{color:#f1f5fc}
+.faq-section.finish-motion-section:has(.finish-atmosphere--clarity) .faq-list{background:#202633ed;color:#f0f4fa}
+.faq-section.finish-motion-section:has(.finish-atmosphere--clarity) :is(summary,.faq-list p,.faq-intro p,.faq-eyebrow){color:#dce5f1}
+.faq-section .finish-atmosphere--clarity{background:#181b23;mask-image:none;-webkit-mask-image:none}
+.faq-section.finish-motion-section .faq-refined-intro :is(p,a,.faq-refined-label){color:#d8e4f4!important}
+.faq-section.finish-motion-section .faq-list details>p{color:#d8e4f4!important}
+.faq-section.finish-motion-section .faq-refined-intro h2 em{background:linear-gradient(100deg,#a9d0ff,#94dfeb,#c7b3f3);background-clip:text;-webkit-background-clip:text;color:transparent}

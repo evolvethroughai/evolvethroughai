@@ -414,3 +414,46 @@ See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected fi
 Added local video atmospheres to the enquiry, FAQ and footer sections, with soft edge fades, restrained ambient drift, answer reveals and CTA feedback. Reuses existing media; no new application dependencies. Videos load near view, pause offscreen and use posters under reduced motion. Desktop/mobile light/dark browser checks found no horizontal overflow; TypeScript and production build passed. Visual approval remains pending. No deployment.
 
 Screens 7�9 correction: each now has its own locally generated abstract video (aurora, cyan contours, orbital glow), replacing the reused dotted/pour media. Existing lazy playback and reduced-motion posters retained. No content changes or deployment.
+
+## 11 November 2026 - Screen 7 interactive robot journey
+Owner approved the five-step staircase concept. Added tappable steps, robot hop/advance, rotating educational messages, restart and final conversation CTA. Existing enquiry form, budget preference and authentication preserved. Existing robot PNG reused; no new dependencies. Keyboard selection and all five steps verified at 390, 768 and 1440px with no horizontal overflow. TypeScript and production build passed. Reduced-motion CSS disables hops/transitions. Visual review remains open; no deployment.
+
+11 November 2026: Owner requested revert of the staircase trial. Restored the prior Screen 7 ambition copy/checklist and existing enquiry card. Distinct Screen 7–9 video backgrounds remain. The staircase entry above is historical and no longer active.
+
+11 November 2026 - Screen 7 stairway film interaction: owner requested richer quality and tap-driven milestones. Created a contrast/saturation-adjusted 30fps interpolated derivative from the supplied 438px, 4fps, two-second GIF. Five sequential tap/keyboard-triggered playback segments reveal aspirational achievement messages; replay resets the journey. Source animation does not contain five separately authored stair-climbing actions. Existing enquiry form retained. All five transitions and replay verified in browser; 390px no overflow; TypeScript/build passed. No deployment.
+
+11 November 2026: Replaced Screen 7 stairway footage with the newer ten-second learning-growth clip. Preserved 716px/30fps, applied light sharpening and colour refinement, refreshed poster and retained five tap milestones at natural speed. TypeScript/build passed. No deployment.
+
+11 November 2026: Owner supplied a landscape stairway still and requested a full, clear Screen 7 image. Replaced video/milestone interaction with optimized enhanced still and restored ambition/checklist introduction. Existing enquiry form and other screens preserved. Soft masking and readability overlay applied; no deployment.
+
+11 November 2026: Screen 7 image visibility correction removes full-image opacity, white wash, ambient overlay and section masking. Image now renders at full opacity without CSS filtering; local charcoal panels protect content contrast. Desktop/mobile light/dark checks found no overflow; build passed.
+
+11 November 2026: Screen 5 clarity review confirmed thread-colour-pour.mp4 remained unchanged (9 November, 5,581,038 bytes). Removed pearl media wash and list backdrop blur, reduced list white opacity to retain film colour. Video source, timing and robot pull trigger unchanged. Build passed.
+
+11 November 2026: Applied owner-selected connected-node video to Screen 8 FAQ with charcoal backdrop and protected answer contrast. Existing question categories/content, offscreen pause and reduced-motion poster behavior preserved. Desktop/mobile playback and answer expansion verified, no horizontal overflow; TypeScript/build passed. Screens 5 and 7 unchanged. No deployment.
+
+11 November 2026: Lower-homepage seam correction (Screens 5–9). Unified backing to graphite, removed outer section borders/shadows and added edge-only top/bottom fades on colour-pour, stairway image and FAQ media. Footer shares graphite backing. Central media remains unfiltered and full-strength. Desktop/mobile light/dark layout checks and build passed; no content, source media or interaction changes. No deployment.
+
+11 November 2026: Applied owner-selected human/AI hands image on final screen, conversation action aligned beneath left headline; added exact laptop-robot image below FAQ introduction over the existing connected-node video. Responsive fades retain charcoal continuity. Screen 7 and Screen 5 unchanged. TypeScript/build and desktop/mobile light/dark overflow checks passed; screenshot review completed. No deployment.
+
+11 November 2026: Robot colour cord moved to a portal slot beneath the Screen 4 Explore learning pathways link. Larger curved brown SVG rope and larger robot; drag starts/replays Screen 5 pouring film and reveals the section, ordinary click navigates to #programs. Separate keyboard Play colours action retained. Drag/click distinction verified; mobile no overflow; TypeScript/build passed. Existing video asset unchanged. No deployment.
+
+11 November 2026: Cord refinement makes learning-pathways label pale high-contrast, ties the brown curved rope to its underline with an SVG knot, and removes the separate Play/Replay colours text. Robot drag still plays colour video; click follows #programs. Arrow Down on focused robot provides keyboard colour activation. TypeScript/build and drag/navigation checks run; no deployment.
+
+12 November 2026: Replaced recreated cord/robot/link with the exact owner-saved Explore the Learning Pathways PNG. Artwork and wording unchanged, aspect ratio preserved. Drag-to-play Screen 5, click-to-#programs and keyboard Arrow Down activation retained. TypeScript/build passed. No deployment.
+
+12 November 2026: Changed the supplied pull-artwork background to matching graphite charcoal with imagegen; retained the robot/rope/lettering composition and existing drag/click handlers. Original image preserved. No deployment.
+
+12 November 2026: Removed the rectangular pull artwork and replaced it with transparent robot plus native heading/knot/SVG rope/caption over the actual page background. Drag visibly lowers robot and lengthens rope (50px displacement browser-verified), release starts Screen 5; click still targets #programs. TypeScript/build and drag/navigation/mobile overflow checks passed. No deployment.
+
+12 November 2026: Refined draggable robot to match the latest close-up reference: detailed golden fibre rope, silver-mounted realistic knot, larger robot and cyan/violet ring. Transparent layered composition retained. Build/TypeScript passed and 50px live drag movement verified. No deployment.
+
+12 November 2026: Screen 8 laptop robot enlarged and its rectangular photo background removed using a transparent derivative. Shared connected-line film now shows around robot/laptop, no image-box boundary. TypeScript/build and desktop/mobile video/FAQ checks passed; no horizontal overflow. No deployment.
+
+12 November 2026: Follow-up seam review removes opaque media backing boxes and decorative section pseudo-layers on Screens 7–9. Image/video layers extend 80px beyond section boundaries with 180px crossfades (mobile 50/130px). Footer structural horizontal dividers removed; footer light-theme contrast fixed over shared charcoal. Screens 7–9 desktop/mobile light/dark overflow checks and production build passed; visual transition screenshots inspected. No deployment.
+
+12 November 2026: Reduced Screen 8 node-film glare with lower media opacity/brightness and steadier charcoal wash; no CSS media animation/transition. Owner report of white flicker is awaiting confirmation of the affected screen. Sampled source brightness appeared stable; this pass reduces glare rather than claiming a proven flicker root cause. Build and playback/mobile checks passed.
+
+12 November 2026: Owner confirmed glare/flicker report concerns Screen 8. FAQ separators reduced to half-pixel low-opacity rules, last rule removed; network-film opacity .18 with brightness .5 and contrast .85, eliminating white glare at presentation level. Answer text contrast retained. Desktop/mobile playback and expansion checks and build passed; source video unchanged. No deployment.
+
+12 November 2026: Owner requested visible but shorter background connections on Screen 8. Restored moderate visibility and used a finer-scale mirrored network derivative; thin low-contrast FAQ separators remain. Desktop/mobile playback, no-overflow checks and TypeScript/build passed; screenshot inspected. No deployment.

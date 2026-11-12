@@ -366,3 +366,141 @@
 .shared-landing-layout .business-cinematic-screen .business-solutions-grid article>svg{color:#a8c8ff}
 .shared-landing-layout .business-cinematic-screen :is(.business-solutions-intro p,.business-solutions-grid p,.business-workflow p,.business-solutions-caption,.business-solutions-close p span){color:#e0e5ef}
 
+
+/* Screen 5: preserve the original pouring film's colour and detail. */
+#programs.pathway-video-screen .learning-route-video-media video{opacity:1;filter:none;mix-blend-mode:normal}
+#programs.pathway-video-screen .learning-route-video-media::after{background:none}
+.shared-landing-layout #programs.pathway-video-screen .program-list{background:#ffffffb8;backdrop-filter:none;-webkit-backdrop-filter:none}
+/* Continuous lower homepage: edge-only fades, never a wash over central media. */
+.shared-landing-layout:has(.cinematic-hero){background-color:#18191c!important}
+.shared-landing-layout #programs.pathway-video-screen{background:#18191c!important;border-block:0!important;box-shadow:none!important}
+#programs.pathway-video-screen .learning-route-video-media::after{background:linear-gradient(to bottom,#18191c 0%,#18191c00 120px,#18191c00 calc(100% - 120px),#18191c 100%)}
+.shared-landing-layout #programs .section-heading h2{color:#f1f4fa}
+.shared-landing-layout #programs .section-heading p{color:#d8e1ef}
+.shared-landing-layout #solutions.business-cinematic-screen{border-block:0!important;box-shadow:none!important;background:#18191c!important}
+.investment-section .finish-atmosphere--conversation,.faq-section .finish-atmosphere--clarity{background:#18191c;mask-image:none;-webkit-mask-image:none}
+.investment-section .finish-atmosphere--conversation::after,.faq-section .finish-atmosphere--clarity::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#18191c 0%,#18191c00 100px,#18191c00 calc(100% - 100px),#18191c 100%)}
+.shared-landing-layout .investment-section,.shared-landing-layout .faq-section{border-block:0!important;box-shadow:none!important;background:transparent!important}
+.shared-landing-layout .site-footer{background:#18191c!important;border-top:0!important;box-shadow:none!important}
+.site-footer.finish-motion-section .finish-atmosphere{background:#18191c;mask-image:linear-gradient(to bottom,transparent,#000 120px,#000);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 120px,#000)}
+@media(max-width:700px){#programs.pathway-video-screen .learning-route-video-media::after,.investment-section .finish-atmosphere--conversation::after,.faq-section .finish-atmosphere--clarity::after{background:linear-gradient(to bottom,#18191c,transparent 70px,transparent calc(100% - 70px),#18191c)}}
+
+/* Owner-selected imagery for the closing two screens. */
+.faq-robot-laptop{display:block;width:min(100%,440px);height:auto;margin-top:24px;mask-image:radial-gradient(ellipse at center,#000 40%,transparent 73%);-webkit-mask-image:radial-gradient(ellipse at center,#000 40%,transparent 73%);pointer-events:none}
+.site-footer .finish-atmosphere--closing{mask-image:none!important;-webkit-mask-image:none!important}
+.site-footer .finish-atmosphere--closing .finish-atmosphere-wash,.site-footer .finish-atmosphere--closing .finish-ambient-light{display:none}
+.site-footer .footer-hands-image{position:absolute;right:0;top:0;width:62%;height:440px;object-fit:cover;object-position:center;opacity:1;mask-image:linear-gradient(to right,transparent,#000 30%),linear-gradient(to bottom,transparent,#000 15%,#000 65%,transparent);mask-composite:intersect;-webkit-mask-image:linear-gradient(to right,transparent,#000 30%),linear-gradient(to bottom,transparent,#000 15%,#000 65%,transparent);-webkit-mask-composite:source-in}
+.site-footer .footer-invitation{display:block;min-height:330px;position:relative}
+.site-footer .footer-invitation>div{max-width:47%}
+.site-footer .footer-invitation-actions{margin-top:24px}
+@media(max-width:800px){.site-footer .footer-invitation>div{max-width:100%}.site-footer .footer-invitation{padding-bottom:190px}.site-footer .footer-hands-image{width:100%;top:230px;height:280px;mask-image:linear-gradient(transparent,#000 25%,#000 65%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 25%,#000 65%,transparent)}.faq-robot-laptop{max-width:320px;margin-inline:auto}}
+
+.site-footer .footer-invitation .footer-invitation-actions{margin-left:0;margin-right:auto}
+
+
+/* Cord anchored beneath the pathways link. */
+.learning-route-cord-anchor{display:flex;flex-direction:column;align-items:flex-start}
+#learning-path-cord-slot{position:relative;width:250px;min-height:300px}
+.learning-path-cord-control{position:relative;width:250px;height:300px}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{position:relative;left:auto;right:auto;top:0;transform:none;width:220px;height:265px;margin-left:5px;align-items:center}
+.learning-path-cord-control .colour-cord-mount{display:none}
+.learning-path-cord-control .colour-cord-line{display:block;width:160px;height:calc(145px + var(--cord-pull,0px));background:none;box-shadow:none;transform:none!important}
+.learning-path-cord-control .colour-cord-line svg{display:block;width:100%;height:100%;overflow:visible}
+.learning-path-cord-control .colour-cord-handle--robot{width:84px;height:90px;margin-top:-8px;margin-left:-57px;transform:translateY(0)}
+.learning-path-cord-control .colour-cord-caption{margin-top:5px;width:210px;max-width:210px;font-size:10px}
+.cord-keyboard-play{position:absolute;bottom:0;left:22px;border:0;background:transparent;text-decoration:underline;text-underline-offset:4px;color:#d5e2f5;font-size:11px;padding:8px;cursor:pointer}
+.learning-path-cord-control .colour-pull-cord:focus-visible,.cord-keyboard-play:focus-visible{outline:2px solid #accfff;outline-offset:3px}
+
+/* Visible link and rope tied directly to its underline. */
+.shared-landing-layout .learning-route-cord-anchor .learning-route-action{color:#d4e9ff!important;font-weight:600;text-decoration:none;border-bottom:1px solid #c5deffb3;padding-bottom:7px;line-height:1.5;text-shadow:0 1px 5px #0008}
+.shared-landing-layout .learning-route-cord-anchor .learning-route-action:hover{color:#fff!important;border-color:#fff}
+.learning-route-cord-anchor{width:fit-content;max-width:100%}
+#learning-path-cord-slot{margin-top:0;min-height:275px}
+.learning-path-cord-control{height:275px}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{margin-top:0;height:265px}
+.learning-path-cord-control .colour-cord-line{overflow:visible}
+.learning-path-cord-control .colour-cord-caption{color:#f2e7d5;background:#352b22e6;border-color:#b8966680;backdrop-filter:none}
+
+/* Exact owner-supplied artwork: no crop, recolour, opacity wash or recreated text. */
+.learning-route-cord-anchor{width:100%}
+#learning-path-cord-slot{width:min(100%,520px);min-height:0;margin-top:20px}
+.learning-path-cord-control{width:100%;height:auto}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{display:block;position:relative;width:100%;height:auto;min-height:0;margin:0;padding:0;left:auto;right:auto;top:auto;transform:none;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible;touch-action:none}
+.learning-path-thread-art{display:block;width:100%;height:auto;object-fit:contain;opacity:1;filter:none;pointer-events:none;user-select:none}
+.learning-path-cord-control .colour-pull-cord:focus-visible{outline:3px solid #a6d8ff;outline-offset:5px}
+
+/* Separate interactive layers merge into the real page, with no image rectangle. */
+#learning-path-cord-slot{width:min(100%,520px)}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{display:flex;flex-direction:column;align-items:center;gap:0;background:transparent!important;cursor:grab;color:#f0f5ff;padding:10px 4px 20px}
+.learning-path-cord-control .colour-pull-cord:active{cursor:grabbing}
+.pull-art-title{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;font-size:clamp(18px,2vw,26px);font-weight:600;line-height:1.4}
+.pull-art-title strong{background:linear-gradient(100deg,#2cc9ed,#9e7cf5,#c663ef);background-clip:text;-webkit-background-clip:text;color:transparent}
+.pull-art-anchor{position:relative;width:88%;height:2px;margin-top:20px;background:linear-gradient(90deg,transparent,#42d9ff,transparent);z-index:2}
+.pull-art-knot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-20deg);display:grid;place-items:center;width:37px;height:28px;border:5px ridge #c18b40;border-radius:50%;background:#70501f;color:#f9d68f;font-size:23px;box-shadow:0 0 14px #efbf5326}
+.pull-art-rope{display:block;width:160px;height:calc(180px + var(--cord-pull,0px));transition:height .4s cubic-bezier(.2,.8,.2,1)}
+.pull-art-rope svg{display:block;width:100%;height:100%;overflow:visible}
+.pull-art-robot{display:block;width:150px;height:170px;margin-top:-8px;margin-left:-50px;filter:drop-shadow(0 5px 12px #0005)}
+.pull-art-robot img{width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none}
+.pull-art-caption{display:flex;flex-direction:column;gap:3px;align-items:center;margin-top:12px;padding:12px 30px;border:1px solid #9172dfaa;border-radius:40px;background:linear-gradient(100deg,#08354565,#52266a40);box-shadow:0 0 18px #31caf018;color:#eaf3ff;font-size:14px}
+.pull-art-caption strong{font-size:20px;font-weight:600}
+.colour-pull-cord[data-pulling=true] .pull-art-rope{transition:none}
+@media(prefers-reduced-motion:reduce){.pull-art-rope{transition:none}}
+
+.pull-art-knot::after{content:'';width:17px;height:12px;border:4px ridge #e9b964;border-radius:50%;transform:rotate(55deg)}
+
+
+.pull-art-robot{margin-top:-53px;margin-left:-76px}
+
+
+.pull-art-robot{margin-top:-63px}
+
+
+/* Reference-matched golden fibres and metal-mounted knot. */
+.pull-art-knot{width:92px;height:60px;padding:0;display:block;border:0;border-radius:0;background:none;box-shadow:none;transform:translate(-50%,-50%);filter:drop-shadow(0 0 8px #dba84230)}
+.pull-art-knot::after{content:none}
+.pull-art-knot img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.pull-art-anchor{margin-top:30px}
+.pull-art-rope{width:105px;height:calc(230px + var(--cord-pull,0px));transform:translateX(-24px);margin-top:5px}
+.pull-art-rope>img{display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;user-select:none}
+.pull-art-robot{position:relative;width:220px;height:245px;margin-left:-105px;margin-top:-76px}
+.pull-art-robot>img{position:relative;z-index:1}
+.pull-robot-ring{position:absolute;left:15%;right:15%;bottom:8%;height:13px;border:3px solid #58d9ff;border-right-color:#cb6aff;border-bottom-color:#b677ff;border-radius:50%;box-shadow:0 0 12px #41c7ff70,0 0 19px #af56ff40;transform:rotate(-3deg)}
+.pull-art-caption{margin-top:2px}
+
+.pull-art-robot{margin-top:-88px}.pull-robot-ring{bottom:16%}
+
+
+/* Screen 8 robot: larger transparent foreground, shared node film behind it. */
+.faq-section .faq-robot-laptop{width:118%;max-width:580px;height:auto;margin-top:12px;margin-left:-9%;margin-right:0;mask-image:none;-webkit-mask-image:none;object-fit:contain;filter:drop-shadow(0 12px 24px #0003)}
+@media(max-width:800px){.faq-section .faq-robot-laptop{width:100%;max-width:440px;margin:12px auto 0}}
+
+/* Screens 7–9 share one plane; only the media fades, never a section-sized box. */
+.shared-landing-layout #enquire,.shared-landing-layout #questions,.shared-landing-layout #footer{border:0!important;outline:0!important;box-shadow:none!important;background:none!important;overflow:visible}
+.shared-landing-layout #enquire::before,.shared-landing-layout #enquire::after,.shared-landing-layout #questions::before,.shared-landing-layout #questions::after,.shared-landing-layout #footer::before,.shared-landing-layout #footer::after{content:none!important;display:none!important}
+#enquire .finish-atmosphere--conversation,#questions .finish-atmosphere--clarity{top:-80px;bottom:-80px;background:transparent!important;mask-image:linear-gradient(to bottom,transparent 0%,#000 180px,#000 calc(100% - 180px),transparent 100%)!important;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 180px,#000 calc(100% - 180px),transparent 100%)!important}
+#enquire .finish-atmosphere--conversation::after,#questions .finish-atmosphere--clarity::after{content:none!important;display:none!important}
+#footer .finish-atmosphere--closing{background:transparent!important}
+#footer :is(.footer-invitation,.footer-directory,.footer-signature,.footer-end){border-top:0!important;border-bottom:0!important;box-shadow:none!important}
+@media(max-width:700px){#enquire .finish-atmosphere--conversation,#questions .finish-atmosphere--clarity{top:-50px;bottom:-50px;mask-image:linear-gradient(to bottom,transparent,#000 130px,#000 calc(100% - 130px),transparent)!important;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 130px,#000 calc(100% - 130px),transparent)!important}}
+#footer.site-footer{color:#f1f4fb!important}
+#footer.site-footer :is(h2,.footer-column>a,.footer-column>button){color:#edf2fa!important}
+#footer.site-footer :is(p,.eyebrow,.mini-label,.footer-brand-tagline,.footer-end){color:#c7d3e3!important}
+
+/* Screen 8: keep the connected-line film quiet, without bright white glare. */
+#questions .finish-atmosphere--clarity video{opacity:.28;filter:brightness(.62) contrast(.9);background:#18191c;transition:none;animation:none}
+#questions .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#18191c55,#18191c77 55%,#18191cbb)}
+
+/* FAQ separators should recede; avoid bright white horizontal rules. */
+#questions.faq-section .faq-list details{border-bottom:.5px solid #94a8c226!important}
+#questions.faq-section .faq-list details:last-child{border-bottom:0!important}
+#questions.faq-section .faq-list{border:0!important}
+#questions .finish-atmosphere--clarity video{opacity:.18;filter:brightness(.5) contrast(.85);mix-blend-mode:normal}
+#questions .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#18191c66,#18191c80 50%,#18191ccc)}
+#questions .faq-item-number,#questions .faq-list summary>svg{color:#9cacc3!important}
+
+#questions.faq-section .faq-list details[open]>p{color:#cbd5e3!important}
+
+
+/* Screen 8: visible fine-scale connections, subdued highlights. */
+#questions .finish-atmosphere--clarity video{opacity:.5;filter:brightness(.8) contrast(.95)}
+#questions .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#18191c22,#18191c33 48%,#18191c99)}
