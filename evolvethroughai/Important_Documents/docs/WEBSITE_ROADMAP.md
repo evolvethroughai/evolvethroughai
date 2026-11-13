@@ -457,3 +457,26 @@ Owner approved the five-step staircase concept. Added tappable steps, robot hop/
 12 November 2026: Owner confirmed glare/flicker report concerns Screen 8. FAQ separators reduced to half-pixel low-opacity rules, last rule removed; network-film opacity .18 with brightness .5 and contrast .85, eliminating white glare at presentation level. Answer text contrast retained. Desktop/mobile playback and expansion checks and build passed; source video unchanged. No deployment.
 
 12 November 2026: Owner requested visible but shorter background connections on Screen 8. Restored moderate visibility and used a finer-scale mirrored network derivative; thin low-contrast FAQ separators remain. Desktop/mobile playback, no-overflow checks and TypeScript/build passed; screenshot inspected. No deployment.
+
+
+## 12 November 2026 — whole-site spacing and contrast review
+
+Reviewed homepage and five pathway routes across four viewport widths and both themes. Normalized pathway-list spacing and repaired low-contrast labels/headings while preserving the design and media. TypeScript/build passed; 48 layout states had no overflow, broken images or page errors; 12 desktop axe scans returned zero violations. Evidence: [layout review](../../design-review/layout-review-2026-11-12/REPORT.md). No deployment.
+
+
+## 12 November 2026 — smooth wheel scrolling
+Added Lenis site-wide with restrained wheel easing, native touch, keyboard inertia cancellation, dialog/nested-list exclusions and live reduced-motion fallback. Removed competing CSS scroll easing while enabled. Browser checks confirmed interpolated wheel movement on homepage/masterclass, no page errors or mobile overflow. TypeScript and production build passed before final keyboard refinement; TypeScript rechecked afterwards. No deployment.
+
+## 12 November 2026 — stable FAQ atmosphere and later-screen composition
+Replaced the Screen 8 connected-node video with its existing poster and a slow transform-only drift to eliminate video-frame brightness changes. Reduced motion disables drift. Compacted Screen 6–8 padding, FAQ row spacing and laptop robot sizing; added fixed-header anchor clearance to later sections. No fixed viewport clipping or scroll snapping introduced: long/mobile content remains naturally scrollable. TypeScript/build passed; homepage checks in both themes at 320/390/768/1440 showed no overflow or axe violations in the desktop scans. Existing media elsewhere preserved. No deployment.
+
+## 12 November 2026 — scroll rendering and robot identity
+Topo contour recalculation pauses during active scrolling and resumes after 160ms; idle contour paint reduced from 30fps to 12.5fps for the slow drift. Existing videos already pause offscreen. Added static official-symbol overlays to hero, Academy, cord, stairway and FAQ robot presentations. These are layout-positioned badges, not frame-tracked video edits; moving footage can shift relative to the mark. TypeScript/build and wheel/keyboard/reduced-motion browser checks passed; no mobile overflow or page errors in focused checks. No deployment.
+
+
+## 12 November 2026 — reload and floating badge correction
+Homepage reload clears its section hash and returns to the hero; direct pathway query routes remain intact. Removed hero/Academy video and stairway overlays because they were not attached to the moving/cropped robot bodies. Cord and FAQ image-bound badges retained. Frame-tracked robot branding remains unfinished; it requires editing the media rather than a fixed page overlay. TypeScript/build passed.
+
+
+## 12 November 2026 — robot branding reverted
+Owner requested removal of robot logo additions. Removed the remaining cord/FAQ logo badges, their wrapper, component and badge styling. Original robot media retained; tracked trial renders were never installed. Scrolling and homepage-refresh fixes preserved.

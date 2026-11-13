@@ -1,0 +1,2396 @@
+[
+  {
+    "route": "home",
+    "width": 320,
+    "theme": "light",
+    "overflow": false,
+    "excess": [
+      "pull-art-robot",
+      ""
+    ],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 900,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 900,
+        "height": 1164,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 2064,
+        "height": 984,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 3048,
+        "height": 1975,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 5023,
+        "height": 1011,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 6034,
+        "height": 2308,
+        "paddingTop": "48px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 8342,
+        "height": 1161,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 9503,
+        "height": 1278,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 10782,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "home",
+    "width": 320,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [
+      "pull-art-robot",
+      ""
+    ],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 900,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 900,
+        "height": 1164,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 2064,
+        "height": 984,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 3048,
+        "height": 1975,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 5023,
+        "height": 1011,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 6034,
+        "height": 2308,
+        "paddingTop": "48px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 8342,
+        "height": 1161,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 9503,
+        "height": 1278,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 10782,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "home",
+    "width": 390,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 900,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 900,
+        "height": 1064,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 1964,
+        "height": 890,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 2853,
+        "height": 1835,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 4688,
+        "height": 813,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 5501,
+        "height": 2070,
+        "paddingTop": "48px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 7571,
+        "height": 1028,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 8598,
+        "height": 1194,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 9792,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "home",
+    "width": 390,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 900,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 900,
+        "height": 1064,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 1964,
+        "height": 890,
+        "paddingTop": "40px",
+        "paddingBottom": "40px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 2853,
+        "height": 1835,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 4688,
+        "height": 813,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 5501,
+        "height": 2070,
+        "paddingTop": "48px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 7571,
+        "height": 1028,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 8598,
+        "height": 1227,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 9825,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 101.640625,
+    "errors": []
+  },
+  {
+    "route": "home",
+    "width": 768,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 690,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 690,
+        "height": 812,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 1502,
+        "height": 758,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 2259,
+        "height": 1613,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 3873,
+        "height": 597,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 4470,
+        "height": 1237,
+        "paddingTop": "72px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 5707,
+        "height": 966,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 6673,
+        "height": 1142,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 7815,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "home",
+    "width": 768,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 690,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 690,
+        "height": 812,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 1502,
+        "height": 758,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 2259,
+        "height": 1613,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 3873,
+        "height": 597,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 4470,
+        "height": 1237,
+        "paddingTop": "72px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 5707,
+        "height": 966,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 6673,
+        "height": 1142,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 7815,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "home",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 711,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 711,
+        "height": 633,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 1343,
+        "height": 597,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 1940,
+        "height": 1298,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 3238,
+        "height": 713,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 3951,
+        "height": 950,
+        "paddingTop": "72px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 4901,
+        "height": 608,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 5509,
+        "height": 865,
+        "paddingTop": "58px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 6374,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "home",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "cinematic-hero refined-hero landing-centered hero-contained hero-seamless hero-atmospheric hero-intelligent hero-topo-unified hero-robot-layout",
+        "top": 0,
+        "height": 711,
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "engineering-journey",
+        "top": 711,
+        "height": 633,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "business-introduction",
+        "top": 1343,
+        "height": 597,
+        "paddingTop": "64px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "path",
+        "top": 1940,
+        "height": 1298,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "programs",
+        "top": 3238,
+        "height": 713,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "solutions",
+        "top": 3951,
+        "height": 950,
+        "paddingTop": "72px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 4901,
+        "height": 608,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 5509,
+        "height": 865,
+        "paddingTop": "58px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 6374,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 57,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "masterclass",
+    "width": 320,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 658,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 10785,
+        "height": 1161,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 11947,
+        "height": 1278,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 13225,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "masterclass",
+    "width": 320,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 658,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 10785,
+        "height": 1161,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 11947,
+        "height": 1278,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 13225,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "masterclass",
+    "width": 390,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 574,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 10176,
+        "height": 1028,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 11204,
+        "height": 1194,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 12397,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "masterclass",
+    "width": 390,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 574,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 10176,
+        "height": 1028,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 11204,
+        "height": 1227,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 12431,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 101.640625,
+    "errors": []
+  },
+  {
+    "route": "masterclass",
+    "width": 768,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 462,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 7763,
+        "height": 966,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 8729,
+        "height": 1142,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 9871,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "masterclass",
+    "width": 768,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 462,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 7763,
+        "height": 966,
+        "paddingTop": "44px",
+        "paddingBottom": "52px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 8729,
+        "height": 1142,
+        "paddingTop": "42px",
+        "paddingBottom": "48px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 9871,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "masterclass",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 486,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 7233,
+        "height": 608,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 7841,
+        "height": 865,
+        "paddingTop": "58px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 8706,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "masterclass",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 486,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "enquire",
+        "top": 7233,
+        "height": 608,
+        "paddingTop": "64px",
+        "paddingBottom": "72px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "questions",
+        "top": 7841,
+        "height": 865,
+        "paddingTop": "58px",
+        "paddingBottom": "64px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 8706,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 57,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 320,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 481,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 481,
+        "height": 2854,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 3335,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 320,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 481,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 481,
+        "height": 2854,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 3335,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 390,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 2550,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 3002,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 390,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 2550,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 3002,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 101.640625,
+    "errors": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 768,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 2119,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 2508,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 768,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 2119,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 2508,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 386,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 386,
+        "height": 1657,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 2043,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "azure-cloud-devops",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 386,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 386,
+        "height": 1657,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 2043,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 57,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 320,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 481,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 481,
+        "height": 1044,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1525,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 320,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 481,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 481,
+        "height": 1044,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1525,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 390,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 910,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1362,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 390,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 910,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1362,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 101.640625,
+    "errors": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 768,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 765,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1154,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 768,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 765,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1154,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 386,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 386,
+        "height": 583,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 970,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "aws-cloud-devops",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 386,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 386,
+        "height": 583,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 970,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 57,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 320,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 515,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 515,
+        "height": 1091,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1607,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 320,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 515,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 515,
+        "height": 1091,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1607,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 390,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 1008,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1460,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 390,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 1008,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1460,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 101.640625,
+    "errors": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 768,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 765,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1154,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 768,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 765,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1154,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 448,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 448,
+        "height": 583,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1032,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "forward-deployed-ai",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 448,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 448,
+        "height": 583,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1032,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 57,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "career-development",
+    "width": 320,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 481,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 481,
+        "height": 1068,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1549,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "career-development",
+    "width": 320,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 481,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 481,
+        "height": 1068,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1549,
+        "height": 1242,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "career-development",
+    "width": 390,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 937,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1389,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 108.640625,
+    "errors": []
+  },
+  {
+    "route": "career-development",
+    "width": 390,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 452,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 452,
+        "height": 937,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1389,
+        "height": 1176,
+        "paddingTop": "51px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 101.640625,
+    "errors": []
+  },
+  {
+    "route": "career-development",
+    "width": 768,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 765,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1154,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "career-development",
+    "width": 768,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 390,
+        "paddingTop": "140px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 390,
+        "height": 765,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 1154,
+        "height": 967,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": []
+  },
+  {
+    "route": "career-development",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 386,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 386,
+        "height": 583,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 970,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 64,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "route": "career-development",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": false,
+    "excess": [],
+    "sections": [
+      {
+        "id": "container pathway-page",
+        "top": 0,
+        "height": 386,
+        "paddingTop": "110px",
+        "paddingBottom": "36px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "container pathway-outline",
+        "top": 386,
+        "height": 583,
+        "paddingTop": "20px",
+        "paddingBottom": "70px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      },
+      {
+        "id": "footer",
+        "top": 970,
+        "height": 887,
+        "paddingTop": "74px",
+        "paddingBottom": "0px",
+        "borderTop": "0px",
+        "borderBottom": "0px"
+      }
+    ],
+    "brokenImages": [],
+    "header": 57,
+    "errors": [],
+    "axe": []
+  }
+]

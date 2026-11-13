@@ -1,4 +1,4 @@
-﻿/* Homepage hero trial: graphite throughout, preserving the selected logo palette. */
+/* Homepage hero trial: graphite throughout, preserving the selected logo palette. */
 .shared-landing-layout .hero-robot-video{background:#18191c}
 [data-theme=light] .shared-landing-layout .hero-robot-video-wash,
 [data-theme=dark] .shared-landing-layout .hero-robot-video-wash{background:linear-gradient(90deg,#18191c05 0%,#18191c10 28%,#1d1f24a3 48%,#20232be8 72%,#1b1e26f5 100%)}
@@ -504,3 +504,40 @@
 /* Screen 8: visible fine-scale connections, subdued highlights. */
 #questions .finish-atmosphere--clarity video{opacity:.5;filter:brightness(.8) contrast(.95)}
 #questions .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#18191c22,#18191c33 48%,#18191c99)}
+
+/* Whole-site layout review — 12 November 2026. */
+.shared-landing-layout #programs.pathway-video-screen{padding-block:64px 72px}
+.shared-landing-layout #programs .section-heading>.eyebrow,
+.shared-landing-layout #programs .section-heading>div>.eyebrow{color:#d4dfef}
+.shared-landing-layout #programs .section-number{color:#c4cfea}
+.shared-landing-layout #programs .pathway-title-link>span:first-child{color:#353c50}
+.shared-landing-layout #path .learning-route-intro h2>span,
+.shared-landing-layout #solutions h2>span,
+.shared-landing-layout #questions h2>span{background-image:linear-gradient(100deg,#9ec5ff,#83d7e6,#bba7f1);color:transparent;background-clip:text;-webkit-background-clip:text}
+[data-theme=light] .masterclass-page .flagship-copy>.eyebrow{color:#3755a0}
+[data-theme=light] .masterclass-page .masterclass-display-title>span{color:#43599a}
+[data-theme=light] .masterclass-page .stack-choice .mono,
+[data-theme=light] .masterclass-page [class*="stack-choice-"]>.mono{color:#35466f}
+@media(max-width:800px){.shared-landing-layout #programs.pathway-video-screen{padding-block:44px 52px}}
+/* Avoid competing browser and wheel easing engines. */
+html.lenis{scroll-behavior:auto!important}
+
+/* Stable FAQ atmosphere and comfortable later-screen composition. */
+#questions .finish-atmosphere--clarity .faq-network-steady{width:106%;height:106%;max-width:none;object-fit:cover;opacity:.5;filter:brightness(.8) contrast(.95);animation:faq-network-drift 36s ease-in-out infinite alternate;will-change:transform}
+@keyframes faq-network-drift{from{transform:translate(-2%,-2%)}to{transform:translate(0,0)}}
+.shared-landing-layout :is(#solutions,#enquire,#questions,#footer){scroll-margin-top:110px}
+.shared-landing-layout #questions{padding-block:44px 48px}
+#questions .faq-refined-intro h2{text-wrap:balance}
+#questions .faq-list summary{padding-block:15px;min-height:56px;line-height:1.5}
+#questions .faq-robot-laptop{width:100%;max-width:440px;margin:12px auto 0}
+.shared-landing-layout #solutions{padding-block:56px}
+@media(min-width:901px){.shared-landing-layout #enquire{padding-block:48px 56px}}
+@media(max-width:800px){
+ .shared-landing-layout #questions{padding-block:40px 48px}
+ #questions .faq-robot-laptop{max-width:300px}
+ .shared-landing-layout #solutions{padding-block:44px}
+ .shared-landing-layout :is(#solutions,#enquire,#questions,#footer) :is(h2,h3,p,summary){overflow-wrap:break-word}
+}
+@media(prefers-reduced-motion:reduce){#questions .finish-atmosphere--clarity .faq-network-steady{animation:none;will-change:auto}}
+/* Keep modal interaction local; the document remains still behind it. */
+html:has(dialog[open]){overflow:hidden!important}
