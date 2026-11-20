@@ -578,3 +578,141 @@ html{scroll-padding-top:72px;scrollbar-gutter:stable}
 .shared-landing-layout :is(#programs,#solutions,#enquire,#questions,#footer) h2 em{background-image:linear-gradient(100deg,#a8ceff 0%,#87deeb 48%,#c6aff5 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important}
 .shared-landing-layout #footer .footer-end a{color:#c7d3e3!important;opacity:1}
 .shared-landing-layout #footer .footer-end a:hover{color:#fff!important}
+/* Bounded card/navigation refinement; headline and hero composition untouched. */
+.header.header-focused-navigation .nav-wrap{grid-template-columns:minmax(160px,1fr) auto minmax(120px,1fr)}
+.header.header-focused-navigation .portal-controls{flex-basis:auto;margin-left:auto;justify-content:flex-end}
+@media(max-width:1100px){.header.header-focused-navigation .nav-wrap{flex-wrap:wrap}.header.header-focused-navigation .header-brand-search{order:0}.header.header-focused-navigation .portal-controls{order:1}.header.header-focused-navigation .portal-menu-toggle{order:2}.header.header-focused-navigation .portal-navigation{order:3}}
+@media(max-width:700px){.header.header-focused-navigation .nav-wrap{gap:10px}.header.header-focused-navigation .header-brand-search .brand-logo{width:125px}.header.header-focused-navigation .portal-control--primary{padding-inline:12px}.header.header-focused-navigation .portal-menu-toggle{margin-left:0}}
+.hero-robot-layout .hero-path-cards>a.hero-path-card{transition:transform .32s ease,box-shadow .32s ease,border-color .32s ease;touch-action:manipulation}
+.hero-robot-layout .hero-path-cards>a.hero-path-card>img{transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.hero-robot-layout .hero-path-cards>a.hero-path-card:focus-visible{outline:2px solid #8ce7f4;outline-offset:4px;border-color:#a8a0ff;box-shadow:-5px 3px 22px #22d3ee24,5px 6px 25px #9a62f530}
+@media(hover:hover) and (pointer:fine){.hero-robot-layout .hero-path-cards>a.hero-path-card:hover{transform:translateY(-4px);border-color:#9bafffaa;box-shadow:0 13px 28px #0004,-5px 2px 20px #22d3ee24,5px 5px 24px #a15ff52b}.hero-robot-layout .hero-path-cards>a.hero-path-card:hover>img{transform:scale(1.045)}}
+.hero-robot-layout .hero-path-cards>a.hero-path-card:focus-visible>img{transform:scale(1.045)}
+@media(hover:none),(pointer:coarse){.hero-robot-layout .hero-path-cards>a.hero-path-card:active{transform:scale(.99);border-color:#99dff3;box-shadow:0 0 20px #9867f538}}
+.scroll-reveal-once[data-reveal=pending]{opacity:0;transform:translate3d(0,14px,0)}
+.scroll-reveal-once[data-reveal=visible]{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+@media(prefers-reduced-motion:reduce){.scroll-reveal-once[data-reveal]{opacity:1!important;transform:none!important;transition:none!important}.hero-robot-layout .hero-path-cards>a.hero-path-card,.hero-robot-layout .hero-path-cards>a.hero-path-card>img{transform:none!important;transition:none!important}}
+.scroll-reveal-once[data-reveal=pending]{opacity:0;transform:translateY(14px)}
+.scroll-reveal-once[data-reveal=visible]{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.22,1,.36,1)}
+@media(max-width:1100px){
+ .header.header-focused-navigation .nav-wrap{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;min-height:64px}
+ .header.header-focused-navigation .header-brand-search{grid-column:1;grid-row:1}
+ .header.header-focused-navigation .portal-controls{grid-column:2;grid-row:1;flex-basis:auto;margin:0;justify-self:end}
+ .header.header-focused-navigation .portal-menu-toggle{grid-column:3;grid-row:1;margin:0}
+ .header.header-focused-navigation .portal-navigation{grid-column:1/-1;grid-row:2;width:100%;padding:8px 0 12px}
+}
+@media(max-width:370px){.header.header-focused-navigation .header-brand-search .brand-logo{width:112px}.header.header-focused-navigation .portal-control--primary{padding-inline:9px;gap:5px}}
+@media(prefers-reduced-motion:reduce){.scroll-reveal-once[data-reveal]{opacity:1;transform:none;transition:none}}/* Restore the existing Firebase Login/Account action alongside Enquire. */
+@media(max-width:700px){
+ .header.header-focused-navigation .nav-wrap{gap:6px}
+ .header.header-focused-navigation .header-brand-search .brand-logo{width:110px}
+ .header.header-focused-navigation .portal-controls{gap:6px}
+ .header.header-focused-navigation .portal-control{padding-inline:8px;font-size:11px;gap:5px}
+ .header.header-focused-navigation .portal-control:not(.portal-control--primary)>svg:last-child{display:none}
+ .header.header-focused-navigation .portal-menu-toggle{width:36px;min-width:36px;height:36px}
+}
+@media(max-width:370px){.header.header-focused-navigation .header-brand-search .brand-logo{width:90px}}
+/* Learning copy only: preserve section geometry, media and theme. */
+#engineering-journey .learning-text-highlights li>span{min-width:0;font-weight:400;overflow-wrap:break-word}
+#engineering-journey .learning-text-highlights strong{font-weight:600}
+#engineering-journey .learning-text-highlights li{transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+#engineering-journey .learning-text-highlights li:nth-child(2){transition-delay:.08s}
+#engineering-journey .learning-text-highlights li:nth-child(3){transition-delay:.16s}
+#engineering-journey .learning-text-highlights li:nth-child(4){transition-delay:.24s}
+#engineering-journey .learning-text-highlights[data-highlights=pending] li{opacity:0;transform:translateY(10px)}
+#engineering-journey .learning-text-highlights[data-highlights=visible] li{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){#engineering-journey .learning-text-highlights[data-highlights] li{opacity:1;transform:none;transition:none}}
+
+
+/* Learning CTA only: a bounded power-up portal, without layout-affecting motion. */
+.shared-landing-layout #engineering-journey a.learning-portal-cta{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;justify-content:flex-start;gap:14px;padding:14px 18px;border:1px solid #a1b5ff66;border-radius:18px;background:linear-gradient(115deg,#1F3D9A,#6840C8)!important;color:#fff!important;text-decoration:none;text-align:left;box-shadow:inset 0 1px #ffffff26,0 6px 18px #0002;touch-action:manipulation;transition:transform .28s ease,border-color .28s ease}
+#engineering-journey .learning-portal-cta>span{position:relative;z-index:1}
+#engineering-journey .learning-portal-icon{display:grid;place-items:center;flex:0 0 42px;height:42px;border:1px solid #d6eaff33;border-radius:12px;background:#ffffff10;color:#c3f2ff}
+#engineering-journey .learning-portal-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px}
+#engineering-journey .learning-portal-copy strong{font-size:14px;line-height:1.4;font-weight:600;color:#fff}
+#engineering-journey .learning-portal-copy>span{font-size:11px;font-weight:400;line-height:1.5;color:#e0def6}
+#engineering-journey .learning-portal-arrow{display:grid;place-items:center;flex:0 0 36px;height:36px;border:1px solid #e1ebff55;border-radius:50%;background:#ffffff0d;color:#fff}
+#engineering-journey .learning-portal-arrow svg{transition:transform .28s ease}
+#engineering-journey a.learning-portal-cta::before{content:'';position:absolute;inset:-70% auto -70% -50%;width:35%;background:linear-gradient(90deg,transparent,#d3faff24,transparent);transform:translateX(-150%) skewX(-22deg);opacity:0;pointer-events:none}
+#engineering-journey a.learning-portal-cta::after{content:'';position:absolute;inset:0;border:2px solid #9deaff;border-radius:inherit;box-shadow:inset -16px 0 22px #c18bff55,inset 16px 0 22px #60e7ff44;opacity:0;pointer-events:none}
+#engineering-journey a.learning-portal-cta:focus-visible{outline:3px solid #9be7ff;outline-offset:4px;border-color:#d5baff}
+#engineering-journey a.learning-portal-cta:focus-visible .learning-portal-arrow svg{transform:translateX(5px)}
+@media(hover:hover) and (pointer:fine){
+ .shared-landing-layout #engineering-journey a.learning-portal-cta:hover{transform:translateY(-3px);border-color:#9edfffc9}
+ #engineering-journey a.learning-portal-cta:hover::before{animation:learning-portal-sweep .45s ease-out 1}
+ #engineering-journey a.learning-portal-cta:hover::after{animation:learning-portal-led .275s ease-in-out 2}
+ #engineering-journey a.learning-portal-cta:hover .learning-portal-arrow svg{transform:translateX(5px)}
+}
+#engineering-journey a.learning-portal-cta:active{border-color:#bbf1ff;box-shadow:inset 0 0 20px #a77bff33,0 0 16px #63dfff33}
+@keyframes learning-portal-sweep{0%{transform:translateX(-150%) skewX(-22deg);opacity:0}25%{opacity:1}100%{transform:translateX(520%) skewX(-22deg);opacity:0}}
+@keyframes learning-portal-led{0%,100%{opacity:0}50%{opacity:.75}}
+@media(max-width:370px){.shared-landing-layout #engineering-journey a.learning-portal-cta{gap:9px;padding-inline:12px}#engineering-journey .learning-portal-icon{flex-basis:32px;height:36px}#engineering-journey .learning-portal-copy strong{font-size:13px}#engineering-journey .learning-portal-arrow{flex-basis:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){.shared-landing-layout #engineering-journey a.learning-portal-cta,#engineering-journey .learning-portal-arrow svg{transform:none!important;transition:none!important}#engineering-journey a.learning-portal-cta::before,#engineering-journey a.learning-portal-cta::after{animation:none!important;opacity:0!important}}
+
+/* Checklist-only copy layout and clearance above the unchanged CTA. */
+#engineering-journey .learning-text-highlights{gap:16px;margin-bottom:24px}
+#engineering-journey .learning-text-highlights li>span{display:flex;flex-direction:column;gap:3px}
+#engineering-journey .learning-text-highlights strong{font-weight:700}
+#engineering-journey .learning-highlight-description{display:block;font-weight:400}
+#engineering-journey .learning-highlight-status{display:block;font-size:10px;line-height:1.5;font-weight:500}
+
+/* Screen 3 only: compact services and cyan-blue solution portal. */
+#business-introduction #enterprise-heading{line-height:1.2}
+#business-introduction .business-possibilities{background:linear-gradient(100deg,#b0eef2,#70d4ea);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;white-space:nowrap}
+#business-introduction .business-service-rows{gap:12px;margin-block:18px 20px;padding-top:18px}
+#business-introduction .business-service-rows li{gap:10px;font-size:13px;line-height:1.5}
+#business-introduction .business-service-rows li>svg{color:#8addeb;flex-shrink:0;margin-top:3px}
+#business-introduction .business-service-rows li>span{display:flex;flex-direction:column;gap:2px;min-width:0}
+#business-introduction .business-service-rows strong{font-weight:650}
+#business-introduction .business-service-rows li>span>span{font-weight:400;color:#d0dce9}
+.shared-landing-layout #business-introduction a.business-portal-cta{position:relative;isolation:isolate;overflow:hidden;display:flex;justify-content:flex-start;align-items:center;gap:13px;padding:13px 17px;border:1px solid #88dfe866;border-radius:18px;background:linear-gradient(110deg,#125f94,#234ab2)!important;color:white!important;text-align:left;box-shadow:inset 0 1px #ffffff24,0 6px 18px #0002;transition:transform .28s ease,border-color .28s ease;touch-action:manipulation}
+#business-introduction .business-portal-cta>span{position:relative;z-index:1}
+#business-introduction .business-portal-icon{display:grid;place-items:center;flex:0 0 40px;height:40px;border:1px solid #ccf6ff44;border-radius:12px;background:#ffffff10;color:#d3faff}
+#business-introduction .business-portal-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px}
+#business-introduction .business-portal-copy strong{font-size:14px;font-weight:600;line-height:1.4;color:#fff}
+#business-introduction .business-portal-copy>span{font-size:11px;font-weight:400;line-height:1.5;color:#d6effb}
+#business-introduction .business-portal-arrow{display:grid;place-items:center;flex:0 0 34px;height:34px;border:1px solid #cdf2ff66;border-radius:50%;background:#ffffff0d}
+#business-introduction .business-portal-arrow svg{transition:transform .28s ease}
+#business-introduction a.business-portal-cta::before{content:'';position:absolute;inset:-70% auto -70% -50%;width:35%;background:linear-gradient(90deg,transparent,#d4fcff2d,transparent);transform:translateX(-150%) skewX(-22deg);opacity:0;pointer-events:none}
+#business-introduction a.business-portal-cta::after{content:'';position:absolute;inset:0;border-radius:inherit;border:1px solid #9beaff;box-shadow:inset 0 0 14px #8be8ff22;background:radial-gradient(circle at 15% 0%,#d0ffff 0 2px,transparent 3px),radial-gradient(circle at 78% 100%,#b8eeff 0 2px,transparent 3px);opacity:0;pointer-events:none;transition:opacity .25s ease}
+#business-introduction a.business-portal-cta:focus-visible{outline:3px solid #9be7ff;outline-offset:4px}
+#business-introduction a.business-portal-cta:focus-visible::after,#business-introduction a.business-portal-cta:active::after{opacity:.7}
+@media(hover:hover) and (pointer:fine){.shared-landing-layout #business-introduction a.business-portal-cta:hover{transform:translateY(-3px);border-color:#a1ecff}#business-introduction a.business-portal-cta:hover::before{animation:business-portal-sweep .4s ease-out 1}#business-introduction a.business-portal-cta:hover::after{opacity:.65}#business-introduction a.business-portal-cta:hover .business-portal-arrow svg{transform:translateX(3px)}}
+@keyframes business-portal-sweep{0%{transform:translateX(-150%) skewX(-22deg);opacity:0}25%{opacity:1}100%{transform:translateX(520%) skewX(-22deg);opacity:0}}
+@media(max-width:700px){#business-introduction .business-possibilities{white-space:normal}}
+@media(max-width:370px){.shared-landing-layout #business-introduction a.business-portal-cta{padding-inline:12px;gap:9px}#business-introduction .business-portal-icon{flex-basis:32px;height:36px}#business-introduction .business-portal-arrow{flex-basis:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){.shared-landing-layout #business-introduction a.business-portal-cta,#business-introduction .business-portal-arrow svg{transform:none!important;transition:none!important}#business-introduction a.business-portal-cta::before{animation:none!important;opacity:0!important}#business-introduction a.business-portal-cta::after{transition:none!important}}
+
+/* Screen 3 interaction polish only; no geometry or content changes. */
+#business-introduction .business-service-rows li{transition:transform .3s ease}
+#business-introduction .business-service-rows li>svg{transition:filter .3s ease}
+#business-introduction a.business-portal-cta:focus-visible::before{animation:business-portal-sweep .4s ease-out 1}
+#business-introduction a.business-portal-cta:focus-visible .business-portal-arrow svg{transform:translateX(3px)}
+@media(hover:hover) and (pointer:fine){
+ #business-introduction .business-service-rows li:hover{transform:translateY(-2px)}
+ #business-introduction .business-service-rows li:hover>svg{filter:drop-shadow(0 0 4px #8addeb66)}
+}
+@media(prefers-reduced-motion:reduce){
+ #business-introduction .business-service-rows li,#business-introduction .business-service-rows li>svg{transition:none!important;transform:none!important}
+ #business-introduction a.business-portal-cta:focus-visible::before{animation:none!important;opacity:0!important}
+ #business-introduction a.business-portal-cta:focus-visible .business-portal-arrow svg{transform:none!important}
+}
+
+/* Match learning checklist presentation to the Screen 3 service rows. */
+#engineering-journey .learning-text-highlights{gap:12px;margin-top:18px;padding-top:18px}
+#engineering-journey .learning-text-highlights li{gap:10px;font-size:13px;line-height:1.5;transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1),translate .3s ease}
+#engineering-journey .learning-text-highlights li:nth-child(2){transition-delay:.08s,.08s,0s}
+#engineering-journey .learning-text-highlights li:nth-child(3){transition-delay:.16s,.16s,0s}
+#engineering-journey .learning-text-highlights li:nth-child(4){transition-delay:.24s,.24s,0s}
+#engineering-journey .learning-text-highlights li>svg{color:#8addeb;flex-shrink:0;margin-top:3px;transition:filter .3s ease}
+#engineering-journey .learning-text-highlights li>span{gap:2px}
+#engineering-journey .learning-text-highlights strong{font-weight:650}
+#engineering-journey .learning-highlight-description{color:#d0dce9}
+@media(hover:hover) and (pointer:fine){
+ #engineering-journey .learning-text-highlights[data-highlights=visible] li:hover{translate:0 -2px}
+ #engineering-journey .learning-text-highlights li:hover>svg{filter:drop-shadow(0 0 4px #8addeb66)}
+}
+@media(prefers-reduced-motion:reduce){#engineering-journey .learning-text-highlights li,#engineering-journey .learning-text-highlights li>svg{translate:none!important;transition:none!important}}
+
+#engineering-journey #academy-heading .learning-heading-accent{color:#8addeb}
+

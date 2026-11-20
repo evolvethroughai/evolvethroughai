@@ -1,0 +1,111 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "nav": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About"
+    ],
+    "controls": [
+      "Enquire"
+    ],
+    "heroReveal": 0,
+    "cardCount": 2,
+    "reveal": {
+      "state": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    "once": "visible",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "nav": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About"
+    ],
+    "controls": [
+      "Enquire"
+    ],
+    "heroReveal": 0,
+    "cardCount": 2,
+    "reveal": {
+      "state": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    "once": "visible",
+    "mobileMenu": true,
+    "mobileDestination": "#path",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "nav": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About"
+    ],
+    "controls": [
+      "Enquire"
+    ],
+    "heroReveal": 0,
+    "cardCount": 2,
+    "reveal": {
+      "state": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    "once": "visible",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "nav": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About"
+    ],
+    "controls": [
+      "Enquire"
+    ],
+    "heroReveal": 0,
+    "cardCount": 2,
+    "hover": {
+      "transform": "matrix(1, 0, 0, 1, 0, -4)",
+      "image": "matrix(1.045, 0, 0, 1.045, 0, 0)",
+      "shadow": "rgba(0, 0, 0, 0.267) 0px 13px 28px 0px, rgba(34, 211, 238, 0.14) -5px 2px 20px 0px, rgba(161, 95, 245, 0.17) 5px 5px 24px 0px"
+    },
+    "focus": {
+      "visible": true,
+      "outline": "solid"
+    },
+    "keyboardDestination": "#path",
+    "searchPreserved": true,
+    "reveal": {
+      "state": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    "once": "visible",
+    "errors": []
+  },
+  {
+    "reduced": {
+      "state": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    "headline": "Build real skills.Shape what’s next.Shape what’s next.Build AI agents.Explore agentic AI.Make RAG practical.Understand LLMs.Connect cloud and AI.Automate with purpose.Grow your AI skills.Build smarter workflows.Explore AI for business.Turn ideas into applications.Advance your engineering.Explore forward-deployed engineering.Build intelligent applications.Bring AI into your business.Learn. Build. Keep evolving.Explore AI for growth.Engineer what comes next.Shape what’s next."
+  }
+]

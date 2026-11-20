@@ -510,3 +510,20 @@ Replaced the low-bitrate 960px puzzle video with a 1280px source-derived high-qu
 
 ## 20 November 2026 — overall layout review
 Reviewed homepage and five pathway routes at four responsive widths: no overflow, broken loaded images or JavaScript errors. Section borders absent; desktop/mobile visual review completed. Repaired lower-screen gradient-heading and footer-link contrast. Navigation/search/FAQ/login-gate/mobile interactions, continuous first-two-robot playback and reduced motion checked. TypeScript/build passed. Evidence: design-review/overall-review-2026-11-20/REPORT.md. Release approval remains separate.
+
+## 20 November 2026 — bounded card and navigation refinement
+
+Owner explicitly preserved the existing headline wording, typography, gradient, layout and animation. Hero.tsx and VisualExperience.tsx remain byte-identical to their pre-change versions. Existing robot media, card images and branding retained.
+
+Hero cards now use a restrained 4px desktop hover lift, 1.045 image zoom and cyan/violet border glow, plus visible keyboard focus and native single-tap links. Reduced motion disables transforms/transitions. Below-hero content uses one-time IntersectionObserver fade/rise reveals; reduced motion shows content immediately. Existing headline behavior is excluded from this reveal system.
+
+Header order: Programs / Projects / Solutions / About / Enquire. Search, Login and Experience removed from the top navigation only. Search dialog and Ctrl/Cmd+K remain available; account provider, enquiry login flow and Experience content remain. Mobile controls fit one row with a collapsible menu.
+
+Verified 320/390/768/1440px: no overflow or JavaScript errors; desktop lift/zoom/glow, keyboard focus/Enter, mobile link activation/menu/Escape, retained search shortcut, one-time reveal state and reduced motion. TypeScript and production build passed. Evidence: design-review/hero-card-navigation-2026-11-20/. No new dependencies or deployment.
+
+### Header follow-up — Login restored
+Owner requested Login back beside Enquire. Restored existing Firebase AccountButton (Login when signed out, Account when signed in); Search and Experience remain absent from the top navigation. Responsive widths 320/390/768/1440 checked for overflow; login dialog opens. TypeScript/build passed. Hero/headline unchanged.
+
+
+### Hero card destinations — guided introduction flow
+Owner accepted the guided flow: Explore Learning Paths now links to Screen 2 (#engineering-journey); Explore Digital Solutions links to Screen 3 (#business-introduction). Their onward actions retain #path and #solutions respectively. Only card hrefs changed; headline, layout, assets and animation remain unchanged. TypeScript/build passed.

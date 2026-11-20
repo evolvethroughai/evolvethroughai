@@ -20,6 +20,25 @@ export function SmoothScroll() {
         prevent: node => Boolean(node.closest('dialog, [role="dialog"], .project-list, .action-search-results, [data-lenis-prevent]')),
       });
     };
+    // Hero pathway cards land on the introduction copy, below the fixed header.
+    const landOnIntroduction = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('.hero-path-card') : null;
+      if (!link || link.target || !['#engineering-journey', '#business-introduction'].includes(link.hash)) return;
+      const section = document.getElementById(link.hash.slice(1));
+      const copy = section?.querySelector<HTMLElement>('.dual-track-card');
+      if (!copy) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const transform = getComputedStyle(copy).transform;
+      const revealShift = transform === 'none' ? 0 : new DOMMatrixReadOnly(transform).m42;
+      const clearance = (document.querySelector('header')?.getBoundingClientRect().height ?? 64) + 16;
+      const top = Math.max(0, copy.getBoundingClientRect().top + window.scrollY - revealShift - clearance);
+      if (location.hash !== link.hash) history.pushState(null, '', link.hash);
+      if (scroll) scroll.scrollTo(top);
+      else window.scrollTo({ top, behavior: 'instant' });
+    };
+    document.addEventListener('click', landOnIntroduction, true);
     const releaseKeyboard = (event: KeyboardEvent) => {
       if (['PageDown', 'PageUp', 'Home', 'End', 'ArrowDown', 'ArrowUp', ' '].includes(event.key)) {
         scroll?.scrollTo(window.scrollY, { immediate: true });
@@ -35,6 +54,7 @@ export function SmoothScroll() {
     syncDialogs();
     preference.addEventListener('change', configure);
     return () => {
+      document.removeEventListener('click', landOnIntroduction, true);
       document.removeEventListener('toggle', syncDialogs, true);
       window.removeEventListener('keydown', releaseKeyboard, true);
       preference.removeEventListener('change', configure);

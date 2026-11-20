@@ -1,4 +1,3 @@
-import { AccountButton } from '../auth/ConversationAccess';
 import { SiteSearch } from './SiteSearch';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
@@ -9,7 +8,6 @@ interface HeaderProps { onEnquire: () => void; }
 interface NavigationItem { label: string; href: string; }
 const navigation: readonly NavigationItem[] = [
   { label: 'Programs', href: '#programs' },
-  { label: 'Experience', href: '#engineering-journey' },
   { label: 'Projects', href: '#projects' },
   { label: 'Solutions', href: '#solutions' },
   { label: 'About', href: '#about' },
@@ -42,20 +40,19 @@ export default function Header({ onEnquire }: HeaderProps) {
 
   const enquire = () => { setMenuOpen(false); onEnquire(); };
   return <>
-    <header className={`header portal-header header-seamless header-floating header-aurora header-transparent-compact header-slim header-text-navigation header-scroll-shield header-cinematic-pills${scrolled ? ' is-scrolled' : ''}`} ref={headerRef}>
+    <header className={`header portal-header header-seamless header-floating header-aurora header-transparent-compact header-slim header-text-navigation header-scroll-shield header-cinematic-pills header-focused-navigation${scrolled ? ' is-scrolled' : ''}`} ref={headerRef}>
       <div className="nav-wrap">
         <div className="header-brand-search"><BrandLogo tagline /></div>
         <nav id="main-navigation" aria-label="Main navigation" className={`portal-navigation public-site-navigation${menuOpen ? ' is-open' : ''}`}>
           {navigation.map(item=><a key={item.label} href={new URLSearchParams(location.search).has('pathway') ? './'+item.href : item.href} onClick={()=>setMenuOpen(false)}><span className="nav-pill-label">{item.label}</span></a>)}
         </nav>
         <div className="portal-controls">
-          <div className="portal-search"><SiteSearch /></div>
-          <AccountButton />
           <button type="button" className="portal-control portal-control--primary" onClick={enquire}>Enquire<ArrowUpRight size={18} aria-hidden="true" /></button>
         </div>
         <button ref={menuButtonRef} type="button" className="icon-button portal-menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen(open => !open)}>{menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}</button>
       </div>
     </header>
+    <SiteSearch showTrigger={false} />
 
   </>;
 }

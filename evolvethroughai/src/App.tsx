@@ -70,16 +70,19 @@ export default function App() {
 
   useEffect(() => {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
-    if (reduced.matches || !('IntersectionObserver' in window)) return;
-    elements.forEach(element => {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal, .learning-screen-layout .dual-track-card, .solutions-screen-layout .dual-track-card, .business-solutions-grid article, .business-workflow, .faq-list, .footer-invitation'));
+    const belowHero = elements.filter(element => !element.closest('.cinematic-hero'));
+    belowHero.forEach(element => element.classList.add('scroll-reveal-once'));
+    if (reduced.matches || !('IntersectionObserver' in window)) { belowHero.forEach(element => element.dataset.reveal = 'visible'); return; }
+    belowHero.forEach(element => {
+      if (element.dataset.reveal === 'visible') return;
       if (element.getBoundingClientRect().top > window.innerHeight * .98) element.dataset.reveal = 'pending';
     });
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       if (entry.isIntersecting) { (entry.target as HTMLElement).dataset.reveal = 'visible'; observer.unobserve(entry.target); }
     }), { threshold: .05, rootMargin: '0px 0px -20px 0px' });
-    elements.forEach(element => observer.observe(element));
-    const showAll = () => { if (reduced.matches) elements.forEach(element => element.dataset.reveal = 'visible'); };
+    belowHero.forEach(element => { if (element.dataset.reveal !== 'visible') observer.observe(element); });
+    const showAll = () => { if (reduced.matches) { observer.disconnect(); belowHero.forEach(element => element.dataset.reveal = 'visible'); } };
     reduced.addEventListener('change', showAll);
     return () => { observer.disconnect(); reduced.removeEventListener('change', showAll); };
   }, [pathway]);

@@ -1,0 +1,189 @@
+[
+  {
+    "width": 320,
+    "heading": "For Future-Ready Engineers & Professionals",
+    "tag": " LEARN • BUILD • EVOLVE",
+    "cta": "#path",
+    "overflow": false,
+    "highlights": "visible",
+    "checks": [
+      {
+        "text": "Cloud & DevOps Engineering — Build infrastructure, CI/CD pipelines, cloud platforms and real-world engineering projects.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Applied AI Engineering — Explore Python, APIs, LLM applications, RAG and intelligent automation.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Agentic AI & Forward-Deployed Engineering — Develop practical problem-solving skills for emerging engineering roles. Advanced pathways coming soon.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Career & Interview Readiness — Strengthen your portfolio, resume, technical interviews and professional confidence.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      }
+    ],
+    "overlap": false,
+    "header": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About",
+      "Enquire"
+    ],
+    "video": "/videos/learning-robot-clear-960.mp4",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "heading": "For Future-Ready Engineers & Professionals",
+    "tag": " LEARN • BUILD • EVOLVE",
+    "cta": "#path",
+    "overflow": false,
+    "highlights": "visible",
+    "checks": [
+      {
+        "text": "Cloud & DevOps Engineering — Build infrastructure, CI/CD pipelines, cloud platforms and real-world engineering projects.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Applied AI Engineering — Explore Python, APIs, LLM applications, RAG and intelligent automation.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Agentic AI & Forward-Deployed Engineering — Develop practical problem-solving skills for emerging engineering roles. Advanced pathways coming soon.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Career & Interview Readiness — Strengthen your portfolio, resume, technical interviews and professional confidence.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      }
+    ],
+    "overlap": false,
+    "header": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About",
+      "Enquire"
+    ],
+    "video": "/videos/learning-robot-clear-960.mp4",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "heading": "For Future-Ready Engineers & Professionals",
+    "tag": " LEARN • BUILD • EVOLVE",
+    "cta": "#path",
+    "overflow": false,
+    "highlights": "visible",
+    "checks": [
+      {
+        "text": "Cloud & DevOps Engineering — Build infrastructure, CI/CD pipelines, cloud platforms and real-world engineering projects.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Applied AI Engineering — Explore Python, APIs, LLM applications, RAG and intelligent automation.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Agentic AI & Forward-Deployed Engineering — Develop practical problem-solving skills for emerging engineering roles. Advanced pathways coming soon.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Career & Interview Readiness — Strengthen your portfolio, resume, technical interviews and professional confidence.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      }
+    ],
+    "overlap": false,
+    "header": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About",
+      "Enquire"
+    ],
+    "video": "/videos/learning-robot-clear-1280.mp4",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "heading": "For Future-Ready Engineers & Professionals",
+    "tag": " LEARN • BUILD • EVOLVE",
+    "cta": "#path",
+    "overflow": false,
+    "highlights": "visible",
+    "checks": [
+      {
+        "text": "Cloud & DevOps Engineering — Build infrastructure, CI/CD pipelines, cloud platforms and real-world engineering projects.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Applied AI Engineering — Explore Python, APIs, LLM applications, RAG and intelligent automation.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Agentic AI & Forward-Deployed Engineering — Develop practical problem-solving skills for emerging engineering roles. Advanced pathways coming soon.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      },
+      {
+        "text": "Career & Interview Readiness — Strengthen your portfolio, resume, technical interviews and professional confidence.",
+        "color": "rgb(216, 62, 5)",
+        "weight": "600",
+        "bodyWeight": "400"
+      }
+    ],
+    "overlap": false,
+    "header": [
+      "Programs",
+      "Projects",
+      "Solutions",
+      "About",
+      "Enquire"
+    ],
+    "video": "/videos/learning-robot-clear-1280.mp4",
+    "errors": []
+  },
+  {
+    "reduced": {
+      "state": "visible",
+      "opacity": "1",
+      "transform": "none"
+    }
+  },
+  {
+    "videoComponentUnchanged": true,
+    "protectedFilesUnchanged": true
+  }
+]

@@ -146,3 +146,38 @@ Secondary headline is now fixed to Engineer the future., retaining the motion en
 8 November continuity repair: Layout now measures the combined hero/learning opening height for one charcoal backing beneath both video masks. This prevents light-mode paper showing as a pale seam while preserving the original hero video layer and continuous topo. Removed the separate overlapping learning pseudo backing. TypeScript passed; build verification recorded in session.
 
 8 November rollback: Owner reported the shared charcoal backing collapsed the layout. Removed that backing and combined-height measurement, restoring the preceding Layout and screen styling. Continuity repair remains unresolved; do not treat the previous entry as accepted.
+
+## 20 November 2026 — bounded card and navigation refinement
+
+Owner explicitly preserved the existing headline wording, typography, gradient, layout and animation. Hero.tsx and VisualExperience.tsx remain byte-identical to their pre-change versions. Existing robot media, card images and branding retained.
+
+Hero cards now use a restrained 4px desktop hover lift, 1.045 image zoom and cyan/violet border glow, plus visible keyboard focus and native single-tap links. Reduced motion disables transforms/transitions. Below-hero content uses one-time IntersectionObserver fade/rise reveals; reduced motion shows content immediately. Existing headline behavior is excluded from this reveal system.
+
+Header order: Programs / Projects / Solutions / About / Enquire. Search, Login and Experience removed from the top navigation only. Search dialog and Ctrl/Cmd+K remain available; account provider, enquiry login flow and Experience content remain. Mobile controls fit one row with a collapsible menu.
+
+Verified 320/390/768/1440px: no overflow or JavaScript errors; desktop lift/zoom/glow, keyboard focus/Enter, mobile link activation/menu/Escape, retained search shortcut, one-time reveal state and reduced motion. TypeScript and production build passed. Evidence: design-review/hero-card-navigation-2026-11-20/. No new dependencies or deployment.
+
+### Header follow-up — Login restored
+Owner requested Login back beside Enquire. Restored existing Firebase AccountButton (Login when signed out, Account when signed in); Search and Experience remain absent from the top navigation. Responsive widths 320/390/768/1440 checked for overflow; login dialog opens. TypeScript/build passed. Hero/headline unchanged.
+
+
+### Hero card destinations — guided introduction flow
+Owner accepted the guided flow: Explore Learning Paths now links to Screen 2 (#engineering-journey); Explore Digital Solutions links to Screen 3 (#business-introduction). Their onward actions retain #path and #solutions respectively. Only card hrefs changed; headline, layout, assets and animation remain unchanged. TypeScript/build passed.
+
+### Learning introduction copy and navigation refinement
+Owner requested copy/checklist-only changes to Screen 2. Eyebrow is LEARN • BUILD • EVOLVE; heading is For Future-Ready Engineers & Professionals. Description and four highlights now cover Cloud/DevOps, applied AI, forthcoming agentic/forward-deployed pathways, and career/interview readiness. Orange checks preserved; titles use 600 weight, descriptions 400. Only highlight text receives the new one-time staggered fade-up, with immediate reduced-motion display.
+
+Shared header now contains Programs / Projects / Solutions / About / Enquire; Login removed again at owner request. Search remains absent from the header; keyboard search and auth/enquiry functionality remain. CTA label and #path destination retained because this destination is the learning-start selector, not the programme listing.
+
+Verified 320/390/768/1440px: no horizontal overflow, checklist overlap or JavaScript errors. Orange checks and title/body weights verified. Reduced-motion content is fully visible. Hero.tsx, VisualExperience.tsx, auth provider and playback coordinator hashes unchanged; SectionVideo implementation unchanged. No media files, backgrounds, video framing or section spacing rules modified. TypeScript/build passed.
+
+### Hero introduction anchor clearance
+Corrected hero-card navigation to land on the Screen 2/3 copy below the fixed header, accounting for the one-time reveal translation. Destination hashes remain unchanged. Scoped to hero pathway cards; section layout, media and headline untouched. Desktop/mobile and reduced-motion landing checks passed; TypeScript/build passed.
+
+### Screen 4 — audience journey refinement, 20 November 2026
+Retained headline, original background media, section location, parent-controlled audience selection and pull-thread slot/navigation. Replaced the long numbered detail timeline with three compact milestones and owner-supplied captions. Audience cards use cyan for professionals and violet for freshers, with visible selected/focus states and a 2px desktop hover lift. A connecting trail runs once per selection over 800ms; milestone icons illuminate sequentially within that interval. Reduced motion displays the complete static journey. Small screens use vertical milestones. No new dependencies/assets or backend changes.
+
+Checked 320/390/768/1440px: no horizontal overflow or page errors; correct captions/milestones, keyboard selection, unchanged pull-thread slot, no measured section-height change between selections. TypeScript/build passed. Evidence: design-review/screen4-journey-2026-11-20/. Visual approval remains open.
+
+### Screen 4 redesign reverted
+Owner requested revert of the latest audience-card/three-milestone redesign. Restored LearningPathSection.tsx from the pre-change snapshot and removed only the Screen 4 refinement CSS. Previous selector, copy and numbered timeline restored; other screens unchanged. Prior redesign report remains historical evidence, not current implementation.

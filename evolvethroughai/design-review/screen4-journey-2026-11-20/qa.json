@@ -1,0 +1,84 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "milestones": [
+      "Foundations",
+      "Build & Deploy",
+      "Career Ready"
+    ],
+    "caption": "Start with core skills, build working systems and prepare for engineering roles.",
+    "heightShift": 0,
+    "cord": 1,
+    "errors": [],
+    "keyboard": "true",
+    "professional": [
+      "Your Experience",
+      "Real Projects",
+      "Applied AI"
+    ]
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "milestones": [
+      "Foundations",
+      "Build & Deploy",
+      "Career Ready"
+    ],
+    "caption": "Start with core skills, build working systems and prepare for engineering roles.",
+    "heightShift": 0,
+    "cord": 1,
+    "errors": [],
+    "keyboard": "true",
+    "professional": [
+      "Your Experience",
+      "Real Projects",
+      "Applied AI"
+    ]
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "milestones": [
+      "Foundations",
+      "Build & Deploy",
+      "Career Ready"
+    ],
+    "caption": "Start with core skills, build working systems and prepare for engineering roles.",
+    "heightShift": 0,
+    "cord": 1,
+    "errors": [],
+    "keyboard": "true",
+    "professional": [
+      "Your Experience",
+      "Real Projects",
+      "Applied AI"
+    ]
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "milestones": [
+      "Foundations",
+      "Build & Deploy",
+      "Career Ready"
+    ],
+    "caption": "Start with core skills, build working systems and prepare for engineering roles.",
+    "heightShift": 0,
+    "cord": 1,
+    "errors": [],
+    "keyboard": "true",
+    "professional": [
+      "Your Experience",
+      "Real Projects",
+      "Applied AI"
+    ]
+  },
+  {
+    "reduced": {
+      "trail": "none",
+      "node": "none"
+    }
+  }
+]
