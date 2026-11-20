@@ -1,3 +1,4 @@
+import { ScrollActivity } from './components/ScrollActivity';
 import { SmoothScroll } from './components/SmoothScroll';
 import { AccountProvider } from './auth/ConversationAccess';
 import {createRoot} from 'react-dom/client';
@@ -19,7 +20,7 @@ if (navigation?.type === 'reload' && !new URLSearchParams(location.search).has('
   history.replaceState(history.state, '', location.pathname + location.search);
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
-createRoot(document.getElementById('root')!).render(<AccountProvider><SmoothScroll /><App /></AccountProvider>);
+createRoot(document.getElementById('root')!).render(<AccountProvider><ScrollActivity /><SmoothScroll /><App /></AccountProvider>);
 
 
 import './curated-backgrounds.css';

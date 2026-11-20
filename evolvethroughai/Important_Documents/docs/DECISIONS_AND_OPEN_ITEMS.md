@@ -275,3 +275,8 @@ Owner requested refinement of the existing homepage, preserving the logo/headlin
 ## 9 November 2026 - five-screen video and interaction reconciliation
 
 See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.
+
+
+## 20 November 2026 — implementation and remaining gates
+
+Use [current handover](CURRENT_WEBSITE_HANDOVER.md) for active behavior; earlier scroll/video/theme trials are historical. Owner requested continuous first-two-robot playback and the HD media is installed. No new business promises or release authorization resulted from this review. Final visual approval, domain/hosting/HTTPS verification, publication rights, approved commercial/legal details, detailed curriculum/lab reconciliation and full release verification remain open. Google sign-in and enquiry saving were previously owner-confirmed; no new external submission or delivery test was performed.

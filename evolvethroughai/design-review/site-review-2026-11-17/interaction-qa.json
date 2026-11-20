@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "name": "local anchors resolve",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "Projects opens masterclass",
+      "ok": true,
+      "detail": "http://localhost:3000/?pathway=masterclass#projects"
+    },
+    {
+      "name": "Projects target visible",
+      "ok": true
+    },
+    {
+      "name": "Programs returns home",
+      "ok": true,
+      "detail": "http://localhost:3000/#programs"
+    },
+    {
+      "name": "Search finds curriculum",
+      "ok": true
+    },
+    {
+      "name": "Search Escape closes",
+      "ok": true
+    },
+    {
+      "name": "business FAQs",
+      "ok": true
+    },
+    {
+      "name": "FAQ expands",
+      "ok": true
+    },
+    {
+      "name": "Enquire opens login gate",
+      "ok": true
+    },
+    {
+      "name": "mobile navigation opens",
+      "ok": true
+    },
+    {
+      "name": "mobile Escape closes",
+      "ok": true
+    },
+    {
+      "name": "scroll advances",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "reduced motion native",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "longTasks": []
+}

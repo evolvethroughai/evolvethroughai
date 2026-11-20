@@ -1,10 +1,29 @@
 # Current website handover
 
-Updated: 9 November 2026 (Asia/Kolkata). Inspected current local source and this session's changes. This is the current-state summary; older dated entries remain historical. No public deployment or Git push was performed.
+Updated: 20 November 2026 (Asia/Kolkata). Inspected current local source and this session's changes. This is the current-state summary; older dated entries remain historical. No public deployment or Git push was performed.
 
-## Current implementation — 9 November 2026
+## Current implementation — 20 November 2026
 
-This section supersedes earlier implementation snapshots and dated trials below. Final homepage approval and publication authorization remain open. No deployment, Git push or external message was performed.
+This snapshot supersedes the 9 November implementation details below; those entries remain history. The site uses React 19 / TypeScript / Vite. Final visual approval, launch approval and verified public deployment remain separate.
+
+- Screens 1–3: graphite robot hero with two image cards; Academy copy left/robot right; Business Solutions puzzle video left/copy right. Higher-quality robot and puzzle encodes replace low-resolution derivatives without changing framing or content.
+- Screen 4: professional/fresher learning selector with the accepted golden rope and draggable robot interaction. Screen 5: five pathway links and manually triggered colour-pouring video.
+- Screens 6–9: static globe Business Solutions; clear stairway enquiry image; FAQs with a static connected-line poster and laptop robot; human/AI hands closing screen and footer.
+- Continuous contour texture spans the site. A cached original contour PNG replaces the live canvas; it moves naturally with document scrolling. FAQ background uses a steady image, avoiding the former video flashes. No robot logo badges remain.
+- Lenis smooth wheel interpolation is active; touch remains native and reduced motion disables interpolation. Expensive nested backdrop filters were removed. First two robot videos loop continuously in the active tab; other decorative videos use visibility-based playback. Reduced-motion, data-saving and hidden-tab handling remain.
+- Header retains Programs / Experience / Projects / Solutions / About and Search / Firebase Login or Account / Enquire. Scrolled header contrast and mobile menu visibility are corrected. Search, keyboard Escape, FAQ controls and enquiry login gate were checked.
+- Latest review covered homepage plus five pathway routes at 320/390/768/1440px (24 states): no horizontal overflow, broken loaded images or page JavaScript errors. Main section borders are absent; desktop/mobile screenshots were reviewed for gaps and transitions. Lower-screen heading accents and Back to top contrast were repaired. TypeScript and production build passed; build emitted a non-fatal plugin timing warning.
+- Scroll samples showed no long tasks and roughly 17ms p95 frame intervals, with an isolated desktop frame gap around 184ms. These are local samples, not a guarantee of stall-free performance on every device.
+
+Current HD assets under public/videos: robot-hero-clear-1600.mp4 / robot-hero-clear-1280.mp4; learning-robot-clear-1280.mp4 / learning-robot-clear-960.mp4; business-puzzle-clear-1280.mp4 and matching posters. HD source URLs and provenance are recorded in public/videos/SOURCES.md. Higher-quality media increases transfer size; older derivatives remain available.
+
+Evidence: [overall review](../../design-review/overall-review-2026-11-20/REPORT.md), [layout checks](../../design-review/overall-review-2026-11-20/layout-qa.json), [desktop overview](../../design-review/overall-review-2026-11-20/desktop-overview.png), and [scroll repair history](../../design-review/scroll-performance-2026-11-19/REPORT.md).
+
+Google login and Firestore enquiry saving were previously owner-confirmed. This review checked the login gate, not a live external submission. Public hosting/domain/HTTPS, commercial details, detailed curriculum reconciliation, asset publication rights and final release verification remain open. No new runtime dependencies, Git push, deployment or external messages in this review.
+
+## Historical implementation — 9 November 2026
+
+This historical snapshot is superseded by the 20 November summary above. Final homepage approval and publication authorization remain open. No deployment, Git push or external message was performed.
 
 ### Current screen order and assets
 

@@ -13,10 +13,10 @@ export function SmoothScroll() {
       if (preference.matches) return;
       scroll = new Lenis({
         autoRaf: true,
-        lerp: 0.085,
+        lerp: 0.14,
         smoothWheel: true,
         syncTouch: false,
-        anchors: { offset: -(document.querySelector('header')?.getBoundingClientRect().height ?? 80) - 12 },
+        anchors: true,
         prevent: node => Boolean(node.closest('dialog, [role="dialog"], .project-list, .action-search-results, [data-lenis-prevent]')),
       });
     };

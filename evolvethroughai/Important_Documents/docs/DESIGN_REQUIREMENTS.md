@@ -472,3 +472,8 @@ TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning
 ## 9 November 2026 - five-screen video and interaction reconciliation
 
 See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.
+
+
+## 20 November 2026 — reviewed current website
+
+Updated the [current handover](CURRENT_WEBSITE_HANDOVER.md) with all nine screens, higher-quality robot/puzzle media, cached continuous contours, current Lenis/native-touch/reduced-motion behavior and continuous first-two-robot playback. Latest responsive review covered six routes at four widths with no observed overflow, broken loaded images or JavaScript errors. Repaired lower-screen gradient-heading and footer-link contrast; TypeScript/build passed. Evidence: [overall review](../../design-review/overall-review-2026-11-20/REPORT.md). Local scroll timing is device-dependent; final visual/publication approval and launch verification remain open. No deployment or push.

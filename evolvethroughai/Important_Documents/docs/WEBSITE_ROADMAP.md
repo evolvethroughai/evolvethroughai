@@ -480,3 +480,33 @@ Homepage reload clears its section hash and returns to the hero; direct pathway 
 
 ## 12 November 2026 — robot branding reverted
 Owner requested removal of robot logo additions. Removed the remaining cord/FAQ logo badges, their wrapper, component and badge styling. Original robot media retained; tracked trial renders were never installed. Scrolling and homepage-refresh fixes preserved.
+
+
+## 17 November 2026 — full-site review completed
+Reviewed homepage and five pathway routes in both themes at 320/390/768/1440px. Fixed Search Escape handling, modal background scroll, stacked anchor offsets and a solid footer brand background. Preserved design/media, robot-logo revert, content and normal mobile scrolling. Restored missing installed Windows build binaries. TypeScript/build, 48 layout states, 12 desktop axe scans and focused user-flow checks passed. No sign-in/submission/deployment. Evidence: [full-site review](../../design-review/site-review-2026-11-17/REPORT.md).
+
+
+## 19 November 2026 — scrolling stall repair
+Removed mounted JavaScript wheel easing; native scroll now owns input. Topo geometry renders once with lightweight transform drift, and a shared playback coordinator limits decorative playback to one visible video. Nearby video metadata warms before section entry. TypeScript/build and desktop/mobile scroll checks passed without page errors or observed long tasks; frame timing remains device-dependent. Original robot appearance and media preserved. Details: [scroll repair](../../design-review/scroll-performance-2026-11-19/REPORT.md). No deployment.
+
+
+### 19 November — follow-up rendering repair
+Owner still reported stalls after the native-scroll pass. Replaced the shared canvas with its original contour texture image, removed nested live backdrop filters, paused decorative videos/motion while scrolling and restored wheel interpolation. Videos resume after settling. Follow-up samples reduced worst frame pauses; TypeScript/build and focused interaction checks passed. Device-dependent timing remains. See scroll-performance report. No deployment.
+
+
+### Visible video playback during scrolling
+Removed scroll-activity gating from the background video coordinator at owner request. The selected visible video now continues during scrolling; offscreen/background-tab videos still pause. Texture and blur performance improvements remain.
+
+
+### First two robots — continuous playback
+Owner explicitly requested both robot videos to run without viewport gating. Hero and Academy videos now load on homepage entry and continue looping when scrolled elsewhere in the active tab. Other decorative videos retain visibility-based playback. Reduced-motion/data-saving and hidden-tab handling remain. Browser checks confirmed both videos playing at home and their time advancing at the footer; TypeScript/build passed.
+
+### 19 November — robot clarity restored from HD sources
+Switched both robot sections to higher-quality source-derived encodes and matching posters. Hero: 1600px desktop/1280px mobile; Academy: 1280px desktop/960px mobile (previous desktop Academy copy was 960px enlarged beyond native width). Original size/placement, continuous playback and no-logo appearance preserved. No live blur/sharpen filter added. Desktop browser confirmed correct dimensions, opacity 1/filter none and both videos continuing at the footer. TypeScript/build passed. Higher-quality files are larger; original derivatives retained. See public/videos/SOURCES.md.
+
+### Screen 3 clarity and colour
+Replaced the low-bitrate 960px puzzle video with a 1280px source-derived high-quality encode and matching poster. Removed brightness/desaturation filters and central dark washes; feathering now follows the actual video picture edges to preserve the charcoal blend without visible letterbox borders. Content and layout preserved. Desktop/mobile playback, source dimensions and no-overflow verified; TypeScript/build passed before the final CSS edge refinement.
+
+
+## 20 November 2026 — overall layout review
+Reviewed homepage and five pathway routes at four responsive widths: no overflow, broken loaded images or JavaScript errors. Section borders absent; desktop/mobile visual review completed. Repaired lower-screen gradient-heading and footer-link contrast. Navigation/search/FAQ/login-gate/mobile interactions, continuous first-two-robot playback and reduced motion checked. TypeScript/build passed. Evidence: design-review/overall-review-2026-11-20/REPORT.md. Release approval remains separate.

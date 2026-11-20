@@ -1,3 +1,4 @@
+import { requestBackgroundPlayback, releaseBackgroundPlayback } from './backgroundPlayback';
 import { createPortal } from 'react-dom';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ArrowUpRight, Check, Code2, Layers } from 'lucide-react';
@@ -6,7 +7,7 @@ import './EngineeringJourney.css';
 import './DualTrackShowcase.css';
 import './LearningSolutionsScreens.css';
 
-export function SectionVideo({src='/videos/learning-screen-1280.mp4',poster='/videos/learning-screen-poster.webp',restartOnEnter=false,manualPlay=false}:{src?:string;poster?:string;restartOnEnter?:boolean;manualPlay?:boolean}) {
+export function SectionVideo({src=matchMedia('(max-width: 700px)').matches?'/videos/learning-robot-clear-960.mp4':'/videos/learning-robot-clear-1280.mp4',poster='/videos/learning-robot-clear-1280.webp',restartOnEnter=false,manualPlay=false,continuous=false}:{src?:string;poster?:string;restartOnEnter?:boolean;manualPlay?:boolean;continuous?:boolean}) {
  const video = useRef<HTMLVideoElement>(null);
  const [cordSlot,setCordSlot]=useState<HTMLElement|null>(null);
  useEffect(()=>{if(manualPlay)setCordSlot(document.getElementById('learning-path-cord-slot'));},[manualPlay]);
@@ -23,18 +24,21 @@ export function SectionVideo({src='/videos/learning-screen-1280.mp4',poster='/vi
   if(manualPlay&&!started)return;
   if(!manualPlay && (reduced !== false || (navigator as Navigator & {connection?:{saveData?:boolean}}).connection?.saveData))return;
   const element=video.current;if(!element)return;
+  if(continuous)setSource(src);
   let visible=false;
-  const sync=()=>{if(visible&&!document.hidden)void element.play().catch(()=>{});else element.pause();};
-  const observer=new IntersectionObserver(([entry])=>{const next=entry.isIntersecting && entry.intersectionRatio >= (restartOnEnter ? .25 : .05);if(next&&!visible&&restartOnEnter)element.currentTime=0;visible=next;inView.current=next;if(visible)setSource(src);sync();},{threshold:restartOnEnter?[0,.25]:[0,.05]});
+  const sync=()=>requestBackgroundPlayback(element,visible,continuous);
+  const observer=new IntersectionObserver(([entry])=>{const next=entry.isIntersecting && entry.intersectionRatio >= (restartOnEnter ? .25 : .05);if(next&&!visible&&restartOnEnter)element.currentTime=0;visible=next;inView.current=next;if(visible)setSource(src);sync();},{threshold:[0,.05,.25,.5,.75,1]});
+  const warmup = new IntersectionObserver(([entry])=>{if(entry.isIntersecting){setSource(src);warmup.disconnect();}},{rootMargin:'250px 0px'});
+  if(!manualPlay)warmup.observe(element);
   observer.observe(element);document.addEventListener('visibilitychange',sync);
-  return()=>{observer.disconnect();document.removeEventListener('visibilitychange',sync);element.pause();};
- },[reduced,src,restartOnEnter,manualPlay,started]);
- useEffect(()=>{if(source&&inView.current&&!document.hidden)void video.current?.play().catch(()=>{});},[source]);
- return <><video ref={video} data-manual={manualPlay || undefined} data-started={started || undefined} data-play-count={playCount} style={manualPlay ? {animationName:started ? (playCount % 2 ? 'pour-reveal-a' : 'pour-reveal-b') : undefined} : undefined} src={source} poster={manualPlay&&!started?undefined:poster} muted loop playsInline preload={source?'auto':'none'} aria-hidden="true" />{manualPlay&&cordSlot&&createPortal(<div className="learning-path-cord-control"><button type="button" className="colour-flow-play colour-pull-cord" data-pulling={pull>0 || undefined} aria-label="Drag robot down to play colours; click to explore learning pathways. Keyboard: Arrow Down plays colours." style={{'--cord-pull':pull+'px'} as import('react').CSSProperties} onPointerDown={event=>{pullStart.current=event.clientY;dragged.current=false;event.currentTarget.setPointerCapture(event.pointerId);}} onPointerMove={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))setPull(Math.max(0,Math.min(85,event.clientY-pullStart.current)));}} onPointerUp={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))event.currentTarget.releasePointerCapture(event.pointerId);if(pull>=28){dragged.current=true;startVideo();}setPull(0);}} onPointerCancel={()=>setPull(0)} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();startVideo();}}} onClick={()=>{if(dragged.current){dragged.current=false;return;}window.location.hash='programs';}}><span className="pull-art-title">Explore the <strong>Learning Pathways</strong><ArrowUpRight size={23} aria-hidden="true"/></span><span className="pull-art-anchor" aria-hidden="true"><span className="pull-art-knot"><img src="/images/pathway-rope-knot.png" alt="" draggable={false}/></span></span><span className="pull-art-rope" aria-hidden="true"><img src="/images/pathway-gold-rope.png" alt="" draggable={false}/></span><span className="pull-art-robot"><img src="/images/pathway-pull-robot.png" alt="" draggable={false}/><span className="pull-robot-ring" aria-hidden="true"/></span><span className="pull-art-caption"><strong>Pull the thread.</strong><span>Unlock your next journey.</span></span></button></div>,cordSlot)}</>;
+  return()=>{warmup.disconnect();observer.disconnect();document.removeEventListener('visibilitychange',sync);releaseBackgroundPlayback(element);};
+ },[reduced,src,restartOnEnter,manualPlay,started,continuous]);
+ useEffect(()=>{if(source&&video.current)requestBackgroundPlayback(video.current,inView.current,continuous);},[source,continuous]);
+ return <><video ref={video} data-manual={manualPlay || undefined} data-started={started || undefined} data-play-count={playCount} style={manualPlay ? {animationName:started ? (playCount % 2 ? 'pour-reveal-a' : 'pour-reveal-b') : undefined} : undefined} src={source} poster={manualPlay&&!started?undefined:poster} muted loop playsInline preload={source?'metadata':'none'} aria-hidden="true" />{manualPlay&&cordSlot&&createPortal(<div className="learning-path-cord-control"><button type="button" className="colour-flow-play colour-pull-cord" data-pulling={pull>0 || undefined} aria-label="Drag robot down to play colours; click to explore learning pathways. Keyboard: Arrow Down plays colours." style={{'--cord-pull':pull+'px'} as import('react').CSSProperties} onPointerDown={event=>{pullStart.current=event.clientY;dragged.current=false;event.currentTarget.setPointerCapture(event.pointerId);}} onPointerMove={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))setPull(Math.max(0,Math.min(85,event.clientY-pullStart.current)));}} onPointerUp={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))event.currentTarget.releasePointerCapture(event.pointerId);if(pull>=28){dragged.current=true;startVideo();}setPull(0);}} onPointerCancel={()=>setPull(0)} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();startVideo();}}} onClick={()=>{if(dragged.current){dragged.current=false;return;}window.location.hash='programs';}}><span className="pull-art-title">Explore the <strong>Learning Pathways</strong><ArrowUpRight size={23} aria-hidden="true"/></span><span className="pull-art-anchor" aria-hidden="true"><span className="pull-art-knot"><img src="/images/pathway-rope-knot.png" alt="" draggable={false}/></span></span><span className="pull-art-rope" aria-hidden="true"><img src="/images/pathway-gold-rope.png" alt="" draggable={false}/></span><span className="pull-art-robot"><img src="/images/pathway-pull-robot.png" alt="" draggable={false}/><span className="pull-robot-ring" aria-hidden="true"/></span><span className="pull-art-caption"><strong>Pull the thread.</strong><span>Unlock your next journey.</span></span></button></div>,cordSlot)}</>;
 }
 export function EngineeringJourney(){return <>
  <section id="engineering-journey" className="workspace-journey dual-track-showcase learning-video-screen" aria-labelledby="academy-heading">
-  <div className="learning-screen-media" aria-hidden="true"><SectionVideo /></div>
+  <div className="learning-screen-media" aria-hidden="true"><SectionVideo continuous /></div>
   <div className="container learning-screen-layout"><article className="dual-track-card" aria-labelledby="academy-heading">
           <span className="dual-track-kicker"><Code2 size={16} aria-hidden="true" /> ACADEMY</span><h3 id="academy-heading">For Engineers &amp; Career Seekers</h3>
           <p className="dual-track-summary">Build a foundation in cloud and DevOps, then grow toward LLM applications, agentic AI and forward-deployed engineering: turning real problems into working systems.</p>
@@ -43,7 +47,7 @@ export function EngineeringJourney(){return <>
         </article></div>
  </section>
  <section id="business-introduction" className="workspace-journey dual-track-showcase solutions-intro-screen" aria-labelledby="enterprise-heading">
-  <div className="business-screen-media" aria-hidden="true"><SectionVideo src="/videos/business-puzzle-960.mp4" poster="/videos/business-puzzle-poster.webp" /></div><div className="container solutions-screen-layout"><article className="dual-track-card" aria-labelledby="enterprise-heading">
+  <div className="business-screen-media" aria-hidden="true"><SectionVideo src="/videos/business-puzzle-clear-1280.mp4" poster="/videos/business-puzzle-clear-1280.webp" /></div><div className="container solutions-screen-layout"><article className="dual-track-card" aria-labelledby="enterprise-heading">
           <span className="dual-track-kicker"><Layers size={16} aria-hidden="true" /> BUSINESS SOLUTIONS</span><h3 id="enterprise-heading">Scale Your Business, Not Your Headcount.</h3>
           <p className="dual-track-summary">We architect custom AI workflows, automate operations, and scale your social presence organically—turning repetitive manual work into self-sustaining systems.</p>
           <ul className="dual-track-benefits"><li><Check size={15} aria-hidden="true" />Websites &amp; Digital Platforms: Turn your ideas into production-grade user experiences.</li><li><Check size={15} aria-hidden="true" />AI-Driven Social Growth: Expand your digital footprint organically through automated content and workflow pipelines.</li><li><Check size={15} aria-hidden="true" />End-to-End Workflow Automation: Eliminate repetitive busywork by connecting systems and data seamlessly.</li></ul>

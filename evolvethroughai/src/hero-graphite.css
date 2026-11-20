@@ -541,3 +541,40 @@ html.lenis{scroll-behavior:auto!important}
 @media(prefers-reduced-motion:reduce){#questions .finish-atmosphere--clarity .faq-network-steady{animation:none;will-change:auto}}
 /* Keep modal interaction local; the document remains still behind it. */
 html:has(dialog[open]){overflow:hidden!important}
+
+/* One header clearance for native links and Lenis; never add both. */
+html{scroll-padding-top:72px;scrollbar-gutter:stable}
+.shared-landing-layout main [id],.shared-landing-layout footer[id],.shared-landing-layout footer [id]{scroll-margin-top:0!important}
+@media(max-width:1100px){html{scroll-padding-top:120px}}
+#footer .footer-brand#about{background:transparent!important;border:0!important;box-shadow:none!important}
+
+/* Native scrolling owns input. Contours are drawn once, then move on the compositor. */
+.site-continuous-topo canvas{animation:topo-texture-glide 38s ease-in-out infinite alternate;transform-origin:center;will-change:transform}
+@keyframes topo-texture-glide{from{transform:scale(1.04) translate(-.5%,-.5%)}to{transform:scale(1.04) translate(.5%,.5%)}}
+.header.portal-header .portal-controls :is(.header-search-button,.portal-control){backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+@media(prefers-reduced-motion:reduce){.site-continuous-topo canvas{animation:none!important;will-change:auto}}
+/* Scroll performance: one cached contour tile, no viewport-sized live renderer. */
+.shared-landing-layout .site-continuous-topo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;transform:none!important;animation:none!important;will-change:auto!important;background-image:url('/images/site-topo-texture.png');background-repeat:repeat;background-size:1440px 900px;pointer-events:none}
+.shared-landing-layout .site-continuous-topo:before,.shared-landing-layout .site-continuous-topo:after{content:none!important}
+/* Nested backdrop filters forced expensive video resampling on every scroll frame. */
+.shared-landing-layout .header,.shared-landing-layout .header *,.shared-landing-layout .dual-track-card,.shared-landing-layout .business-workflow,.shared-landing-layout .investment-card,.shared-landing-layout .faq-list,.shared-landing-layout .hero-path-card,.shared-landing-layout .program-list{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.shared-landing-layout .header.is-scrolled{background:#202126f5!important}
+.shared-landing-layout .header.is-scrolled .nav-pill-label{color:#eef2fa}
+.shared-landing-layout .hero-headline-glow,.shared-landing-layout .intelligent-aurora>div{filter:none!important;opacity:.22}
+.is-scroll-moving .intelligent-aurora *,.is-scroll-moving .finish-atmosphere *,.is-scroll-moving .hero-path-card img,.is-scroll-moving .evolve-icon *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}.shared-landing-layout .header.is-scrolled .brand-logo--light{display:none!important}
+.shared-landing-layout .header.is-scrolled .brand-logo--dark{display:block!important}
+.shared-landing-layout .header.is-scrolled :is(.brand-tagline,.header-search-button,.portal-control:not(.portal-control--primary)){color:#eef2fa!important}
+/* Screen 3: preserve source colour and detail; blend only the stage edges. */
+.shared-landing-layout .solutions-intro-screen .business-screen-media{background:transparent;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 86%,transparent),linear-gradient(to right,transparent,#000 8%,#000 74%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 86%,transparent),linear-gradient(to right,transparent,#000 8%,#000 74%,transparent);mask-composite:intersect;-webkit-mask-composite:source-in}
+.shared-landing-layout .solutions-intro-screen .business-screen-media video{filter:none;opacity:1;transform:scale(.94);object-fit:contain;mask-image:none;-webkit-mask-image:none}
+.shared-landing-layout .solutions-intro-screen .business-screen-media::after{background:linear-gradient(90deg,transparent 0%,transparent 62%,#18191c70 82%,#18191c 100%)}
+.shared-landing-layout .solutions-intro-screen .dual-track-kicker{color:#a7dce9!important}
+@media(max-width:700px){.shared-landing-layout .solutions-intro-screen .business-screen-media{height:240px;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent)}.shared-landing-layout .solutions-intro-screen .business-screen-media::after{background:none}.shared-landing-layout .solutions-intro-screen .solutions-screen-layout{padding-top:240px}}/* Feather the picture itself, so letterboxing cannot reveal a rectangular edge. */
+.shared-landing-layout .solutions-intro-screen .business-screen-media{mask-image:none;-webkit-mask-image:none}
+.shared-landing-layout .solutions-intro-screen .business-screen-media video{position:absolute;left:0;top:50%;width:100%;height:auto;aspect-ratio:16/9;transform:translateY(-50%) scale(.94);mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent),linear-gradient(to right,transparent,#000 8%,#000 86%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent),linear-gradient(to right,transparent,#000 8%,#000 86%,transparent);mask-composite:intersect;-webkit-mask-composite:source-in}
+.shared-landing-layout .header.is-scrolled .portal-menu-toggle{color:#eef2fa!important}
+/* Overall review — 20 November: readable accents on the charcoal screens. */
+.shared-landing-layout :is(#programs,#solutions,#enquire,#questions,#footer) h2 em{background-image:linear-gradient(100deg,#a8ceff 0%,#87deeb 48%,#c6aff5 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important}
+.shared-landing-layout #footer .footer-end a{color:#c7d3e3!important;opacity:1}
+.shared-landing-layout #footer .footer-end a:hover{color:#fff!important}

@@ -1,8 +1,8 @@
 # Evolve Through AI — Important Documents
 
-**Documentation updated through 9 November 2026 (IST).** This folder is the canonical project-knowledge location. The latest explicit owner decision takes precedence over earlier notes.
+**Documentation updated through 20 November 2026 (IST).** This folder is the canonical project-knowledge location. The latest explicit owner decision takes precedence over earlier notes.
 
-Current implementation: [9 November handover](docs/CURRENT_WEBSITE_HANDOVER.md). Older dated evidence below remains historical.
+Current implementation: [Current handover](docs/CURRENT_WEBSITE_HANDOVER.md). Older dated evidence below remains historical.
 
 ## Start here
 
@@ -44,7 +44,7 @@ The [application-root AGENTS.md](../AGENTS.md) is a short discovery pointer to t
 
 ## Current state in plain language
 
-Read [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md) for the reconciled implementation through 9 November 2026: graphite robot-video hero, glass navigation, supplied image cards, five pathway views, continuous contours and authenticated Firebase enquiries. Latest production build passed; final visual/release checks remain open. Spotlight and white-robot experiments are reverted. No public deployment or push.
+Read [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md) for the reconciled implementation through 20 November 2026: graphite robot-video hero, glass navigation, supplied image cards, five pathway views, continuous contours and authenticated Firebase enquiries. Latest production build passed; final visual/release checks remain open. Spotlight and white-robot experiments are reverted. No public deployment or push.
 
 ## Evidence and history
 
@@ -67,3 +67,8 @@ Circuit-ribbon identity is approved and integrated locally. See [brand assets an
 Current visual theme: Inter headings/body, midnight dark default with a persistent light switch, and logo-led gradient accents. See [theme QA](../design-review/brand-theme/REPORT.md). This supersedes the earlier Sora/light-only implementation summary.
 
 Latest milestone: [immersive section plan](docs/IMMERSIVE_DESIGN_PLAN.md) and [hero/pathway preview evidence](../design-review/immersive-milestone-01/REPORT.md). Owner visual approval required before lifecycle/curriculum work.
+
+
+## Latest review — 20 November 2026
+
+The [current handover](docs/CURRENT_WEBSITE_HANDOVER.md) records all nine homepage screens, HD media, current smooth scrolling and continuous robot playback. See the [overall review](../design-review/overall-review-2026-11-20/REPORT.md) for the latest responsive and interaction evidence. Earlier milestone/theme paragraphs above are historical and do not override this snapshot. Final release approval remains open.
