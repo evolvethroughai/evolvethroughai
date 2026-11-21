@@ -749,3 +749,24 @@ html{scroll-padding-top:72px;scrollbar-gutter:stable}
 .shared-landing-layout #programs:not(:has(video[data-started=true])) .pathway-title-link{color:#edf2fa}
 .shared-landing-layout #programs:not(:has(video[data-started=true])) .pathway-title-link>span:first-child{color:#b8c8db}
 #programs:not(:has(video[data-started=true])) .pathway-title-link:is(:hover,:focus-visible,:active){background:#2b3039}
+
+/* One top-down front drives both the white surface and the colour film. */
+@property --pour-front{syntax:'<length>';inherits:true;initial-value:0px}
+#programs:has(video[data-started=true]){animation:unified-colour-front 1.2s linear both}
+@keyframes unified-colour-front{from{--pour-front:0px}to{--pour-front:var(--pour-height,1200px)}}
+#programs:has(video[data-started=true]) .learning-route-video-media{clip-path:inset(0 0 max(0px,calc(100% - var(--pour-front))) 0)}
+.shared-landing-layout #programs:has(video[data-started=true]) .program-list{background:linear-gradient(to bottom,#f4f5f8ed 0px,#f4f5f8ed max(0px,calc(var(--pour-front) - var(--list-offset))),#202126 max(0px,calc(var(--pour-front) - var(--list-offset))),#202126 100%)!important}
+#programs:has(video[data-started=true]) .pathway-title-link{color:#edf2fa;animation:pour-row-contrast 0s var(--row-reveal-delay,0s) forwards}
+.shared-landing-layout #programs:has(video[data-started=true]) .pathway-title-link>span:first-child{color:inherit}
+@keyframes pour-row-contrast{to{color:#252a3b}}
+@media(prefers-reduced-motion:reduce){#programs:has(video[data-started=true]){animation:none;--pour-front:var(--pour-height,1200px)}#programs:has(video[data-started=true]) .pathway-title-link{animation:none;color:#252a3b}}
+
+/* Center the complete rope/robot control beneath both audience columns. */
+.learning-route-layout>.learning-route-cord-anchor{grid-column:1/-1;align-items:center;justify-self:center}
+.learning-route-layout>.learning-route-cord-anchor #learning-path-cord-slot{margin-inline:auto}
+
+/* Compact pull instruction beside the robot, within the same drag control. */
+.learning-path-cord-control .pull-art-caption{position:absolute;left:calc(50% + 62px);bottom:100px;width:180px;margin:0;padding:10px 13px;gap:3px;align-items:flex-start;border-radius:14px;font-size:11px;line-height:1.4;box-shadow:0 0 12px #31caf010}
+.learning-path-cord-control .pull-art-caption strong{font-size:15px;line-height:1.3}
+@media(max-width:600px){.learning-path-cord-control .pull-art-caption{left:calc(50% + 35px);bottom:100px;width:132px;padding:9px 10px;font-size:10px}.learning-path-cord-control .pull-art-caption strong{font-size:13px}}
+@media(max-width:360px){.learning-path-cord-control .pull-art-caption{left:calc(50% + 20px);width:110px}}

@@ -193,3 +193,15 @@ Owner correction, 21 November: supersedes during-drag playback and extra landing
 
 21 November — Screen 5 idle presentation: section and pathway list remain charcoal with light text before robot activation; the media layer is hidden and video remains paused at time zero. On robot-triggered arrival, the existing colour film and active list appearance are revealed. Approved landing position and sequence unchanged. Desktop 1440px/mobile 390px idle/active checks, lint and production build passed. Changed src/hero-graphite.css only for presentation.
 
+
+21 November timing follow-up: video seeks to its opening frame during the pull-to-section scroll; pearl/list and visible film are activated together only after play() confirms playback. No white surface is exposed while playback is preparing. Refresh after activation verified to restore hidden video, paused at zero, and charcoal idle presentation on 1440px and 390px. Landing position unchanged. Lint/build passed.
+
+
+21 November — eliminate arrival playback startup: after pull release the clip plays hidden behind charcoal during the 850ms scroll; arrival exposes the already-running video and pearl appearance together. Measured at visibility activation: video time 0.864s, readyState 4, paused false. No seek/new play call at arrival. Idle and refresh remain charcoal/paused at zero on desktop/mobile. Approved landing unchanged; lint/build passed.
+
+
+21 November — unified top-down white/colour reveal: a single 1.2s CSS front controls the media clip and pearl pathway surface using measured section/list offsets. Rows change contrast as the front reaches them. No separate delayed white fade. Reduced motion shows the full surface immediately. Desktop/mobile idle, arrival and refresh verified; sampled moving clip/front values agree. Approved landing and existing footage retained. Lint/build passed.
+
+
+21 November: centered rope control retained; pull instruction caption made compact and positioned beside the robot with narrow-mobile sizing. Text and drag interaction preserved. Lint/build and desktop/mobile activation checks passed.
+

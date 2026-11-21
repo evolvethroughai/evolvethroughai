@@ -42,21 +42,44 @@ export function SectionVideo({src=matchMedia('(max-width: 700px)').matches?'/vid
   if (triggerLocked.current) return;
   triggerLocked.current = true;
   setSource(src);
+  const preparedVideo = video.current;
+  if (preparedVideo) {
+   preparedVideo.pause();
+   if (!preparedVideo.src) preparedVideo.src = src;
+   if (preparedVideo.readyState >= 1) preparedVideo.currentTime = 0;
+  }
+  // Decode and advance the opening frames behind charcoal during the scroll.
+  const playbackReady = preparedVideo?.play().then(() => true, () => false);
   triggerTimer.current = setTimeout(() => { triggerLocked.current = false; }, 2500);
   let revealed = false;
   const reveal = () => {
    if (revealed) return;
    revealed = true;
    clearTimeout(triggerTimer.current);
-   setStarted(true);
-   setPlayCount(count => count + 1);
    const element = video.current;
-   if (element) {
-    if (!element.src) element.src = src;
-    if (element.readyState >= 1) element.currentTime = 0;
-    void element.play().catch(() => {});
-   }
-   triggerTimer.current = setTimeout(() => { triggerLocked.current = false; }, 700);
+   if (!element) { triggerLocked.current = false; return; }
+   const showFilm = () => {
+    const section = element.closest<HTMLElement>('#programs');
+    if (section) {
+     const sectionTop = section.getBoundingClientRect().top;
+     const list = section.querySelector<HTMLElement>('.program-list');
+     section.style.setProperty('--pour-height', section.offsetHeight + 'px');
+     section.style.setProperty('--list-offset', ((list?.getBoundingClientRect().top ?? sectionTop) - sectionTop) + 'px');
+     section.querySelectorAll<HTMLElement>('.pathway-title-link').forEach(row => {
+      const fraction = (row.getBoundingClientRect().top - sectionTop) / section.offsetHeight;
+      row.style.setProperty('--row-reveal-delay', Math.max(0, fraction * 1.2) + 's');
+     });
+    }
+    setStarted(true);
+    setPlayCount(count => count + 1);
+    triggerTimer.current = setTimeout(() => { triggerLocked.current = false; }, 700);
+   };
+   // No new seek or play call at arrival: expose the already-running film.
+   if (!element.paused && element.readyState >= 2) showFilm();
+   else void playbackReady?.then(ready => {
+    if (ready) showFilm();
+    else triggerLocked.current = false;
+   });
   };
   // Measure the destination after the released rope has returned to its resting height.
   requestAnimationFrame(() => window.dispatchEvent(new CustomEvent('evolve:reveal-programs', { detail: { onArrive: reveal } }))); 
