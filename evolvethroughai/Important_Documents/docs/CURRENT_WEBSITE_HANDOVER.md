@@ -181,3 +181,15 @@ Checked 320/390/768/1440px: no horizontal overflow or page errors; correct capti
 
 ### Screen 4 redesign reverted
 Owner requested revert of the latest audience-card/three-milestone redesign. Restored LearningPathSection.tsx from the pre-change snapshot and removed only the Screen 4 refinement CSS. Previous selector, copy and numbered timeline restored; other screens unchanged. Prior redesign report remains historical evidence, not current implementation.
+
+### 21 November 2026 — Screen 4 pull timing and Screen 5 clarity
+The pull begins playback at the drag threshold (before pointer release) and scrolls concurrently. Manual video preloads near the rope control. The destination includes additional header/reveal clearance and a final overlap guard. Desktop 1440/2560px and mobile 390px checks place the heading below the header, without overflow; drag, tap and reduced-motion keyboard activation each trigger once. During-pull playback verified at 1920px decoded width. Replaced the 960px derivative with thread-colour-pour-hd.mp4, encoded at 1920px/CRF18 from the same owner-selected Pexels 6721009 original; original timing/footage retained, no artificial sharpening or colour filters. Independent sliding clip mask remains disabled. Lint/build passed. Other screens and backend unchanged.
+
+Owner correction, 21 November: supersedes during-drag playback and extra landing gap above. The robot must be pulled and released before scrolling; the preloaded 1920px colour clip starts only in the scroll-completion callback. Heading aligns 28px below the navbar, matching the supplied screenshot. Verified video paused at time zero during drag; on arrival playing once, heading top ~85px versus header bottom 57px at desktop/mobile. Reduced-motion keyboard, lint and build passed.
+
+
+21 November follow-up: removed the post-scroll correction. Rope stretch now uses visual transforms rather than height changes, so pulling cannot shift the next section's measured position. One scroll lands the heading ~28px below the navbar at 390/1440/2560px. Video remains paused during drag and starts on arrival; desktop/mobile/reduced-motion checks passed.
+
+
+21 November — Screen 5 idle presentation: section and pathway list remain charcoal with light text before robot activation; the media layer is hidden and video remains paused at time zero. On robot-triggered arrival, the existing colour film and active list appearance are revealed. Approved landing position and sequence unchanged. Desktop 1440px/mobile 390px idle/active checks, lint and production build passed. Changed src/hero-graphite.css only for presentation.
+

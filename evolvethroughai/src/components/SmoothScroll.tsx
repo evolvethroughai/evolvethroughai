@@ -39,6 +39,21 @@ export function SmoothScroll() {
       else window.scrollTo({ top, behavior: 'instant' });
     };
     document.addEventListener('click', landOnIntroduction, true);
+    const revealPrograms = (event: Event) => {
+      const target = document.getElementById('programs');
+      const onArrive = (event as CustomEvent<{ onArrive: () => void }>).detail.onArrive;
+      if (!target) { onArrive(); return; }
+      const heading = target.querySelector<HTMLElement>('.section-heading') ?? target;
+      const clearance = (document.querySelector('header')?.getBoundingClientRect().bottom ?? 64) + 28;
+      // Use layout coordinates: reveal transforms must not affect the destination.
+      let layoutTop = 0;
+      let node: HTMLElement | null = heading;
+      while (node) { layoutTop += node.offsetTop; node = node.offsetParent as HTMLElement | null; }
+      const top = Math.max(0, layoutTop - clearance);
+      if (location.hash !== '#programs') history.pushState(null, '', '#programs');
+      if (scroll) scroll.scrollTo(top, { duration: .85, onComplete: onArrive });
+      else { window.scrollTo({ top, behavior: 'instant' }); onArrive(); }
+    };    window.addEventListener('evolve:reveal-programs', revealPrograms);
     const releaseKeyboard = (event: KeyboardEvent) => {
       if (['PageDown', 'PageUp', 'Home', 'End', 'ArrowDown', 'ArrowUp', ' '].includes(event.key)) {
         scroll?.scrollTo(window.scrollY, { immediate: true });
@@ -54,6 +69,7 @@ export function SmoothScroll() {
     syncDialogs();
     preference.addEventListener('change', configure);
     return () => {
+      window.removeEventListener('evolve:reveal-programs', revealPrograms);
       document.removeEventListener('click', landOnIntroduction, true);
       document.removeEventListener('toggle', syncDialogs, true);
       window.removeEventListener('keydown', releaseKeyboard, true);

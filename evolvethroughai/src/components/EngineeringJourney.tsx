@@ -22,12 +22,45 @@ export function SectionVideo({src=matchMedia('(max-width: 700px)').matches?'/vid
   observer.observe(document.body, { childList: true, subtree: true });
   return () => observer.disconnect();
  }, [manualPlay]);
- const [started,setStarted]=useState(false);
+ useEffect(() => {
+  if (!manualPlay || !cordSlot) return;
+  const observer = new IntersectionObserver(([entry]) => {
+   if (entry.isIntersecting) { setSource(src); observer.disconnect(); }
+  }, { rootMargin: '600px 0px' });
+  observer.observe(cordSlot);
+  return () => observer.disconnect();
+ }, [manualPlay, cordSlot, src]); const [started,setStarted]=useState(false);
  const [playCount,setPlayCount]=useState(0);
  const [pull,setPull]=useState(0);
  const pullStart=useRef(0);
  const dragged=useRef(false);
- const startVideo=()=>{document.getElementById('programs')?.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});setStarted(true);setPlayCount(v=>v+1);const element=video.current;if(element){if(!element.src)element.src=src;element.currentTime=0;void element.play().catch(()=>{});}};
+ const pullDistance = useRef(0);
+ const triggerLocked = useRef(false);
+ const triggerTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+ useEffect(() => () => { clearTimeout(triggerTimer.current); }, []);
+ const startVideo = () => {
+  if (triggerLocked.current) return;
+  triggerLocked.current = true;
+  setSource(src);
+  triggerTimer.current = setTimeout(() => { triggerLocked.current = false; }, 2500);
+  let revealed = false;
+  const reveal = () => {
+   if (revealed) return;
+   revealed = true;
+   clearTimeout(triggerTimer.current);
+   setStarted(true);
+   setPlayCount(count => count + 1);
+   const element = video.current;
+   if (element) {
+    if (!element.src) element.src = src;
+    if (element.readyState >= 1) element.currentTime = 0;
+    void element.play().catch(() => {});
+   }
+   triggerTimer.current = setTimeout(() => { triggerLocked.current = false; }, 700);
+  };
+  // Measure the destination after the released rope has returned to its resting height.
+  requestAnimationFrame(() => window.dispatchEvent(new CustomEvent('evolve:reveal-programs', { detail: { onArrive: reveal } }))); 
+ };
  const reduced = useReducedMotion();
  const inView=useRef(false);
  const [source,setSource] = useState<string>();
@@ -37,15 +70,15 @@ export function SectionVideo({src=matchMedia('(max-width: 700px)').matches?'/vid
   const element=video.current;if(!element)return;
   if(continuous)setSource(src);
   let visible=false;
-  const sync=()=>requestBackgroundPlayback(element,visible,continuous);
-  const observer=new IntersectionObserver(([entry])=>{const next=entry.isIntersecting && entry.intersectionRatio >= (restartOnEnter ? .25 : .05);if(next&&!visible&&restartOnEnter)element.currentTime=0;visible=next;inView.current=next;if(visible)setSource(src);sync();},{threshold:[0,.05,.25,.5,.75,1]});
+  const sync=()=>{if(manualPlay&&!visible&&!inView.current)return;requestBackgroundPlayback(element,visible,continuous);};
+  const observer=new IntersectionObserver(([entry])=>{const next=entry.isIntersecting && entry.intersectionRatio >= (restartOnEnter ? .25 : .05);if(next&&!visible&&restartOnEnter)element.currentTime=0;const wasVisible=inView.current;visible=next;if(visible)setSource(src);if(!manualPlay||next||wasVisible)requestBackgroundPlayback(element,visible,continuous);inView.current=next;},{threshold:[0,.05,.25,.5,.75,1]});
   const warmup = new IntersectionObserver(([entry])=>{if(entry.isIntersecting){setSource(src);warmup.disconnect();}},{rootMargin:'250px 0px'});
   if(!manualPlay)warmup.observe(element);
   observer.observe(element);document.addEventListener('visibilitychange',sync);
   return()=>{warmup.disconnect();observer.disconnect();document.removeEventListener('visibilitychange',sync);releaseBackgroundPlayback(element);};
  },[reduced,src,restartOnEnter,manualPlay,started,continuous]);
- useEffect(()=>{if(source&&video.current)requestBackgroundPlayback(video.current,inView.current,continuous);},[source,continuous]);
- return <><video ref={video} data-manual={manualPlay || undefined} data-started={started || undefined} data-play-count={playCount} style={manualPlay ? {animationName:started ? (playCount % 2 ? 'pour-reveal-a' : 'pour-reveal-b') : undefined} : undefined} src={source} poster={manualPlay&&!started?undefined:poster} muted loop playsInline preload={source?'metadata':'none'} aria-hidden="true" />{manualPlay&&cordSlot&&createPortal(<div className="learning-path-cord-control"><button type="button" className="colour-flow-play colour-pull-cord" data-pulling={pull>0 || undefined} aria-label="Drag robot down to play colours; click to explore learning pathways. Keyboard: Arrow Down plays colours." style={{'--cord-pull':pull+'px'} as import('react').CSSProperties} onPointerDown={event=>{pullStart.current=event.clientY;dragged.current=false;event.currentTarget.setPointerCapture(event.pointerId);}} onPointerMove={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))setPull(Math.max(0,Math.min(85,event.clientY-pullStart.current)));}} onPointerUp={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))event.currentTarget.releasePointerCapture(event.pointerId);if(pull>=28){dragged.current=true;startVideo();}setPull(0);}} onPointerCancel={()=>setPull(0)} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();startVideo();}}} onClick={()=>{if(dragged.current){dragged.current=false;return;}window.location.hash='programs';}}><span className="pull-art-title">Explore the <strong>Learning Pathways</strong><ArrowUpRight size={23} aria-hidden="true"/></span><span className="pull-art-anchor" aria-hidden="true"><span className="pull-art-knot"><img src="/images/pathway-rope-knot.png" alt="" draggable={false}/></span></span><span className="pull-art-rope" aria-hidden="true"><img src="/images/pathway-gold-rope.png" alt="" draggable={false}/></span><span className="pull-art-robot"><img src="/images/pathway-pull-robot.png" alt="" draggable={false}/><span className="pull-robot-ring" aria-hidden="true"/></span><span className="pull-art-caption"><strong>Pull the thread.</strong><span>Unlock your next journey.</span></span></button></div>,cordSlot)}</>;
+ useEffect(()=>{if(source&&video.current&&!manualPlay)requestBackgroundPlayback(video.current,inView.current,continuous);},[source,continuous]);
+ return <><video ref={video} data-manual={manualPlay || undefined} data-started={started || undefined} data-play-count={playCount} style={manualPlay ? {animationName:started ? (playCount % 2 ? 'pour-reveal-a' : 'pour-reveal-b') : undefined} : undefined} src={source} poster={manualPlay&&!started?undefined:poster} muted loop playsInline preload={manualPlay?'auto':source?'metadata':'none'} aria-hidden="true" />{manualPlay&&cordSlot&&createPortal(<div className="learning-path-cord-control"><button type="button" className="colour-flow-play colour-pull-cord" data-pulling={pull>0 || undefined} aria-label="Pull or tap the robot to explore learning pathways and reveal colours. Keyboard: Enter, Space or Arrow Down." style={{'--cord-pull':pull+'px'} as import('react').CSSProperties} onPointerDown={event=>{pullStart.current=event.clientY;pullDistance.current=0;dragged.current=false;event.currentTarget.setPointerCapture(event.pointerId);}} onPointerMove={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId)){pullDistance.current=Math.max(0,Math.min(85,event.clientY-pullStart.current));setPull(pullDistance.current);}}} onPointerUp={event=>{if(event.currentTarget.hasPointerCapture(event.pointerId))event.currentTarget.releasePointerCapture(event.pointerId);if(pullDistance.current>=28&&!dragged.current){dragged.current=true;startVideo();}pullDistance.current=0;setPull(0);}} onPointerCancel={()=>{pullDistance.current=0;dragged.current=true;setPull(0);}} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();if(!event.repeat)startVideo();}}} onClick={()=>{if(dragged.current){dragged.current=false;return;}startVideo();}}><span className="pull-art-title">Explore the <strong>Learning Pathways</strong><ArrowUpRight size={23} aria-hidden="true"/></span><span className="pull-art-anchor" aria-hidden="true"><span className="pull-art-knot"><img src="/images/pathway-rope-knot.png" alt="" draggable={false}/></span></span><span className="pull-art-rope" aria-hidden="true"><img src="/images/pathway-gold-rope.png" alt="" draggable={false}/></span><span className="pull-art-robot"><img src="/images/pathway-pull-robot.png" alt="" draggable={false}/><span className="pull-robot-ring" aria-hidden="true"/></span><span className="pull-art-caption"><strong>Pull the thread.</strong><span>Unlock your next journey.</span></span></button></div>,cordSlot)}</>;
 }
 export function EngineeringJourney(){
  const highlights = useRef<HTMLUListElement>(null);
