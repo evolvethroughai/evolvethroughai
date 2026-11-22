@@ -1,144 +1,145 @@
 {
-    "version":  1,
-    "project":  {
-                    "name":  "Evolve Through AI",
-                    "productType":  "Practical engineering education and future technology solutions",
-                    "stack":  [
-                                  "react",
-                                  "tailwind-v4",
-                                  "vite"
-                              ]
-                },
-    "sources":  {
-                    "tokens":  [
-                                   "src/index.css",
-                                   "src/refinement.css",
-                                   "src/brand-theme.css",
-                                   "src/homepage-refinement.css",
-                                   "src/immersive-milestone.css",
-                                   "src/components/HeaderRefinement.css",
-                                   "src/premium-flow.css"
-                               ],
-                    "components":  [
-
-                                   ],
-                    "assets":  [
-                                   "public/assets",
-                                   "public/images"
-                               ],
-                    "instructions":  [
-
-                                     ]
-                },
-    "design":  {
-                   "colorMode":  "dark with persistent light toggle",
-                   "colors":  {
-                                  "--muted":  {
-                                                  "value":  "#596675",
-                                                  "source":  "src/index.css"
-                                              }
-                              },
-                   "typography":  {
-                                      "heading":  {
-                                                      "family":  "Inter",
-                                                      "weight":  "600–700",
-                                                      "source":  "src/refinement.css"
-                                                  },
-                                      "body":  {
-                                                   "family":  "Inter",
-                                                   "weight":  "400–600",
-                                                   "source":  "src/refinement.css"
-                                               }
-                                  },
-                   "spacing":  {
-
-                               },
-                   "radius":  {
-
-                              },
-                   "shadows":  {
-
-                               },
-                   "motion":  {
-
-                              },
-                   "density":  "unknown"
-               },
-    "components":  {
-                       "installed":  [
-
-                                     ],
-                       "preferredPrimitives":  [
-
-                                               ],
-                       "patterns":  [
-
-                                    ]
-                   },
-    "constraints":  {
-                        "must":  [
-                                     "Preserve the approved landscape, engineering stack and infinity imagery.",
-                                     "Keep program status, fees and scope truthful.",
-                                     "Respect reduced motion, native scrolling, keyboard use and mobile layouts."
-                                 ],
-                        "avoid":  [
-                                      "Decorative serif headlines",
-                                      "Tiny technical labels",
-                                      "Continuous floating interactive controls",
-                                      "Unconfirmed program claims"
-                                  ]
-                    },
-    "decisions":  [
-                      {
-                          "date":  "2026-10-26",
-                          "decision":  "Use self-hosted Sora and Inter, a focused hero with explicit program actions, a useful footer and optional quick actions. Keep native scrolling and use bounded, interpolated image motion."
-                      },
-                      {
-                          "date":  "2026-10-26",
-                          "decision":  "Owner approved the reconstructed blue–cyan–violet circuit-ribbon E. Use outlined Inter SVG lockups in header/footer, simplified circuit favicons, midnight footer, restrained spacing; no unrelated redesign."
-                      },
-                      {
-                          "date":  "2026-10-26",
-                          "decision":  "Owner requested full logo-led theme: midnight dark default with light toggle, Inter typography, blue-cyan-violet accents, gradient actions and bounded circuit motion."
-                      },
-                      {
-                          "date":  "2026-10-26",
-                          "decision":  "Homepage refinement implemented for review: integrated connected engineering journey, secondary curriculum text link, contained cinematic image, audience pathways. Owner approval remains pending."
-                      },
-                      {
-                          "date":  "2026-10-26",
-                          "decision":  "Owner-directed immersive milestone 01: human-context illustrative hero, expandable workflow examples, editorial career pathways, lightweight existing Motion; visual approval pending before downstream sections."
-                      },
-                      {
-                          "date":  "2026-10-26",
-                          "decision":  "Owner-requested centered morphic navigation, tagline beneath logo, left search, truthful visitor account menu, separate theme toggle and pauseable five-second headline rotation; implementation awaiting visual approval."
-                      },
-                      {
-                          "date":  "2026-10-27",
-                          "decision":  "Reference-inspired editorial hierarchy and original scroll-linked ribbon bridge across Screens 1�2. Approved logo/topography/workspace assets retained; visual review pending; later sections untouched."
-                      }
-                  ],
-    "evidence":  [
-                     {
-                         "fact":  "design.colorMode:light",
-                         "source":  "src/index.css"
-                     },
-                     {
-                         "fact":  "design.tokens",
-                         "source":  "src/index.css"
-                     },
-                     {
-                         "fact":  "project.stack:react",
-                         "source":  "package.json"
-                     },
-                     {
-                         "fact":  "project.stack:tailwind-v4",
-                         "source":  "package.json"
-                     },
-                     {
-                         "fact":  "project.stack:vite",
-                         "source":  "package.json"
-                     }
-                 ],
-    "generatedAt":  "2026-10-26T04:48:54.884Z"
+  "version": 1,
+  "project": {
+    "name": "Evolve Through AI",
+    "productType": "Practical engineering education and future technology solutions",
+    "stack": [
+      "react",
+      "tailwind-v4",
+      "vite"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "src/index.css",
+      "src/refinement.css",
+      "src/brand-theme.css",
+      "src/homepage-refinement.css",
+      "src/immersive-milestone.css",
+      "src/components/HeaderRefinement.css",
+      "src/premium-flow.css"
+    ],
+    "components": [],
+    "assets": [
+      "public/assets",
+      "public/images"
+    ],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "dark with persistent light toggle",
+    "colors": {
+      "--muted": {
+        "value": "#596675",
+        "source": "src/index.css"
+      }
+    },
+    "typography": {
+      "heading": {
+        "family": "Inter",
+        "weight": "600–700",
+        "source": "src/refinement.css"
+      },
+      "body": {
+        "family": "Inter",
+        "weight": "400–600",
+        "source": "src/refinement.css"
+      }
+    },
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [
+      "Preserve the approved landscape, engineering stack and infinity imagery.",
+      "Keep program status, fees and scope truthful.",
+      "Respect reduced motion, native scrolling, keyboard use and mobile layouts."
+    ],
+    "avoid": [
+      "Decorative serif headlines",
+      "Tiny technical labels",
+      "Continuous floating interactive controls",
+      "Unconfirmed program claims"
+    ]
+  },
+  "decisions": [
+    {
+      "date": "2026-10-26",
+      "decision": "Use self-hosted Sora and Inter, a focused hero with explicit program actions, a useful footer and optional quick actions. Keep native scrolling and use bounded, interpolated image motion."
+    },
+    {
+      "date": "2026-10-26",
+      "decision": "Owner approved the reconstructed blue–cyan–violet circuit-ribbon E. Use outlined Inter SVG lockups in header/footer, simplified circuit favicons, midnight footer, restrained spacing; no unrelated redesign."
+    },
+    {
+      "date": "2026-10-26",
+      "decision": "Owner requested full logo-led theme: midnight dark default with light toggle, Inter typography, blue-cyan-violet accents, gradient actions and bounded circuit motion."
+    },
+    {
+      "date": "2026-10-26",
+      "decision": "Homepage refinement implemented for review: integrated connected engineering journey, secondary curriculum text link, contained cinematic image, audience pathways. Owner approval remains pending."
+    },
+    {
+      "date": "2026-10-26",
+      "decision": "Owner-directed immersive milestone 01: human-context illustrative hero, expandable workflow examples, editorial career pathways, lightweight existing Motion; visual approval pending before downstream sections."
+    },
+    {
+      "date": "2026-10-26",
+      "decision": "Owner-requested centered morphic navigation, tagline beneath logo, left search, truthful visitor account menu, separate theme toggle and pauseable five-second headline rotation; implementation awaiting visual approval."
+    },
+    {
+      "date": "2026-10-27",
+      "decision": "Reference-inspired editorial hierarchy and original scroll-linked ribbon bridge across Screens 1�2. Approved logo/topography/workspace assets retained; visual review pending; later sections untouched."
+    }
+  ],
+  "evidence": [
+    {
+      "fact": "design.colorMode:light",
+      "source": "src/index.css"
+    },
+    {
+      "fact": "design.tokens",
+      "source": "src/index.css"
+    },
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:tailwind-v4",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:vite",
+      "source": "package.json"
+    }
+  ],
+  "generatedAt": "2026-10-26T04:48:54.884Z",
+  "currentImplementation": {
+    "updated": "2026-11-09",
+    "source": "Important_Documents/docs/CURRENT_WEBSITE_HANDOVER.md",
+    "screens": [
+      "graphite robot hero and two image cards",
+      "learning copy left and robot right",
+      "business puzzle video left and copy right",
+      "learning-start selector with dotted-wave video",
+      "pearl pathway catalogue with manual pull-cord colour video"
+    ],
+    "approval": "Final visual and release approval pending",
+    "dependencies": "No new app dependencies for video/cord work",
+    "reverted": [
+      "spotlights",
+      "white robot compositing",
+      "shared combined-height charcoal backing",
+      "intermediate transition glows"
+    ]
+  }
 }

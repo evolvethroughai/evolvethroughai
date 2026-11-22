@@ -1,10 +1,10 @@
 # Website Roadmap
 
-> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+> Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
-> Updated: 8 November 2026 · Timezone: Asia/Kolkata (IST).
-> Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
+> Updated: 9 November 2026 Â· Timezone: Asia/Kolkata (IST).
+> Business intention: the ownerâ€™s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
 
 ## Current milestone
@@ -17,25 +17,25 @@ An existing local implementation already covers parts of Phases 2 and 3. Do not 
 
 | Phase | Inspection snapshot | Acceptance still needed |
 | --- | --- | --- |
-| 1 — Foundation/design approval | Existing app, exports, notes, source context and latest QA artifacts inspected; documentation being established | Owner review and explicit homepage approval |
-| 2 — Core website | Navigation and one composed homepage exist in React/Vite | Dedicated Learning Programs and Masterclass routes, agreed page architecture and owner review |
-| 3 — Curriculum/interactions | 18-module overview, 14 project concepts, 8 lifecycle controls, 9 capstone UI stages and 5 progression controls exist | Original detailed source reconciliation, approved lab scope and content review |
-| 4 — Business functionality | Browser validation and local enquiry/curriculum downloads exist | Real delivery backend, verified contacts, spam handling, data practices, legal pages and approved analytics |
-| 5 — Production launch | Earlier build/TypeScript/browser/axe results are recorded; local build output exists | Full release review, domain/HTTPS/hosting verification, production forms and deployment smoke tests |
-| 6 — Content/marketing | Channels and strategy discussed | Owner-approved publication cadence, real accounts/content and measured enquiries |
-| 7 — Expansion | Future program/service/product directions documented | Demand, capacity, detailed scope and explicit approval |
+| 1 â€” Foundation/design approval | Existing app, exports, notes, source context and latest QA artifacts inspected; documentation being established | Owner review and explicit homepage approval |
+| 2 â€” Core website | Navigation and one composed homepage exist in React/Vite | Dedicated Learning Programs and Masterclass routes, agreed page architecture and owner review |
+| 3 â€” Curriculum/interactions | 18-module overview, 14 project concepts, 8 lifecycle controls, 9 capstone UI stages and 5 progression controls exist | Original detailed source reconciliation, approved lab scope and content review |
+| 4 â€” Business functionality | Browser validation and local enquiry/curriculum downloads exist | Real delivery backend, verified contacts, spam handling, data practices, legal pages and approved analytics |
+| 5 â€” Production launch | Earlier build/TypeScript/browser/axe results are recorded; local build output exists | Full release review, domain/HTTPS/hosting verification, production forms and deployment smoke tests |
+| 6 â€” Content/marketing | Channels and strategy discussed | Owner-approved publication cadence, real accounts/content and measured enquiries |
+| 7 â€” Expansion | Future program/service/product directions documented | Demand, capacity, detailed scope and explicit approval |
 
 ## Founder roadmap and acceptance criteria
 
-## PART 20 — WEBSITE DEVELOPMENT ROADMAP
+## PART 20 â€” WEBSITE DEVELOPMENT ROADMAP
 
 These are planning targets, not guaranteed deadlines.
 
-I have approximately 5–7 hours per week available for this project.
+I have approximately 5â€“7 hours per week available for this project.
 
 Adjust the timeline based on actual implementation complexity.
 
-### PHASE 1 — FOUNDATION AND DESIGN APPROVAL
+### PHASE 1 â€” FOUNDATION AND DESIGN APPROVAL
 
 Objectives:
 
@@ -54,7 +54,7 @@ Acceptance criteria:
 - Visual direction clearly established.
 - Homepage reviewed and approved by me.
 
-### PHASE 2 — CORE WEBSITE
+### PHASE 2 â€” CORE WEBSITE
 
 Build or refine:
 
@@ -74,7 +74,7 @@ Acceptance criteria:
 - Mobile experience is usable.
 - No fabricated business claims.
 
-### PHASE 3 — CURRICULUM AND INTERACTIVE EXPERIENCES
+### PHASE 3 â€” CURRICULUM AND INTERACTIVE EXPERIENCES
 
 Implement:
 
@@ -94,7 +94,7 @@ Acceptance criteria:
 - Mobile layouts are usable.
 - Motion does not block accessibility.
 
-### PHASE 4 — BUSINESS FUNCTIONALITY
+### PHASE 4 â€” BUSINESS FUNCTIONALITY
 
 Implement:
 
@@ -115,7 +115,7 @@ Acceptance criteria:
 - Contact information is verified.
 - Personal information is handled responsibly.
 
-### PHASE 5 — QUALITY AND PRODUCTION LAUNCH
+### PHASE 5 â€” QUALITY AND PRODUCTION LAUNCH
 
 Tasks:
 
@@ -139,7 +139,7 @@ Acceptance criteria:
 - Forms work.
 - The website is ready for public visitors.
 
-### PHASE 6 — CONTENT AND MARKETING
+### PHASE 6 â€” CONTENT AND MARKETING
 
 Potential activities:
 
@@ -154,7 +154,7 @@ Potential activities:
 
 Content should provide genuine value rather than rely on exaggerated marketing.
 
-### PHASE 7 — BUSINESS EXPANSION
+### PHASE 7 â€” BUSINESS EXPANSION
 
 After validating initial demand:
 
@@ -171,7 +171,7 @@ After validating initial demand:
 
 ## Version 1 boundaries
 
-## PART 22 — WEBSITE VERSION 1 SCOPE
+## PART 22 â€” WEBSITE VERSION 1 SCOPE
 
 The first public version should prioritize:
 
@@ -202,7 +202,7 @@ Build a strong foundation without overengineering.
 
 ---
 
-## PART 13 — TECHNICAL DIRECTION
+## PART 13 â€” TECHNICAL DIRECTION
 
 Previously discussed technologies:
 
@@ -256,7 +256,7 @@ Do not push, deploy, delete existing code, or change remotes without explicit ap
 5. Prepare dedicated content routes and production discovery configuration where approved, then test production behavior.
 6. Publish only against verified domain/hosting details and explicit authorization; move into selling when delivery is ready.
 
-Plan around the founder's 5–7 available hours/week. Use one small deliverable and a review checkpoint at a time. Dates and phase durations are not committed.
+Plan around the founder's 5â€“7 available hours/week. Use one small deliverable and a review checkpoint at a time. Dates and phase durations are not committed.
 
 ## Launch checklist
 
@@ -281,11 +281,11 @@ Plan around the founder's 5–7 available hours/week. Use one small deliverable 
 
 Final design approval; original detailed curriculum/labs; live enquiry delivery; confirmed commercial/legal/contact details; and verified public deployment remain open. Separate page routing/prerendering/SEO architecture, approved analytics, lead storage and hosting choices also require decisions. Keep unresolved questions in [Decisions and open items](DECISIONS_AND_OPEN_ITEMS.md).
 
-## Screen-by-screen review checkpoint — 26 October 2026
+## Screen-by-screen review checkpoint â€” 26 October 2026
 
 Screen 01 (header and hero) has a bounded corrective pass and recorded verification, and is awaiting owner review. Do not treat this as approval of the whole homepage. Follow [Homepage screen review](HOMEPAGE_SCREEN_REVIEW.md) before moving to the audience section or additional pages.
 
-## 26 October 2026 � immersive direction, milestone 01
+## 26 October 2026 ï¿½ immersive direction, milestone 01
 
 Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
 
@@ -405,3 +405,128 @@ Owner approved trying a restrained warm spotlight after positive feedback on the
 ## 8 November 2026 - current handover reconciled
 
 Graphite hero retained; spotlight trials removed. Glass navigation pills, interactive image-backed learning/solutions cards, upward hero spacing and smaller robot framing implemented. Both latest owner-provided images are connected as optimized WebP assets. Firebase login/enquiry saving previously confirmed by owner; old pending/local-draft statements are historical. See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for exact state and verification limits. Full homepage approval and launch remain open; no push/deployment.
+
+## 9 November 2026 - five-screen video and interaction reconciliation
+
+See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.
+
+## 10 November 2026 - Screens 7–9 atmosphere refinement
+Added local video atmospheres to the enquiry, FAQ and footer sections, with soft edge fades, restrained ambient drift, answer reveals and CTA feedback. Reuses existing media; no new application dependencies. Videos load near view, pause offscreen and use posters under reduced motion. Desktop/mobile light/dark browser checks found no horizontal overflow; TypeScript and production build passed. Visual approval remains pending. No deployment.
+
+Screens 7�9 correction: each now has its own locally generated abstract video (aurora, cyan contours, orbital glow), replacing the reused dotted/pour media. Existing lazy playback and reduced-motion posters retained. No content changes or deployment.
+
+## 11 November 2026 - Screen 7 interactive robot journey
+Owner approved the five-step staircase concept. Added tappable steps, robot hop/advance, rotating educational messages, restart and final conversation CTA. Existing enquiry form, budget preference and authentication preserved. Existing robot PNG reused; no new dependencies. Keyboard selection and all five steps verified at 390, 768 and 1440px with no horizontal overflow. TypeScript and production build passed. Reduced-motion CSS disables hops/transitions. Visual review remains open; no deployment.
+
+11 November 2026: Owner requested revert of the staircase trial. Restored the prior Screen 7 ambition copy/checklist and existing enquiry card. Distinct Screen 7–9 video backgrounds remain. The staircase entry above is historical and no longer active.
+
+11 November 2026 - Screen 7 stairway film interaction: owner requested richer quality and tap-driven milestones. Created a contrast/saturation-adjusted 30fps interpolated derivative from the supplied 438px, 4fps, two-second GIF. Five sequential tap/keyboard-triggered playback segments reveal aspirational achievement messages; replay resets the journey. Source animation does not contain five separately authored stair-climbing actions. Existing enquiry form retained. All five transitions and replay verified in browser; 390px no overflow; TypeScript/build passed. No deployment.
+
+11 November 2026: Replaced Screen 7 stairway footage with the newer ten-second learning-growth clip. Preserved 716px/30fps, applied light sharpening and colour refinement, refreshed poster and retained five tap milestones at natural speed. TypeScript/build passed. No deployment.
+
+11 November 2026: Owner supplied a landscape stairway still and requested a full, clear Screen 7 image. Replaced video/milestone interaction with optimized enhanced still and restored ambition/checklist introduction. Existing enquiry form and other screens preserved. Soft masking and readability overlay applied; no deployment.
+
+11 November 2026: Screen 7 image visibility correction removes full-image opacity, white wash, ambient overlay and section masking. Image now renders at full opacity without CSS filtering; local charcoal panels protect content contrast. Desktop/mobile light/dark checks found no overflow; build passed.
+
+11 November 2026: Screen 5 clarity review confirmed thread-colour-pour.mp4 remained unchanged (9 November, 5,581,038 bytes). Removed pearl media wash and list backdrop blur, reduced list white opacity to retain film colour. Video source, timing and robot pull trigger unchanged. Build passed.
+
+11 November 2026: Applied owner-selected connected-node video to Screen 8 FAQ with charcoal backdrop and protected answer contrast. Existing question categories/content, offscreen pause and reduced-motion poster behavior preserved. Desktop/mobile playback and answer expansion verified, no horizontal overflow; TypeScript/build passed. Screens 5 and 7 unchanged. No deployment.
+
+11 November 2026: Lower-homepage seam correction (Screens 5–9). Unified backing to graphite, removed outer section borders/shadows and added edge-only top/bottom fades on colour-pour, stairway image and FAQ media. Footer shares graphite backing. Central media remains unfiltered and full-strength. Desktop/mobile light/dark layout checks and build passed; no content, source media or interaction changes. No deployment.
+
+11 November 2026: Applied owner-selected human/AI hands image on final screen, conversation action aligned beneath left headline; added exact laptop-robot image below FAQ introduction over the existing connected-node video. Responsive fades retain charcoal continuity. Screen 7 and Screen 5 unchanged. TypeScript/build and desktop/mobile light/dark overflow checks passed; screenshot review completed. No deployment.
+
+11 November 2026: Robot colour cord moved to a portal slot beneath the Screen 4 Explore learning pathways link. Larger curved brown SVG rope and larger robot; drag starts/replays Screen 5 pouring film and reveals the section, ordinary click navigates to #programs. Separate keyboard Play colours action retained. Drag/click distinction verified; mobile no overflow; TypeScript/build passed. Existing video asset unchanged. No deployment.
+
+11 November 2026: Cord refinement makes learning-pathways label pale high-contrast, ties the brown curved rope to its underline with an SVG knot, and removes the separate Play/Replay colours text. Robot drag still plays colour video; click follows #programs. Arrow Down on focused robot provides keyboard colour activation. TypeScript/build and drag/navigation checks run; no deployment.
+
+12 November 2026: Replaced recreated cord/robot/link with the exact owner-saved Explore the Learning Pathways PNG. Artwork and wording unchanged, aspect ratio preserved. Drag-to-play Screen 5, click-to-#programs and keyboard Arrow Down activation retained. TypeScript/build passed. No deployment.
+
+12 November 2026: Changed the supplied pull-artwork background to matching graphite charcoal with imagegen; retained the robot/rope/lettering composition and existing drag/click handlers. Original image preserved. No deployment.
+
+12 November 2026: Removed the rectangular pull artwork and replaced it with transparent robot plus native heading/knot/SVG rope/caption over the actual page background. Drag visibly lowers robot and lengthens rope (50px displacement browser-verified), release starts Screen 5; click still targets #programs. TypeScript/build and drag/navigation/mobile overflow checks passed. No deployment.
+
+12 November 2026: Refined draggable robot to match the latest close-up reference: detailed golden fibre rope, silver-mounted realistic knot, larger robot and cyan/violet ring. Transparent layered composition retained. Build/TypeScript passed and 50px live drag movement verified. No deployment.
+
+12 November 2026: Screen 8 laptop robot enlarged and its rectangular photo background removed using a transparent derivative. Shared connected-line film now shows around robot/laptop, no image-box boundary. TypeScript/build and desktop/mobile video/FAQ checks passed; no horizontal overflow. No deployment.
+
+12 November 2026: Follow-up seam review removes opaque media backing boxes and decorative section pseudo-layers on Screens 7–9. Image/video layers extend 80px beyond section boundaries with 180px crossfades (mobile 50/130px). Footer structural horizontal dividers removed; footer light-theme contrast fixed over shared charcoal. Screens 7–9 desktop/mobile light/dark overflow checks and production build passed; visual transition screenshots inspected. No deployment.
+
+12 November 2026: Reduced Screen 8 node-film glare with lower media opacity/brightness and steadier charcoal wash; no CSS media animation/transition. Owner report of white flicker is awaiting confirmation of the affected screen. Sampled source brightness appeared stable; this pass reduces glare rather than claiming a proven flicker root cause. Build and playback/mobile checks passed.
+
+12 November 2026: Owner confirmed glare/flicker report concerns Screen 8. FAQ separators reduced to half-pixel low-opacity rules, last rule removed; network-film opacity .18 with brightness .5 and contrast .85, eliminating white glare at presentation level. Answer text contrast retained. Desktop/mobile playback and expansion checks and build passed; source video unchanged. No deployment.
+
+12 November 2026: Owner requested visible but shorter background connections on Screen 8. Restored moderate visibility and used a finer-scale mirrored network derivative; thin low-contrast FAQ separators remain. Desktop/mobile playback, no-overflow checks and TypeScript/build passed; screenshot inspected. No deployment.
+
+
+## 12 November 2026 — whole-site spacing and contrast review
+
+Reviewed homepage and five pathway routes across four viewport widths and both themes. Normalized pathway-list spacing and repaired low-contrast labels/headings while preserving the design and media. TypeScript/build passed; 48 layout states had no overflow, broken images or page errors; 12 desktop axe scans returned zero violations. Evidence: [layout review](../../design-review/layout-review-2026-11-12/REPORT.md). No deployment.
+
+
+## 12 November 2026 — smooth wheel scrolling
+Added Lenis site-wide with restrained wheel easing, native touch, keyboard inertia cancellation, dialog/nested-list exclusions and live reduced-motion fallback. Removed competing CSS scroll easing while enabled. Browser checks confirmed interpolated wheel movement on homepage/masterclass, no page errors or mobile overflow. TypeScript and production build passed before final keyboard refinement; TypeScript rechecked afterwards. No deployment.
+
+## 12 November 2026 — stable FAQ atmosphere and later-screen composition
+Replaced the Screen 8 connected-node video with its existing poster and a slow transform-only drift to eliminate video-frame brightness changes. Reduced motion disables drift. Compacted Screen 6–8 padding, FAQ row spacing and laptop robot sizing; added fixed-header anchor clearance to later sections. No fixed viewport clipping or scroll snapping introduced: long/mobile content remains naturally scrollable. TypeScript/build passed; homepage checks in both themes at 320/390/768/1440 showed no overflow or axe violations in the desktop scans. Existing media elsewhere preserved. No deployment.
+
+## 12 November 2026 — scroll rendering and robot identity
+Topo contour recalculation pauses during active scrolling and resumes after 160ms; idle contour paint reduced from 30fps to 12.5fps for the slow drift. Existing videos already pause offscreen. Added static official-symbol overlays to hero, Academy, cord, stairway and FAQ robot presentations. These are layout-positioned badges, not frame-tracked video edits; moving footage can shift relative to the mark. TypeScript/build and wheel/keyboard/reduced-motion browser checks passed; no mobile overflow or page errors in focused checks. No deployment.
+
+
+## 12 November 2026 — reload and floating badge correction
+Homepage reload clears its section hash and returns to the hero; direct pathway query routes remain intact. Removed hero/Academy video and stairway overlays because they were not attached to the moving/cropped robot bodies. Cord and FAQ image-bound badges retained. Frame-tracked robot branding remains unfinished; it requires editing the media rather than a fixed page overlay. TypeScript/build passed.
+
+
+## 12 November 2026 — robot branding reverted
+Owner requested removal of robot logo additions. Removed the remaining cord/FAQ logo badges, their wrapper, component and badge styling. Original robot media retained; tracked trial renders were never installed. Scrolling and homepage-refresh fixes preserved.
+
+
+## 17 November 2026 — full-site review completed
+Reviewed homepage and five pathway routes in both themes at 320/390/768/1440px. Fixed Search Escape handling, modal background scroll, stacked anchor offsets and a solid footer brand background. Preserved design/media, robot-logo revert, content and normal mobile scrolling. Restored missing installed Windows build binaries. TypeScript/build, 48 layout states, 12 desktop axe scans and focused user-flow checks passed. No sign-in/submission/deployment. Evidence: [full-site review](../../design-review/site-review-2026-11-17/REPORT.md).
+
+
+## 19 November 2026 — scrolling stall repair
+Removed mounted JavaScript wheel easing; native scroll now owns input. Topo geometry renders once with lightweight transform drift, and a shared playback coordinator limits decorative playback to one visible video. Nearby video metadata warms before section entry. TypeScript/build and desktop/mobile scroll checks passed without page errors or observed long tasks; frame timing remains device-dependent. Original robot appearance and media preserved. Details: [scroll repair](../../design-review/scroll-performance-2026-11-19/REPORT.md). No deployment.
+
+
+### 19 November — follow-up rendering repair
+Owner still reported stalls after the native-scroll pass. Replaced the shared canvas with its original contour texture image, removed nested live backdrop filters, paused decorative videos/motion while scrolling and restored wheel interpolation. Videos resume after settling. Follow-up samples reduced worst frame pauses; TypeScript/build and focused interaction checks passed. Device-dependent timing remains. See scroll-performance report. No deployment.
+
+
+### Visible video playback during scrolling
+Removed scroll-activity gating from the background video coordinator at owner request. The selected visible video now continues during scrolling; offscreen/background-tab videos still pause. Texture and blur performance improvements remain.
+
+
+### First two robots — continuous playback
+Owner explicitly requested both robot videos to run without viewport gating. Hero and Academy videos now load on homepage entry and continue looping when scrolled elsewhere in the active tab. Other decorative videos retain visibility-based playback. Reduced-motion/data-saving and hidden-tab handling remain. Browser checks confirmed both videos playing at home and their time advancing at the footer; TypeScript/build passed.
+
+### 19 November — robot clarity restored from HD sources
+Switched both robot sections to higher-quality source-derived encodes and matching posters. Hero: 1600px desktop/1280px mobile; Academy: 1280px desktop/960px mobile (previous desktop Academy copy was 960px enlarged beyond native width). Original size/placement, continuous playback and no-logo appearance preserved. No live blur/sharpen filter added. Desktop browser confirmed correct dimensions, opacity 1/filter none and both videos continuing at the footer. TypeScript/build passed. Higher-quality files are larger; original derivatives retained. See public/videos/SOURCES.md.
+
+### Screen 3 clarity and colour
+Replaced the low-bitrate 960px puzzle video with a 1280px source-derived high-quality encode and matching poster. Removed brightness/desaturation filters and central dark washes; feathering now follows the actual video picture edges to preserve the charcoal blend without visible letterbox borders. Content and layout preserved. Desktop/mobile playback, source dimensions and no-overflow verified; TypeScript/build passed before the final CSS edge refinement.
+
+
+## 20 November 2026 — overall layout review
+Reviewed homepage and five pathway routes at four responsive widths: no overflow, broken loaded images or JavaScript errors. Section borders absent; desktop/mobile visual review completed. Repaired lower-screen gradient-heading and footer-link contrast. Navigation/search/FAQ/login-gate/mobile interactions, continuous first-two-robot playback and reduced motion checked. TypeScript/build passed. Evidence: design-review/overall-review-2026-11-20/REPORT.md. Release approval remains separate.
+
+## 20 November 2026 — bounded card and navigation refinement
+
+Owner explicitly preserved the existing headline wording, typography, gradient, layout and animation. Hero.tsx and VisualExperience.tsx remain byte-identical to their pre-change versions. Existing robot media, card images and branding retained.
+
+Hero cards now use a restrained 4px desktop hover lift, 1.045 image zoom and cyan/violet border glow, plus visible keyboard focus and native single-tap links. Reduced motion disables transforms/transitions. Below-hero content uses one-time IntersectionObserver fade/rise reveals; reduced motion shows content immediately. Existing headline behavior is excluded from this reveal system.
+
+Header order: Programs / Projects / Solutions / About / Enquire. Search, Login and Experience removed from the top navigation only. Search dialog and Ctrl/Cmd+K remain available; account provider, enquiry login flow and Experience content remain. Mobile controls fit one row with a collapsible menu.
+
+Verified 320/390/768/1440px: no overflow or JavaScript errors; desktop lift/zoom/glow, keyboard focus/Enter, mobile link activation/menu/Escape, retained search shortcut, one-time reveal state and reduced motion. TypeScript and production build passed. Evidence: design-review/hero-card-navigation-2026-11-20/. No new dependencies or deployment.
+
+### Header follow-up — Login restored
+Owner requested Login back beside Enquire. Restored existing Firebase AccountButton (Login when signed out, Account when signed in); Search and Experience remain absent from the top navigation. Responsive widths 320/390/768/1440 checked for overflow; login dialog opens. TypeScript/build passed. Hero/headline unchanged.
+
+
+### Hero card destinations — guided introduction flow
+Owner accepted the guided flow: Explore Learning Paths now links to Screen 2 (#engineering-journey); Explore Digital Solutions links to Screen 3 (#business-introduction). Their onward actions retain #path and #solutions respectively. Only card hrefs changed; headline, layout, assets and animation remain unchanged. TypeScript/build passed.
+
+21 November 2026: owner-approved lower-homepage consolidation implemented. Fees/budget enquiry retained on Masterclass only; homepage business workflow reduced to one CTA, followed by quieter FAQs and closing/footer. Repaired explicit Masterclass section navigation. Desktop/mobile checks and lint/build passed; see CURRENT_WEBSITE_HANDOVER.md for current composition and evidence. No deployment.
+

@@ -1,3 +1,4 @@
+import { FinishAtmosphere } from './components/FinishAtmosphere';
 import { SectionVideo } from './components/EngineeringJourney';
 import { useAccount } from './auth/ConversationAccess';
 import { SiteFAQ } from './components/SiteFAQ';
@@ -69,16 +70,19 @@ export default function App() {
 
   useEffect(() => {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
-    if (reduced.matches || !('IntersectionObserver' in window)) return;
-    elements.forEach(element => {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal, .learning-screen-layout .dual-track-card, .solutions-screen-layout .dual-track-card, .business-solutions-grid article, .business-workflow, .faq-list, .footer-invitation'));
+    const belowHero = elements.filter(element => !element.closest('.cinematic-hero'));
+    belowHero.forEach(element => element.classList.add('scroll-reveal-once'));
+    if (reduced.matches || !('IntersectionObserver' in window)) { belowHero.forEach(element => element.dataset.reveal = 'visible'); return; }
+    belowHero.forEach(element => {
+      if (element.dataset.reveal === 'visible') return;
       if (element.getBoundingClientRect().top > window.innerHeight * .98) element.dataset.reveal = 'pending';
     });
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       if (entry.isIntersecting) { (entry.target as HTMLElement).dataset.reveal = 'visible'; observer.unobserve(entry.target); }
     }), { threshold: .05, rootMargin: '0px 0px -20px 0px' });
-    elements.forEach(element => observer.observe(element));
-    const showAll = () => { if (reduced.matches) elements.forEach(element => element.dataset.reveal = 'visible'); };
+    belowHero.forEach(element => { if (element.dataset.reveal !== 'visible') observer.observe(element); });
+    const showAll = () => { if (reduced.matches) { observer.disconnect(); belowHero.forEach(element => element.dataset.reveal = 'visible'); } };
     reduced.addEventListener('change', showAll);
     return () => { observer.disconnect(); reduced.removeEventListener('change', showAll); };
   }, [pathway]);
@@ -90,7 +94,7 @@ export default function App() {
       {pathway === null ? <>
         <CinematicHero />
         <LearningPathSection selected={audience} onSelect={chooseAudience} />
-        <section className="programs-section section pathway-catalogue pathway-video-screen" id="programs"><div className="learning-route-video-media" aria-hidden="true"><SectionVideo manualPlay src="/videos/thread-colour-pour.mp4" poster="/videos/thread-colour-pour.webp" /></div><div className="container"><div className="section-heading reveal"><div><SectionLabel number="02">THE LEARNING PATHWAYS</SectionLabel><h2>Go deeper.<br /><em>Build what matters.</em></h2></div><p>Focused learning. Connected thinking.<br />Find a direction that fits where you are<br className="desktop-break" /> and where you want to go.</p></div><div className="program-list">{programs.map((item,i)=><a className="pathway-title-link" key={item.title} href={'?pathway='+pathwaySlugs[i]}><span>PATHWAY 0{i+1}</span><span>{item.title}</span><Arrow /></a>)}</div></div></section>
+        <section className="programs-section section pathway-catalogue pathway-video-screen" id="programs"><div className="learning-route-video-media"><SectionVideo manualPlay src="/videos/thread-colour-pour-hd.mp4" poster="/videos/thread-colour-pour.webp" /></div><div className="container"><div className="section-heading reveal"><div><div className="eyebrow"><span className="tiny-cross" aria-hidden="true">+</span>THE LEARNING PATHWAYS</div><h2>Go deeper.<br /><em>Build what matters.</em></h2></div><p>Explore practical learning paths built around real projects, modern tools and your career goals.</p></div><div className="program-list">{programs.map((item,i)=><a className="pathway-title-link" key={item.title} href={'?pathway='+pathwaySlugs[i]}><span>PATHWAY 0{i+1}</span><span className="pathway-row-title">{item.title}</span><Arrow /></a>)}</div></div></section>
         <BusinessSolutions />
       </> : <PathwayPageIntro index={pathway} />}
       {pathway === 0 && <div className="masterclass-page"><section className="programs-section section masterclass-showcase"><div className="container"><article className="flagship reveal"><div className="flagship-copy"><div className="eyebrow"><span className="status-dot" /> PATHWAY 01 · THE MASTERCLASS</div><h2 className="masterclass-display-title">DevOps. Multi-Cloud.<br /><span>AI Engineering.</span></h2><p>One connected masterclass. From your first engineering workflow to an integrated enterprise capstone.</p><p className="flagship-coverage-note">Azure leads the current syllabus. Ask about AWS-specific lab availability.</p><div className="flagship-stats">{[[18, 'curriculum modules'], [14, 'hands-on projects'], [1, 'integrated capstone']].map(([value, label]) => <div key={label}><strong>{String(value).padStart(2, '0')}</strong><span>{label}</span></div>)}</div><a href="#curriculum" className="button primary">Explore the full curriculum <Arrow /></a></div><EngineeringStack /></article></div></section>
@@ -104,12 +108,14 @@ export default function App() {
 
       </div>}
       {pathway !== null && pathway > 0 && <PathwayOutline index={pathway} onEnquire={()=>openEnquiry(programs[pathway].title)} />}
+      {pathway === 0 && <>
+
+
+
+      <section className="section container investment-section reveal investment-refined finish-motion-section" id="enquire"><FinishAtmosphere kind="conversation" /><div><span className="investment-eyebrow"><Sparkles size={14} aria-hidden="true" /> YOUR NEXT CHAPTER STARTS HERE</span><h2>Your ambition.<br /><em>Your next move.</em></h2><p>Explore the curriculum first. Then get clarity on<br className="desktop-break" /> program fees, schedules and the right pathway for you.</p><div className="investment-checks"><span><Check size={17} aria-hidden="true" /> Explore the full curriculum before deciding</span><span><Check size={17} aria-hidden="true" /> Fees and delivery details confirmed before enrolment</span><span><Check size={17} aria-hidden="true" /> Build on your existing experience</span></div></div><div className="investment-card"><div className="investment-card-top"><span className="mini-label">LET'S SHAPE YOUR LEARNING PATH</span><span className="small-spark"><Sparkles size={18} aria-hidden="true" /></span></div><h3>Let’s find the right fit.</h3><div className="investment-conversation-steps" aria-label="What we will discuss"><span><span>01</span>Your goals</span><span><span>02</span>Your pathway</span><span><span>03</span>The practical details</span></div><p className="price-status">Program fees <span>Details on request <ArrowUpRight size={15} aria-hidden="true" /></span></p><label className="budget-opt-in"><input type="checkbox" checked={includeBudget} onChange={e => setIncludeBudget(e.target.checked)} /> Add a budget preference to my enquiry</label>{includeBudget && <div className="budget-widget"><div className="budget-value"><span>₹<RollingNumber value={budget} /></span><small>YOUR PREFERENCE<br />NOT A COURSE FEE</small></div><label className="sr-only" htmlFor="budget">Your budget preference in Indian rupees</label><input id="budget" type="range" min="10000" max="100000" step="5000" value={budget} onChange={e => setBudget(Number(e.target.value))} aria-valuetext={`${money(budget)} Indian rupees, budget preference only`} /><div className="budget-range mono"><span>₹10,000</span><span>₹1,00,000</span></div></div>}<button className="button primary" onClick={() => openEnquiry()}>{user ? 'Start a conversation' : 'Login to start a conversation'} <Arrow /></button><p className="investment-note">No payment is collected on this website.</p></div></section>
+
+      </>}
       {(pathway === null || pathway === 0) && <>
-
-
-
-      <section className="section container investment-section reveal investment-refined" id="enquire"><div><span className="investment-eyebrow"><Sparkles size={14} aria-hidden="true" /> YOUR NEXT CHAPTER STARTS HERE</span><h2>Your ambition.<br /><em>Your next move.</em></h2><p>Explore the curriculum first. Then get clarity on<br className="desktop-break" /> program fees, schedules and the right pathway for you.</p><div className="investment-checks"><span><Check size={17} aria-hidden="true" /> Explore the full curriculum before deciding</span><span><Check size={17} aria-hidden="true" /> Fees and delivery details confirmed before enrolment</span><span><Check size={17} aria-hidden="true" /> Build on your existing experience</span></div></div><div className="investment-card"><div className="investment-card-top"><span className="mini-label">LET'S SHAPE YOUR LEARNING PATH</span><span className="small-spark"><Sparkles size={18} aria-hidden="true" /></span></div><h3>Let’s find the right fit.</h3><div className="investment-conversation-steps" aria-label="What we will discuss"><span><span>01</span>Your goals</span><span><span>02</span>Your pathway</span><span><span>03</span>The practical details</span></div><p className="price-status">Program fees <span>Details on request <ArrowUpRight size={15} aria-hidden="true" /></span></p><label className="budget-opt-in"><input type="checkbox" checked={includeBudget} onChange={e => setIncludeBudget(e.target.checked)} /> Add a budget preference to my enquiry</label>{includeBudget && <div className="budget-widget"><div className="budget-value"><span>₹<RollingNumber value={budget} /></span><small>YOUR PREFERENCE<br />NOT A COURSE FEE</small></div><label className="sr-only" htmlFor="budget">Your budget preference in Indian rupees</label><input id="budget" type="range" min="10000" max="100000" step="5000" value={budget} onChange={e => setBudget(Number(e.target.value))} aria-valuetext={`${money(budget)} Indian rupees, budget preference only`} /><div className="budget-range mono"><span>₹10,000</span><span>₹1,00,000</span></div></div>}<button className="button primary" onClick={() => openEnquiry()}>{user ? 'Start a conversation' : 'Login to start a conversation'} <Arrow /></button><p className="investment-note">No payment is collected on this website.</p></div></section>
-
       <SiteFAQ />
       </>}
     </main>

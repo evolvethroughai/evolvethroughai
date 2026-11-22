@@ -12,3 +12,15 @@
 @media(max-width:700px){.business-solutions{padding-block:48px}.business-solutions-intro{grid-template-columns:1fr}.business-workflow{padding:22px}.business-solutions-grid{gap:26px 20px;margin-top:32px}.business-solutions-close{align-items:flex-start;flex-direction:column}.business-enquiry-dialog{padding:22px}}
 @media(max-width:400px){.business-solutions-grid{grid-template-columns:1fr}.business-solutions-grid article{border-bottom:1px solid var(--bs-line);padding-bottom:20px}.business-solutions-grid article:last-child{border-bottom:0;padding-bottom:0}}
 @media(prefers-reduced-motion:reduce){.business-solutions-primary{transition:none;transform:none}}
+
+/* Business workflow: one scroll-triggered trail and quiet interaction feedback. */
+#solutions .business-workflow{transition:border-color 250ms ease,box-shadow 250ms ease}
+#solutions .business-workflow li{border-radius:10px;transition:background-color 250ms ease,box-shadow 250ms ease}
+#solutions .business-workflow-number{transition:border-color 250ms ease,box-shadow 250ms ease,color 250ms ease}
+#solutions .business-workflow li:not(:last-child)::after{content:'';position:absolute;top:36px;bottom:0;left:17px;width:1px;background:linear-gradient(#78d9e5,#9c8cdd);transform:scaleY(0);transform-origin:top;transition:transform 300ms ease}
+#solutions .business-workflow[data-workflow-visible=true] li::after{transform:scaleY(1)}
+#solutions .business-workflow li:nth-child(2)::after{transition-delay:180ms}
+#solutions .business-workflow li:nth-child(3)::after{transition-delay:360ms}
+@media(hover:hover) and (pointer:fine){#solutions .business-workflow:hover{border-color:#76d2e150;box-shadow:0 0 24px #4dc9df0a}#solutions .business-workflow li:hover{background:#75d8e505;box-shadow:0 0 14px #67d8e508}#solutions .business-workflow li:hover .business-workflow-number{color:#b9edf4;border-color:#78d9e573;box-shadow:0 0 12px #67d8e51c}}
+#solutions .business-solutions-primary:focus-visible{outline:2px solid #8cdeec;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){#solutions .business-workflow,#solutions .business-workflow li,#solutions .business-workflow-number,#solutions .business-workflow li::after{transition:none}#solutions .business-workflow li::after{transform:none}}

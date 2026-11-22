@@ -1,0 +1,7 @@
+
+### Learning introduction copy and navigation refinement
+Owner requested copy/checklist-only changes to Screen 2. Eyebrow is LEARN • BUILD • EVOLVE; heading is For Future-Ready Engineers & Professionals. Description and four highlights now cover Cloud/DevOps, applied AI, forthcoming agentic/forward-deployed pathways, and career/interview readiness. Orange checks preserved; titles use 600 weight, descriptions 400. Only highlight text receives the new one-time staggered fade-up, with immediate reduced-motion display.
+
+Shared header now contains Programs / Projects / Solutions / About / Enquire; Login removed again at owner request. Search remains absent from the header; keyboard search and auth/enquiry functionality remain. CTA label and #path destination retained because this destination is the learning-start selector, not the programme listing.
+
+Verified 320/390/768/1440px: no horizontal overflow, checklist overlap or JavaScript errors. Orange checks and title/body weights verified. Reduced-motion content is fully visible. Hero.tsx, VisualExperience.tsx, auth provider and playback coordinator hashes unchanged; SectionVideo implementation unchanged. No media files, backgrounds, video framing or section spacing rules modified. TypeScript/build passed.

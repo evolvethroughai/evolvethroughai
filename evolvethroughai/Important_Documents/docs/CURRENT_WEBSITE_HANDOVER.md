@@ -1,6 +1,84 @@
 # Current website handover
 
-Updated: 8 November 2026 (Asia/Kolkata). Inspected current local source and this session's changes. This is the current-state summary; older dated entries remain historical. No public deployment or Git push was performed.
+Updated: 20 November 2026 (Asia/Kolkata). Inspected current local source and this session's changes. This is the current-state summary; older dated entries remain historical. No public deployment or Git push was performed.
+
+## Current implementation — 20 November 2026
+
+This snapshot supersedes the 9 November implementation details below; those entries remain history. The site uses React 19 / TypeScript / Vite. Final visual approval, launch approval and verified public deployment remain separate.
+
+- Screens 1–3: graphite robot hero with two image cards; Academy copy left/robot right; Business Solutions puzzle video left/copy right. Higher-quality robot and puzzle encodes replace low-resolution derivatives without changing framing or content.
+- Screen 4: professional/fresher learning selector with the accepted golden rope and draggable robot interaction. Screen 5: five pathway links and manually triggered colour-pouring video.
+- Screens 6–9: static globe Business Solutions; clear stairway enquiry image; FAQs with a static connected-line poster and laptop robot; human/AI hands closing screen and footer.
+- Continuous contour texture spans the site. A cached original contour PNG replaces the live canvas; it moves naturally with document scrolling. FAQ background uses a steady image, avoiding the former video flashes. No robot logo badges remain.
+- Lenis smooth wheel interpolation is active; touch remains native and reduced motion disables interpolation. Expensive nested backdrop filters were removed. First two robot videos loop continuously in the active tab; other decorative videos use visibility-based playback. Reduced-motion, data-saving and hidden-tab handling remain.
+- Header retains Programs / Experience / Projects / Solutions / About and Search / Firebase Login or Account / Enquire. Scrolled header contrast and mobile menu visibility are corrected. Search, keyboard Escape, FAQ controls and enquiry login gate were checked.
+- Latest review covered homepage plus five pathway routes at 320/390/768/1440px (24 states): no horizontal overflow, broken loaded images or page JavaScript errors. Main section borders are absent; desktop/mobile screenshots were reviewed for gaps and transitions. Lower-screen heading accents and Back to top contrast were repaired. TypeScript and production build passed; build emitted a non-fatal plugin timing warning.
+- Scroll samples showed no long tasks and roughly 17ms p95 frame intervals, with an isolated desktop frame gap around 184ms. These are local samples, not a guarantee of stall-free performance on every device.
+
+Current HD assets under public/videos: robot-hero-clear-1600.mp4 / robot-hero-clear-1280.mp4; learning-robot-clear-1280.mp4 / learning-robot-clear-960.mp4; business-puzzle-clear-1280.mp4 and matching posters. HD source URLs and provenance are recorded in public/videos/SOURCES.md. Higher-quality media increases transfer size; older derivatives remain available.
+
+Evidence: [overall review](../../design-review/overall-review-2026-11-20/REPORT.md), [layout checks](../../design-review/overall-review-2026-11-20/layout-qa.json), [desktop overview](../../design-review/overall-review-2026-11-20/desktop-overview.png), and [scroll repair history](../../design-review/scroll-performance-2026-11-19/REPORT.md).
+
+Google login and Firestore enquiry saving were previously owner-confirmed. This review checked the login gate, not a live external submission. Public hosting/domain/HTTPS, commercial details, detailed curriculum reconciliation, asset publication rights and final release verification remain open. No new runtime dependencies, Git push, deployment or external messages in this review.
+
+## Historical implementation — 9 November 2026
+
+This historical snapshot is superseded by the 20 November summary above. Final homepage approval and publication authorization remain open. No deployment, Git push or external message was performed.
+
+### Current screen order and assets
+
+| Screen | Content and layout | Active media |
+| --- | --- | --- |
+| 1 | Graphite hero; robot left, rotating headline and two image-backed pathway links right | robot-hero-1600.mp4 / robot-hero-960.mp4 and poster; learning-path-card.webp / digital-solutions-card.webp |
+| 2 | Academy learning content left; second robot right; charcoal background and soft media edges | learning-screen-1280.mp4 and learning-screen-poster.webp |
+| 3 | Business Solutions copy right; puzzle/teamwork video left | business-puzzle-960.mp4 and business-puzzle-poster.webp |
+| 4 | Working professional / fresher learning-start selector and detail panel; charcoal reading surface | screen4-learning.mp4 and screen4-learning.webp |
+| 5 | Five named pathway links on soft pearl; colour-pouring video triggered by a pull cord | thread-colour-pour.mp4 and thread-colour-pour.webp |
+
+Media paths above are under public/videos except the two card images under public/images. All footage is owner-supplied and optimized locally; original downloads are unchanged. Installed application dependencies were not expanded for these changes. Temporary encoding tools are not application dependencies.
+
+### Hero, navigation and spacing
+
+- Preserve official logo, graphite hero, current header glass pills and Search / Firebase Login or Account / Enquire controls. Enquire remains the primary action.
+- Hero headline remains Build real skills. with the existing rotating secondary phrases. The fixed Engineer the future. trial was reverted.
+- Supporting caption remains the two original lines beginning Master modern Cloud, DevOps, and Enterprise AI architecture. It is lifted 18px on desktop / 10px on mobile. Eyebrow/headline lift: 16px desktop / 8px mobile.
+- Hero card copy: LEARN • BUILD • GROW / Explore Learning Paths / Practical skills. Real engineering.; BUILD • AUTOMATE • SCALE / Explore Digital Solutions / Websites, apps & AI-powered solutions.
+- Owner card originals retained: Glowing Path to Achievement-2.png and Collaborative Digital Business Growth-1.png. The cards use optimized WebP derivatives, warm/cool readable overlays and image-zoom/lift hover feedback.
+- Homepage robot desktop video framing remains translateX(0) scale(.74). Screen 2 robot is slightly reduced (133% video width within its stage, left offset -16%); homepage robot was not changed by that adjustment.
+- Screen 2 robot/content was lifted 24px on desktop. Subsequent spacing normalization sets the learning layout top to zero; video retains its existing lift. CSS cascade, not older numbers, controls final appearance.
+- Removed unequal fixed-height blank areas between Screens 1–3. Last desktop browser measurement at 1440px showed both visible content gaps at 128px. This is a measured viewport result, not a guarantee at all responsive sizes.
+- Hero bottom fade now goes to charcoal, not transparent paper. Actual video edges are feathered. Shared topo canvas remains continuous. Do not add an opaque hero surface that covers the separate video plane.
+
+### Screen 3 video treatment
+
+The earlier digital-marketing team clip (6558232) was replaced with puzzle/team clip 6193976. It plays silently on the left, with broad top/bottom/side masks and a gradual graphite fade before the copy. Current video scale is .88. The visible video stage is shorter (desktop top 60px / bottom 36px; mobile height 220px). Business introduction has modest additional top spacing; later shared spacing normalization overrides section padding to 64px desktop / 40px mobile. The artwork file is still retained for the homepage Solutions card.
+
+### Screen 4 and Screen 5 playback
+
+Screen 4 uses owner video 12676758 (white dotted flowing geometry). The earlier cyan/violet clip 7077358 was moved to Screen 5, then superseded there by owner clip 6721009. These older files remain on disk but are not the current Screen 5 source.
+
+SectionVideo is exported from EngineeringJourney.tsx and reused by the learning, business, learning-selector and pathway sections. Automatic media starts on visibility, pauses offscreen/hidden, and uses a poster under reduced-motion or Save-Data. Screen 5 uses manualPlay instead: video is hidden before user activation, leaving pearl visible; explicit activation can play even when automatic playback is suppressed. All current videos loop silently with inline playback. There is no audio playback.
+
+The Screen 5 trigger is a small central pull cord on desktop (right aligned on mobile): braided thread, pearl/violet mount and ring, subtle caption, hover polish and spring-back. Drag downward at least 28px to trigger; travel is capped at 85px. Tap/click or keyboard button activation also starts playback. Subsequent activation restarts at time zero. Captions change from Pull for colour to Pull to replay. The control is not aria-hidden; the decorative video remains hidden from accessibility APIs.
+
+A 2.8-second top-down reveal remains on activation/replay, disabled under reduced motion. This is a presentation effect, not newly generated pouring footage. Do not claim it changes the source clip's underlying content. The new supplied clip replaced the previous mid-pour opening. Full pull/replay behavior still needs browser validation on touch and keyboard after the premium styling change.
+
+### Reverted experiments and preserved boundaries
+
+- White robot compositing, spotlights, fixed-headline trial and multiple intermediary white/purple transition-glow trials were rejected/reverted. No spotlight or added middle-shade glow is active.
+- A combined-height shared charcoal backing broke the layout and was reverted. Layout.tsx retains its hero-only background-height measurement; later targeted video masks address seams instead.
+- Some superseded CSS rules and unused media remain as historical worktree artifacts. Do not assume every asset or earlier selector is active. Review the final rules in hero-graphite.css and the imported component styles before changing layout.
+- Preserve authenticated Firebase enquiries, current business copy, 18 modules / 14 projects / one capstone and the five named pathway views. Named future pathways are not proof of commercial availability. No fake reviews, outcome metrics or price claims were added.
+
+### Verification and next review
+
+Recent TypeScript checks and production builds passed, including the premium pull-cord change. Earlier browser checks confirmed the first robot/video structure, Screen 2 playing at 390/768/1440px, the corrected Screen 1–2 charcoal seam, and equal desktop content gaps. Screen 4 playback was confirmed before the clips were reassigned. No new all-route accessibility audit, formal compliance test or complete five-screen mobile/desktop review has been performed after the latest video and cord changes. Build success alone does not prove visual acceptance or gesture correctness.
+
+Local development: npm run dev; http://localhost:3000/. A local HTTP 200 was verified when the server was started. Do not treat that as public deployment. Next review: current five-screen flow in both themes and mobile/tablet/desktop, full robot movement bounds, all video edge fades, manual pull/tap/keyboard replay, offscreen/reduced-motion behavior and text contrast. Screen 4 media is about 10.8 MB and Screen 5 about 5.6 MB; further encoding/performance review remains appropriate before release.
+
+## Historical snapshots through 8 November 2026
+
+The entries below are retained as history; use the current implementation above for handover.
 
 ## Application and business structure
 
@@ -68,3 +146,82 @@ Secondary headline is now fixed to Engineer the future., retaining the motion en
 8 November continuity repair: Layout now measures the combined hero/learning opening height for one charcoal backing beneath both video masks. This prevents light-mode paper showing as a pale seam while preserving the original hero video layer and continuous topo. Removed the separate overlapping learning pseudo backing. TypeScript passed; build verification recorded in session.
 
 8 November rollback: Owner reported the shared charcoal backing collapsed the layout. Removed that backing and combined-height measurement, restoring the preceding Layout and screen styling. Continuity repair remains unresolved; do not treat the previous entry as accepted.
+
+## 20 November 2026 — bounded card and navigation refinement
+
+Owner explicitly preserved the existing headline wording, typography, gradient, layout and animation. Hero.tsx and VisualExperience.tsx remain byte-identical to their pre-change versions. Existing robot media, card images and branding retained.
+
+Hero cards now use a restrained 4px desktop hover lift, 1.045 image zoom and cyan/violet border glow, plus visible keyboard focus and native single-tap links. Reduced motion disables transforms/transitions. Below-hero content uses one-time IntersectionObserver fade/rise reveals; reduced motion shows content immediately. Existing headline behavior is excluded from this reveal system.
+
+Header order: Programs / Projects / Solutions / About / Enquire. Search, Login and Experience removed from the top navigation only. Search dialog and Ctrl/Cmd+K remain available; account provider, enquiry login flow and Experience content remain. Mobile controls fit one row with a collapsible menu.
+
+Verified 320/390/768/1440px: no overflow or JavaScript errors; desktop lift/zoom/glow, keyboard focus/Enter, mobile link activation/menu/Escape, retained search shortcut, one-time reveal state and reduced motion. TypeScript and production build passed. Evidence: design-review/hero-card-navigation-2026-11-20/. No new dependencies or deployment.
+
+### Header follow-up — Login restored
+Owner requested Login back beside Enquire. Restored existing Firebase AccountButton (Login when signed out, Account when signed in); Search and Experience remain absent from the top navigation. Responsive widths 320/390/768/1440 checked for overflow; login dialog opens. TypeScript/build passed. Hero/headline unchanged.
+
+
+### Hero card destinations — guided introduction flow
+Owner accepted the guided flow: Explore Learning Paths now links to Screen 2 (#engineering-journey); Explore Digital Solutions links to Screen 3 (#business-introduction). Their onward actions retain #path and #solutions respectively. Only card hrefs changed; headline, layout, assets and animation remain unchanged. TypeScript/build passed.
+
+### Learning introduction copy and navigation refinement
+Owner requested copy/checklist-only changes to Screen 2. Eyebrow is LEARN • BUILD • EVOLVE; heading is For Future-Ready Engineers & Professionals. Description and four highlights now cover Cloud/DevOps, applied AI, forthcoming agentic/forward-deployed pathways, and career/interview readiness. Orange checks preserved; titles use 600 weight, descriptions 400. Only highlight text receives the new one-time staggered fade-up, with immediate reduced-motion display.
+
+Shared header now contains Programs / Projects / Solutions / About / Enquire; Login removed again at owner request. Search remains absent from the header; keyboard search and auth/enquiry functionality remain. CTA label and #path destination retained because this destination is the learning-start selector, not the programme listing.
+
+Verified 320/390/768/1440px: no horizontal overflow, checklist overlap or JavaScript errors. Orange checks and title/body weights verified. Reduced-motion content is fully visible. Hero.tsx, VisualExperience.tsx, auth provider and playback coordinator hashes unchanged; SectionVideo implementation unchanged. No media files, backgrounds, video framing or section spacing rules modified. TypeScript/build passed.
+
+### Hero introduction anchor clearance
+Corrected hero-card navigation to land on the Screen 2/3 copy below the fixed header, accounting for the one-time reveal translation. Destination hashes remain unchanged. Scoped to hero pathway cards; section layout, media and headline untouched. Desktop/mobile and reduced-motion landing checks passed; TypeScript/build passed.
+
+### Screen 4 — audience journey refinement, 20 November 2026
+Retained headline, original background media, section location, parent-controlled audience selection and pull-thread slot/navigation. Replaced the long numbered detail timeline with three compact milestones and owner-supplied captions. Audience cards use cyan for professionals and violet for freshers, with visible selected/focus states and a 2px desktop hover lift. A connecting trail runs once per selection over 800ms; milestone icons illuminate sequentially within that interval. Reduced motion displays the complete static journey. Small screens use vertical milestones. No new dependencies/assets or backend changes.
+
+Checked 320/390/768/1440px: no horizontal overflow or page errors; correct captions/milestones, keyboard selection, unchanged pull-thread slot, no measured section-height change between selections. TypeScript/build passed. Evidence: design-review/screen4-journey-2026-11-20/. Visual approval remains open.
+
+### Screen 4 redesign reverted
+Owner requested revert of the latest audience-card/three-milestone redesign. Restored LearningPathSection.tsx from the pre-change snapshot and removed only the Screen 4 refinement CSS. Previous selector, copy and numbered timeline restored; other screens unchanged. Prior redesign report remains historical evidence, not current implementation.
+
+### 21 November 2026 — Screen 4 pull timing and Screen 5 clarity
+The pull begins playback at the drag threshold (before pointer release) and scrolls concurrently. Manual video preloads near the rope control. The destination includes additional header/reveal clearance and a final overlap guard. Desktop 1440/2560px and mobile 390px checks place the heading below the header, without overflow; drag, tap and reduced-motion keyboard activation each trigger once. During-pull playback verified at 1920px decoded width. Replaced the 960px derivative with thread-colour-pour-hd.mp4, encoded at 1920px/CRF18 from the same owner-selected Pexels 6721009 original; original timing/footage retained, no artificial sharpening or colour filters. Independent sliding clip mask remains disabled. Lint/build passed. Other screens and backend unchanged.
+
+Owner correction, 21 November: supersedes during-drag playback and extra landing gap above. The robot must be pulled and released before scrolling; the preloaded 1920px colour clip starts only in the scroll-completion callback. Heading aligns 28px below the navbar, matching the supplied screenshot. Verified video paused at time zero during drag; on arrival playing once, heading top ~85px versus header bottom 57px at desktop/mobile. Reduced-motion keyboard, lint and build passed.
+
+
+21 November follow-up: removed the post-scroll correction. Rope stretch now uses visual transforms rather than height changes, so pulling cannot shift the next section's measured position. One scroll lands the heading ~28px below the navbar at 390/1440/2560px. Video remains paused during drag and starts on arrival; desktop/mobile/reduced-motion checks passed.
+
+
+21 November — Screen 5 idle presentation: section and pathway list remain charcoal with light text before robot activation; the media layer is hidden and video remains paused at time zero. On robot-triggered arrival, the existing colour film and active list appearance are revealed. Approved landing position and sequence unchanged. Desktop 1440px/mobile 390px idle/active checks, lint and production build passed. Changed src/hero-graphite.css only for presentation.
+
+
+21 November timing follow-up: video seeks to its opening frame during the pull-to-section scroll; pearl/list and visible film are activated together only after play() confirms playback. No white surface is exposed while playback is preparing. Refresh after activation verified to restore hidden video, paused at zero, and charcoal idle presentation on 1440px and 390px. Landing position unchanged. Lint/build passed.
+
+
+21 November — eliminate arrival playback startup: after pull release the clip plays hidden behind charcoal during the 850ms scroll; arrival exposes the already-running video and pearl appearance together. Measured at visibility activation: video time 0.864s, readyState 4, paused false. No seek/new play call at arrival. Idle and refresh remain charcoal/paused at zero on desktop/mobile. Approved landing unchanged; lint/build passed.
+
+
+21 November — unified top-down white/colour reveal: a single 1.2s CSS front controls the media clip and pearl pathway surface using measured section/list offsets. Rows change contrast as the front reaches them. No separate delayed white fade. Reduced motion shows the full surface immediately. Desktop/mobile idle, arrival and refresh verified; sampled moving clip/front values agree. Approved landing and existing footage retained. Lint/build passed.
+
+
+21 November: centered rope control retained; pull instruction caption made compact and positioned beside the robot with narrow-mobile sizing. Text and drag interaction preserved. Lint/build and desktop/mobile activation checks passed.
+
+
+### 21 November 2026 — approved lower-homepage streamlining
+Owner approved the review recommendation. Homepage now continues from the five learning pathways to the compact Business Solutions workflow, FAQs, then closing conversation/footer. The former Screen 7 fees/budget/enquiry section is retained on the Masterclass route only. Business Solutions retains its globe artwork, intro, four-step concept workflow and one business enquiry button; removed repeated service cards (already covered in Screen 3) and duplicate closing CTA. FAQ network image opacity reduced from .5 to .3; robot, answers and controls preserved. Header Projects and footer curriculum/projects/lifecycle/fees links explicitly target Masterclass query routes with section hashes.
+
+Checked 1440px desktop and 390px mobile: no horizontal overflow or page errors; FAQ topic/accordion controls work; all four revised footer destinations exist; learning enquiry is absent from homepage and present on Masterclass. Business Solutions height reduced from 918px to 562px desktop, and 2086px to 1065px mobile in the same viewport checks. Lint/TypeScript and production build passed. No changes to hero, robot/rope, ink reveal, authentication/backend or media assets. No dependencies or deployment. Evidence: design-review/lower-homepage-2026-11-21/.
+
+21 November — owner requested faster Screen 5 activation: white/video reveal now begins at pull release alongside scrolling, rather than on scroll completion. Unified wipe shortened from 1.2s to 450ms with matching row contrast timing. Measured local release-to-visible-state delay 79.5ms; video playing and white front advancing during scroll. Desktop/mobile refresh still restores charcoal and paused zero-time film; landing unchanged. Lint/build passed.
+
+
+21 November — Screen 5 polish only: updated supporting copy; 250ms pale-cyan row hover/focus with 2px left accent and 3px diagonal arrow movement; subtle cyan/violet headline-panel outline/shadow. Coming Soon appears only for existing IN DEVELOPMENT (AWS) and FUTURE PATHWAY (FDE/Applied AI) statuses. Titles, destinations, white-panel contrast, ink/robot timing and background preserved. Checked 320/390/768/1440px, keyboard navigation/focus, reduced motion and no overflow/page errors. Lint/build passed.
+
+
+### Lower-screen interaction polish — 21 November 2026
+Screens 6–9 only: Business Solutions retains its globe, heading and workflow layout; four steps receive restrained cyan hover feedback and a one-time scroll-triggered connector trail. Main card receives a gentle border/glow highlight. CTA is Discuss Your Project, opening the existing business enquiry dialog directly. No auth/backend changes; existing Google sign-in remains necessary to send a saved enquiry.
+
+FAQ uses semantic question buttons with aria-expanded/controls, one open answer, 250ms grid expansion/collapse, cyan active accent and animated plus-to-minus. Topic changes reset the open answer. Added Still have a question? Ask us through the existing enquiry context. Robot, background, heading and question/answer copy preserved.
+
+Closing CTA is Let's Build Something, using the existing enquiry callback, a single 450ms light sweep and 3px diagonal arrow motion on hover/focus. Footer directory spacing, 44px targets, cyan link feedback and mobile alignment refined. Logo, large Learn. Build. Evolve. signature and human/AI artwork retained. Homepage anchors are explicit for Find your starting point and Back to top; existing Masterclass section routes retained; no legal pages invented.
+
+Changed source: BusinessSolutions.tsx, BusinessSolutions.css, SiteFAQ.tsx, SiteActions.tsx, SiteFinish.css. No new packages/assets. App.tsx, Hero.tsx, EngineeringJourney.tsx, LearningPathSection.tsx and SmoothScroll.tsx hashes match pre-edit values, preserving Screens 1–5. Verified 320/390/768/1440px, no horizontal overflow or browser errors, keyboard FAQ open/close, one-open state, enquiry dialogs and footer targets. Reduced motion displays static connectors and instant FAQ changes, with no CTA sweep/arrow movement. Lint/TypeScript and production build passed. Evidence: design-review/lower-screen-interactions/. Visual approval and deployment remain separate.

@@ -118,3 +118,13 @@ The previous App, entry file, hero component and document HTML are preserved und
 ## 8 November 2026 - documentation reconciliation
 
 Current source, latest owner feedback, image assets, removed spotlight experiments, header/cards and robot framing are reconciled in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). This is the current implementation reference; earlier design trials remain historical. No deployment or Git push.
+
+
+## 9 November 2026 - current design handover
+
+Reconciled five-screen layout, media swaps, spacing, edge blending, pearl pathway catalogue and premium pull-cord interaction in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). Earlier tests/trials are historical; no final approval or deployment implied. TypeScript/build passed; new interaction still needs full touch/keyboard/browser QA.
+
+
+## 20 November 2026 — reviewed current website
+
+Updated the [current handover](docs/CURRENT_WEBSITE_HANDOVER.md) with all nine screens, higher-quality robot/puzzle media, cached continuous contours, current Lenis/native-touch/reduced-motion behavior and continuous first-two-robot playback. Latest responsive review covered six routes at four widths with no observed overflow, broken loaded images or JavaScript errors. Repaired lower-screen gradient-heading and footer-link contrast; TypeScript/build passed. Evidence: [overall review](../design-review/overall-review-2026-11-20/REPORT.md). Local scroll timing is device-dependent; final visual/publication approval and launch verification remain open. No deployment or push.

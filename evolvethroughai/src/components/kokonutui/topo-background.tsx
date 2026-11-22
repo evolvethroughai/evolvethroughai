@@ -55,7 +55,7 @@ const RIPPLE_HEIGHT = 0.2;
 // Distance between the crests of the wave train, in px.
 const RIPPLE_WAVELENGTH = 96;
 // When nothing is moving but the drift, a frame every 33ms is plenty.
-const IDLE_FRAME_MS = 33;
+const IDLE_FRAME_MS = 80;
 // Elevation labels: one per slot of this size at most (px), riding along
 // with the terrain. Elevation of level n is BASE + n * STEP metres, so the
 // index contours read as round hundreds.
@@ -425,6 +425,9 @@ export default function TopoBackground({
     let time = 0;
     let last = 0;
     let lastPaint = 0;
+    let scrollQuietAt = 0;
+    const onPageScroll = () => { scrollQuietAt = performance.now() + 160; };
+    window.addEventListener('scroll', onPageScroll, { passive: true });
     let raf = 0;
     let visible = true;
 
@@ -587,7 +590,7 @@ export default function TopoBackground({
       time += dt * speed;
       // The drift alone is slow; half the frame rate looks the same and
       // costs half as much. Anything following the hand gets every frame.
-      if (settling || now - lastPaint >= IDLE_FRAME_MS) {
+      if (now >= scrollQuietAt && (settling || now - lastPaint >= IDLE_FRAME_MS)) {
         paint(now);
         lastPaint = now;
       }
@@ -699,6 +702,7 @@ export default function TopoBackground({
 
     return () => {
       cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onPageScroll);
       resizeObserver.disconnect();
       intersection.disconnect();
       document.removeEventListener("visibilitychange", updateVisible);

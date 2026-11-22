@@ -1,3 +1,4 @@
+import { requestBackgroundPlayback, releaseBackgroundPlayback } from './backgroundPlayback';
 import { IntelligentAurora } from './IntelligentAurora';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
@@ -16,23 +17,22 @@ function HeroVideoBackground() {
   useEffect(() => {
     const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
     if (reduced !== false || connection?.saveData) { setSource(''); return; }
-    setSource(matchMedia('(max-width: 700px)').matches ? '/videos/robot-hero-960.mp4' : '/videos/robot-hero-1600.mp4');
+    setSource(matchMedia('(max-width: 700px)').matches ? '/videos/robot-hero-clear-1280.mp4' : '/videos/robot-hero-clear-1600.mp4');
   }, [reduced]);
   useEffect(() => {
     const element = video.current;
     if (!element || !source) return;
     let visible = true;
     const sync = () => {
-      if (visible && !document.hidden) void element.play().catch(() => {});
-      else element.pause();
+      requestBackgroundPlayback(element, visible, true);
     };
-    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync(); }, { threshold: .01 });
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting && entry.intersectionRatio >= .15; sync(); }, { threshold: [0, .15, .25, .5, .75, 1] });
     observer.observe(element);
     document.addEventListener('visibilitychange', sync);
     sync();
-    return () => { observer.disconnect(); element.pause(); document.removeEventListener('visibilitychange', sync); };
+    return () => { observer.disconnect(); releaseBackgroundPlayback(element); document.removeEventListener('visibilitychange', sync); };
   }, [source]);
-  return <div className="hero-robot-video"><video ref={video} src={source || undefined} poster="/videos/robot-hero-poster.webp" muted playsInline loop preload="metadata" aria-hidden="true" /><div className="hero-robot-video-wash" /></div>;
+  return <div className="hero-robot-video"><video ref={video} src={source || undefined} poster="/videos/robot-hero-clear-1600.webp" muted playsInline loop preload="metadata" aria-hidden="true" /><div className="hero-robot-video-wash" /></div>;
 }
 export function HeroBackground() {
   return <>
@@ -53,8 +53,8 @@ export function HeroIntro() {
   return <>
     <p className="journey-intro hero-dual-caption"><span>Master modern Cloud, DevOps, and Enterprise AI architecture.</span><span>Bridging deep technical capability with production-grade execution.</span></p>
     <div className="hero-primary-actions hero-dual-actions hero-premium-actions hero-path-cards">
-      <a className="hero-path-card hero-path-card--learning" href="#path"><img src="/images/learning-path-card.webp" alt="" width="1000" height="563" decoding="async" /><span className="hero-path-card-content"><span className="hero-path-card-eyebrow">LEARN • BUILD • GROW</span><strong>Explore Learning Paths</strong><span className="hero-path-card-detail">Practical skills. Real engineering.</span></span><ArrowUpRight className="hero-path-card-arrow" size={20} aria-hidden="true" /></a>
-      <a className="hero-path-card hero-path-card--solutions" href="#solutions"><img src="/images/digital-solutions-card.webp" alt="" width="1000" height="563" decoding="async" /><span className="hero-path-card-content"><span className="hero-path-card-eyebrow">BUILD • AUTOMATE • SCALE</span><strong>Explore Digital Solutions</strong><span className="hero-path-card-detail">Websites, apps & AI-powered solutions.</span></span><ArrowRight className="hero-path-card-arrow" size={20} aria-hidden="true" /></a>
+      <a className="hero-path-card hero-path-card--learning" href="#engineering-journey"><img src="/images/learning-path-card.webp" alt="" width="1000" height="563" decoding="async" /><span className="hero-path-card-content"><span className="hero-path-card-eyebrow">LEARN • BUILD • GROW</span><strong>Explore Learning Paths</strong><span className="hero-path-card-detail">Cloud, DevOps, AI and career-focused programmes built around real projects.</span></span><ArrowUpRight className="hero-path-card-arrow" size={20} aria-hidden="true" /></a>
+      <a className="hero-path-card hero-path-card--solutions" href="#business-introduction"><img src="/images/digital-solutions-card.webp" alt="" width="1000" height="563" decoding="async" /><span className="hero-path-card-content"><span className="hero-path-card-eyebrow">BUILD • AUTOMATE • SCALE</span><strong>Explore Digital Solutions</strong><span className="hero-path-card-detail">Websites, applications, AI automation and practical digital solutions.</span></span><ArrowRight className="hero-path-card-arrow" size={20} aria-hidden="true" /></a>
     </div>
   </>;
 }

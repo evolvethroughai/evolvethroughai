@@ -1,6 +1,6 @@
 # Header components and headline motion
 
-> Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
+> Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
 26 October 2026. Integrated locally; no deployment. Current usages are complete and live in src/components/Header.tsx and VisualExperience.tsx.
@@ -60,3 +60,7 @@ TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning
 ## 8 November 2026 - active component usage
 
 Current Header.tsx renders native navigation anchors with nav-pill-label spans, SiteSearch and Firebase AccountButton. Search/Login/Enquire are the right controls; no theme/download control is rendered. Old MorphicNavbar/ProfileDropdown integration instructions above describe history. HeroIntro now uses image cards and HeroPathCards.css, not the old button CTA classes. Final framing, image sources and motion limits: CURRENT_WEBSITE_HANDOVER.md.
+
+## 9 November 2026 - five-screen video and interaction reconciliation
+
+See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected final screen order, active video mapping, pull-cord behavior, reverted trials and validation limits. Screens 2 and 3 are now separate learning/business introductions. Screen 4 uses the dotted-wave clip; Screen 5 uses the latest owner-selected pouring clip over pearl with a manual pull/tap/keyboard trigger. Hero rotation, supplied image cards, charcoal continuity and glass navigation are retained. TypeScript/build passed; final gesture, responsive and visual acceptance remain open. No deployment or push.

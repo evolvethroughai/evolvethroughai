@@ -1,4 +1,4 @@
-﻿/* Homepage hero trial: graphite throughout, preserving the selected logo palette. */
+/* Homepage hero trial: graphite throughout, preserving the selected logo palette. */
 .shared-landing-layout .hero-robot-video{background:#18191c}
 [data-theme=light] .shared-landing-layout .hero-robot-video-wash,
 [data-theme=dark] .shared-landing-layout .hero-robot-video-wash{background:linear-gradient(90deg,#18191c05 0%,#18191c10 28%,#1d1f24a3 48%,#20232be8 72%,#1b1e26f5 100%)}
@@ -279,3 +279,509 @@
 .colour-cord-caption{font-size:10px;letter-spacing:.04em;margin-top:8px;white-space:nowrap;background:#faf7f1d9;padding:3px 6px;border-radius:6px}
 @media(max-width:700px){.colour-flow-play.colour-pull-cord{left:auto;right:16px;transform:none;width:90px}.colour-cord-line{height:calc(30px + var(--cord-pull,0px))}}
 
+
+/* Pearl and brushed-violet pull cord, with a tactile ring and quiet instruction. */
+.colour-flow-play.colour-pull-cord{width:132px;height:154px;overflow:visible;border-radius:14px}
+.colour-cord-mount{width:22px;height:6px;border:1px solid #c7bdd4;border-radius:0 0 7px 7px;background:linear-gradient(90deg,#b8afc6,#fff,#b8afc6);box-shadow:0 2px 5px #49356718;flex-shrink:0}
+.colour-cord-line{width:3px;height:calc(48px + var(--cord-pull,0px));background:repeating-linear-gradient(135deg,#d8d0e3 0 2px,#8a799f 2px 3px,#ede8f3 3px 4px);box-shadow:1px 0 2px #fff8;transition:height .45s cubic-bezier(.2,.8,.2,1)}
+.colour-pull-cord[data-pulling=true] .colour-cord-line{transition:none}
+.colour-cord-handle{position:relative;display:grid;place-items:center;width:28px;height:36px;border-radius:11px 11px 14px 14px;border:1px solid #afa0c7;background:linear-gradient(115deg,#fdfbff 0%,#ded3ee 35%,#aa94ce 70%,#e7def3 100%);box-shadow:inset 1px 1px 2px #fff,inset -1px -1px 2px #70588b35,0 5px 12px #4a326429;transition:box-shadow .25s,border-color .25s}
+.colour-cord-handle>span{width:12px;height:17px;border:1px solid #af9ec4;border-radius:8px;background:#f4f1f5;box-shadow:inset 0 2px 3px #49346720,0 1px #fff}
+.colour-cord-caption{margin-top:10px;background:#fff9;border:1px solid #ded5e680;padding:4px 9px;border-radius:999px;font-size:9px;letter-spacing:.065em;color:#61516f;backdrop-filter:blur(8px)}
+.colour-pull-cord:hover .colour-cord-handle{border-color:#8e72b8;box-shadow:inset 1px 1px 2px #fff,0 5px 16px #7956ae38}
+.colour-pull-cord:focus-visible{outline:2px solid #7a5da9;outline-offset:6px}
+@media(max-width:700px){.colour-flow-play.colour-pull-cord{width:100px}.colour-cord-line{height:calc(30px + var(--cord-pull,0px))}}
+@media(prefers-reduced-motion:reduce){.colour-cord-line,.colour-cord-handle{transition:none}}
+
+
+/* Robot-image pull handle; native ring remains until the supplied asset is available. */
+.colour-cord-handle.colour-cord-handle--robot{width:62px;height:66px;background:transparent;border:0;border-radius:18px;box-shadow:none}
+.colour-cord-handle--robot img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;filter:drop-shadow(0 4px 5px #77639630)}
+.colour-cord-caption{max-width:180px;white-space:normal;text-align:center;line-height:1.5}
+.colour-flow-play.colour-pull-cord{height:190px}
+
+
+/* Screen 6: restrained dark motion and an occasional small astronaut accent. */
+.shared-landing-layout .business-cinematic-screen{position:relative;isolation:isolate;background:#18191c!important;color:#f0f2f7;--ink:#f0f2f7;--muted:#c4cbd8}
+.shared-landing-layout .business-cinematic-screen::before{content:none}
+.business-cinema-backdrop{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
+.business-cinema-backdrop video{width:100%;height:100%;object-fit:cover;opacity:.18;filter:grayscale(.4)}
+.business-cinematic-screen>.container{position:relative;z-index:1}
+.business-astronaut-accent{position:absolute;right:4%;top:12px;width:110px;height:130px;z-index:0;pointer-events:none;overflow:hidden;mask-image:radial-gradient(ellipse,#000 25%,transparent 72%);opacity:0;animation:astronaut-visit 24s ease-in-out infinite}
+.business-astronaut-accent video{width:100%;height:100%;object-fit:cover;object-position:center 65%}
+@keyframes astronaut-visit{0%,68%,100%{opacity:0;transform:translateY(8px)}75%,87%{opacity:.5;transform:translateY(0)}}
+.shared-landing-layout .business-cinematic-screen :is(h2,h3,.business-solutions-close>p){color:#f0f2f7}
+.shared-landing-layout .business-cinematic-screen :is(.business-solutions-intro p,.business-solutions-grid p,.business-workflow p,.business-solutions-caption,.business-solutions-close p span){color:#c4cbd8}
+.shared-landing-layout .business-cinematic-screen :is(.business-workflow,.business-solutions-grid article){background:#222733d9;border-color:#71809b40}
+@media(prefers-reduced-motion:reduce){.business-astronaut-accent{display:none}}
+
+
+/* Slightly reduce only Screen 6's main background footage. */
+.business-cinematic-screen .business-cinema-backdrop video{transform:scale(.9);transform-origin:center;mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at center,#000 55%,transparent 100%)}
+
+
+
+/* Attach the cord to the raised hand rather than the robot's head. */
+.colour-pull-cord:has(.colour-cord-handle--robot) .colour-cord-mount,.colour-pull-cord:has(.colour-cord-handle--robot) .colour-cord-line{transform:translateX(20px)}
+.colour-cord-handle.colour-cord-handle--robot{margin-top:-25px;position:relative;z-index:1}
+
+
+/* Screen 6 connected-world visual replaces both earlier decorative clips. */
+.business-cinematic-screen .business-cinema-backdrop{inset:0 0 auto auto;width:58%;height:460px;top:70px;mask-image:linear-gradient(to bottom,transparent,#000 16%,#000 80%,transparent)}
+.business-cinematic-screen .business-cinema-backdrop video{object-fit:contain;object-position:center;transform:none;opacity:.4;filter:saturate(.8);mask-image:linear-gradient(to right,transparent,#000 20%,#000 85%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,#000 20%,#000 85%,transparent)}
+.business-video-disclosure{position:absolute;bottom:70px;left:25%;color:#d6ddea;background:#18191ccc;border-radius:5px;padding:3px 7px;font-size:9px}
+@media(max-width:700px){.business-cinematic-screen .business-cinema-backdrop{top:0;width:100%;height:300px;opacity:.7}.business-video-disclosure{bottom:35px}}
+
+
+/* Position Screen 6's cropped world footage on the left. */
+.business-cinematic-screen .business-cinema-backdrop{left:0;right:auto}
+
+
+/* Expand Screen 6's world footage within the left background. */
+.business-cinematic-screen .business-cinema-backdrop{width:72%;height:620px;top:32px}
+.business-cinematic-screen .business-cinema-backdrop video{object-fit:cover;opacity:.5}
+@media(max-width:700px){.business-cinematic-screen .business-cinema-backdrop{width:100%;height:360px;top:0}}
+
+
+/* Avoid cropping/upscaling softness and unnecessary colour filtering on the globe. */
+.business-cinematic-screen .business-cinema-backdrop video{object-fit:contain;filter:none;opacity:.65}
+
+
+/* Screen 6 uses one uninterrupted globe shot across the complete section. */
+.shared-landing-layout .business-cinematic-screen .business-cinema-backdrop{inset:0;width:100%;height:100%;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent)}
+.business-cinematic-screen .business-cinema-backdrop video{width:100%;height:100%;object-fit:cover;opacity:.48;filter:none;mask-image:none;-webkit-mask-image:none}
+.business-cinematic-screen .business-cinema-backdrop::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#18191c80,#18191c33 50%,#18191c80)}
+
+
+/* Static globe backdrop: no playback, sharper presentation. */
+.business-cinematic-screen .business-cinema-backdrop img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.65}
+
+
+/* Screen 6 contrast: readable labels and light-spectrum type over the detailed globe. */
+.business-cinematic-screen .business-cinema-backdrop::after{background:linear-gradient(90deg,#18191cce 0%,#18191c8c 52%,#18191cb8 100%)}
+.shared-landing-layout .business-cinematic-screen .business-solutions-intro h2>span{background:linear-gradient(105deg,#a6c8ff,#8de0eb 48%,#cbb3f5);background-clip:text;-webkit-background-clip:text;color:transparent}
+.shared-landing-layout .business-cinematic-screen :is(.business-solutions-eyebrow,.business-workflow-top,.business-workflow-tag,.business-workflow-footer,.business-workflow-number){color:#d4deef}
+.shared-landing-layout .business-cinematic-screen .business-workflow-number{background:#353d50;border-color:#97a8cb70}
+.shared-landing-layout .business-cinematic-screen :is(.business-workflow,.business-solutions-grid article){background:#202530ed;border-color:#7a8ba650}
+.shared-landing-layout .business-cinematic-screen .business-solutions-grid article>svg{color:#a8c8ff}
+.shared-landing-layout .business-cinematic-screen :is(.business-solutions-intro p,.business-solutions-grid p,.business-workflow p,.business-solutions-caption,.business-solutions-close p span){color:#e0e5ef}
+
+
+/* Screen 5: preserve the original pouring film's colour and detail. */
+#programs.pathway-video-screen .learning-route-video-media video{opacity:1;filter:none;mix-blend-mode:normal}
+#programs.pathway-video-screen .learning-route-video-media::after{background:none}
+.shared-landing-layout #programs.pathway-video-screen .program-list{background:#ffffffb8;backdrop-filter:none;-webkit-backdrop-filter:none}
+/* Continuous lower homepage: edge-only fades, never a wash over central media. */
+.shared-landing-layout:has(.cinematic-hero){background-color:#18191c!important}
+.shared-landing-layout #programs.pathway-video-screen{background:#18191c!important;border-block:0!important;box-shadow:none!important}
+#programs.pathway-video-screen .learning-route-video-media::after{background:linear-gradient(to bottom,#18191c 0%,#18191c00 120px,#18191c00 calc(100% - 120px),#18191c 100%)}
+.shared-landing-layout #programs .section-heading h2{color:#f1f4fa}
+.shared-landing-layout #programs .section-heading p{color:#d8e1ef}
+.shared-landing-layout #solutions.business-cinematic-screen{border-block:0!important;box-shadow:none!important;background:#18191c!important}
+.investment-section .finish-atmosphere--conversation,.faq-section .finish-atmosphere--clarity{background:#18191c;mask-image:none;-webkit-mask-image:none}
+.investment-section .finish-atmosphere--conversation::after,.faq-section .finish-atmosphere--clarity::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#18191c 0%,#18191c00 100px,#18191c00 calc(100% - 100px),#18191c 100%)}
+.shared-landing-layout .investment-section,.shared-landing-layout .faq-section{border-block:0!important;box-shadow:none!important;background:transparent!important}
+.shared-landing-layout .site-footer{background:#18191c!important;border-top:0!important;box-shadow:none!important}
+.site-footer.finish-motion-section .finish-atmosphere{background:#18191c;mask-image:linear-gradient(to bottom,transparent,#000 120px,#000);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 120px,#000)}
+@media(max-width:700px){#programs.pathway-video-screen .learning-route-video-media::after,.investment-section .finish-atmosphere--conversation::after,.faq-section .finish-atmosphere--clarity::after{background:linear-gradient(to bottom,#18191c,transparent 70px,transparent calc(100% - 70px),#18191c)}}
+
+/* Owner-selected imagery for the closing two screens. */
+.faq-robot-laptop{display:block;width:min(100%,440px);height:auto;margin-top:24px;mask-image:radial-gradient(ellipse at center,#000 40%,transparent 73%);-webkit-mask-image:radial-gradient(ellipse at center,#000 40%,transparent 73%);pointer-events:none}
+.site-footer .finish-atmosphere--closing{mask-image:none!important;-webkit-mask-image:none!important}
+.site-footer .finish-atmosphere--closing .finish-atmosphere-wash,.site-footer .finish-atmosphere--closing .finish-ambient-light{display:none}
+.site-footer .footer-hands-image{position:absolute;right:0;top:0;width:62%;height:440px;object-fit:cover;object-position:center;opacity:1;mask-image:linear-gradient(to right,transparent,#000 30%),linear-gradient(to bottom,transparent,#000 15%,#000 65%,transparent);mask-composite:intersect;-webkit-mask-image:linear-gradient(to right,transparent,#000 30%),linear-gradient(to bottom,transparent,#000 15%,#000 65%,transparent);-webkit-mask-composite:source-in}
+.site-footer .footer-invitation{display:block;min-height:330px;position:relative}
+.site-footer .footer-invitation>div{max-width:47%}
+.site-footer .footer-invitation-actions{margin-top:24px}
+@media(max-width:800px){.site-footer .footer-invitation>div{max-width:100%}.site-footer .footer-invitation{padding-bottom:190px}.site-footer .footer-hands-image{width:100%;top:230px;height:280px;mask-image:linear-gradient(transparent,#000 25%,#000 65%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 25%,#000 65%,transparent)}.faq-robot-laptop{max-width:320px;margin-inline:auto}}
+
+.site-footer .footer-invitation .footer-invitation-actions{margin-left:0;margin-right:auto}
+
+
+/* Cord anchored beneath the pathways link. */
+.learning-route-cord-anchor{display:flex;flex-direction:column;align-items:flex-start}
+#learning-path-cord-slot{position:relative;width:250px;min-height:300px}
+.learning-path-cord-control{position:relative;width:250px;height:300px}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{position:relative;left:auto;right:auto;top:0;transform:none;width:220px;height:265px;margin-left:5px;align-items:center}
+.learning-path-cord-control .colour-cord-mount{display:none}
+.learning-path-cord-control .colour-cord-line{display:block;width:160px;height:calc(145px + var(--cord-pull,0px));background:none;box-shadow:none;transform:none!important}
+.learning-path-cord-control .colour-cord-line svg{display:block;width:100%;height:100%;overflow:visible}
+.learning-path-cord-control .colour-cord-handle--robot{width:84px;height:90px;margin-top:-8px;margin-left:-57px;transform:translateY(0)}
+.learning-path-cord-control .colour-cord-caption{margin-top:5px;width:210px;max-width:210px;font-size:10px}
+.cord-keyboard-play{position:absolute;bottom:0;left:22px;border:0;background:transparent;text-decoration:underline;text-underline-offset:4px;color:#d5e2f5;font-size:11px;padding:8px;cursor:pointer}
+.learning-path-cord-control .colour-pull-cord:focus-visible,.cord-keyboard-play:focus-visible{outline:2px solid #accfff;outline-offset:3px}
+
+/* Visible link and rope tied directly to its underline. */
+.shared-landing-layout .learning-route-cord-anchor .learning-route-action{color:#d4e9ff!important;font-weight:600;text-decoration:none;border-bottom:1px solid #c5deffb3;padding-bottom:7px;line-height:1.5;text-shadow:0 1px 5px #0008}
+.shared-landing-layout .learning-route-cord-anchor .learning-route-action:hover{color:#fff!important;border-color:#fff}
+.learning-route-cord-anchor{width:fit-content;max-width:100%}
+#learning-path-cord-slot{margin-top:0;min-height:275px}
+.learning-path-cord-control{height:275px}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{margin-top:0;height:265px}
+.learning-path-cord-control .colour-cord-line{overflow:visible}
+.learning-path-cord-control .colour-cord-caption{color:#f2e7d5;background:#352b22e6;border-color:#b8966680;backdrop-filter:none}
+
+/* Exact owner-supplied artwork: no crop, recolour, opacity wash or recreated text. */
+.learning-route-cord-anchor{width:100%}
+#learning-path-cord-slot{width:min(100%,520px);min-height:0;margin-top:20px}
+.learning-path-cord-control{width:100%;height:auto}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{display:block;position:relative;width:100%;height:auto;min-height:0;margin:0;padding:0;left:auto;right:auto;top:auto;transform:none;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible;touch-action:none}
+.learning-path-thread-art{display:block;width:100%;height:auto;object-fit:contain;opacity:1;filter:none;pointer-events:none;user-select:none}
+.learning-path-cord-control .colour-pull-cord:focus-visible{outline:3px solid #a6d8ff;outline-offset:5px}
+
+/* Separate interactive layers merge into the real page, with no image rectangle. */
+#learning-path-cord-slot{width:min(100%,520px)}
+.learning-path-cord-control .colour-flow-play.colour-pull-cord{display:flex;flex-direction:column;align-items:center;gap:0;background:transparent!important;cursor:grab;color:#f0f5ff;padding:10px 4px 20px}
+.learning-path-cord-control .colour-pull-cord:active{cursor:grabbing}
+.pull-art-title{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;font-size:clamp(18px,2vw,26px);font-weight:600;line-height:1.4}
+.pull-art-title strong{background:linear-gradient(100deg,#2cc9ed,#9e7cf5,#c663ef);background-clip:text;-webkit-background-clip:text;color:transparent}
+.pull-art-anchor{position:relative;width:88%;height:2px;margin-top:20px;background:linear-gradient(90deg,transparent,#42d9ff,transparent);z-index:2}
+.pull-art-knot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-20deg);display:grid;place-items:center;width:37px;height:28px;border:5px ridge #c18b40;border-radius:50%;background:#70501f;color:#f9d68f;font-size:23px;box-shadow:0 0 14px #efbf5326}
+.pull-art-rope{display:block;width:160px;height:calc(180px + var(--cord-pull,0px));transition:height .4s cubic-bezier(.2,.8,.2,1)}
+.pull-art-rope svg{display:block;width:100%;height:100%;overflow:visible}
+.pull-art-robot{display:block;width:150px;height:170px;margin-top:-8px;margin-left:-50px;filter:drop-shadow(0 5px 12px #0005)}
+.pull-art-robot img{width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none}
+.pull-art-caption{display:flex;flex-direction:column;gap:3px;align-items:center;margin-top:12px;padding:12px 30px;border:1px solid #9172dfaa;border-radius:40px;background:linear-gradient(100deg,#08354565,#52266a40);box-shadow:0 0 18px #31caf018;color:#eaf3ff;font-size:14px}
+.pull-art-caption strong{font-size:20px;font-weight:600}
+.colour-pull-cord[data-pulling=true] .pull-art-rope{transition:none}
+@media(prefers-reduced-motion:reduce){.pull-art-rope{transition:none}}
+
+.pull-art-knot::after{content:'';width:17px;height:12px;border:4px ridge #e9b964;border-radius:50%;transform:rotate(55deg)}
+
+
+.pull-art-robot{margin-top:-53px;margin-left:-76px}
+
+
+.pull-art-robot{margin-top:-63px}
+
+
+/* Reference-matched golden fibres and metal-mounted knot. */
+.pull-art-knot{width:92px;height:60px;padding:0;display:block;border:0;border-radius:0;background:none;box-shadow:none;transform:translate(-50%,-50%);filter:drop-shadow(0 0 8px #dba84230)}
+.pull-art-knot::after{content:none}
+.pull-art-knot img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.pull-art-anchor{margin-top:30px}
+.pull-art-rope{width:105px;height:calc(230px + var(--cord-pull,0px));transform:translateX(-24px);margin-top:5px}
+.pull-art-rope>img{display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;user-select:none}
+.pull-art-robot{position:relative;width:220px;height:245px;margin-left:-105px;margin-top:-76px}
+.pull-art-robot>img{position:relative;z-index:1}
+.pull-robot-ring{position:absolute;left:15%;right:15%;bottom:8%;height:13px;border:3px solid #58d9ff;border-right-color:#cb6aff;border-bottom-color:#b677ff;border-radius:50%;box-shadow:0 0 12px #41c7ff70,0 0 19px #af56ff40;transform:rotate(-3deg)}
+.pull-art-caption{margin-top:2px}
+
+.pull-art-robot{margin-top:-88px}.pull-robot-ring{bottom:16%}
+
+
+/* Screen 8 robot: larger transparent foreground, shared node film behind it. */
+.faq-section .faq-robot-laptop{width:118%;max-width:580px;height:auto;margin-top:12px;margin-left:-9%;margin-right:0;mask-image:none;-webkit-mask-image:none;object-fit:contain;filter:drop-shadow(0 12px 24px #0003)}
+@media(max-width:800px){.faq-section .faq-robot-laptop{width:100%;max-width:440px;margin:12px auto 0}}
+
+/* Screens 7–9 share one plane; only the media fades, never a section-sized box. */
+.shared-landing-layout #enquire,.shared-landing-layout #questions,.shared-landing-layout #footer{border:0!important;outline:0!important;box-shadow:none!important;background:none!important;overflow:visible}
+.shared-landing-layout #enquire::before,.shared-landing-layout #enquire::after,.shared-landing-layout #questions::before,.shared-landing-layout #questions::after,.shared-landing-layout #footer::before,.shared-landing-layout #footer::after{content:none!important;display:none!important}
+#enquire .finish-atmosphere--conversation,#questions .finish-atmosphere--clarity{top:-80px;bottom:-80px;background:transparent!important;mask-image:linear-gradient(to bottom,transparent 0%,#000 180px,#000 calc(100% - 180px),transparent 100%)!important;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 180px,#000 calc(100% - 180px),transparent 100%)!important}
+#enquire .finish-atmosphere--conversation::after,#questions .finish-atmosphere--clarity::after{content:none!important;display:none!important}
+#footer .finish-atmosphere--closing{background:transparent!important}
+#footer :is(.footer-invitation,.footer-directory,.footer-signature,.footer-end){border-top:0!important;border-bottom:0!important;box-shadow:none!important}
+@media(max-width:700px){#enquire .finish-atmosphere--conversation,#questions .finish-atmosphere--clarity{top:-50px;bottom:-50px;mask-image:linear-gradient(to bottom,transparent,#000 130px,#000 calc(100% - 130px),transparent)!important;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 130px,#000 calc(100% - 130px),transparent)!important}}
+#footer.site-footer{color:#f1f4fb!important}
+#footer.site-footer :is(h2,.footer-column>a,.footer-column>button){color:#edf2fa!important}
+#footer.site-footer :is(p,.eyebrow,.mini-label,.footer-brand-tagline,.footer-end){color:#c7d3e3!important}
+
+/* Screen 8: keep the connected-line film quiet, without bright white glare. */
+#questions .finish-atmosphere--clarity video{opacity:.28;filter:brightness(.62) contrast(.9);background:#18191c;transition:none;animation:none}
+#questions .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#18191c55,#18191c77 55%,#18191cbb)}
+
+/* FAQ separators should recede; avoid bright white horizontal rules. */
+#questions.faq-section .faq-list details{border-bottom:.5px solid #94a8c226!important}
+#questions.faq-section .faq-list details:last-child{border-bottom:0!important}
+#questions.faq-section .faq-list{border:0!important}
+#questions .finish-atmosphere--clarity video{opacity:.18;filter:brightness(.5) contrast(.85);mix-blend-mode:normal}
+#questions .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#18191c66,#18191c80 50%,#18191ccc)}
+#questions .faq-item-number,#questions .faq-list summary>svg{color:#9cacc3!important}
+
+#questions.faq-section .faq-list details[open]>p{color:#cbd5e3!important}
+
+
+/* Screen 8: visible fine-scale connections, subdued highlights. */
+#questions .finish-atmosphere--clarity video{opacity:.5;filter:brightness(.8) contrast(.95)}
+#questions .finish-atmosphere--clarity .finish-atmosphere-wash{background:linear-gradient(90deg,#18191c22,#18191c33 48%,#18191c99)}
+
+/* Whole-site layout review — 12 November 2026. */
+.shared-landing-layout #programs.pathway-video-screen{padding-block:64px 72px}
+.shared-landing-layout #programs .section-heading>.eyebrow,
+.shared-landing-layout #programs .section-heading>div>.eyebrow{color:#d4dfef}
+.shared-landing-layout #programs .section-number{color:#c4cfea}
+.shared-landing-layout #programs .pathway-title-link>span:first-child{color:#353c50}
+.shared-landing-layout #path .learning-route-intro h2>span,
+.shared-landing-layout #solutions h2>span,
+.shared-landing-layout #questions h2>span{background-image:linear-gradient(100deg,#9ec5ff,#83d7e6,#bba7f1);color:transparent;background-clip:text;-webkit-background-clip:text}
+[data-theme=light] .masterclass-page .flagship-copy>.eyebrow{color:#3755a0}
+[data-theme=light] .masterclass-page .masterclass-display-title>span{color:#43599a}
+[data-theme=light] .masterclass-page .stack-choice .mono,
+[data-theme=light] .masterclass-page [class*="stack-choice-"]>.mono{color:#35466f}
+@media(max-width:800px){.shared-landing-layout #programs.pathway-video-screen{padding-block:44px 52px}}
+/* Avoid competing browser and wheel easing engines. */
+html.lenis{scroll-behavior:auto!important}
+
+/* Stable FAQ atmosphere and comfortable later-screen composition. */
+#questions .finish-atmosphere--clarity .faq-network-steady{width:106%;height:106%;max-width:none;object-fit:cover;opacity:.5;filter:brightness(.8) contrast(.95);animation:faq-network-drift 36s ease-in-out infinite alternate;will-change:transform}
+@keyframes faq-network-drift{from{transform:translate(-2%,-2%)}to{transform:translate(0,0)}}
+.shared-landing-layout :is(#solutions,#enquire,#questions,#footer){scroll-margin-top:110px}
+.shared-landing-layout #questions{padding-block:44px 48px}
+#questions .faq-refined-intro h2{text-wrap:balance}
+#questions .faq-list summary{padding-block:15px;min-height:56px;line-height:1.5}
+#questions .faq-robot-laptop{width:100%;max-width:440px;margin:12px auto 0}
+.shared-landing-layout #solutions{padding-block:56px}
+@media(min-width:901px){.shared-landing-layout #enquire{padding-block:48px 56px}}
+@media(max-width:800px){
+ .shared-landing-layout #questions{padding-block:40px 48px}
+ #questions .faq-robot-laptop{max-width:300px}
+ .shared-landing-layout #solutions{padding-block:44px}
+ .shared-landing-layout :is(#solutions,#enquire,#questions,#footer) :is(h2,h3,p,summary){overflow-wrap:break-word}
+}
+@media(prefers-reduced-motion:reduce){#questions .finish-atmosphere--clarity .faq-network-steady{animation:none;will-change:auto}}
+/* Keep modal interaction local; the document remains still behind it. */
+html:has(dialog[open]){overflow:hidden!important}
+
+/* One header clearance for native links and Lenis; never add both. */
+html{scroll-padding-top:72px;scrollbar-gutter:stable}
+.shared-landing-layout main [id],.shared-landing-layout footer[id],.shared-landing-layout footer [id]{scroll-margin-top:0!important}
+@media(max-width:1100px){html{scroll-padding-top:120px}}
+#footer .footer-brand#about{background:transparent!important;border:0!important;box-shadow:none!important}
+
+/* Native scrolling owns input. Contours are drawn once, then move on the compositor. */
+.site-continuous-topo canvas{animation:topo-texture-glide 38s ease-in-out infinite alternate;transform-origin:center;will-change:transform}
+@keyframes topo-texture-glide{from{transform:scale(1.04) translate(-.5%,-.5%)}to{transform:scale(1.04) translate(.5%,.5%)}}
+.header.portal-header .portal-controls :is(.header-search-button,.portal-control){backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+@media(prefers-reduced-motion:reduce){.site-continuous-topo canvas{animation:none!important;will-change:auto}}
+/* Scroll performance: one cached contour tile, no viewport-sized live renderer. */
+.shared-landing-layout .site-continuous-topo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;transform:none!important;animation:none!important;will-change:auto!important;background-image:url('/images/site-topo-texture.png');background-repeat:repeat;background-size:1440px 900px;pointer-events:none}
+.shared-landing-layout .site-continuous-topo:before,.shared-landing-layout .site-continuous-topo:after{content:none!important}
+/* Nested backdrop filters forced expensive video resampling on every scroll frame. */
+.shared-landing-layout .header,.shared-landing-layout .header *,.shared-landing-layout .dual-track-card,.shared-landing-layout .business-workflow,.shared-landing-layout .investment-card,.shared-landing-layout .faq-list,.shared-landing-layout .hero-path-card,.shared-landing-layout .program-list{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.shared-landing-layout .header.is-scrolled{background:#202126f5!important}
+.shared-landing-layout .header.is-scrolled .nav-pill-label{color:#eef2fa}
+.shared-landing-layout .hero-headline-glow,.shared-landing-layout .intelligent-aurora>div{filter:none!important;opacity:.22}
+.is-scroll-moving .intelligent-aurora *,.is-scroll-moving .finish-atmosphere *,.is-scroll-moving .hero-path-card img,.is-scroll-moving .evolve-icon *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}.shared-landing-layout .header.is-scrolled .brand-logo--light{display:none!important}
+.shared-landing-layout .header.is-scrolled .brand-logo--dark{display:block!important}
+.shared-landing-layout .header.is-scrolled :is(.brand-tagline,.header-search-button,.portal-control:not(.portal-control--primary)){color:#eef2fa!important}
+/* Screen 3: preserve source colour and detail; blend only the stage edges. */
+.shared-landing-layout .solutions-intro-screen .business-screen-media{background:transparent;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 86%,transparent),linear-gradient(to right,transparent,#000 8%,#000 74%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 86%,transparent),linear-gradient(to right,transparent,#000 8%,#000 74%,transparent);mask-composite:intersect;-webkit-mask-composite:source-in}
+.shared-landing-layout .solutions-intro-screen .business-screen-media video{filter:none;opacity:1;transform:scale(.94);object-fit:contain;mask-image:none;-webkit-mask-image:none}
+.shared-landing-layout .solutions-intro-screen .business-screen-media::after{background:linear-gradient(90deg,transparent 0%,transparent 62%,#18191c70 82%,#18191c 100%)}
+.shared-landing-layout .solutions-intro-screen .dual-track-kicker{color:#a7dce9!important}
+@media(max-width:700px){.shared-landing-layout .solutions-intro-screen .business-screen-media{height:240px;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent)}.shared-landing-layout .solutions-intro-screen .business-screen-media::after{background:none}.shared-landing-layout .solutions-intro-screen .solutions-screen-layout{padding-top:240px}}/* Feather the picture itself, so letterboxing cannot reveal a rectangular edge. */
+.shared-landing-layout .solutions-intro-screen .business-screen-media{mask-image:none;-webkit-mask-image:none}
+.shared-landing-layout .solutions-intro-screen .business-screen-media video{position:absolute;left:0;top:50%;width:100%;height:auto;aspect-ratio:16/9;transform:translateY(-50%) scale(.94);mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent),linear-gradient(to right,transparent,#000 8%,#000 86%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent),linear-gradient(to right,transparent,#000 8%,#000 86%,transparent);mask-composite:intersect;-webkit-mask-composite:source-in}
+.shared-landing-layout .header.is-scrolled .portal-menu-toggle{color:#eef2fa!important}
+/* Overall review — 20 November: readable accents on the charcoal screens. */
+.shared-landing-layout :is(#programs,#solutions,#enquire,#questions,#footer) h2 em{background-image:linear-gradient(100deg,#a8ceff 0%,#87deeb 48%,#c6aff5 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important}
+.shared-landing-layout #footer .footer-end a{color:#c7d3e3!important;opacity:1}
+.shared-landing-layout #footer .footer-end a:hover{color:#fff!important}
+/* Bounded card/navigation refinement; headline and hero composition untouched. */
+.header.header-focused-navigation .nav-wrap{grid-template-columns:minmax(160px,1fr) auto minmax(120px,1fr)}
+.header.header-focused-navigation .portal-controls{flex-basis:auto;margin-left:auto;justify-content:flex-end}
+@media(max-width:1100px){.header.header-focused-navigation .nav-wrap{flex-wrap:wrap}.header.header-focused-navigation .header-brand-search{order:0}.header.header-focused-navigation .portal-controls{order:1}.header.header-focused-navigation .portal-menu-toggle{order:2}.header.header-focused-navigation .portal-navigation{order:3}}
+@media(max-width:700px){.header.header-focused-navigation .nav-wrap{gap:10px}.header.header-focused-navigation .header-brand-search .brand-logo{width:125px}.header.header-focused-navigation .portal-control--primary{padding-inline:12px}.header.header-focused-navigation .portal-menu-toggle{margin-left:0}}
+.hero-robot-layout .hero-path-cards>a.hero-path-card{transition:transform .32s ease,box-shadow .32s ease,border-color .32s ease;touch-action:manipulation}
+.hero-robot-layout .hero-path-cards>a.hero-path-card>img{transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.hero-robot-layout .hero-path-cards>a.hero-path-card:focus-visible{outline:2px solid #8ce7f4;outline-offset:4px;border-color:#a8a0ff;box-shadow:-5px 3px 22px #22d3ee24,5px 6px 25px #9a62f530}
+@media(hover:hover) and (pointer:fine){.hero-robot-layout .hero-path-cards>a.hero-path-card:hover{transform:translateY(-4px);border-color:#9bafffaa;box-shadow:0 13px 28px #0004,-5px 2px 20px #22d3ee24,5px 5px 24px #a15ff52b}.hero-robot-layout .hero-path-cards>a.hero-path-card:hover>img{transform:scale(1.045)}}
+.hero-robot-layout .hero-path-cards>a.hero-path-card:focus-visible>img{transform:scale(1.045)}
+@media(hover:none),(pointer:coarse){.hero-robot-layout .hero-path-cards>a.hero-path-card:active{transform:scale(.99);border-color:#99dff3;box-shadow:0 0 20px #9867f538}}
+.scroll-reveal-once[data-reveal=pending]{opacity:0;transform:translate3d(0,14px,0)}
+.scroll-reveal-once[data-reveal=visible]{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+@media(prefers-reduced-motion:reduce){.scroll-reveal-once[data-reveal]{opacity:1!important;transform:none!important;transition:none!important}.hero-robot-layout .hero-path-cards>a.hero-path-card,.hero-robot-layout .hero-path-cards>a.hero-path-card>img{transform:none!important;transition:none!important}}
+.scroll-reveal-once[data-reveal=pending]{opacity:0;transform:translateY(14px)}
+.scroll-reveal-once[data-reveal=visible]{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.22,1,.36,1)}
+@media(max-width:1100px){
+ .header.header-focused-navigation .nav-wrap{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;min-height:64px}
+ .header.header-focused-navigation .header-brand-search{grid-column:1;grid-row:1}
+ .header.header-focused-navigation .portal-controls{grid-column:2;grid-row:1;flex-basis:auto;margin:0;justify-self:end}
+ .header.header-focused-navigation .portal-menu-toggle{grid-column:3;grid-row:1;margin:0}
+ .header.header-focused-navigation .portal-navigation{grid-column:1/-1;grid-row:2;width:100%;padding:8px 0 12px}
+}
+@media(max-width:370px){.header.header-focused-navigation .header-brand-search .brand-logo{width:112px}.header.header-focused-navigation .portal-control--primary{padding-inline:9px;gap:5px}}
+@media(prefers-reduced-motion:reduce){.scroll-reveal-once[data-reveal]{opacity:1;transform:none;transition:none}}/* Restore the existing Firebase Login/Account action alongside Enquire. */
+@media(max-width:700px){
+ .header.header-focused-navigation .nav-wrap{gap:6px}
+ .header.header-focused-navigation .header-brand-search .brand-logo{width:110px}
+ .header.header-focused-navigation .portal-controls{gap:6px}
+ .header.header-focused-navigation .portal-control{padding-inline:8px;font-size:11px;gap:5px}
+ .header.header-focused-navigation .portal-control:not(.portal-control--primary)>svg:last-child{display:none}
+ .header.header-focused-navigation .portal-menu-toggle{width:36px;min-width:36px;height:36px}
+}
+@media(max-width:370px){.header.header-focused-navigation .header-brand-search .brand-logo{width:90px}}
+/* Learning copy only: preserve section geometry, media and theme. */
+#engineering-journey .learning-text-highlights li>span{min-width:0;font-weight:400;overflow-wrap:break-word}
+#engineering-journey .learning-text-highlights strong{font-weight:600}
+#engineering-journey .learning-text-highlights li{transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+#engineering-journey .learning-text-highlights li:nth-child(2){transition-delay:.08s}
+#engineering-journey .learning-text-highlights li:nth-child(3){transition-delay:.16s}
+#engineering-journey .learning-text-highlights li:nth-child(4){transition-delay:.24s}
+#engineering-journey .learning-text-highlights[data-highlights=pending] li{opacity:0;transform:translateY(10px)}
+#engineering-journey .learning-text-highlights[data-highlights=visible] li{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){#engineering-journey .learning-text-highlights[data-highlights] li{opacity:1;transform:none;transition:none}}
+
+
+/* Learning CTA only: a bounded power-up portal, without layout-affecting motion. */
+.shared-landing-layout #engineering-journey a.learning-portal-cta{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;justify-content:flex-start;gap:14px;padding:14px 18px;border:1px solid #a1b5ff66;border-radius:18px;background:linear-gradient(115deg,#1F3D9A,#6840C8)!important;color:#fff!important;text-decoration:none;text-align:left;box-shadow:inset 0 1px #ffffff26,0 6px 18px #0002;touch-action:manipulation;transition:transform .28s ease,border-color .28s ease}
+#engineering-journey .learning-portal-cta>span{position:relative;z-index:1}
+#engineering-journey .learning-portal-icon{display:grid;place-items:center;flex:0 0 42px;height:42px;border:1px solid #d6eaff33;border-radius:12px;background:#ffffff10;color:#c3f2ff}
+#engineering-journey .learning-portal-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px}
+#engineering-journey .learning-portal-copy strong{font-size:14px;line-height:1.4;font-weight:600;color:#fff}
+#engineering-journey .learning-portal-copy>span{font-size:11px;font-weight:400;line-height:1.5;color:#e0def6}
+#engineering-journey .learning-portal-arrow{display:grid;place-items:center;flex:0 0 36px;height:36px;border:1px solid #e1ebff55;border-radius:50%;background:#ffffff0d;color:#fff}
+#engineering-journey .learning-portal-arrow svg{transition:transform .28s ease}
+#engineering-journey a.learning-portal-cta::before{content:'';position:absolute;inset:-70% auto -70% -50%;width:35%;background:linear-gradient(90deg,transparent,#d3faff24,transparent);transform:translateX(-150%) skewX(-22deg);opacity:0;pointer-events:none}
+#engineering-journey a.learning-portal-cta::after{content:'';position:absolute;inset:0;border:2px solid #9deaff;border-radius:inherit;box-shadow:inset -16px 0 22px #c18bff55,inset 16px 0 22px #60e7ff44;opacity:0;pointer-events:none}
+#engineering-journey a.learning-portal-cta:focus-visible{outline:3px solid #9be7ff;outline-offset:4px;border-color:#d5baff}
+#engineering-journey a.learning-portal-cta:focus-visible .learning-portal-arrow svg{transform:translateX(5px)}
+@media(hover:hover) and (pointer:fine){
+ .shared-landing-layout #engineering-journey a.learning-portal-cta:hover{transform:translateY(-3px);border-color:#9edfffc9}
+ #engineering-journey a.learning-portal-cta:hover::before{animation:learning-portal-sweep .45s ease-out 1}
+ #engineering-journey a.learning-portal-cta:hover::after{animation:learning-portal-led .275s ease-in-out 2}
+ #engineering-journey a.learning-portal-cta:hover .learning-portal-arrow svg{transform:translateX(5px)}
+}
+#engineering-journey a.learning-portal-cta:active{border-color:#bbf1ff;box-shadow:inset 0 0 20px #a77bff33,0 0 16px #63dfff33}
+@keyframes learning-portal-sweep{0%{transform:translateX(-150%) skewX(-22deg);opacity:0}25%{opacity:1}100%{transform:translateX(520%) skewX(-22deg);opacity:0}}
+@keyframes learning-portal-led{0%,100%{opacity:0}50%{opacity:.75}}
+@media(max-width:370px){.shared-landing-layout #engineering-journey a.learning-portal-cta{gap:9px;padding-inline:12px}#engineering-journey .learning-portal-icon{flex-basis:32px;height:36px}#engineering-journey .learning-portal-copy strong{font-size:13px}#engineering-journey .learning-portal-arrow{flex-basis:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){.shared-landing-layout #engineering-journey a.learning-portal-cta,#engineering-journey .learning-portal-arrow svg{transform:none!important;transition:none!important}#engineering-journey a.learning-portal-cta::before,#engineering-journey a.learning-portal-cta::after{animation:none!important;opacity:0!important}}
+
+/* Checklist-only copy layout and clearance above the unchanged CTA. */
+#engineering-journey .learning-text-highlights{gap:16px;margin-bottom:24px}
+#engineering-journey .learning-text-highlights li>span{display:flex;flex-direction:column;gap:3px}
+#engineering-journey .learning-text-highlights strong{font-weight:700}
+#engineering-journey .learning-highlight-description{display:block;font-weight:400}
+#engineering-journey .learning-highlight-status{display:block;font-size:10px;line-height:1.5;font-weight:500}
+
+/* Screen 3 only: compact services and cyan-blue solution portal. */
+#business-introduction #enterprise-heading{line-height:1.2}
+#business-introduction .business-possibilities{background:linear-gradient(100deg,#b0eef2,#70d4ea);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent;white-space:nowrap}
+#business-introduction .business-service-rows{gap:12px;margin-block:18px 20px;padding-top:18px}
+#business-introduction .business-service-rows li{gap:10px;font-size:13px;line-height:1.5}
+#business-introduction .business-service-rows li>svg{color:#8addeb;flex-shrink:0;margin-top:3px}
+#business-introduction .business-service-rows li>span{display:flex;flex-direction:column;gap:2px;min-width:0}
+#business-introduction .business-service-rows strong{font-weight:650}
+#business-introduction .business-service-rows li>span>span{font-weight:400;color:#d0dce9}
+.shared-landing-layout #business-introduction a.business-portal-cta{position:relative;isolation:isolate;overflow:hidden;display:flex;justify-content:flex-start;align-items:center;gap:13px;padding:13px 17px;border:1px solid #88dfe866;border-radius:18px;background:linear-gradient(110deg,#125f94,#234ab2)!important;color:white!important;text-align:left;box-shadow:inset 0 1px #ffffff24,0 6px 18px #0002;transition:transform .28s ease,border-color .28s ease;touch-action:manipulation}
+#business-introduction .business-portal-cta>span{position:relative;z-index:1}
+#business-introduction .business-portal-icon{display:grid;place-items:center;flex:0 0 40px;height:40px;border:1px solid #ccf6ff44;border-radius:12px;background:#ffffff10;color:#d3faff}
+#business-introduction .business-portal-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px}
+#business-introduction .business-portal-copy strong{font-size:14px;font-weight:600;line-height:1.4;color:#fff}
+#business-introduction .business-portal-copy>span{font-size:11px;font-weight:400;line-height:1.5;color:#d6effb}
+#business-introduction .business-portal-arrow{display:grid;place-items:center;flex:0 0 34px;height:34px;border:1px solid #cdf2ff66;border-radius:50%;background:#ffffff0d}
+#business-introduction .business-portal-arrow svg{transition:transform .28s ease}
+#business-introduction a.business-portal-cta::before{content:'';position:absolute;inset:-70% auto -70% -50%;width:35%;background:linear-gradient(90deg,transparent,#d4fcff2d,transparent);transform:translateX(-150%) skewX(-22deg);opacity:0;pointer-events:none}
+#business-introduction a.business-portal-cta::after{content:'';position:absolute;inset:0;border-radius:inherit;border:1px solid #9beaff;box-shadow:inset 0 0 14px #8be8ff22;background:radial-gradient(circle at 15% 0%,#d0ffff 0 2px,transparent 3px),radial-gradient(circle at 78% 100%,#b8eeff 0 2px,transparent 3px);opacity:0;pointer-events:none;transition:opacity .25s ease}
+#business-introduction a.business-portal-cta:focus-visible{outline:3px solid #9be7ff;outline-offset:4px}
+#business-introduction a.business-portal-cta:focus-visible::after,#business-introduction a.business-portal-cta:active::after{opacity:.7}
+@media(hover:hover) and (pointer:fine){.shared-landing-layout #business-introduction a.business-portal-cta:hover{transform:translateY(-3px);border-color:#a1ecff}#business-introduction a.business-portal-cta:hover::before{animation:business-portal-sweep .4s ease-out 1}#business-introduction a.business-portal-cta:hover::after{opacity:.65}#business-introduction a.business-portal-cta:hover .business-portal-arrow svg{transform:translateX(3px)}}
+@keyframes business-portal-sweep{0%{transform:translateX(-150%) skewX(-22deg);opacity:0}25%{opacity:1}100%{transform:translateX(520%) skewX(-22deg);opacity:0}}
+@media(max-width:700px){#business-introduction .business-possibilities{white-space:normal}}
+@media(max-width:370px){.shared-landing-layout #business-introduction a.business-portal-cta{padding-inline:12px;gap:9px}#business-introduction .business-portal-icon{flex-basis:32px;height:36px}#business-introduction .business-portal-arrow{flex-basis:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){.shared-landing-layout #business-introduction a.business-portal-cta,#business-introduction .business-portal-arrow svg{transform:none!important;transition:none!important}#business-introduction a.business-portal-cta::before{animation:none!important;opacity:0!important}#business-introduction a.business-portal-cta::after{transition:none!important}}
+
+/* Screen 3 interaction polish only; no geometry or content changes. */
+#business-introduction .business-service-rows li{transition:transform .3s ease}
+#business-introduction .business-service-rows li>svg{transition:filter .3s ease}
+#business-introduction a.business-portal-cta:focus-visible::before{animation:business-portal-sweep .4s ease-out 1}
+#business-introduction a.business-portal-cta:focus-visible .business-portal-arrow svg{transform:translateX(3px)}
+@media(hover:hover) and (pointer:fine){
+ #business-introduction .business-service-rows li:hover{transform:translateY(-2px)}
+ #business-introduction .business-service-rows li:hover>svg{filter:drop-shadow(0 0 4px #8addeb66)}
+}
+@media(prefers-reduced-motion:reduce){
+ #business-introduction .business-service-rows li,#business-introduction .business-service-rows li>svg{transition:none!important;transform:none!important}
+ #business-introduction a.business-portal-cta:focus-visible::before{animation:none!important;opacity:0!important}
+ #business-introduction a.business-portal-cta:focus-visible .business-portal-arrow svg{transform:none!important}
+}
+
+/* Match learning checklist presentation to the Screen 3 service rows. */
+#engineering-journey .learning-text-highlights{gap:12px;margin-top:18px;padding-top:18px}
+#engineering-journey .learning-text-highlights li{gap:10px;font-size:13px;line-height:1.5;transition:opacity .5s ease,transform .5s cubic-bezier(.22,1,.36,1),translate .3s ease}
+#engineering-journey .learning-text-highlights li:nth-child(2){transition-delay:.08s,.08s,0s}
+#engineering-journey .learning-text-highlights li:nth-child(3){transition-delay:.16s,.16s,0s}
+#engineering-journey .learning-text-highlights li:nth-child(4){transition-delay:.24s,.24s,0s}
+#engineering-journey .learning-text-highlights li>svg{color:#8addeb;flex-shrink:0;margin-top:3px;transition:filter .3s ease}
+#engineering-journey .learning-text-highlights li>span{gap:2px}
+#engineering-journey .learning-text-highlights strong{font-weight:650}
+#engineering-journey .learning-highlight-description{color:#d0dce9}
+@media(hover:hover) and (pointer:fine){
+ #engineering-journey .learning-text-highlights[data-highlights=visible] li:hover{translate:0 -2px}
+ #engineering-journey .learning-text-highlights li:hover>svg{filter:drop-shadow(0 0 4px #8addeb66)}
+}
+@media(prefers-reduced-motion:reduce){#engineering-journey .learning-text-highlights li,#engineering-journey .learning-text-highlights li>svg{translate:none!important;transition:none!important}}
+
+#engineering-journey #academy-heading .learning-heading-accent{color:#8addeb}
+
+
+/* Screen 5: readable ink-reveal text and quiet pathway row feedback. */
+.shared-landing-layout #programs .section-heading>p{color:#f0f4fb!important;background:#18191ce6;border-radius:8px;box-shadow:0 0 0 8px #18191ce6;text-shadow:0 1px 2px #0005}
+.shared-landing-layout #programs .program-list{background:#f4f5f8ed!important}
+#programs .pathway-title-link{transition:background-color .3s ease,border-color .3s ease;box-shadow:inset 0 -1px #34476b14}
+#programs .pathway-title-link>svg{transition:transform .3s ease}
+#programs .pathway-title-link:focus-visible{outline:2px solid #2f7394;outline-offset:-3px;background:#dcebf2;box-shadow:inset 3px 0 #47869b}
+#programs .pathway-title-link:focus-visible>svg{transform:translateX(3px)}
+@media(hover:hover) and (pointer:fine){#programs .pathway-title-link:hover{background:#e0edf5;box-shadow:inset 3px 0 #5d9bad,inset 0 -1px #34476b26}#programs .pathway-title-link:hover>svg{transform:translateX(3px)}}
+#programs .pathway-title-link:active{background:#dcebf2}
+@media(prefers-reduced-motion:reduce){#programs .pathway-title-link,#programs .pathway-title-link>svg{transition:none!important;transform:none!important}}
+
+.shared-landing-layout #programs .section-heading>div{background:#18191cf2;border-radius:12px;box-shadow:0 0 0 12px #18191cf2}
+
+
+/* Reveal the native white-and-colour footage together; no separate sliding mask. */
+#programs.pathway-video-screen video[data-started=true]{animation:none!important;clip-path:none!important}
+
+
+/* Pull visually without changing the following section's layout position. */
+.learning-path-cord-control .pull-art-rope{height:230px;transition:none}
+.pull-art-rope>img{transform-origin:top center;transform:scaleY(calc(1 + var(--cord-pull,0px)/230px));transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.pull-art-robot,.pull-art-caption{translate:0 var(--cord-pull,0px);transition:translate .4s cubic-bezier(.2,.8,.2,1)}
+.colour-pull-cord[data-pulling=true] :is(.pull-art-rope>img,.pull-art-robot,.pull-art-caption){transition:none}
+@media(prefers-reduced-motion:reduce){.pull-art-rope>img,.pull-art-robot,.pull-art-caption{transition:none}}
+
+/* Screen 5 stays charcoal until the robot-triggered film starts on arrival. */
+.shared-landing-layout #programs:not(:has(video[data-started=true])){background:#18191c!important}
+#programs:not(:has(video[data-started=true])) .learning-route-video-media{visibility:hidden}
+.shared-landing-layout #programs:not(:has(video[data-started=true])) .program-list{background:#202126!important}
+.shared-landing-layout #programs:not(:has(video[data-started=true])) .pathway-title-link{color:#edf2fa}
+.shared-landing-layout #programs:not(:has(video[data-started=true])) .pathway-title-link>span:first-child{color:#b8c8db}
+#programs:not(:has(video[data-started=true])) .pathway-title-link:is(:hover,:focus-visible,:active){background:#2b3039}
+
+/* One top-down front drives both the white surface and the colour film. */
+@property --pour-front{syntax:'<length>';inherits:true;initial-value:0px}
+#programs:has(video[data-started=true]){animation:unified-colour-front .45s linear both}
+@keyframes unified-colour-front{from{--pour-front:0px}to{--pour-front:var(--pour-height,1200px)}}
+#programs:has(video[data-started=true]) .learning-route-video-media{clip-path:inset(0 0 max(0px,calc(100% - var(--pour-front))) 0)}
+.shared-landing-layout #programs:has(video[data-started=true]) .program-list{background:linear-gradient(to bottom,#f4f5f8ed 0px,#f4f5f8ed max(0px,calc(var(--pour-front) - var(--list-offset))),#202126 max(0px,calc(var(--pour-front) - var(--list-offset))),#202126 100%)!important}
+#programs:has(video[data-started=true]) .pathway-title-link{color:#edf2fa;animation:pour-row-contrast 0s var(--row-reveal-delay,0s) forwards}
+.shared-landing-layout #programs:has(video[data-started=true]) .pathway-title-link>span:first-child{color:inherit}
+@keyframes pour-row-contrast{to{color:#252a3b}}
+@media(prefers-reduced-motion:reduce){#programs:has(video[data-started=true]){animation:none;--pour-front:var(--pour-height,1200px)}#programs:has(video[data-started=true]) .pathway-title-link{animation:none;color:#252a3b}}
+
+/* Center the complete rope/robot control beneath both audience columns. */
+.learning-route-layout>.learning-route-cord-anchor{grid-column:1/-1;align-items:center;justify-self:center}
+.learning-route-layout>.learning-route-cord-anchor #learning-path-cord-slot{margin-inline:auto}
+
+/* Compact pull instruction beside the robot, within the same drag control. */
+.learning-path-cord-control .pull-art-caption{position:absolute;left:calc(50% + 62px);bottom:100px;width:180px;margin:0;padding:10px 13px;gap:3px;align-items:flex-start;border-radius:14px;font-size:11px;line-height:1.4;box-shadow:0 0 12px #31caf010}
+.learning-path-cord-control .pull-art-caption strong{font-size:15px;line-height:1.3}
+@media(max-width:600px){.learning-path-cord-control .pull-art-caption{left:calc(50% + 35px);bottom:100px;width:132px;padding:9px 10px;font-size:10px}.learning-path-cord-control .pull-art-caption strong{font-size:13px}}
+@media(max-width:360px){.learning-path-cord-control .pull-art-caption{left:calc(50% + 20px);width:110px}}
+
+/* Quieter FAQ atmosphere; preserve the laptop robot and contour layer. */
+#questions .finish-atmosphere--clarity .faq-network-steady{opacity:.3;filter:brightness(.7) contrast(.9)}
+
+/* Screen 5 row polish, retaining the shared ink/pearl reveal. */
+#programs .pathway-title-link{transition:background-color 250ms ease,box-shadow 250ms ease}
+#programs .pathway-title-link>svg{transition:transform 250ms ease}
+#programs .pathway-title-link:focus-visible{background:#e4f5f8;box-shadow:inset 2px 0 #76bfce;outline:2px solid #3d8799;outline-offset:-2px}
+#programs .pathway-title-link:focus-visible>svg{transform:translate(3px,-3px)}
+@media(hover:hover) and (pointer:fine){#programs .pathway-title-link:hover{background:#e4f5f8;box-shadow:inset 2px 0 #76bfce}#programs .pathway-title-link:hover>svg{transform:translate(3px,-3px)}}
+#programs .pathway-row-title{min-width:0;flex:1}
+#programs .pathway-upcoming-badge{display:inline-block;vertical-align:middle;margin-left:12px;padding:3px 7px;border-radius:6px;border:1px solid #bddbe3;background:#e8f4f7;color:#315b68;font-size:10px;font-weight:600;line-height:1.4;white-space:nowrap}
+.shared-landing-layout #programs .section-heading>div{box-shadow:0 0 0 12px #18191cf2,0 0 0 13px #79d7e322,0 8px 28px #9878dc12,inset 0 0 0 1px #b6a2ec12}
+@media(max-width:600px){#programs .pathway-upcoming-badge{margin-left:0;margin-top:6px;display:table}}
+@media(prefers-reduced-motion:reduce){#programs .pathway-title-link,#programs .pathway-title-link>svg{transition:none!important}#programs .pathway-title-link>svg{transform:none!important}}

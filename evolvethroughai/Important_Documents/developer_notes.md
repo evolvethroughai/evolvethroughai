@@ -295,17 +295,17 @@ Started the owner-requested screen-by-screen workflow. Fixed mobile-menu Escape/
 
 Integrated the owner-approved circuit-ribbon SVG lockups through a shared BrandLogo component. Replaced the old footer display wordmark with the brand tagline and symbol. Added SVG/ICO/Apple icons, browser web manifest and a rendered 1200Ã—630 social card. Kept prior asset approval previews as history. No unrelated sections redesigned; no deployment or Git push. Validation results are recorded in design-review/brand-integration/REPORT.md.
 
-## 26 October 2026 — logo-led website theme
+## 26 October 2026 ï¿½ logo-led website theme
 
-Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blue–violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
+Owner clarified that asset integration alone was insufficient and authorized carrying the ribbon brand into the full website. Implemented midnight dark mode by default, persistent accessible light/dark toggle, theme-aware SVG header logos, Inter headings/body, blueï¿½violet gradient actions, cyan/violet heading accents, atmospheric section surfaces, branded engineering selection states and a gradient footer. Added a decorative ribbon/circuit trace with terminal node in the hero and the approved symbol at the lifecycle center. The circuit draws once and is static under reduced motion; native scrolling and existing content are preserved. No external libraries added, no deployment.
 
 Evidence: design-review/brand-theme/qa.json and dark/light screenshots. Both themes checked at 320, 390, 640, 768, 1024 and 1440px: no horizontal overflow or header overlap. Desktop axe WCAG A/AA scans in each theme: zero reported violations after contrast repairs. Theme survives reload. Mobile navigation, enquiry open/Escape close, curriculum download and normal/reduced circuit motion passed. TypeScript and production build passed. Automated checks do not replace owner visual approval. Earlier Sora typography and light-only implementation notes are historical; the current heading font is Inter.
 
-## 26 October 2026 — homepage premium refinement for review
+## 26 October 2026 ï¿½ homepage premium refinement for review
 
 Owner requested refinement of the existing homepage, preserving the logo/headline/architecture. Replaced floating hero labels and cropped overlay with a connected, keyboard-operable engineering journey and illustrative workflows. Refined header, CTA hierarchy and audience transition; removed decorative hero ribbon and image drift. Both themes checked at six widths; all stage panels stable, CTA/stage/audience targets verified, zero desktop axe violations, no console errors. Homepage approval is pending. No other pages or deployment. Evidence: design-review/homepage-premium/REPORT.md and qa.json. This supersedes prior hero composition notes, not the approved brand identity.
 
-## 26 October 2026 — immersive direction, milestone 01
+## 26 October 2026 ï¿½ immersive direction, milestone 01
 
 Owner authorized a premium human-centred direction and bounded first implementation: hero plus first audience-pathway transition. This direction is recorded; final visual approval is still pending. See [section plan](docs/IMMERSIVE_DESIGN_PLAN.md) for reviewed references, licensing limits and later section proposals.
 
@@ -317,11 +317,11 @@ Verification: TypeScript and production build passed. Dark/light at 320, 390, 64
 
 STOP GATE: obtain owner visual approval of milestone 01 before implementing the DevOps infinity lifecycle, DevOps-to-AI progression, projects, curriculum or other pages. No deployment authorized or performed.
 
-## 26 October 2026 — reusable EvolveIcon pulse
+## 26 October 2026 ï¿½ reusable EvolveIcon pulse
 
 Owner requested removal of the static circuit trace and a 2.8s repeating pulse ending at the fixed dot. Implemented EvolveIcon.tsx/CSS with useId-scoped defs, animated prop, SVG accessibility props and reduced-motion fallback. Integrated standalone footer symbol; official static lockups and favicons preserved. Build/TypeScript and timed Chrome checks passed. Usage/evidence: design-review/evolve-icon-pulse/README.md. No deployment.
 
-## 26 October 2026 — pulse visibility correction
+## 26 October 2026 ï¿½ pulse visibility correction
 
 Previous animated instance was limited to the small footer signoff. Integrated EvolveIcon into shared header/footer wordmarks using original outlined lettering-only SVG derivatives, preserving exact placement and AI gradient. Lengthened pulse and increased core/halo/terminal flare visibility. Checked 320/390/768/1440px: animation present, arrival flare visible, no overflow; reduced motion disables it. TypeScript/build passed. Original full logo SVG masters preserved. Header screenshot: design-review/evolve-icon-pulse/header-preview.png. No deployment.
 
@@ -422,3 +422,13 @@ TypeScript/build passed. Chrome 320/390/768/1440: no overflow, fixed positioning
 ## 8 November 2026 - documentation reconciliation
 
 Current source, latest owner feedback, image assets, removed spotlight experiments, header/cards and robot framing are reconciled in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). This is the current implementation reference; earlier design trials remain historical. No deployment or Git push.
+
+
+## 9 November 2026 - current design handover
+
+Reconciled five-screen layout, media swaps, spacing, edge blending, pearl pathway catalogue and premium pull-cord interaction in [Current website handover](docs/CURRENT_WEBSITE_HANDOVER.md). Earlier tests/trials are historical; no final approval or deployment implied. TypeScript/build passed; new interaction still needs full touch/keyboard/browser QA.
+
+
+## 20 November 2026 â€” reviewed current website
+
+Updated the [current handover](docs/CURRENT_WEBSITE_HANDOVER.md) with all nine screens, higher-quality robot/puzzle media, cached continuous contours, current Lenis/native-touch/reduced-motion behavior and continuous first-two-robot playback. Latest responsive review covered six routes at four widths with no observed overflow, broken loaded images or JavaScript errors. Repaired lower-screen gradient-heading and footer-link contrast; TypeScript/build passed. Evidence: [overall review](../design-review/overall-review-2026-11-20/REPORT.md). Local scroll timing is device-dependent; final visual/publication approval and launch verification remain open. No deployment or push.

@@ -1,11 +1,9 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { HeroBackground } from './Hero';
-import { useReducedMotion } from 'motion/react';
-import TopoBackground from './kokonutui/topo-background';
 
 /** One background plane behind the public header and first screen. */
 export function Layout({ children }: { children: ReactNode }) {
-  const reduced = useReducedMotion();
+
   const root = useRef<HTMLDivElement>(null);
   const pathway = new URLSearchParams(location.search).get('pathway');
   useEffect(() => {
@@ -29,7 +27,7 @@ export function Layout({ children }: { children: ReactNode }) {
     {pathway === null && <div className="shared-landing-background hero-topo-unified hero-intelligent" aria-hidden="true"><HeroBackground /></div>}
     {children}
     <div className="site-continuous-topo" aria-hidden="true">
-      <TopoBackground interval={0.17} speed={reduced ? 0 : 0.12} seed={26} labels={false} interactive={false}>{null}</TopoBackground>
+      
     </div>
   </div>;
 }

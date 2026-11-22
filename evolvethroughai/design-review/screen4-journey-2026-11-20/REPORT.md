@@ -1,0 +1,5 @@
+
+### Screen 4 — audience journey refinement, 20 November 2026
+Retained headline, original background media, section location, parent-controlled audience selection and pull-thread slot/navigation. Replaced the long numbered detail timeline with three compact milestones and owner-supplied captions. Audience cards use cyan for professionals and violet for freshers, with visible selected/focus states and a 2px desktop hover lift. A connecting trail runs once per selection over 800ms; milestone icons illuminate sequentially within that interval. Reduced motion displays the complete static journey. Small screens use vertical milestones. No new dependencies/assets or backend changes.
+
+Checked 320/390/768/1440px: no horizontal overflow or page errors; correct captions/milestones, keyboard selection, unchanged pull-thread slot, no measured section-height change between selections. TypeScript/build passed. Evidence: design-review/screen4-journey-2026-11-20/. Visual approval remains open.
