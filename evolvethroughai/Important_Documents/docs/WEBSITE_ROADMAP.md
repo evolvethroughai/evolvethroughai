@@ -527,3 +527,6 @@ Owner requested Login back beside Enquire. Restored existing Firebase AccountBut
 
 ### Hero card destinations — guided introduction flow
 Owner accepted the guided flow: Explore Learning Paths now links to Screen 2 (#engineering-journey); Explore Digital Solutions links to Screen 3 (#business-introduction). Their onward actions retain #path and #solutions respectively. Only card hrefs changed; headline, layout, assets and animation remain unchanged. TypeScript/build passed.
+
+21 November 2026: owner-approved lower-homepage consolidation implemented. Fees/budget enquiry retained on Masterclass only; homepage business workflow reduced to one CTA, followed by quieter FAQs and closing/footer. Repaired explicit Masterclass section navigation. Desktop/mobile checks and lint/build passed; see CURRENT_WEBSITE_HANDOVER.md for current composition and evidence. No deployment.
+

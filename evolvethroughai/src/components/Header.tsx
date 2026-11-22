@@ -8,7 +8,7 @@ interface HeaderProps { onEnquire: () => void; }
 interface NavigationItem { label: string; href: string; }
 const navigation: readonly NavigationItem[] = [
   { label: 'Programs', href: '#programs' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'Projects', href: '?pathway=masterclass#projects' },
   { label: 'Solutions', href: '#solutions' },
   { label: 'About', href: '#about' },
 ];

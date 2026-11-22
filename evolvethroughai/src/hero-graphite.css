@@ -752,7 +752,7 @@ html{scroll-padding-top:72px;scrollbar-gutter:stable}
 
 /* One top-down front drives both the white surface and the colour film. */
 @property --pour-front{syntax:'<length>';inherits:true;initial-value:0px}
-#programs:has(video[data-started=true]){animation:unified-colour-front 1.2s linear both}
+#programs:has(video[data-started=true]){animation:unified-colour-front .45s linear both}
 @keyframes unified-colour-front{from{--pour-front:0px}to{--pour-front:var(--pour-height,1200px)}}
 #programs:has(video[data-started=true]) .learning-route-video-media{clip-path:inset(0 0 max(0px,calc(100% - var(--pour-front))) 0)}
 .shared-landing-layout #programs:has(video[data-started=true]) .program-list{background:linear-gradient(to bottom,#f4f5f8ed 0px,#f4f5f8ed max(0px,calc(var(--pour-front) - var(--list-offset))),#202126 max(0px,calc(var(--pour-front) - var(--list-offset))),#202126 100%)!important}
@@ -770,3 +770,18 @@ html{scroll-padding-top:72px;scrollbar-gutter:stable}
 .learning-path-cord-control .pull-art-caption strong{font-size:15px;line-height:1.3}
 @media(max-width:600px){.learning-path-cord-control .pull-art-caption{left:calc(50% + 35px);bottom:100px;width:132px;padding:9px 10px;font-size:10px}.learning-path-cord-control .pull-art-caption strong{font-size:13px}}
 @media(max-width:360px){.learning-path-cord-control .pull-art-caption{left:calc(50% + 20px);width:110px}}
+
+/* Quieter FAQ atmosphere; preserve the laptop robot and contour layer. */
+#questions .finish-atmosphere--clarity .faq-network-steady{opacity:.3;filter:brightness(.7) contrast(.9)}
+
+/* Screen 5 row polish, retaining the shared ink/pearl reveal. */
+#programs .pathway-title-link{transition:background-color 250ms ease,box-shadow 250ms ease}
+#programs .pathway-title-link>svg{transition:transform 250ms ease}
+#programs .pathway-title-link:focus-visible{background:#e4f5f8;box-shadow:inset 2px 0 #76bfce;outline:2px solid #3d8799;outline-offset:-2px}
+#programs .pathway-title-link:focus-visible>svg{transform:translate(3px,-3px)}
+@media(hover:hover) and (pointer:fine){#programs .pathway-title-link:hover{background:#e4f5f8;box-shadow:inset 2px 0 #76bfce}#programs .pathway-title-link:hover>svg{transform:translate(3px,-3px)}}
+#programs .pathway-row-title{min-width:0;flex:1}
+#programs .pathway-upcoming-badge{display:inline-block;vertical-align:middle;margin-left:12px;padding:3px 7px;border-radius:6px;border:1px solid #bddbe3;background:#e8f4f7;color:#315b68;font-size:10px;font-weight:600;line-height:1.4;white-space:nowrap}
+.shared-landing-layout #programs .section-heading>div{box-shadow:0 0 0 12px #18191cf2,0 0 0 13px #79d7e322,0 8px 28px #9878dc12,inset 0 0 0 1px #b6a2ec12}
+@media(max-width:600px){#programs .pathway-upcoming-badge{margin-left:0;margin-top:6px;display:table}}
+@media(prefers-reduced-motion:reduce){#programs .pathway-title-link,#programs .pathway-title-link>svg{transition:none!important}#programs .pathway-title-link>svg{transform:none!important}}

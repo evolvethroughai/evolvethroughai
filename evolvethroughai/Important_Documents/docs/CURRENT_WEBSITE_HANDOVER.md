@@ -205,3 +205,23 @@ Owner correction, 21 November: supersedes during-drag playback and extra landing
 
 21 November: centered rope control retained; pull instruction caption made compact and positioned beside the robot with narrow-mobile sizing. Text and drag interaction preserved. Lint/build and desktop/mobile activation checks passed.
 
+
+### 21 November 2026 — approved lower-homepage streamlining
+Owner approved the review recommendation. Homepage now continues from the five learning pathways to the compact Business Solutions workflow, FAQs, then closing conversation/footer. The former Screen 7 fees/budget/enquiry section is retained on the Masterclass route only. Business Solutions retains its globe artwork, intro, four-step concept workflow and one business enquiry button; removed repeated service cards (already covered in Screen 3) and duplicate closing CTA. FAQ network image opacity reduced from .5 to .3; robot, answers and controls preserved. Header Projects and footer curriculum/projects/lifecycle/fees links explicitly target Masterclass query routes with section hashes.
+
+Checked 1440px desktop and 390px mobile: no horizontal overflow or page errors; FAQ topic/accordion controls work; all four revised footer destinations exist; learning enquiry is absent from homepage and present on Masterclass. Business Solutions height reduced from 918px to 562px desktop, and 2086px to 1065px mobile in the same viewport checks. Lint/TypeScript and production build passed. No changes to hero, robot/rope, ink reveal, authentication/backend or media assets. No dependencies or deployment. Evidence: design-review/lower-homepage-2026-11-21/.
+
+21 November — owner requested faster Screen 5 activation: white/video reveal now begins at pull release alongside scrolling, rather than on scroll completion. Unified wipe shortened from 1.2s to 450ms with matching row contrast timing. Measured local release-to-visible-state delay 79.5ms; video playing and white front advancing during scroll. Desktop/mobile refresh still restores charcoal and paused zero-time film; landing unchanged. Lint/build passed.
+
+
+21 November — Screen 5 polish only: updated supporting copy; 250ms pale-cyan row hover/focus with 2px left accent and 3px diagonal arrow movement; subtle cyan/violet headline-panel outline/shadow. Coming Soon appears only for existing IN DEVELOPMENT (AWS) and FUTURE PATHWAY (FDE/Applied AI) statuses. Titles, destinations, white-panel contrast, ink/robot timing and background preserved. Checked 320/390/768/1440px, keyboard navigation/focus, reduced motion and no overflow/page errors. Lint/build passed.
+
+
+### Lower-screen interaction polish — 21 November 2026
+Screens 6–9 only: Business Solutions retains its globe, heading and workflow layout; four steps receive restrained cyan hover feedback and a one-time scroll-triggered connector trail. Main card receives a gentle border/glow highlight. CTA is Discuss Your Project, opening the existing business enquiry dialog directly. No auth/backend changes; existing Google sign-in remains necessary to send a saved enquiry.
+
+FAQ uses semantic question buttons with aria-expanded/controls, one open answer, 250ms grid expansion/collapse, cyan active accent and animated plus-to-minus. Topic changes reset the open answer. Added Still have a question? Ask us through the existing enquiry context. Robot, background, heading and question/answer copy preserved.
+
+Closing CTA is Let's Build Something, using the existing enquiry callback, a single 450ms light sweep and 3px diagonal arrow motion on hover/focus. Footer directory spacing, 44px targets, cyan link feedback and mobile alignment refined. Logo, large Learn. Build. Evolve. signature and human/AI artwork retained. Homepage anchors are explicit for Find your starting point and Back to top; existing Masterclass section routes retained; no legal pages invented.
+
+Changed source: BusinessSolutions.tsx, BusinessSolutions.css, SiteFAQ.tsx, SiteActions.tsx, SiteFinish.css. No new packages/assets. App.tsx, Hero.tsx, EngineeringJourney.tsx, LearningPathSection.tsx and SmoothScroll.tsx hashes match pre-edit values, preserving Screens 1–5. Verified 320/390/768/1440px, no horizontal overflow or browser errors, keyboard FAQ open/close, one-open state, enquiry dialogs and footer targets. Reduced motion displays static connectors and instant FAQ changes, with no CTA sweep/arrow movement. Lint/TypeScript and production build passed. Evidence: design-review/lower-screen-interactions/. Visual approval and deployment remain separate.

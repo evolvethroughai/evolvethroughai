@@ -1,0 +1,9 @@
+
+### Lower-screen interaction polish — 21 November 2026
+Screens 6–9 only: Business Solutions retains its globe, heading and workflow layout; four steps receive restrained cyan hover feedback and a one-time scroll-triggered connector trail. Main card receives a gentle border/glow highlight. CTA is Discuss Your Project, opening the existing business enquiry dialog directly. No auth/backend changes; existing Google sign-in remains necessary to send a saved enquiry.
+
+FAQ uses semantic question buttons with aria-expanded/controls, one open answer, 250ms grid expansion/collapse, cyan active accent and animated plus-to-minus. Topic changes reset the open answer. Added Still have a question? Ask us through the existing enquiry context. Robot, background, heading and question/answer copy preserved.
+
+Closing CTA is Let's Build Something, using the existing enquiry callback, a single 450ms light sweep and 3px diagonal arrow motion on hover/focus. Footer directory spacing, 44px targets, cyan link feedback and mobile alignment refined. Logo, large Learn. Build. Evolve. signature and human/AI artwork retained. Homepage anchors are explicit for Find your starting point and Back to top; existing Masterclass section routes retained; no legal pages invented.
+
+Changed source: BusinessSolutions.tsx, BusinessSolutions.css, SiteFAQ.tsx, SiteActions.tsx, SiteFinish.css. No new packages/assets. App.tsx, Hero.tsx, EngineeringJourney.tsx, LearningPathSection.tsx and SmoothScroll.tsx hashes match pre-edit values, preserving Screens 1–5. Verified 320/390/768/1440px, no horizontal overflow or browser errors, keyboard FAQ open/close, one-open state, enquiry dialogs and footer targets. Reduced motion displays static connectors and instant FAQ changes, with no CTA sweep/arrow movement. Lint/TypeScript and production build passed. Evidence: design-review/lower-screen-interactions/. Visual approval and deployment remain separate.
