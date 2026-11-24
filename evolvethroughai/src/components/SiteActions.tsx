@@ -1,15 +1,49 @@
-import { FinishAtmosphere } from './FinishAtmosphere';
-import { EvolveIcon } from './EvolveIcon';
-import type { ReactNode } from 'react';
-import { ArrowUp, ArrowUpRight, Sparkles } from 'lucide-react';
-import { useAccount } from '../auth/ConversationAccess';
+import { useEffect, useRef, type ReactNode, type PointerEvent } from 'react';
+import { ArrowUp, ArrowUpRight } from 'lucide-react';
+import './FooterFinale.css';
 
 export function SiteFooter({ onEnquire, brand }: { onEnquire: () => void; brand: ReactNode }) {
-  const { user } = useAccount();
-  return <footer className="site-footer finish-motion-section" id="footer"><FinishAtmosphere kind="closing" /><div className="container">
-    <div className="footer-invitation"><div><div className="eyebrow"><Sparkles size={15} aria-hidden="true" /> YOUR NEXT CHAPTER</div><h2>Good things start<br />with <em>building.</em></h2><p>Bring your curiosity. We’ll help you explore your next step.</p><div className="footer-invitation-actions"><button className="button footer-primary" onClick={onEnquire}>Let's Build Something <ArrowUpRight size={20} aria-hidden="true" /></button></div></div></div>
-    <div className="footer-directory"><div className="footer-brand" id="about">{brand}<p>Practical engineering education.<br />AI-powered business solutions.</p><span className="footer-brand-tagline">Technology · Innovation · Solutions</span></div><nav className="footer-column" aria-label="Learning links"><span className="mini-label">LEARN & BUILD</span><a href="?pathway=masterclass">The masterclass <ArrowUpRight size={13} aria-hidden="true" /></a><a href="?pathway=masterclass#curriculum">All 18 modules <ArrowUpRight size={13} aria-hidden="true" /></a><a href="?pathway=masterclass#projects">Projects & capstone <ArrowUpRight size={13} aria-hidden="true" /></a><a href="./#path">Find your starting point <ArrowUpRight size={13} aria-hidden="true" /></a></nav><nav className="footer-column" aria-label="Company links"><span className="mini-label">KEEP EVOLVING</span><a href="?pathway=masterclass#experience">The engineering lifecycle <ArrowUpRight size={13} aria-hidden="true" /></a><a href="#about">Our story <ArrowUpRight size={13} aria-hidden="true" /></a><a href="?pathway=masterclass#enquire">Fees & program enquiries <ArrowUpRight size={13} aria-hidden="true" /></a><button onClick={onEnquire}>{user ? 'Start a conversation' : 'Login to start a conversation'} <ArrowUpRight size={13} aria-hidden="true" /></button></nav></div>
-    <div className="footer-signature brand-signoff"><span>Learn. Build. Evolve.</span><EvolveIcon className="footer-evolve-icon" animated aria-hidden="true" /></div>
-    <div className="footer-end"><span>© {new Date().getFullYear()} Evolve Through AI</span><span>Learn. Build. Evolve.</span><a href="./#home">Back to top <ArrowUp size={15} aria-hidden="true" /></a></div>
-  </div></footer>;
+  const root = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const node = root.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { node.dataset.visible = 'true'; observer.disconnect(); }
+    }, {threshold:.08});
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+  const parallax = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType !== 'mouse' || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const node=event.currentTarget, box=node.getBoundingClientRect();
+    node.style.setProperty('--scene-x', ((event.clientX-box.left)/box.width-.5)*5+'px');
+    node.style.setProperty('--scene-y', ((event.clientY-box.top)/box.height-.5)*4+'px');
+  };
+  const magnet = (event: PointerEvent<HTMLButtonElement>) => {
+    if (event.pointerType !== 'mouse' || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const node=event.currentTarget, box=node.getBoundingClientRect();
+    node.style.setProperty('--magnet-x', ((event.clientX-box.left)/box.width-.5)*5+'px');
+    node.style.setProperty('--magnet-y', ((event.clientY-box.top)/box.height-.5)*4+'px');
+  };
+  return <footer ref={root} id="footer" className="footer-finale">
+    <div className="container">
+      <div className="finale-scene" onPointerMove={parallax} onPointerLeave={event=>{event.currentTarget.style.setProperty('--scene-x','0px');event.currentTarget.style.setProperty('--scene-y','0px');}}>
+        <div className="finale-art" aria-hidden="true"><img src="/images/footer-human-ai-hands.jpg" alt="" loading="lazy" decoding="async"/><div className="finale-contact"><i/><i/><span/><span/><span/></div></div>
+        <div className="finale-copy"><span className="finale-eyebrow"><i/>THE FUTURE STARTS WITH YOU</span>
+          <h2>Human ambition.<br/>Intelligent technology.<br/><em>Limitless possibilities.</em></h2>
+          <p>Whether you're shaping your career or reimagining your business, let's build something meaningful together.</p>
+          <button type="button" className="finale-cta" onClick={onEnquire} onPointerMove={magnet} onPointerLeave={event=>{event.currentTarget.style.setProperty('--magnet-x','0px');event.currentTarget.style.setProperty('--magnet-y','0px');}}><span>Let's Build the Future</span><i><ArrowUpRight size={21} aria-hidden="true"/></i></button>
+          <div className="finale-path-links"><a href="./#programs">Explore learning <ArrowUpRight size={14} aria-hidden="true"/></a><a href="./#solutions">Discover digital solutions <ArrowUpRight size={14} aria-hidden="true"/></a></div>
+        </div>
+      </div>
+      <div className="finale-directory">
+        <div className="finale-brand" id="about">{brand}<p>Practical engineering education.<br/>AI-powered business solutions.</p><small>Technology · Innovation · Solutions</small></div>
+        <nav aria-label="Learning and careers"><h3>Learning &amp; Careers</h3><a href="?pathway=masterclass">The masterclass</a><a href="?pathway=masterclass#curriculum">All 18 modules</a><a href="?pathway=masterclass#projects">Projects &amp; capstone</a><a href="./#path">Find your starting point</a></nav>
+        <nav aria-label="Digital solutions"><h3>Digital Solutions</h3><a href="./#solutions">Websites &amp; applications</a><a href="./#solutions">AI agents &amp; assistants</a><a href="./#solutions">Business automation</a><a href="./#solutions">Digital growth systems</a></nav>
+        <nav aria-label="Explore and connect"><h3>Explore &amp; Connect</h3><a href="?pathway=masterclass#experience">Engineering lifecycle</a><a href="#about">Our story</a><a href="?pathway=masterclass#enquire">Fees &amp; program enquiries</a><button type="button" onClick={onEnquire}>Start a conversation <ArrowUpRight size={13} aria-hidden="true"/></button></nav>
+      </div>
+      <div className="finale-signature" aria-label="Learn. Build. Evolve."><span>Learn.</span> <span>Build.</span> <span>Evolve.</span></div>
+      <div className="finale-end"><span>© {new Date().getFullYear()} Evolve Through AI</span><a href="./#home">Back to top <ArrowUp size={14} aria-hidden="true"/></a></div>
+    </div>
+  </footer>;
 }

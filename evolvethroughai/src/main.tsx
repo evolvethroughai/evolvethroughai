@@ -30,3 +30,5 @@ import './royal-green-theme.css';
 import './hero-robot-video.css';
 
 import './hero-graphite.css';
+
+import './solutions-showcase.css';

@@ -1,0 +1,49 @@
+#footer.footer-finale{position:relative;isolation:isolate;padding:20px 0 18px;color:#eef3fa;scroll-margin-top:80px}
+#footer .finale-scene{position:relative;isolation:isolate;min-height:360px;display:flex;align-items:center;padding:25px 0 30px;--scene-x:0px;--scene-y:0px}
+#footer .finale-art{position:absolute;right:-3%;top:0;width:68%;height:100%;z-index:-1;pointer-events:none;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 25%,#000 83%,transparent);transform:translate(var(--scene-x),var(--scene-y));transition:transform .5s ease-out}
+#footer .finale-art img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:center;border:0;outline:0;box-shadow:none;mask-image:linear-gradient(transparent,#000 20%,#000 78%,transparent);filter:none}
+#footer .finale-art::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#18191c 0%,#18191c22 35%,transparent 60%),linear-gradient(0deg,#18191c,transparent 24%,transparent 75%,#18191c)}
+#footer .finale-copy{max-width:58%;position:relative;z-index:2}
+#footer .finale-eyebrow{display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.18em;font-weight:600;color:#bed8eb}
+#footer .finale-eyebrow i{width:5px;height:5px;border-radius:50%;background:#93e9f4;box-shadow:0 0 10px #7ae2ed;animation:finale-dot 6s ease-in-out infinite}
+#footer .finale-copy h2{font-size:clamp(31px,3.5vw,51px);line-height:1.08;letter-spacing:-.045em;margin:17px 0;color:#f1f3f8}
+#footer .finale-copy h2 em{font-style:normal;background:linear-gradient(100deg,#a8dcff,#89e4ec,#bea4ee);background-clip:text;-webkit-background-clip:text;color:transparent}
+#footer .finale-copy>p{font-size:13px;line-height:1.8;color:#c5d3e4;max-width:430px;margin:0 0 20px}
+#footer .finale-cta{--magnet-x:0px;--magnet-y:0px;position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:space-between;gap:35px;padding:8px 9px 8px 23px;min-height:52px;border:1px solid transparent;border-radius:99px;background:linear-gradient(#16222bee,#16222bee) padding-box,linear-gradient(110deg,#82e3ee88,#b88df288) border-box;color:#eff8ff;box-shadow:0 0 24px #68d6ec12;font-size:14px;font-weight:600;overflow:hidden;transform:translate(var(--magnet-x),var(--magnet-y));transition:transform .3s,box-shadow .3s}
+#footer .finale-cta::before{content:'';position:absolute;inset:-50%;z-index:-1;background:linear-gradient(115deg,transparent 38%,#c3f2ff18 49%,transparent 60%);transform:translateX(-100%);pointer-events:none}
+#footer .finale-cta i{width:35px;height:35px;border:1px solid #a2d7e766;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#45819855,#7662b855);transition:transform .3s}
+#footer .finale-cta:active{transform:scale(.98)}
+#footer .finale-path-links{display:flex;flex-wrap:wrap;gap:20px;margin-top:15px}
+#footer .finale-path-links a{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#b9cde3}
+#footer .finale-contact{position:absolute;left:43%;top:50%;width:8px;height:8px;border-radius:50%;background:#d6ffff;box-shadow:0 0 13px #99f3ff,0 0 35px #59d8f799;z-index:1;opacity:.6;transition:opacity .4s}
+#footer .finale-contact i{position:absolute;inset:-9px;border:1px solid #b2faff55;border-radius:50%;animation:finale-ring 5s ease-out infinite}
+#footer .finale-contact i:nth-child(2){animation-delay:2.5s}
+#footer .finale-contact span{position:absolute;width:2px;height:2px;background:#c6faff;border-radius:50%;animation:finale-particle 6s ease-out infinite;--px:30px;--py:-15px}
+#footer .finale-contact span:nth-of-type(2){--px:-20px;--py:-25px;animation-delay:2s}#footer .finale-contact span:nth-of-type(3){--px:25px;--py:20px;animation-delay:4s}
+#footer .finale-scene:has(.finale-cta:hover) .finale-contact{opacity:1;box-shadow:0 0 18px #b8faff,0 0 45px #68dcf7aa}
+#footer .finale-directory{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:clamp(20px,4vw,60px);padding:20px 0 12px}
+#footer .finale-brand .brand-logo{max-width:190px}
+#footer .finale-brand p{font-size:12px;line-height:1.8;color:#aebfd4;margin:12px 0 7px}
+#footer .finale-brand small{font-size:9px;letter-spacing:.07em;color:#9db2ce}
+#footer .finale-directory nav{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+#footer .finale-directory h3{font-size:9px;line-height:1.5;text-transform:uppercase;letter-spacing:.13em;color:#b1d3eb;margin:0 0 5px}
+#footer .finale-directory nav :is(a,button){position:relative;display:inline-flex;gap:7px;align-items:center;text-align:left;font-size:11px;line-height:1.6;color:#b9c7d9;background:none;border:0;padding:0;transition:color .25s,transform .25s}
+#footer .finale-directory nav a::after{content:'↗';opacity:0;transform:translate(-4px,2px);transition:opacity .25s,transform .25s}
+#footer .finale-signature{position:relative;display:flex;justify-content:space-between;gap:.2em;max-width:100%;font-size:clamp(42px,7.6vw,112px);line-height:1.1;font-weight:650;letter-spacing:-.055em;margin:20px 0 15px;isolation:isolate}
+#footer .finale-signature span:nth-child(1){color:#edf1f7}#footer .finale-signature span:nth-child(2){color:#7ebdfa}#footer .finale-signature span:nth-child(3){color:#b5a0e4}
+#footer .finale-signature::after{content:'';position:absolute;inset:75% 0 -10px;z-index:-1;background:linear-gradient(90deg,#edf1f707,#7ebdfa09,#b5a0e409);filter:blur(14px);border-radius:50%}
+#footer[data-visible=true] .finale-signature span{animation:finale-word .7s both}#footer[data-visible=true] .finale-signature span:nth-child(2){animation-delay:.15s}#footer[data-visible=true] .finale-signature span:nth-child(3){animation-delay:.3s}
+#footer .finale-end{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#a5b5c9;padding-top:5px}
+#footer .finale-end a{display:flex;align-items:center;gap:8px;color:inherit}
+#footer.footer-finale :is(a,button):focus-visible{outline:2px solid #9ee9f3;outline-offset:5px}
+@media(hover:hover){#footer .finale-cta:hover{box-shadow:0 0 28px #7adcec24}#footer .finale-cta:hover::before{animation:finale-sweep .65s ease-out}#footer .finale-cta:hover i{transform:translate(2px,-2px)}#footer .finale-directory nav :is(a,button):hover,#footer .finale-path-links a:hover{color:#a0e7f1;text-decoration:underline;text-underline-offset:4px}#footer .finale-directory nav a:hover::after{opacity:1;transform:none}}
+@keyframes finale-word{from{opacity:.3;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes finale-sweep{to{transform:translateX(100%)}}
+@keyframes finale-ring{0%{transform:scale(.5);opacity:0}20%{opacity:.4}85%,100%{transform:scale(2.4);opacity:0}}
+@keyframes finale-particle{0%,15%{transform:translate(0,0);opacity:0}25%{opacity:.6}85%,100%{transform:translate(var(--px),var(--py));opacity:0}}
+@keyframes finale-dot{0%,100%{opacity:.65}50%{opacity:1}}
+@media(max-width:900px){#footer .finale-copy{max-width:70%}#footer .finale-directory{grid-template-columns:1fr 1fr;gap:28px}#footer .finale-art{width:76%;right:-8%}}
+@media(max-width:600px){#footer .finale-scene{display:block;padding-top:24px;padding-bottom:150px;min-height:0}#footer .finale-copy{max-width:100%}#footer .finale-copy h2{font-size:clamp(30px,7.5vw,40px)}#footer .finale-art{width:100%;right:0;top:auto;bottom:-10px;height:240px;opacity:.85}#footer .finale-copy>p{max-width:100%}#footer .finale-path-links{gap:14px}#footer .finale-signature{font-size:clamp(30px,8vw,47px);margin-top:24px}#footer .finale-directory{gap:26px 18px}#footer .finale-directory nav :is(a,button){font-size:11px}#footer .finale-brand{grid-column:1/-1}#footer .finale-end{gap:15px;font-size:9px}}
+@media(prefers-reduced-motion:reduce){#footer.footer-finale *,#footer.footer-finale *::before,#footer.footer-finale *::after{animation:none!important;transition:none!important;transform:none!important}}
+#footer .finale-scene{overflow:clip;overflow-clip-margin:12px}
+@media(max-width:900px){#footer .finale-art{right:0;width:76%}}

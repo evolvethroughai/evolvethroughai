@@ -1,31 +1,127 @@
-import { FinishAtmosphere } from './FinishAtmosphere';
-import { useState } from 'react';
+import { useEffect, useRef, useState, type PointerEvent } from 'react';
+import { GraduationCap, Workflow, Search, ArrowUpRight, MessageCircle } from 'lucide-react';
 import { useAccount } from '../auth/ConversationAccess';
-import { ArrowUpRight } from 'lucide-react';
-import './SiteFinish.css';
-interface FAQItem { question:string; answer:string; }
-const learning:readonly FAQItem[]=[
-  {question:'Where should I start if I am new to engineering?',answer:'Start with Linux, networking, Git and scripting, then connect those foundations to cloud and delivery workflows. The early-career learning path helps you see the progression before choosing a program.'},
-  {question:'Can working professionals build on their existing skills?',answer:'Yes. Use the professional starting point to connect your development, infrastructure or operations experience to deeper cloud, automation and AI-assisted engineering. Confirm prerequisites for the pathway you choose.'},
-  {question:'Is the flagship DevOps training or a complete AI engineering course?',answer:'The flagship connects cloud, DevOps and AI-assisted engineering. Full LLM, RAG and agentic engineering require additional Python, API, retrieval and evaluation skills; those developing pathways are distinct from the flagship.'},
-  {question:'What will I build during the Masterclass?',answer:'The documented overview contains 18 modules, 14 hands-on project concepts and an integrated enterprise capstone. Explore the Masterclass page for the existing topics and projects, then request the original detailed syllabus and confirmed lab scope.'},
-  {question:'What are the fees, schedule and delivery format?',answer:'These details are not finalized on this website. Confirm fees, duration, scheduling, support, delivery format and cancellation terms before enrolling. An optional enquiry budget preference is not a course price.'},
-  {question:'Will I need to pay separately for cloud labs or tools?',answer:'Lab accounts, cloud credits, paid tools and responsibility for any usage charges must be confirmed for your chosen program. Do not assume that cloud usage or third-party subscriptions are included.'},
-  {question:'Are all pathways available, and is a job guaranteed?',answer:'The flagship is the launch focus. Availability and detailed scope vary across the other pathways, including developing AWS and applied AI material. No placement, salary or career outcome is guaranteed.'},
+import './FAQHelpCentre.css';
+interface FAQItem { question: string; answer: string; }
+const learning: FAQItem[] = [
+  {
+    "question": "I'm a fresher with no technical experience. Where should I start?",
+    "answer": "Start with engineering fundamentals such as Linux, networking, Git, scripting and cloud concepts. Progress through structured practical exercises before moving into DevOps, automation and real-world projects."
+  },
+  {
+    "question": "I'm already working in IT. How can these programmes help me grow?",
+    "answer": "Build on your existing experience by developing practical skills in cloud engineering, DevOps, infrastructure automation, Kubernetes, CI/CD and applied AI. Choose a pathway aligned with your current experience and career goals."
+  },
+  {
+    "question": "What makes your programmes different from traditional online courses?",
+    "answer": "Our approach focuses on understanding how technologies work together in real engineering environments. Learning is structured around practical implementation, connected workflows, troubleshooting and project-based experience rather than isolated tool demonstrations."
+  },
+  {
+    "question": "What real-world projects will I work on?",
+    "answer": "Depending on your programme, explore enterprise CI/CD pipelines, Terraform infrastructure, Azure and AWS cloud environments, Kubernetes deployments, GitOps, monitoring, security and AI-enabled engineering workflows."
+  },
+  {
+    "question": "What is Forward Deployed Engineering and Applied AI?",
+    "answer": "Forward Deployed Engineering combines software engineering, customer problem-solving, system integration and practical solution delivery. Applied AI extends these capabilities through intelligent applications, AI agents and automated workflows."
+  },
+  {
+    "question": "Will I receive career guidance and interview preparation?",
+    "answer": "Our career-focused learning direction includes resume improvement, technical interview preparation, mock interviews, portfolio development and communicating real-world project experience. Specific inclusions depend on your selected programme."
+  },
+  {
+    "question": "Are programmes live or recorded? What are the fees?",
+    "answer": "Our planned learning formats include recorded lessons and instructor-led sessions. Contact us to learn about current programme availability, schedules, delivery formats and pricing."
+  },
+  {
+    "question": "Do I need cloud subscriptions, and do you guarantee employment?",
+    "answer": "Some practical cloud exercises may require subscriptions or usage charges. We aim to explain these requirements before implementation. Our focus is building practical engineering skills and career readiness rather than guaranteeing employment or salary outcomes."
+  }
 ];
-const business:readonly FAQItem[]=[
-  {question:'What kinds of business problems can we discuss?',answer:'Websites, business applications, repetitive administration, enquiry follow-ups, document workflows and connections between existing tools are useful starting points. Describe what happens today and what you would like to improve.'},
-  {question:'Do I need to know which AI tool or technology to use?',answer:'No. Start with the problem, the people involved and the desired outcome. We can discuss whether a simpler integration, a custom application or an AI-assisted workflow is the right direction.'},
-  {question:'Can a solution work with our existing tools?',answer:'We can explore integration options after understanding your tools, available APIs, access permissions and data requirements. Compatibility and delivery scope need to be assessed before a commitment.'},
-  {question:'How are sensitive data and AI-generated outputs handled?',answer:'Data access, hosting, retention, permissions and human review requirements need to be agreed during scoping. Do not include passwords, credentials or confidential customer information in an initial enquiry.'},
-  {question:'Can you guarantee business growth or fully autonomous operations?',answer:'No. Outcomes depend on the business process, data quality, adoption and implementation. The aim is useful, measurable improvement, with appropriate review and exception handling rather than guaranteed growth or unchecked automation.'},
-  {question:'Do I need an account to start a conversation?',answer:'Yes. Sign in with Google before sending a learning or business enquiry. When account access is configured, enquiries are stored with your account email in our enquiry inbox. A confirmation appears only after the save succeeds. Sign-in and sending are unavailable while the Firebase connection is not configured.'},
+const business: FAQItem[] = [
+  {
+    "question": "What digital solutions can Evolve Through AI build for my business?",
+    "answer": "We work on professional websites, mobile applications, custom software, AI agents, intelligent chatbots, system integrations and business automation tailored to your operational requirements."
+  },
+  {
+    "question": "Can you build a complete website or mobile application from my idea?",
+    "answer": "Yes. We can help translate your business idea into a digital product through requirement discovery, experience design, development, integration and deployment planning."
+  },
+  {
+    "question": "Can AI automate repetitive tasks in my business?",
+    "answer": "AI and workflow automation can help streamline repetitive activities such as customer enquiries, appointment scheduling, lead follow-ups, reporting, document processing and internal operations."
+  },
+  {
+    "question": "Can you develop AI agents and intelligent chatbots?",
+    "answer": "We can design intelligent assistants and multi-step AI workflows that retrieve information, connect business applications, perform permitted actions and involve human approvals when necessary."
+  },
+  {
+    "question": "Can you help restaurants, cafés and small businesses become more digital?",
+    "answer": "Potential solutions include digital menus, booking systems, customer enquiry assistants, automated reminders, order-related notifications and customer engagement workflows, depending on business requirements."
+  },
+  {
+    "question": "Can AI help with social media, marketing and digital growth?",
+    "answer": "AI-assisted systems can support content planning, creation, publishing workflows, customer engagement and performance reporting. The objective is to improve operational efficiency and consistency without promising guaranteed growth."
+  },
+  {
+    "question": "Can you integrate AI with my existing software and business systems?",
+    "answer": "We assess your existing applications, APIs, data sources, access permissions and security requirements before designing an appropriate integration and automation solution."
+  },
+  {
+    "question": "How much does a digital solution cost, and how do we get started?",
+    "answer": "Every project begins with understanding your business problem, objectives and requirements. Based on the agreed scope, integrations and complexity, we propose an appropriate solution, estimated timeline and pricing."
+  }
 ];
-export function SiteFAQ(){
-  const [category,setCategory]=useState<'learning'|'business'>('learning');
-  const [openQuestion,setOpenQuestion]=useState<number|null>(null);
-  const {requestConversation}=useAccount();
-  const chooseCategory = (next:'learning'|'business') => { setCategory(next); setOpenQuestion(null); };
-  const questions=category==='learning'?learning:business;
-  return <section className="faq-section container section faq-refined finish-motion-section" id="questions" aria-labelledby="faq-heading"><FinishAtmosphere kind="clarity" /><div className="faq-refined-intro"><span className="faq-refined-label">A LITTLE CLARITY GOES A LONG WAY</span><h2 id="faq-heading">Good questions.<br /><em>Clear answers.</em></h2><p>Choose what brings you here. Get the practical details before taking your next step.</p><div className="faq-category" role="group" aria-label="Question topics"><button type="button" aria-pressed={category==='learning'} aria-controls="faq-answers" onClick={()=>chooseCategory('learning')}>Learning &amp; careers<span>07</span></button><button type="button" aria-pressed={category==='business'} aria-controls="faq-answers" onClick={()=>chooseCategory('business')}>Business solutions<span>06</span></button></div><a href={category==='learning'?'./#programs':'./#solutions'}>{category==='learning'?'Explore learning pathways':'Explore business solutions'}<ArrowUpRight size={16} aria-hidden="true" /></a><img className="faq-robot-laptop" src="/images/faq-robot-laptop-transparent.png" alt="" width="616" height="360" loading="lazy" decoding="async" /></div><div className="faq-list" id="faq-answers" key={category}>{questions.map((item,index)=>{const expanded=openQuestion===index;const id='faq-'+category+'-'+index;return <div className="faq-accordion-item" data-open={expanded} key={item.question}><button type="button" className="faq-question" id={id+'-question'} aria-expanded={expanded} aria-controls={id+'-answer'} onClick={()=>setOpenQuestion(expanded?null:index)}><span className="faq-item-number" aria-hidden="true">0{index+1}</span><span>{item.question}</span><span className="faq-toggle" aria-hidden="true" /></button><div className="faq-answer" id={id+'-answer'} role="region" aria-labelledby={id+'-question'} aria-hidden={!expanded} inert={!expanded}><div><p>{item.answer}</p></div></div></div>;})}<button type="button" className="faq-enquiry" onClick={()=>requestConversation({kind:category==='business'?'business':'learning',topic:'FAQ question'})}>Still have a question? <span>Ask us</span><ArrowUpRight size={15} aria-hidden="true" /></button></div></section>;
+export function SiteFAQ() {
+  const [category, setCategory] = useState<'learning' | 'business'>('learning');
+  const [open, setOpen] = useState<number | null>(null);
+  const [query, setQuery] = useState('');
+  const section = useRef<HTMLElement>(null);
+  const { requestConversation } = useAccount();
+  useEffect(() => {
+    const node = section.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { node.dataset.entered = 'true'; observer.disconnect(); }
+    }, { threshold: .08 });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+  const choose = (next: 'learning' | 'business') => { setCategory(next); setOpen(null); setQuery(''); };
+  const questions = (category === 'learning' ? learning : business).map((item,index) => ({...item,index})).filter(item => (item.question+' '+item.answer).toLowerCase().includes(query.toLowerCase().trim()));
+  const light = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType !== 'mouse' || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const node = event.currentTarget, box = node.getBoundingClientRect();
+    node.style.setProperty('--light-x', ((event.clientX-box.left)/box.width*100)+'%');
+    node.style.setProperty('--light-y', ((event.clientY-box.top)/box.height*100)+'%');
+  };
+  return <section ref={section} id="questions" className="faq-help-centre" data-category={category} aria-labelledby="faq-heading">
+    <div className="faq-neural" aria-hidden="true"><svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="currentColor" strokeWidth=".7"><path d="M0 170 180 90 340 240 510 100 740 220 980 80 1200 190M0 520 210 370 340 240 480 470 740 220 880 490 1200 390M0 710 210 370 390 690 480 470 710 710 880 490 1080 700 1200 390M180 90 210 370M510 100 480 470M980 80 880 490"/></g>{[[180,90],[340,240],[510,100],[740,220],[980,80],[210,370],[480,470],[880,490],[390,690],[710,710],[1080,700]].map(([cx,cy])=><circle key={cx} cx={cx} cy={cy} r="3" fill="currentColor"/>)}</svg></div>
+    <div className="container faq-help-layout">
+      <div className="faq-help-intro">
+        <span className="faq-help-eyebrow">LET'S CLEAR THINGS UP</span>
+        <h2 id="faq-heading">Good questions.<br/><em>Clear answers.</em></h2>
+        <p className="faq-help-subtitle">Whether you're building your career or transforming your business, find the answers that help you move forward.</p>
+        <div className="faq-help-categories" role="group" aria-label="Question categories">
+          <button type="button" aria-pressed={category==='learning'} onClick={()=>choose('learning')} aria-controls="faq-help-answers"><GraduationCap aria-hidden="true"/><span><strong>Learning &amp; Careers</strong><small>Build skills. Advance your career.</small></span><b>08<small>questions</small></b></button>
+          <button type="button" aria-pressed={category==='business'} onClick={()=>choose('business')} aria-controls="faq-help-answers"><Workflow aria-hidden="true"/><span><strong>Digital Solutions</strong><small>Build smarter. Grow your business.</small></span><b>08<small>questions</small></b></button>
+        </div>
+        <div className="faq-help-robot" key={category+'-'+open}>
+          <div className="faq-robot-bubble"><MessageCircle size={16} aria-hidden="true"/>{category==='learning'?'Your next step starts with a question.':"Let's make your business work smarter."}</div>
+          <span className="faq-hologram question-one" aria-hidden="true">?</span><span className="faq-hologram question-two" aria-hidden="true">?</span>
+          <img src="/images/faq-robot-laptop-transparent.png" width="616" height="360" loading="lazy" decoding="async" alt="Friendly AI robot working at a laptop"/>
+        </div>
+      </div>
+      <div className="faq-help-right">
+        <label className="faq-help-search"><Search size={18} aria-hidden="true"/><span className="faq-sr-only">Search questions in this category</span><input type="search" placeholder="Find your answer…" value={query} onChange={event=>{setQuery(event.target.value);setOpen(null);}}/></label>
+        <div id="faq-help-answers" className="faq-help-answers" key={category}>
+          {questions.map((item,order)=>{const expanded=open===item.index,id='help-'+category+'-'+item.index;return <div key={id} className="faq-help-card" data-open={expanded} style={{'--order':order} as React.CSSProperties} onPointerMove={light}>
+            <button type="button" id={id+'-question'} aria-expanded={expanded} aria-controls={id+'-answer'} onClick={()=>setOpen(expanded?null:item.index)}><span className="faq-help-number">0{item.index+1}</span><span>{item.question}</span><span className="faq-help-toggle" aria-hidden="true"/></button>
+            <div id={id+'-answer'} className="faq-help-answer" role="region" aria-labelledby={id+'-question'} aria-hidden={!expanded} inert={!expanded}><div><p>{item.answer}</p></div></div>
+          </div>;})}
+          {questions.length===0&&<div className="faq-help-empty" role="status"><Search aria-hidden="true"/><h3>No matching questions yet.</h3><p>Try a different word, or ask us directly below.</p><button type="button" onClick={()=>setQuery('')}>Clear search</button></div>}
+        </div>
+        <div className="faq-help-conversation"><div><h3>Every great journey begins with a conversation.</h3><p>Have a question we haven't answered? Let's explore what's possible together.</p></div><button type="button" onClick={()=>requestConversation({kind:category==='business'?'business':'learning',topic:'FAQ: '+(category==='business'?'Digital Solutions':'Learning & Careers')})}>Let's Talk<ArrowUpRight size={18} aria-hidden="true"/></button></div>
+      </div>
+    </div>
+  </section>;
 }

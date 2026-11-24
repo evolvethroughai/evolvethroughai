@@ -1,3 +1,4 @@
+import { AccountButton } from '../auth/ConversationAccess';
 import { SiteSearch } from './SiteSearch';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
@@ -46,7 +47,7 @@ export default function Header({ onEnquire }: HeaderProps) {
         <nav id="main-navigation" aria-label="Main navigation" className={`portal-navigation public-site-navigation${menuOpen ? ' is-open' : ''}`}>
           {navigation.map(item=><a key={item.label} href={new URLSearchParams(location.search).has('pathway') ? './'+item.href : item.href} onClick={()=>setMenuOpen(false)}><span className="nav-pill-label">{item.label}</span></a>)}
         </nav>
-        <div className="portal-controls">
+        <div className="portal-controls"><AccountButton />
           <button type="button" className="portal-control portal-control--primary" onClick={enquire}>Enquire<ArrowUpRight size={18} aria-hidden="true" /></button>
         </div>
         <button ref={menuButtonRef} type="button" className="icon-button portal-menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen(open => !open)}>{menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}</button>
