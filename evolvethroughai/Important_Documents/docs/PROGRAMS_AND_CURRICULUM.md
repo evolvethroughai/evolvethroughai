@@ -1,5 +1,11 @@
 # Programs and Curriculum
 
+## Pathway reconciliation ? 28 November 2026
+
+Five pathways remain. Flagship: 18 modules, 14 project concepts and one integrated capstone. Azure/AWS have structured study units, prerequisites, outputs, self-checks and practice briefs. FDE covers programming, apps/APIs, cloud/DevSecOps, enterprise data, applied AI/RAG/evaluation, agents/MCP, production and customer deployment. Career includes Enterprise Multi-Region Cloud & GitOps Platform and AIOps & Serverless Self-Healing Engine, resume/portfolio preparation and five mock-interview formats. The supplied 20-day plan is a planning structure, not a guaranteed delivery schedule. Availability, detailed labs and commercial promises still need confirmation.
+
+---
+
 > Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 

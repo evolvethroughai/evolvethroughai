@@ -1,5 +1,10 @@
 # Evolve Through AI redesign
 
+## Latest notes ? 28 November 2026
+
+Current implementation and outstanding issues are reconciled in [current handover](docs/CURRENT_WEBSITE_HANDOVER.md) and [About/community guide](docs/ABOUT_STORY_AND_COMMUNITY.md). Active source is the D: website workspace. Older dated entries remain historical; no release approval is implied.
+
+
 An editorial, responsive marketing site built on the existing React + Vite stack. Typography pairs Space Grotesk and DM Sans with Instrument Serif accents. Light paper surfaces alternate with a dark engineering lifecycle and footer. Blue, cyan and violet retain the supplied brand direction.
 
 ## Content decisions

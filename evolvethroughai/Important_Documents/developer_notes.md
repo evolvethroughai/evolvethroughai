@@ -1,5 +1,10 @@
 # Evolve Through AI — Developer Notes
 
+## Latest notes ? 28 November 2026
+
+Current implementation and outstanding issues are reconciled in [current handover](docs/CURRENT_WEBSITE_HANDOVER.md) and [About/community guide](docs/ABOUT_STORY_AND_COMMUNITY.md). Active source is the D: website workspace. Older dated entries remain historical; no release approval is implied.
+
+
 **Work date:** 24 October 2026  
 **Timezone:** Asia/Kolkata (IST)  
 **Project:** Evolve Through AI  

@@ -1,0 +1,564 @@
+{
+  "results": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 681,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 732,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1287,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 717,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 1000,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 1000,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 860,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 681,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 732,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1287,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 717,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 820,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 902,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 860,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 681,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 732,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1287,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 717,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 784,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 902,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 860,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 681,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 732,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1283,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 717,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 820,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 898,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 855,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 681,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 732,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1279,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 711,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 693,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 892,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 840,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 701,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 732,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1274,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 703,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 640,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 884,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 824,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 748,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 838,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1254,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 662,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 1246,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 962,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 773,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 834,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 914,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1558,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 578,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 1316,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 1420,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 952,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 1022,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 1063,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1773,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 774,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 1646,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 1745,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 1269,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 1086,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 1098,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1807,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 846,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 1828,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 1784,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 1282,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 1085,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 1126,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1899,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 846,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 1943,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 1848,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 1281,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1242,
+      "height": 698,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 701,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 732,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1271,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 698,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 626,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 881,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 816,
+          "clipped": false
+        }
+      ]
+    },
+    {
+      "width": 1093,
+      "height": 614,
+      "overflow": false,
+      "header": 64,
+      "sections": [
+        {
+          "id": "engineering-journey",
+          "height": 748,
+          "clipped": false
+        },
+        {
+          "id": "business-introduction",
+          "height": 838,
+          "clipped": false
+        },
+        {
+          "id": "path",
+          "height": 1260,
+          "clipped": false
+        },
+        {
+          "id": "programs",
+          "height": 679,
+          "clipped": true
+        },
+        {
+          "id": "solutions",
+          "height": 1256,
+          "clipped": false
+        },
+        {
+          "id": "questions",
+          "height": 962,
+          "clipped": false
+        },
+        {
+          "id": "footer",
+          "height": 787,
+          "clipped": false
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

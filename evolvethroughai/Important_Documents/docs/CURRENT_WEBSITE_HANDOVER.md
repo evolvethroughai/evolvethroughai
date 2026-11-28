@@ -1,5 +1,25 @@
 # Current website handover
 
+## Current state ? 28 November 2026
+
+Updated: 28 November 2026 ? Asia/Kolkata. Active workspace: D:\evolvethroughai\digital_product_launch\WEBSITE\evolvethroughai. React 19 / TypeScript / Vite; no framework migration. This dated snapshot supersedes older implementation descriptions; historical records remain below. No deployment or Git push is recorded by this documentation update.
+
+- Homepage retains graphite hero, original logo, robot video, two photographic pathway cards and contour branding. Learning and business introductions retain their robot/puzzle media.
+- Navigation uses Learning Programs, Real-Time Projects, Digital Solutions, About, Login and Enquire. About opens the public /about page.
+- Audience selection and realistic rope/robot pull lead into the five learning pathways and manually triggered ink reveal. Preserve the accepted transition rather than replacing its assets.
+- Business Solutions contains the globe-backed service selection and explanatory delivery flows. Homepage story follows it before FAQs, closing artwork and footer.
+- The public About page includes purpose, five story chapters, eight interactive growth themes, vision and values. The growth themes now use an overlapping rolling deck with selectable topics and expandable details rather than the old standalone gallery.
+- Homepage community cards are six development samples, manually advanced by clicking/tapping or keyboard. The concise Sample stories label remains. They are not authenticated reviews. Production only accepts verified, permissioned feedback; the verified data list is currently empty.
+- The 200-professional achievement remains unverified and hidden. Speaking/workshop themes do not establish a confirmed event history.
+- Pathways include the flagship, Azure, AWS, Forward-Deployed Engineering & Applied AI, and Career & Interview Development. Flagship retains 18 modules, 14 projects and one capstone. FDE uses the supplied eight-stage progression; career includes two named major projects, resume/portfolio preparation and mock-interview formats.
+- Firebase Google and phone sign-in interfaces remain. Pathway access resumes after login. Conversation submission retains verified Google-account requirements and Firestore validation; phone login alone does not satisfy those rules.
+- Refresh returns pathway views to the homepage; /about remains /about. Native wheel/touch scrolling is retained, with controlled anchor/pull transitions.
+- About header now has scoped dark contrast matching the main brand. The latest reverse-scroll white-shade experiment was reverted; the reported transient shade remains an open issue, not a verified fix.
+
+See [About and community guide](ABOUT_STORY_AND_COMMUNITY.md), [decisions](DECISIONS_AND_OPEN_ITEMS.md) and [latest documentation report](../../design-review/about-2026-11-28/REPORT.md).
+
+---
+
 Updated: 20 November 2026 (Asia/Kolkata). Inspected current local source and this session's changes. This is the current-state summary; older dated entries remain historical. No public deployment or Git push was performed.
 
 ## Current implementation — 20 November 2026
@@ -225,3 +245,25 @@ FAQ uses semantic question buttons with aria-expanded/controls, one open answer,
 Closing CTA is Let's Build Something, using the existing enquiry callback, a single 450ms light sweep and 3px diagonal arrow motion on hover/focus. Footer directory spacing, 44px targets, cyan link feedback and mobile alignment refined. Logo, large Learn. Build. Evolve. signature and human/AI artwork retained. Homepage anchors are explicit for Find your starting point and Back to top; existing Masterclass section routes retained; no legal pages invented.
 
 Changed source: BusinessSolutions.tsx, BusinessSolutions.css, SiteFAQ.tsx, SiteActions.tsx, SiteFinish.css. No new packages/assets. App.tsx, Hero.tsx, EngineeringJourney.tsx, LearningPathSection.tsx and SmoothScroll.tsx hashes match pre-edit values, preserving Screens 1–5. Verified 320/390/768/1440px, no horizontal overflow or browser errors, keyboard FAQ open/close, one-open state, enquiry dialogs and footer targets. Reduced motion displays static connectors and instant FAQ changes, with no CTA sweep/arrow movement. Lint/TypeScript and production build passed. Evidence: design-review/lower-screen-interactions/. Visual approval and deployment remain separate.
+
+## 25 November 2026 � website stabilization
+Finalized screen designs preserved. Native wheel/touch scrolling; controlled anchor and rope transitions retained. Header height is measured rather than relying on conflicting fixed offsets. Shared container, section spacing and typography proportions consolidated in src/site-stability.css. Eleven requested viewport sizes and five programme routes checked without horizontal overflow; TypeScript/build passed. Rope colour video still begins on release and lands below the header. Actual browser zoom remains unverified (reduced CSS viewport equivalents checked). Evidence: design-review/site-stability-2026-11-25/REPORT.md and qa.json. No deployment.
+
+### 25 November � lower-screen follow-up
+Owner reported sluggish Screens5�8 and cramped lower-screen spacing. Lenis autoRaf is now disabled; its frame loop runs only for explicit anchor/rope transitions and stops when complete. Native wheel/touch retained. FAQ cards/category padding and robot reduced; section6/FAQ receive48px vertical breathing room and footer40px top clearance. Decorative FAQ/footer loops pause during scrolling. Lint/build passed. Rope regression: colour video starts about38ms after release, heading lands y85 below navbar y57. Wheel settled without a delayed jump; FAQ expands; no loaded asset failures. Desktop/mobile overflow checks passed. Does not establish performance on every device.
+
+## 25 November 2026 � pathway detail experiences
+All five pathway introductions now share a premium overview, direction panel and route-entry reveal. Flagship curriculum/projects remain intact. Pathways2�5 have four expandable learning stages, prerequisites, three illustrative practice ideas, enquiry and cross-pathway navigation. Azure links documented flagship topic/project context; AWS and Applied AI/FDE scope remains developing, career support is subject to confirmation and no outcomes are promised. Practice ideas are explicitly illustrative, not approved lab deliverables. Modified PathwayPages.tsx/css only for implementation. Fifteen route/viewport checks (390/768/1440) passed without horizontal overflow or browser errors; TypeScript/build passed. Light-theme contrast repaired after screenshot inspection. No new dependency or deployment.
+
+### 25 November � pathway interiors expanded
+Follow-up clarifies that full detail-page content was wanted. Added PathwayStudyPlan.tsx/css and integrated it into every pathway: flagship explorer uses the existing18-module data, preserving original curriculum/projects/capstone below; Azure/AWS/FDE/Career each have6 proposed study units with topics, exercise, expected output and self-check, plus a proposed integration/portfolio brief. New material is expressly planning content pending scope approval, not a claim of confirmed delivery. No fees, dates, certifications or outcome guarantees added. Unit selection/next navigation and mobile/desktop overflow tested on all5 routes. TypeScript/build passed.
+
+## 28 November 2026 - About story experience
+
+Implemented the compact Our Journey / Your Growth homepage section after Digital Solutions and before FAQs, and a dedicated public /about route. About navigation and footer Our story now link to /about. Existing homepage sections, assets, pathway authentication, ink-pull and enquiry functionality preserved.
+
+About includes the owner-supplied story, asymmetric impact composition, five scroll-linked chapters, eight growth themes with explicitly illustrative existing workspace imagery, community review infrastructure, interactive values and programme/enquiry closing actions. Original logo preserved. Scoped CSS, one-time reveals and reduced-motion support; no new dependencies.
+
+Content gates: 200+ is configured as unverified and not displayed. No authentic testimonials or confirmed event history supplied. Production excludes fictional reviews and unverified metrics. Optional development preview: /about?previewReviews=1; every sample is explicitly illustrative. Real reviews require verified=true and permission=true in src/data/brandStory.ts. Confirm outcomes, permission and source URLs before publication.
+
+Verification: TypeScript lint and Vite production build passed. Browser checks at 1440, 768 and 390px: no horizontal overflow or page errors; five chapters/eight gallery cards; chapter anchors clear the fixed navbar; enquiry opens existing login; /about refresh stays on About; production preview hides sample reviews even with previewReviews=1. Evidence: design-review/about-2026-11-27/qa.json and screenshots. Production host must rewrite /about to index.html (Vite development/preview supports the route). No deployment performed.

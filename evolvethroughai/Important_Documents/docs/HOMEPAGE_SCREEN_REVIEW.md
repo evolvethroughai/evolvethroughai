@@ -1,5 +1,11 @@
 # Homepage Screen Review
 
+## Review checkpoint ? 28 November 2026
+
+Use the actual current homepage and /about, not the old October screenshots. Latest About rolling-deck screenshots are under design-review/about-2026-11-27/growth-deck-*.png. Older gallery and autoplay-review images are superseded. Manual sample-card interaction and responsive deck checks were recorded; this is not final owner approval or formal accessibility certification. Reverse-scroll white shade remains open.
+
+---
+
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 

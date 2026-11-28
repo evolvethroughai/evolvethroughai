@@ -7,3 +7,78 @@
 .pathway-page h1:focus{outline:none}
 @media(max-width:700px){.header-scroll-shield .portal-controls .header-search-button>span,.header-scroll-shield .portal-controls .header-search-button>kbd{display:none}}
 .header-scroll-shield.is-scrolled .portal-controls .header-search-button>span,.header-scroll-shield.is-scrolled .portal-controls .header-search-button>kbd{display:none}
+
+/* Dedicated programme scenes. Existing flagship curriculum remains untouched. */
+.pathway-premium-intro{padding-top:calc(var(--site-header-height,72px) + 30px);padding-bottom:30px;animation:pathway-arrive .5s ease-out both}
+.pathway-intro-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(250px,.7fr);gap:48px;align-items:center}
+.pathway-premium-intro .pathway-page-label,.pathway-kicker{font-size:10px;letter-spacing:.13em;font-weight:600;color:#9adce9;line-height:1.7}
+.pathway-premium-intro h1{font-size:clamp(33px,4.2vw,58px);color:#f0f4fc;line-height:1.12;max-width:950px;margin:16px 0 22px}
+.pathway-intro-grid>div>p{font-size:16px;line-height:1.85;color:#c4d1e5;max-width:760px}
+.pathway-compass{padding:28px;border:1px solid #88b9dc40;border-radius:23px;background:radial-gradient(at 95% 0,#5888c522,transparent 65%),linear-gradient(135deg,#1b2835e8,#252035c9);box-shadow:0 15px 40px #0002}
+.pathway-compass>svg{color:#93e2ef;margin-bottom:18px}.pathway-compass>span{display:block;font:500 10px monospace;letter-spacing:.1em;color:#a9c3e2}
+.pathway-compass h2{font-size:24px;line-height:1.25;margin:10px 0 15px;color:#eef4ff;letter-spacing:-.03em}
+.pathway-compass p{font-size:13px;line-height:1.8;color:#ccd9eb}
+.pathway-compass small{display:block;margin-top:18px;padding-top:14px;border-top:1px solid #8bafd333;font-size:11px;line-height:1.8;color:#aebfd9}
+.pathway-premium-intro .pathway-page-jumps{gap:10px;margin-top:26px}
+.pathway-premium-intro .pathway-page-jumps a{padding:9px 15px;border:1px solid #83bad640;border-radius:99px;background:#18263588;color:#d9e8fb;font-size:12px;gap:12px}
+.pathway-premium-outline{padding-bottom:64px;color:#edf3fc;animation:pathway-arrive .5s .08s both}
+.pathway-overview-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}
+.pathway-premium-outline section{border-top:0;padding-top:0}
+.pathway-premium-outline .pathway-info-card{padding:28px;border:1px solid #8aa9ce30;border-radius:21px;background:#1a2330bf}
+.pathway-info-card>svg{display:block;color:#9bdce9;margin-bottom:18px}
+.pathway-premium-outline h2{font-size:clamp(25px,2.7vw,35px);line-height:1.2;letter-spacing:-.035em;color:#eef4fc;margin:9px 0 18px}
+.pathway-premium-outline p{color:#c3d1e5;font-size:14px;line-height:1.85}
+.pathway-info-card ul{display:grid;gap:12px;list-style:none;padding:0;margin:18px 0 0}
+.pathway-info-card li{display:flex;align-items:flex-start;gap:10px;color:#d9e5f5;font-size:13px;line-height:1.7}
+.pathway-info-card li svg{color:#94dfe9;margin-top:3px}
+.pathway-premium-outline :is(.pathway-roadmap,.pathway-source-context,.pathway-practice){margin-top:50px}
+.pathway-section-title{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:24px}
+.pathway-section-title p{max-width:440px;font-size:13px}
+.pathway-section-title h2{margin-bottom:0}
+.pathway-stages{display:grid;gap:12px}
+.pathway-stages details{border:1px solid #86a7cc38;border-radius:17px;background:linear-gradient(120deg,#1c2836d9,#1e2230e8);transition:border-color .25s,box-shadow .25s}
+.pathway-stages details[open]{border-color:#8adfe578;box-shadow:0 8px 30px #4acde808}
+.pathway-stages summary{display:flex;align-items:center;gap:18px;padding:20px;list-style:none;cursor:pointer}
+.pathway-stages summary::-webkit-details-marker{display:none}
+.pathway-stage-number{display:grid;place-items:center;width:39px;height:39px;border:1px solid #93cde555;border-radius:12px;color:#9ddfea;font:500 12px monospace;flex-shrink:0}
+.pathway-stages summary strong{display:block;font-size:16px;color:#eef3fc}
+.pathway-stages summary small{display:block;font-size:12px;color:#a9bedb;margin-top:5px;line-height:1.6}
+.pathway-stages summary>svg{margin-left:auto;color:#a7ddec;transition:transform .25s}
+.pathway-stages details[open] summary>svg{transform:rotate(90deg)}
+.pathway-stage-body{padding:0 26px 22px 77px;animation:pathway-arrive .25s ease-out}
+.pathway-source-modules{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.pathway-source-modules details{border:1px solid #779dc138;border-radius:15px;padding:18px;background:#192430bb}
+.pathway-source-modules summary,.pathway-existing-projects>summary{display:flex;justify-content:space-between;gap:15px;cursor:pointer;font-size:14px;line-height:1.65;color:#e7f1ff}
+.pathway-source-modules p{margin-top:15px}.pathway-source-modules li{font-size:12px;color:#c5d5e9;line-height:1.9}
+.pathway-practice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pathway-practice-grid article{padding:24px;border:1px solid #8b9cca35;border-radius:19px;background:linear-gradient(140deg,#1a2c39d9,#262236d9);transition:transform .25s,border-color .25s}
+.pathway-practice-grid article>svg{color:#9adfe9;margin-bottom:16px}
+.pathway-practice-grid .pathway-kicker{display:block;font-size:9px}
+.pathway-practice-grid h3{font-size:19px;line-height:1.4;margin:12px 0;color:#eff5ff}
+.pathway-practice-grid p{font-size:13px}
+.pathway-practice-grid small{display:block;color:#a5c5e3;border-top:1px solid #87a5cd33;padding-top:15px;margin-top:18px;font-size:11px;line-height:1.8}
+.pathway-existing-projects{margin-top:22px;padding:20px;border:1px solid #92aaca38;border-radius:17px}
+.pathway-premium-outline .pathway-next-step{display:flex;align-items:center;gap:22px;margin-top:44px;padding:26px;border:1px solid #89cce155;border-radius:21px;background:linear-gradient(110deg,#1e3a4a99,#33284b99)}
+.pathway-next-step>svg{color:#a2deec}.pathway-next-step h2{font-size:25px;margin:0 0 8px}
+.pathway-next-step button{margin-left:auto;display:flex;align-items:center;justify-content:center;gap:16px;padding:14px 19px;min-height:48px;flex-shrink:0;background:linear-gradient(110deg,#265aaf,#6840bd);border:1px solid #9ac3ec66;border-radius:13px;color:white;font-size:13px;font-weight:600}
+.pathway-switcher{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:36px}
+.pathway-switcher>.pathway-kicker{grid-column:1/-1}
+.pathway-switcher a{display:flex;align-items:center;gap:12px;padding:15px;border:1px solid #89aacc30;border-radius:12px;color:#c5d8ed;font-size:12px;line-height:1.6}
+.pathway-switcher a>span{color:#8cdbeb;font:11px monospace}.pathway-switcher a>svg{margin-left:auto}
+.pathway-switcher a[aria-current=page]{border-color:#91d9e96b;background:#6ecbdf0c}
+.pathway-premium-intro :is(a,button):focus-visible,.pathway-premium-outline :is(a,button,summary):focus-visible{outline:2px solid #9ce5ef;outline-offset:4px}
+@media(hover:hover){.pathway-practice-grid article:hover{transform:translateY(-3px);border-color:#96ddea77}.pathway-stages summary:hover{background:#7dcbe906}.pathway-switcher a:hover{border-color:#9ddde888;color:white}}
+@keyframes pathway-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.pathway-intro-grid{grid-template-columns:1fr;gap:25px}.pathway-compass{padding:23px}.pathway-overview-grid{grid-template-columns:1fr}.pathway-practice-grid{grid-template-columns:1fr}.pathway-next-step{flex-wrap:wrap}.pathway-next-step button{margin-left:0}}
+@media(max-width:600px){.pathway-source-modules,.pathway-switcher{grid-template-columns:1fr}.pathway-premium-intro{padding-top:calc(var(--site-header-height,72px) + 20px)}.pathway-premium-outline .pathway-info-card{padding:22px}.pathway-section-title{display:block}.pathway-section-title p{margin-top:15px}.pathway-stages summary{padding:17px;gap:12px}.pathway-stage-body{padding:0 18px 20px}.pathway-stages summary strong{font-size:15px}.pathway-premium-outline .pathway-next-step{padding:22px}.pathway-next-step button{width:100%}.pathway-premium-outline :is(.pathway-roadmap,.pathway-source-context,.pathway-practice){margin-top:36px}}
+@media(prefers-reduced-motion:reduce){.pathway-premium-intro,.pathway-premium-outline,.pathway-stage-body{animation:none!important}.pathway-premium-outline *{transition:none!important;transform:none!important}}
+
+/* Match text contrast to the retained light-theme programme background. */
+[data-theme=light] .pathway-premium-intro h1{color:#172b43}
+[data-theme=light] .pathway-intro-grid>div>p{color:#405774}
+[data-theme=light] .pathway-premium-intro .pathway-page-label{color:#316879}
+[data-theme=light] .pathway-section-title h2,[data-theme=light] .pathway-source-context>h2{color:#172b43}
+[data-theme=light] .pathway-section-title>p,[data-theme=light] .pathway-source-context>p{color:#405774}
+[data-theme=light] .pathway-section-title .pathway-kicker,[data-theme=light] .pathway-source-context>.pathway-kicker,[data-theme=light] .pathway-switcher>.pathway-kicker{color:#27697d}
+[data-theme=light] .pathway-switcher a{background:#1d2c40e8;color:#dce9fa}
+[data-theme=light] .pathway-premium-intro .pathway-back{color:#35516e}

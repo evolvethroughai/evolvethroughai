@@ -1,5 +1,10 @@
 # Evolve Through AI — Important Documents
 
+## Latest notes ? 28 November 2026
+
+Current implementation and outstanding issues are reconciled in [current handover](docs/CURRENT_WEBSITE_HANDOVER.md) and [About/community guide](docs/ABOUT_STORY_AND_COMMUNITY.md). Active source is the D: website workspace. Older dated entries remain historical; no release approval is implied.
+
+
 **Documentation updated through 20 November 2026 (IST).** This folder is the canonical project-knowledge location. The latest explicit owner decision takes precedence over earlier notes.
 
 Current implementation: [Current handover](docs/CURRENT_WEBSITE_HANDOVER.md). Older dated evidence below remains historical.

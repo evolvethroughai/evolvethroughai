@@ -1,5 +1,13 @@
 # Website Roadmap
 
+## Current checkpoint ? 28 November 2026
+
+Updated: 28 November 2026 ? Asia/Kolkata. Active workspace: D:\evolvethroughai\digital_product_launch\WEBSITE\evolvethroughai. React 19 / TypeScript / Vite; no framework migration. This dated snapshot supersedes older implementation descriptions; historical records remain below. No deployment or Git push is recorded by this documentation update.
+
+Homepage, five pathway experiences, authenticated access, business showcase and public About page have progressed beyond the October baseline. Continue refining the current source; do not restart earlier phases. Final visual approval, real community evidence, commercial details, privacy/legal content and production release remain separate gates. Resolve the reported reverse-scroll white shade and complete release QA before publication. See [current handover](CURRENT_WEBSITE_HANDOVER.md).
+
+---
+
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 
@@ -413,7 +421,7 @@ See [Current website handover](CURRENT_WEBSITE_HANDOVER.md) for the inspected fi
 ## 10 November 2026 - Screens 7â€“9 atmosphere refinement
 Added local video atmospheres to the enquiry, FAQ and footer sections, with soft edge fades, restrained ambient drift, answer reveals and CTA feedback. Reuses existing media; no new application dependencies. Videos load near view, pause offscreen and use posters under reduced motion. Desktop/mobile light/dark browser checks found no horizontal overflow; TypeScript and production build passed. Visual approval remains pending. No deployment.
 
-Screens 7–9 correction: each now has its own locally generated abstract video (aurora, cyan contours, orbital glow), replacing the reused dotted/pour media. Existing lazy playback and reduced-motion posters retained. No content changes or deployment.
+Screens 7ï¿½9 correction: each now has its own locally generated abstract video (aurora, cyan contours, orbital glow), replacing the reused dotted/pour media. Existing lazy playback and reduced-motion posters retained. No content changes or deployment.
 
 ## 11 November 2026 - Screen 7 interactive robot journey
 Owner approved the five-step staircase concept. Added tappable steps, robot hop/advance, rotating educational messages, restart and final conversation CTA. Existing enquiry form, budget preference and authentication preserved. Existing robot PNG reused; no new dependencies. Keyboard selection and all five steps verified at 390, 768 and 1440px with no horizontal overflow. TypeScript and production build passed. Reduced-motion CSS disables hops/transitions. Visual review remains open; no deployment.

@@ -1,5 +1,11 @@
 # Header components and headline motion
 
+## Header checkpoint ? 28 November 2026
+
+Current public labels: Learning Programs, Real-Time Projects, Digital Solutions, About, Login and Enquire. About links to /about; cross-home links retain homepage destinations. Original logo is preserved. About header has scoped dark background/text contrast including scrolled state and mobile menu. Auth functionality remains in the account provider; do not replace login with a fake portal.
+
+---
+
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 

@@ -8,10 +8,10 @@ import './Header.css';
 interface HeaderProps { onEnquire: () => void; }
 interface NavigationItem { label: string; href: string; }
 const navigation: readonly NavigationItem[] = [
-  { label: 'Programs', href: '#programs' },
-  { label: 'Projects', href: '?pathway=masterclass#projects' },
-  { label: 'Solutions', href: '#solutions' },
-  { label: 'About', href: '#about' },
+  { label: 'Learning Programs', href: '#programs' },
+  { label: 'Real-Time Projects', href: '?pathway=masterclass#projects' },
+  { label: 'Digital Solutions', href: '#solutions' },
+  { label: 'About', href: '/about' },
 ];
 
 export default function Header({ onEnquire }: HeaderProps) {
@@ -43,9 +43,9 @@ export default function Header({ onEnquire }: HeaderProps) {
   return <>
     <header className={`header portal-header header-seamless header-floating header-aurora header-transparent-compact header-slim header-text-navigation header-scroll-shield header-cinematic-pills header-focused-navigation${scrolled ? ' is-scrolled' : ''}`} ref={headerRef}>
       <div className="nav-wrap">
-        <div className="header-brand-search"><BrandLogo tagline /></div>
+        <div className="header-brand-search"><BrandLogo tagline homeHref={location.pathname === '/about' ? '/' : '#home'} /></div>
         <nav id="main-navigation" aria-label="Main navigation" className={`portal-navigation public-site-navigation${menuOpen ? ' is-open' : ''}`}>
-          {navigation.map(item=><a key={item.label} href={new URLSearchParams(location.search).has('pathway') ? './'+item.href : item.href} onClick={()=>setMenuOpen(false)}><span className="nav-pill-label">{item.label}</span></a>)}
+          {navigation.map(item=><a key={item.label} href={item.href === '/about' ? '/about' : location.pathname === '/about' ? '/'+item.href : new URLSearchParams(location.search).has('pathway') ? './'+item.href : item.href} onClick={()=>setMenuOpen(false)}><span className="nav-pill-label">{item.label}</span></a>)}
         </nav>
         <div className="portal-controls"><AccountButton />
           <button type="button" className="portal-control portal-control--primary" onClick={enquire}>Enquire<ArrowUpRight size={18} aria-hidden="true" /></button>

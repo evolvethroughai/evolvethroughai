@@ -1,3 +1,4 @@
+import { Phone } from 'lucide-react';
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import type { ConfirmationResult, RecaptchaVerifier } from 'firebase/auth';
 import { firebaseConfigured, firebaseServices } from './firebaseClient';
@@ -43,7 +44,7 @@ export function PhoneSignIn() {
       }
     } finally { if (alive.current) setBusy(false); }
   };
-  return <details className="phone-signin"><summary>Or continue with phone number</summary>
+  return <details className="phone-signin"><summary><Phone size={17} aria-hidden="true" /> Continue with phone OTP</summary>
     <form onSubmit={submit}>
       {!confirmation ? <><label>Phone number<input type="tel" autoComplete="tel" placeholder="+91 9876543210" value={phone} onChange={event => setPhone(event.target.value)} required disabled={busy} /></label>
         <label className="conversation-access-consent"><input type="checkbox" required /><span>I agree to receive a verification SMS. Google processes this number for spam and abuse prevention. Standard SMS rates may apply.</span></label>

@@ -1,5 +1,11 @@
 # Project History
 
+## 28 November 2026 ? About, pathways and documentation
+
+Recorded public /about experience, homepage story placement, dark About header repair, eight-topic rolling growth deck, manual homepage sample-story interaction, pathway content refinements and authentication gates. The latest white-shade styling trial was reverted at owner request; the issue remains open. Updated current notes without changing historical source handovers or deploying the site.
+
+---
+
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 

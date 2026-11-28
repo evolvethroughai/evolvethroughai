@@ -1,5 +1,11 @@
 # Design Requirements
 
+## Implemented design checkpoint ? 28 November 2026
+
+Preserve original logo, graphite scenes, cyan/violet accents, existing media and shared contour texture. About uses a dark readable header, five story chapters and an eight-topic overlapping deck with expandable detail. Homepage sample community cards use a prominent center card and receding neighbours, manual click/tap/keyboard progression, and no autoplay controls. Respect reduced motion and natural content height. Do not hide the remaining white-shade issue with an unverified claim of completion. See [current handover](CURRENT_WEBSITE_HANDOVER.md).
+
+---
+
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 

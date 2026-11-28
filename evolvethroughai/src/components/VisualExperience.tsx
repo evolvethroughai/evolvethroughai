@@ -11,7 +11,7 @@ export function CinematicHero() {
   return <LazyMotion features={domAnimation}><Hero>
     <div className="container refined-hero-grid">
       <div className="journey-copy">
-        <div className="eyebrow hero-brand-label">FOR THE ENGINEER YOU’RE BECOMING</div>
+        <div className="eyebrow hero-brand-label">FOR THE ENGINEER YOUâ€™RE BECOMING</div>
         <RotatingHeadline />
         <HeroIntro />
       </div>
@@ -35,5 +35,5 @@ export function EngineeringStack() {
   const [selected, setSelected] = useState(0);
   const current = stackStages[selected];
   const Icon = current.icon;
-  return <div className="engineering-stack"><div className="stack-image-stage"><img src="/images/engineering-stack.jpg" alt="Luminous glass engineering layers rising toward an AI core" width={1200} height={1200} loading="lazy" decoding="async" /><span className="stack-figure mono">FIG. 02 / BUILT ON YOUR FOUNDATIONS</span><div className="stack-choices" aria-label="Explore engineering layers">{stackStages.map((item, index) => <button key={item.name} className={`stack-choice stack-choice-${index} ${selected === index ? 'active' : ''}`} onClick={() => setSelected(index)} aria-pressed={selected === index}><span className="mono">0{index + 1}</span>{item.name}<ArrowUpRight size={12} aria-hidden="true" /></button>)}</div></div><div className="stack-detail" aria-live="polite"><div className="stack-detail-icon"><Icon size={21} aria-hidden="true" /></div><div><span className="mini-label">{current.scope}</span><p>{current.description}</p><div className="stack-tools">{current.tools.map(tool => <span key={tool}><Check size={10} aria-hidden="true" />{tool}</span>)}</div></div></div></div>;
+  return <div className="engineering-stack"><div className="stack-image-stage"><img src="/images/engineering-stack.jpg" alt="Luminous glass engineering layers rising toward an AI core" width={1200} height={1200} loading="lazy" decoding="async" /><span className="stack-figure mono">BUILT ON YOUR FOUNDATIONS</span><div className="stack-choices" aria-label="Explore engineering layers">{stackStages.map((item, index) => <button key={item.name} className={`stack-choice stack-choice-${index} ${selected === index ? 'active' : ''}`} onClick={() => setSelected(index)} aria-pressed={selected === index}><span className="mono">0{index + 1}</span>{item.name}<ArrowUpRight size={12} aria-hidden="true" /></button>)}</div></div><div className="stack-detail" aria-live="polite"><div className="stack-detail-icon"><Icon size={21} aria-hidden="true" /></div><div><span className="mini-label">{current.scope}</span><p>{current.description}</p><div className="stack-tools">{current.tools.map(tool => <span key={tool}><Check size={10} aria-hidden="true" />{tool}</span>)}</div></div></div></div>;
 }

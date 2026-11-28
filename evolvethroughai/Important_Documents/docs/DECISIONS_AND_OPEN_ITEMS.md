@@ -1,5 +1,13 @@
 # Decisions and Open Items
 
+## Latest decisions and open items ? 28 November 2026
+
+Use the D: workspace only. /about is a public page, not a modal. About growth topics use an interactive rolling deck; community samples live on the homepage and advance manually. Keep Sample stories disclosure and production verification filtering. Do not publish fabricated endorsements or the unverified 200+ figure.
+
+Open: transient white shade during reverse scrolling; authentic permissioned reviews and source links; factual speaker/workshop evidence; image licensing; confirmed fees/schedule/lab scope; privacy/legal policies; production hosting SPA fallback for /about; end-to-end release testing and explicit deployment approval.
+
+---
+
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 

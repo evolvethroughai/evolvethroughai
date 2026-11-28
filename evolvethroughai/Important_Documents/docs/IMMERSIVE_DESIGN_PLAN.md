@@ -1,5 +1,11 @@
 # Immersive direction — 26 October 2026
 
+## Current refinement direction ? 28 November 2026
+
+Use current graphite scenes and approved media. About growth themes now form an overlapping interactive chapter deck; homepage community previews advance manually. Preserve reduced-motion support and readable natural section heights. Historical visual proposals below do not override the current implementation or authorize publication. See [current handover](CURRENT_WEBSITE_HANDOVER.md).
+
+---
+
 > Current status (9 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 

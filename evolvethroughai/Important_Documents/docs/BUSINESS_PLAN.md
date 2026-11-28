@@ -1,5 +1,11 @@
 # Business Plan
 
+## Website implementation checkpoint ? 28 November 2026
+
+Current website supports learning pathways, business-solution discovery, public brand storytelling and authenticated enquiries. Delivery capacity, offer availability, fees, schedules, legal terms and production operations remain owner-confirmation items. Development review samples are not business traction or verified endorsements. See [current handover](CURRENT_WEBSITE_HANDOVER.md).
+
+---
+
 > Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 

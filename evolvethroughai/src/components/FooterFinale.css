@@ -47,3 +47,13 @@
 @media(prefers-reduced-motion:reduce){#footer.footer-finale *,#footer.footer-finale *::before,#footer.footer-finale *::after{animation:none!important;transition:none!important;transform:none!important}}
 #footer .finale-scene{overflow:clip;overflow-clip-margin:12px}
 @media(max-width:900px){#footer .finale-art{right:0;width:76%}}
+
+/* Lead the footer with the company logo and signature, then compact navigation. */
+#footer .finale-brand-heading{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:24px 0}
+#footer .finale-brand-heading .finale-brand{flex:0 0 220px}
+#footer .finale-brand-heading .finale-brand p{margin:10px 0 0}
+#footer .finale-brand-heading .finale-brand small{display:none}
+#footer .finale-brand-heading .finale-signature{flex:1;justify-content:flex-end;gap:.22em;font-size:clamp(30px,5vw,76px);margin:0}
+#footer .finale-directory{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:14px 0 26px}
+#footer .finale-directory nav{gap:9px}
+@media(max-width:700px){#footer .finale-brand-heading{flex-direction:column;align-items:flex-start;gap:22px}#footer .finale-brand-heading .finale-brand{flex:auto}#footer .finale-brand-heading .finale-signature{justify-content:flex-start;font-size:clamp(29px,7vw,47px)}#footer .finale-directory{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}}

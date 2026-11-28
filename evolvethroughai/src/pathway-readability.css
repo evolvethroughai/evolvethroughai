@@ -1,0 +1,66 @@
+
+/* Shared reading scale for programme routes; homepage is intentionally excluded. */
+main[data-pathway]{--path-copy:#3c4d63;--path-title:#202b3d;--path-label:#28617e}
+[data-theme=dark] main[data-pathway]{--path-copy:#d1ddef;--path-title:#f1f5ff;--path-label:#9de4f1}
+main[data-pathway] :is(.pathway-intro-grid>div>p,.pathway-outline p,.study-heading>p,.study-unit-detail p,.study-capstone p){font-size:16px;line-height:1.75}
+main[data-pathway] :is(.pathway-info-card li,.study-unit-detail li,.study-capstone li,.pathway-source-modules li,.pathway-related details li){font-size:15px;line-height:1.7}
+main[data-pathway] :is(.pathway-page-label,.pathway-kicker,.section-label,.mini-label,.stage-count){font-size:12px;line-height:1.6;font-weight:600}
+main[data-pathway] :is(.pathway-back,.pathway-page-jumps a,.study-unit-list button strong,.study-unit-controls button,.pathway-next-step button,.pathway-switcher a){font-size:14px;line-height:1.5}
+main[data-pathway] :is(.pathway-compass p,.pathway-stages summary small,.pathway-practice-grid small,.pathway-compass small){font-size:14px;line-height:1.7}
+main[data-pathway] .section-heading h2{font-size:clamp(30px,3.25vw,46px);line-height:1.17;letter-spacing:-.035em}
+main[data-pathway] .section-heading>p{font-size:16px;line-height:1.75;color:var(--path-copy)}
+main[data-pathway] .section-label{color:var(--path-label)}
+main[data-pathway] .stage-panel{gap:18px}
+main[data-pathway] .stage-count{color:var(--path-label)}
+main[data-pathway] .stage-large-icon{color:var(--path-label)}
+main[data-pathway] .stage-panel h3{font-size:clamp(24px,2.2vw,30px);line-height:1.3;min-height:0;color:var(--path-title)}
+main[data-pathway] .stage-panel>p{font-size:16px;line-height:1.8;min-height:0;color:var(--path-copy)}
+main[data-pathway] .stage-tools{display:flex;flex-wrap:wrap;gap:8px}
+main[data-pathway] .stage-tools>span{font-size:14px;line-height:1.5;padding:7px 11px;color:#304c6b;border:1px solid #829ab75c;background:#eef4fb;border-radius:8px}
+[data-theme=dark] main[data-pathway] .stage-tools>span{color:#dbecff;border-color:#88b6da66;background:#223044}
+main[data-pathway] .stage-navigation>.mono{font-size:11px;color:var(--path-label)}
+main[data-pathway] .loop-canvas svg .loop-word{fill:#c5eaff}
+main[data-pathway] :is(.loop-controls,.loop-controls .mono){color:#dfedff;font-size:12px}
+main[data-pathway] .masterclass-page :is(.module-body p,.module-body li,.project-detail-copy>p,.project-outcome>p,.evolution-detail p,.content-note){font-size:16px;line-height:1.75}
+main[data-pathway] .masterclass-page :is(.module h3,.project-detail h3,.evolution-detail h3){font-size:clamp(20px,1.8vw,25px);line-height:1.4}
+main[data-pathway] :is(.study-unit-detail,.study-capstone,.pathway-compass,.pathway-info-card,.pathway-practice-grid article,.pathway-stages details,.pathway-source-modules details){color:#edf4ff}
+main[data-pathway] :is(.study-unit-detail,.study-capstone,.pathway-compass,.pathway-info-card,.pathway-practice-grid article,.pathway-stages details,.pathway-source-modules details) :is(p,li,small,strong){color:#dce7f8}
+main[data-pathway] :is(.study-unit-detail,.study-capstone,.pathway-compass,.pathway-info-card,.pathway-practice-grid article) :is(h2,h3,h4){color:#f1f7ff}
+main[data-pathway] .study-unit-list button :is(strong,span){color:#e5f1ff}
+main[data-pathway] .study-unit-detail h4{font-size:15px}
+main[data-pathway] .study-check strong{font-size:14px}
+main[data-pathway] .pathway-stages summary strong{font-size:18px;color:#f1f7ff}
+main[data-pathway] :is(.pathway-source-modules summary,.pathway-existing-projects summary){font-size:16px}
+main[data-pathway] .pathway-next-step p{color:#dce7f8}
+@media(max-width:600px){main[data-pathway] .section-heading h2{font-size:30px}main[data-pathway] :is(.pathway-intro-grid>div>p,.study-unit-detail p,.pathway-outline p,.stage-panel>p){font-size:15px}main[data-pathway] .study-unit-detail{padding:22px}main[data-pathway] .study-unit-list button{padding:14px}}
+
+main[data-pathway] .section-label :is(span,small){color:var(--path-label)}
+main[data-pathway] .stage-navigation .icon-button{color:var(--path-label);border-color:#829ab780}
+main[data-pathway] .loop-node strong{font-size:12px;line-height:1.45}
+main[data-pathway] .loop-node>span{color:#d9eaff}
+main[data-pathway] .pathway-page-jumps a{min-height:44px}
+
+main[data-pathway] .pathway-compact-return{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:28px;padding:18px 0}
+main[data-pathway] .pathway-compact-return a{display:inline-flex;align-items:center;gap:9px;min-height:44px;font-size:14px;color:var(--path-label)}
+main[data-pathway] .pathway-compact-return a:hover{text-decoration:underline;text-underline-offset:5px}
+main[data-pathway] .pathway-compact-return a:focus-visible{outline:2px solid var(--path-label);outline-offset:5px}
+
+/* Azure route: readable, balanced supporting copy and compact study hierarchy. */
+main[data-pathway="azure-cloud-devops"] .pathway-section-title{align-items:flex-start}
+main[data-pathway="azure-cloud-devops"] .pathway-page-jumps{row-gap:10px}
+main[data-pathway="azure-cloud-devops"] .pathway-kicker{color:#a4e6f2}
+[data-theme=light] main[data-pathway="azure-cloud-devops"] :is(.study-heading,.pathway-section-title) .pathway-kicker{color:#28617e}
+main[data-pathway="azure-cloud-devops"] .pathway-outline .pathway-section-title>p{color:var(--path-copy)}
+main[data-pathway="azure-cloud-devops"] .pathway-study{margin-top:36px}
+main[data-pathway="azure-cloud-devops"] .study-unit-detail h3{font-size:clamp(24px,2.3vw,30px)}
+
+main[data-pathway="career-development"] .pathway-practice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+main[data-pathway] .career-mock-plan{margin-top:32px}
+main[data-pathway] .career-mock-plan>h3{font-size:clamp(24px,2.5vw,32px);line-height:1.3;margin:10px 0 22px;color:var(--path-title)}
+main[data-pathway] .career-mock-plan ol{list-style:none;padding:0;display:grid;gap:12px}
+main[data-pathway] .career-mock-plan li{display:flex;gap:16px;align-items:flex-start;padding:18px;border:1px solid #89b7d343;border-radius:16px;background:#1c2939}
+main[data-pathway] .career-mock-number{color:#a3e6ef;font:600 13px monospace;padding-top:4px}
+main[data-pathway] .career-mock-plan h4{font-size:16px;line-height:1.4;color:#f0f6ff;margin:0 0 6px}
+main[data-pathway] .career-mock-plan li p{font-size:15px;color:#d6e3f5;line-height:1.7}
+main[data-pathway] .career-mock-note{font-size:14px;color:var(--path-copy);margin-top:16px}
+@media(max-width:700px){main[data-pathway="career-development"] .pathway-practice-grid{grid-template-columns:1fr}}

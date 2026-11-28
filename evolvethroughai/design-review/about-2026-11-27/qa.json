@@ -1,0 +1,77 @@
+[
+  {
+    "width": 1440,
+    "layout": {
+      "overflow": false,
+      "h1": "Every evolution begins with a struggle.Ours began with a purpose.",
+      "chapters": 5,
+      "gallery": 8,
+      "reviews": 0,
+      "header": 64,
+      "hero": 195.4375
+    },
+    "anchor": {
+      "top": 80.046875,
+      "header": 57
+    },
+    "dialog": 1,
+    "productionSamples": 0,
+    "reloadRoute": "/about",
+    "home": {
+      "beforeFAQ": true,
+      "headline": "Built through challenges.Driven by transformation.",
+      "link": "/about"
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "layout": {
+      "overflow": false,
+      "h1": "Every evolution begins with a struggle.Ours began with a purpose.",
+      "chapters": 5,
+      "gallery": 8,
+      "reviews": 0,
+      "header": 64,
+      "hero": 195.4375
+    },
+    "anchor": {
+      "top": 80.640625,
+      "header": 65
+    },
+    "dialog": 1,
+    "productionSamples": 0,
+    "reloadRoute": "/about",
+    "home": {
+      "beforeFAQ": true,
+      "headline": "Built through challenges.Driven by transformation.",
+      "link": "/about"
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "layout": {
+      "overflow": false,
+      "h1": "Every evolution begins with a struggle.Ours began with a purpose.",
+      "chapters": 5,
+      "gallery": 8,
+      "reviews": 0,
+      "header": 64,
+      "hero": 175.4375
+    },
+    "anchor": {
+      "top": 80.125,
+      "header": 57
+    },
+    "dialog": 1,
+    "productionSamples": 0,
+    "reloadRoute": "/about",
+    "home": {
+      "beforeFAQ": true,
+      "headline": "Built through challenges.Driven by transformation.",
+      "link": "/about"
+    },
+    "errors": []
+  }
+]

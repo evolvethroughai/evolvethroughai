@@ -1,5 +1,11 @@
 # Google login and authenticated enquiries
 
+## Authentication checkpoint ? 28 November 2026
+
+Google and phone OTP UI remain connected through AccountProvider. Pathway actions require login and resume afterward. Conversation creation still requires verified Google identity and the existing Firestore field validation; phone authentication does not automatically authorize conversation writes. Owner previously reported working Google login/submission, but this documentation pass did not send SMS, authenticate an account or submit external data. No Firebase rules were changed.
+
+---
+
 > Current status (8 November 2026): see [Current website handover](CURRENT_WEBSITE_HANDOVER.md). This dated summary supersedes earlier implementation descriptions below; historical records are preserved.
 
 

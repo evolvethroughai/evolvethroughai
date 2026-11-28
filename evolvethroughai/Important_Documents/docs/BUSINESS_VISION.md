@@ -1,5 +1,11 @@
 # Business Vision
 
+## Current positioning ? 28 November 2026
+
+Education and practical digital solutions are the two public pillars. About now connects technical learning, mentoring, analytical thinking and useful business systems. Present purpose and future direction without claiming verified customer outcomes, placements, event counts or 200+ impact until supporting evidence exists. See [current handover](CURRENT_WEBSITE_HANDOVER.md).
+
+---
+
 > Updated: 26 October 2026 · Timezone: Asia/Kolkata (IST).
 > Business intention: the owner’s master handover. Implementation facts: inspected local source. Approval and launch readiness are separate from implementation.
 
